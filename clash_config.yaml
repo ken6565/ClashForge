@@ -6,12 +6,9 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 geodata-mode: true
-geox-url:
-  geoip: https://ghproxy.net/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
-  mmdb: https://ghproxy.net/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   default-nameserver:
   - 223.5.5.5
   - 119.29.29.29
