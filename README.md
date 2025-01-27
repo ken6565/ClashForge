@@ -17,7 +17,7 @@ https://proxy.fish2018.us.kg/
 - 可以仅执行批量检测(配置文件名为同目录的clash_config.yaml)
 - 支持设置保留节点数，默认保留100个延迟最小的节点
 - 生成临时json配置，极大的提高了修复配置异常节点的效率，使用json格式处理几十万行的数据也非常快
-- 支持测试节点下行速度，按下行速度排序，默认只测试前20个节点(每个节点测试5秒)
+- 支持测试节点下载速度，按下载速度排序，默认只测试前20个节点(每个节点测试5秒)
 
 ## 节点采集源
 
@@ -32,6 +32,7 @@ links = [
   "https://slink.ltd/https://raw.githubusercontent.com/Q3dlaXpoaQ/V2rayN_Clash_Node_Getter/refs/heads/main/APIs/sc2.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/Q3dlaXpoaQ/V2rayN_Clash_Node_Getter/refs/heads/main/APIs/sc3.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/Q3dlaXpoaQ/V2rayN_Clash_Node_Getter/refs/heads/main/APIs/sc4.yaml",
+  "https://slink.ltd/https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/clash/naidounode.txt",
   "https://slink.ltd/https://raw.githubusercontent.com/xiaoer8867785/jddy5/refs/heads/main/data/{Y_m_d}/{x}.yaml",
   "https://slink.ltd/https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/LogInfo.txt|links",
   "https://slink.ltd/https://raw.githubusercontent.com/tglaoshiji/nodeshare/refs/heads/main/{Y}/{m}/{Ymd}.yaml",

@@ -29,4450 +29,1000 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 🇨🇳 visa.cn
-  server: visa.cn
-  port: 443
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: brazil.com
-  server: brazil.com
-  port: 2083
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: 🇷🇺 russia.com
-  server: russia.com
-  port: 2087
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: www.gov.ua
-  server: www.gov.ua
-  port: 2096
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: www.gco.gov.qa
-  server: www.gco.gov.qa
-  port: 8443
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: www.gov.se
-  server: www.gov.se
-  port: 443
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: 🇮🇸 time.is
-  server: time.is
-  port: 443
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: www.wto.org
-  server: www.wto.org
-  port: 8443
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: fbi.gov
-  server: fbi.gov
-  port: 2087
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: 🇭🇰 icook.hk
-  server: icook.hk
-  port: 443
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sub.fish2018.us.kg
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sub.fish2018.us.kg
-- name: 🇺🇸_US_美国_1
-  port: 32091
-  server: 51.120.1.158
-  type: ss
-  udp: true
-  password: xjzsiMfTByKjA9URbdXWNp
-  cipher: chacha20-ietf-poly1305
-- name: 🇺🇸_US_美国_2
-  port: 8080
-  server: 79.110.53.169
-  type: ss
-  udp: true
-  password: 14fFPrbezE3HDZzsMOr6
-  cipher: rc4-md5
-- name: 🇸🇬_SG_新加坡
-  port: 443
-  server: 18.141.187.153
-  type: ss
-  udp: true
-  password: amazonskr05
-  cipher: aes-256-cfb
-- name: 🇱🇻_LV_拉脱维亚
-  port: 990
-  server: 46.183.217.232
-  type: ss
-  udp: true
-  password: f8f7aCzcPKbsF8p3
-  cipher: chacha20-ietf-poly1305
-- name: 🇷🇺_RU_俄罗斯_6
-  port: 9033
-  server: 217.30.10.18
-  type: ss
-  udp: true
-  password: UTJA57ypk2XKQpnm
-  cipher: aes-256-cfb
-- cipher: chacha20-ietf-poly1305
-  name: KR韩国(mibei77.com 米贝节点分享)
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: KR韩国(mibei77.com 米贝节点分享) 2
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: 160.19.78.75
-  type: ss
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: US美国(mibei77.com 米贝节点分享) 10
-  port: 40002
-  server: 183.236.48.163
-  skip-cert-verify: true
-  tls: false
+- name: 剩余流量：98.85 GB
   type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+  server: yes.mojcn.com
+  port: 16617
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
   cipher: auto
-  name: US美国(mibei77.com 米贝节点分享) 11
-  port: 50052
-  server: 183.236.48.158
-  skip-cert-verify: true
-  tls: false
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 日本-优化2
   type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: DE德国(mibei77.com 米贝节点分享)
-  password: 2EtPqn6HYjUNcHohLfUpFQwnfjCCQ5mh1mJdEMCBucuWZ9P1udkRKHnVxuo55k1KXz2Fo6jrgt18W66opty1e4bm1jzfCfBb
-  port: 50841
-  server: 84.19.31.63
-  type: ss
-  udp: true
-- alterId: 64
+  server: m.cnmjin.net
+  port: 16617
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
   cipher: auto
-  name: US美国(mibei77.com 米贝节点分享) 16
-  port: 31878
-  server: 183.236.48.143
-  skip-cert-verify: true
-  tls: false
-  type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--5
-  password: amazonskr05
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 日本-优化3
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16617
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 新加坡SG-T
+  type: trojan
+  server: sg.mjt000.com
   port: 443
-  server: 13.213.67.37
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 🇺🇸 13,14|美国|@ripaojiedian
-  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
-  port: 443
+  password: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT
+  type: trojan
   server: usla.mjt000.com
-  skip-cert-verify: false
+  port: 443
+  password: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  udp: true
   sni: usla.mjt000.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 15|US_speednode_0029
-  network: ws
-  port: 80
-  server: polproxy.fastly80.hosting-ip.com
-  servername: moienam.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vless
-  uuid: 7f1dd75a-c845-405f-a6c0-12d10edea16b
-  ws-opts:
-    headers:
-      Host: moienam.com
-    path: /telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram?ed=2048
-- client-fingerprint: chrome
-  name: 16|d*********g.com_3
-  password: fuck
-  port: 443
-  server: 42.236.73.72
-  skip-cert-verify: false
-  sni: www.zitian.cn
-  type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--1
-  password: amazonskr05
-  port: 443
-  server: 54.191.252.235
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 0|--3-JZxj
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--4-tIUC
-  password: amazonskr05
-  port: 443
-  server: 54.201.174.149
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--8
-  password: amazonskr05
-  port: 443
-  server: 52.12.174.108
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--9
-  password: amazonskr05
-  port: 443
-  server: 54.180.232.93
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--10
-  password: gYCYXfkUQEs2TaJQ
-  port: 9038
-  server: 217.30.10.18
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--11
-  password: amazonskr05
-  port: 443
-  server: 3.34.255.220
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--14
-  password: amazonskr05
-  port: 443
-  server: 43.203.141.93
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--17
-  password: amazonskr05
-  port: 443
-  server: 15.165.76.242
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|--18
-  password: amazonskr05
-  port: 443
-  server: 3.38.212.48
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian-tdx8
-  password: amazonskr05
-  port: 443
-  server: 13.125.90.251
-  tfo: false
-  type: ss
-- type: vless
-  name: xiaoer886_US_6_2
-  server: 172.67.71.122
-  port: 2087
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: 3-fs4f6s46.huangyurong.cfd
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: 3-fs4f6s46.huangyurong.cfd
-- type: vless
-  name: xiaoer886_US_2
-  server: 172.67.75.194
-  port: 8443
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: 3-fs4f6s46.huangyurong.cfd
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: 3-fs4f6s46.huangyurong.cfd
-- type: vless
-  name: xiaoer886_US_3
-  server: 172.67.75.52
-  port: 2083
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: 3-fs4f6s46.huangyurong.cfd
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: 3-fs4f6s46.huangyurong.cfd
-- type: vless
-  name: xiaoer886_DE_2
-  server: 185.16.110.0
-  port: 443
-  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vb.zhuk.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vb.zhuk.us.kg
-- type: vless
-  name: xiaoer886_US_164_2
-  server: 199.232.125.59
-  port: 443
-  uuid: 4d6ffdeb-abc5-5658-a1f3-979681b710f2
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: JOiN--E-L-I-V-2-R-A-Y.net
-  ws-opts:
-    path: /JOiN,@ELiV2RAY-JOiN,@ELiV2RAY-JOiN,@ELiV2RAY-JOiN,@ELiV2RAY?ed=2560
-    headers:
-      host: JOiN--E-L-I-V-2-R-A-Y.net
-- type: vless
-  name: xiaoer886_AT_2
-  server: 212.183.88.232
-  port: 443
-  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vb.zhuk.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vb.zhuk.us.kg
-- type: vless
-  name: xiaoer886_AT_1
-  server: 212.183.88.242
-  port: 443
-  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vb.zhuk.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vb.zhuk.us.kg
-- name: 🇺🇸US-54.202.63.77-0399
-  type: ss
-  server: 54.202.63.77
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇯🇵JP-13.114.67.166-6257
-  type: ss
-  server: 13.114.67.166
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇸🇬SG-18.143.139.72-6475
-  type: ss
-  server: 18.143.139.72
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇸🇬SG-13.250.110.56-6321
-  type: ss
-  server: 13.250.110.56
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇸🇬SG-54.169.63.80-6324
-  type: ss
-  server: 54.169.63.80
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇯🇵JP-74.226.136.204-3322
-  type: trojan
-  server: sg01.trojanyyds.xyz
-  port: 443
-  password: cd41b9d7-df15-46ad-a778-257b0851525a
-  sni: ''
-  skip-cert-verify: false
-- name: 🇯🇵JP-94.177.131.71-5426
-  type: ss
-  server: 2.forlive.live
-  port: 61005
-  cipher: chacha20-ietf-poly1305
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  udp: true
-- name: 🇬🇧GB-18.135.173.157-1451
-  type: trojan
-  server: 18.135.173.157
-  port: 22222
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: false
-- name: 🇫🇷FR-13.36.74.252-6286
-  server: 13.36.74.252
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: false
-- name: 🇮🇪IE-34.242.191.20-6306
-  server: 34.242.191.20
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: false
-- name: 🇸🇪SE-13.50.211.85-6319
-  server: 13.50.211.85
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: false
-- name: 🇺🇸US-54.244.200.142-6345
-  server: 54.244.200.142
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇬SG-54.151.223.9-6560
-  server: 54.151.223.9
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国
-  server: 51.38.65.155
-  port: 443
-  type: trojan
-  password: f142bc50-b755-11ef-ad1a-1239d0255272
-  skip-cert-verify: true
-  tfo: false
-- name: 🇯🇵 日本
-  server: 18.179.44.127
-  port: 443
-  type: trojan
-  password: 24273330-85c9-3a6e-a0fd-58a6076a3a85
-  skip-cert-verify: true
-  tfo: false
-- name: 🇯🇵 日本 2
-  server: 18.179.44.127
-  port: 443
-  type: trojan
-  password: 6b7ec37b-96e7-37a1-9c9f-80399b8e7256
-  skip-cert-verify: true
-  tfo: false
-- name: 🇳🇱 荷兰
-  server: 5.255.118.176
-  port: 443
-  type: trojan
-  password: auto
-  skip-cert-verify: true
-  tfo: false
-- name: 🇷🇺 俄罗斯 3
-  server: 217.30.10.18
-  port: 9050
-  type: ss
-  cipher: aes-256-cfb
-  password: FG5ddLsMPbV5CutE
-  tfo: false
-- name: 🇦🇺 澳大利亚
-  server: 43.206.140.241
-  port: 443
-  type: trojan
-  password: 6b7ec37b-96e7-37a1-9c9f-80399b8e7256
-  skip-cert-verify: true
-  tfo: false
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-79.110.53.169:8080
-  type: ssr
-  server: 79.110.53.169
-  port: 8080
-  password: 14fFPrbezE3HDZzsMOr6
-  cipher: rc4-md5
-  protocol: origin
-  obfs: plain
-- name: VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.21.238.89:2086
+- name: 新加坡-优化
   type: vmess
-  server: 104.21.238.89
-  port: 2086
-  uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
+  server: yes.mojcn.com
+  port: 16618
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
   alterId: 0
   cipher: auto
-  network: ws
-  servername: watt-miss-semester-slots.trycloudflare.com
-  http-opts: {}
-  h2-opts: {}
-  ws-opts:
-    path: github.com/Alvin9999
-    headers:
-      Host: watt-miss-semester-slots.trycloudflare.com
-- name: 台湾2
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  port: 1443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 台湾3
-  server: tw4-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 日本1
-  server: jpgmo101-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 日本2
-  server: jpgmo102-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 香港1
-  server: hkre1-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 香港2
-  server: hkcera3-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 美国3
-  server: usgp3-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 美国5
-  server: usgp2-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 🇯🇵2
-  server: japan-2.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
   udp: true
-- name: 🇯🇵4
-  server: japan-4.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: 🇸🇬6
-  server: singapore-6.keenvpn.me
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  udp: true
-- name: hk1
-  server: pipi.myddns.me
-  port: 28811
-  type: socks5
-  username: myszy
-  password: myszy28811
-  udp: true
-- name: 🇯🇵 免费-日本2-Ver.7
-  server: l4pwe-g03.jp02-9a99-vm0.entry.fr0307a.art
-  port: 11775
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本4-Ver.7
-  server: 4sq5c-g03.jp04-3771-vm0.entry.fr0307a.art
-  port: 446
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本6-Ver.7
-  server: lstqj-g03.jp06-7c5a-vm0.entry.fr0307a.art
-  port: 28785
-  type: vmess
-  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
-  alterId: 99999
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-- name: DE_b5ce7_0006
-  server: 188.245.215.46
-  port: 19984
-  type: vless
-  uuid: 13e15bfe-73f7-4bfe-a386-136451137fc3
-  tls: false
-  skip-cert-verify: false
-  servername: Telewebion.com
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - Telewebion.com
-- name: DE_b5ce7_0008
-  server: 89.187.169.71
-  port: 8443
-  type: vless
-  uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
-  tls: true
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  network: tcp
-- name: HK_b5ce7_0009
-  server: hk9.ftq.ink
-  port: 4000
-  type: http
-  tls: true
-- name: KR_b5ce7_0012
-  server: 43.200.1.13
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: US_b5ce7_0020
-  server: 54.218.229.170
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: US_b5ce7_0021
-  server: 44.243.243.198
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: US_b5ce7_0022
-  server: 35.94.51.2
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: US_b5ce7_0025
-  server: nsus3.irundns.net
-  port: 443
-  type: ssr
-  cipher: aes-128-cfb
-  password: +asd6a5s5df+
-  protocol: auth_aes128_md5
-  obfs: http_post
-  protocol-param: ''
-  obfs-param: ''
-- name: US_b5ce7_0027
-  server: 104.26.5.157
-  port: 2083
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: 3-fs4f6s46.huangyurong.cfd
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 3-fs4f6s46.huangyurong.cfd
-- name: US_b5ce7_0035
-  server: 104.26.5.57
-  port: 2087
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: 3-fs4f6s46.huangyurong.cfd
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 3-fs4f6s46.huangyurong.cfd
-- name: US_b5ce7_0039
-  server: 104.18.41.190
-  port: 8443
-  type: vless
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: 3-fs4f6s46.huangyurong.cfd
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 3-fs4f6s46.huangyurong.cfd
-- name: US_b5ce7_0045
-  server: 170.114.45.6
-  port: 80
-  type: vless
-  uuid: 24e01a84-4864-40e4-abc4-2dc0432d68d4
-  tls: false
-  skip-cert-verify: false
-  servername: paid.free.pranithsandaruwan.shop
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: paid.free.pranithsandaruwan.shop
-- name: 美国[02]中转
-  type: ss
-  server: vip.baima360.com
-  port: 30104
-  cipher: chacha20-ietf-poly1305
-  password: f94dd9f5-eb13-493f-97cf-de31fd61ef01
-  udp: true
-- name: 美国[03]中转
-  type: ss
-  server: vip.baima360.com
-  port: 17941
-  cipher: chacha20-ietf-poly1305
-  password: f94dd9f5-eb13-493f-97cf-de31fd61ef01
-  udp: true
-- name: 香港[04]中转
-  type: ss
-  server: vip.baima360.com
-  port: 65519
-  cipher: chacha20-ietf-poly1305
-  password: f94dd9f5-eb13-493f-97cf-de31fd61ef01
-  udp: true
-- name: 香港[05]中转
-  type: ss
-  server: vip.baima360.com
-  port: 36511
-  cipher: chacha20-ietf-poly1305
-  password: f94dd9f5-eb13-493f-97cf-de31fd61ef01
-  udp: true
-- name: 香港[07]中转
-  type: ss
-  server: vip.baima360.com
-  port: 36214
-  cipher: chacha20-ietf-poly1305
-  password: f94dd9f5-eb13-493f-97cf-de31fd61ef01
-  udp: true
-- name: 日本[01]
-  type: ss
-  server: vip.baima360.com
-  port: 15888
-  cipher: chacha20-ietf-poly1305
-  password: f94dd9f5-eb13-493f-97cf-de31fd61ef01
-  udp: true
-- name: 英国[01]中转
-  type: ss
-  server: vip.baima360.com
-  port: 10683
-  cipher: chacha20-ietf-poly1305
-  password: f94dd9f5-eb13-493f-97cf-de31fd61ef01
-  udp: true
-- name: 英国+伦敦Amazon数据中心-HmHY
-  type: ss
-  server: series-a2.varzesh360.co
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mps3FwmDjLrWaOVg
-  udp: true
-- name: 亚太地区+V2CROSS.COM
-  type: ss
-  server: soonjp.soon.guru
-  port: 40003
-  cipher: chacha20-ietf-poly1305
-  password: f0e7fd1e-0469-415f-95da-774021f16f36
-  udp: true
-- name: 8|Mci-@V2ray_Raha-06
-  password: ksGeWd8r9Rz8
-  port: 16424
-  server: 107.175.70.80
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '[Trojan] 🇩🇪 德国 黑森州法兰克福AMazon数据中心'
-  server: 3.123.224.197
-  port: 22222
-  type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-- name: '[Trojan] 🇺🇸 美国 佐治亚州亚特兰大市BellSouth公司'
-  server: 2e703cfbaa90b14fa90d4f1353058efc.v1.cac.node-is.green
-  port: 45476
-  type: trojan
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  sni: hk12.bilibili.com
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-- name: '[VMess] 🇺🇸 美国 加州'
-  server: 62.60.132.33
-  port: 2087
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 新加坡-优化3
   type: vmess
-  uuid: bd2ba6cd-a221-4c91-934a-2b1d48d9fdd2
+  server: t.cnmjcn.cyou
+  port: 16618
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: true
   udp: true
-  tfo: false
-- name: '[Trojan] 🇺🇸 美国 纽约(Prudential)'
-  server: 4ef4a8055936f6af032689618b72de33.v1.cac.node-is.green
-  port: 40230
-  type: trojan
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  sni: hk12.bilibili.com
-  skip-cert-verify: true
-  udp: true
-  tfo: false
-- type: vless
-  name: 🇺🇸_美国_1
-  server: 162.159.153.244
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_3
-  server: 162.159.137.46
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_4
-  server: 104.20.30.225
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇸🇪_瑞典_1
-  server: 141.147.47.32
-  port: 2053
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇬🇧_英国_1
-  server: 141.144.198.113
-  port: 2053
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇳🇴_挪威_1
-  server: 141.145.217.226
-  port: 443
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_7
-  server: xcsb.ylks2024.us.kg
-  port: 8443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_8
-  server: 104.24.50.103
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_11
-  server: xcsb.ylks2024.us.kg
-  port: 2083
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_12
-  server: xcsb.ylks2024.us.kg
-  port: 2053
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_13
-  server: 190.93.244.50
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_15
-  server: xcsb.ylks2024.us.kg
-  port: 2096
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_16
-  server: xcsb.ylks2024.us.kg
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_18
-  server: xcsb.ylks2024.us.kg
-  port: 2087
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_30
-  server: 104.25.89.216
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇧🇷_巴西_1
-  server: 188.114.99.22
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_31
-  server: 173.245.49.15
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_33
-  server: 104.25.17.112
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_34
-  server: 108.162.192.16
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_35
-  server: 104.24.158.120
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_39
-  server: 104.18.97.176
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_40
-  server: 103.21.244.51
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_41
-  server: 173.245.49.130
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_42
-  server: 108.162.195.229
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_46
-  server: 108.162.194.62
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_48
-  server: 103.21.244.89
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_51
-  server: 103.21.244.53
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_52
-  server: 104.21.23.163
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_53
-  server: 198.41.192.67
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_54
-  server: 173.245.59.88
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_55
-  server: 141.101.120.139
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_58
-  server: 198.41.217.11
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_59
-  server: 103.21.244.167
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_60
-  server: 172.64.137.201
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_62
-  server: 198.41.217.82
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_63
-  server: 172.67.47.117
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_64
-  server: 69.84.182.178
-  port: 443
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_66
-  server: 173.245.59.148
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_67
-  server: 129.151.198.3
-  port: 8443
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_69
-  server: 104.25.47.206
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_70
-  server: 108.162.195.182
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_71
-  server: 198.41.200.249
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇧🇷_巴西_3
-  server: 188.114.99.126
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇧🇷_巴西_4
-  server: 188.114.98.136
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_72
-  server: 162.159.39.136
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_73
-  server: 141.101.121.247
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_74
-  server: 104.19.56.103
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_79
-  server: 141.101.123.197
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_82
-  server: 103.21.244.126
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_83
-  server: 198.41.215.224
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_84
-  server: 104.24.244.224
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_88
-  server: 172.67.159.134
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_89
-  server: 104.25.26.152
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_90
-  server: 103.21.244.91
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_91
-  server: 103.21.244.157
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_93
-  server: 104.24.205.235
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_95
-  server: 160.79.105.247
-  port: 443
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_96
-  server: 63.141.128.214
-  port: 443
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_98
-  server: 104.22.23.224
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_100
-  server: 172.66.204.21
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_101
-  server: 103.21.244.50
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_102
-  server: 162.159.197.58
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_104
-  server: 190.93.244.4
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_107
-  server: 162.159.252.125
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_109
-  server: 172.64.195.144
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_110
-  server: 162.159.6.183
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_114
-  server: 173.245.49.156
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_115
-  server: 69.84.182.27
-  port: 443
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_118
-  server: 103.21.244.63
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_119
-  server: 104.19.193.250
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_121
-  server: 104.25.219.187
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_123
-  server: 173.245.58.210
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_124
-  server: 162.159.49.108
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_127
-  server: 103.21.244.82
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇧🇷_巴西_6
-  server: 188.114.98.160
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_128
-  server: 198.41.204.82
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_129
-  server: 103.21.244.213
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_131
-  server: 198.41.193.246
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_132
-  server: 104.27.61.67
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_134
-  server: 104.19.68.81
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_135
-  server: 104.25.17.162
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇧🇷_巴西_7
-  server: 188.114.98.31
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_136
-  server: 103.21.244.224
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_139
-  server: 104.25.115.106
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_141
-  server: 104.27.122.98
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_143
-  server: 104.22.24.139
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_144
-  server: 104.20.126.182
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_145
-  server: 108.162.198.201
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_146
-  server: 172.67.120.150
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_147
-  server: 104.20.194.115
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_148
-  server: 104.25.73.30
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_149
-  server: 129.151.225.228
-  port: 2053
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇧🇷_巴西_8
-  server: 188.114.99.199
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_150
-  server: 172.67.168.65
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_151
-  server: 104.19.202.209
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_153
-  server: 198.41.220.253
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_155
-  server: 104.25.104.92
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_157
-  server: 129.151.198.3
-  port: 2053
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_158
-  server: 162.159.249.108
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_159
-  server: 104.21.23.238
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_160
-  server: 104.27.198.180
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_161
-  server: 104.27.68.63
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_162
-  server: 141.101.120.171
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_164
-  server: 173.245.49.32
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_165
-  server: 198.41.203.30
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_168
-  server: 104.19.84.225
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_169
-  server: 104.19.98.242
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_170
-  server: 104.25.224.33
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_171
-  server: 141.101.120.224
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_172
-  server: 162.159.254.15
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_173
-  server: 162.159.9.16
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_174
-  server: 172.67.153.79
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_175
-  server: 104.16.94.103
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_176
-  server: 162.159.198.65
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_177
-  server: 104.20.50.185
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇧🇷_巴西_10
-  server: 188.114.98.176
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_179
-  server: 198.41.204.213
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_180
-  server: 172.67.49.208
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_181
-  server: 173.245.49.100
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇨🇷_哥斯达黎加_1
-  server: 190.93.247.24
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_182
-  server: 162.159.17.18
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇨🇷_哥斯达黎加_2
-  server: 190.93.246.186
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_183
-  server: 172.64.192.181
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_184
-  server: 162.159.192.236
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_185
-  server: 154.17.21.134
-  port: 18446
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_186
-  server: 104.22.46.119
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_188
-  server: 104.22.10.141
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_192
-  server: 141.101.114.62
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_193
-  server: 104.20.114.22
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_194
-  server: 104.27.38.10
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_201
-  server: 190.93.245.9
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_202
-  server: 190.93.244.168
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇧🇷_巴西_11
-  server: 188.114.97.15
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_204
-  server: 141.101.115.49
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇧🇷_巴西_12
-  server: 188.114.97.240
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_205
-  server: 190.93.244.209
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_206
-  server: 190.93.244.236
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_207
-  server: 23.94.25.245
-  port: 10287
-  uuid: 71ed6628-5870-4d19-8a52-f2a3ba3d4898
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vb.zhuk.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vb.zhuk.us.kg
-- type: vless
-  name: 🇺🇸_美国_210
-  server: 104.26.8.113
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇮🇩_印度尼西亚
-  server: 35.219.15.90
-  port: 443
-  uuid: 531bf100-1477-487c-a979-6adebf8f105f
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vdb.bgm2024.us.kg
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: vdb.bgm2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_211
-  server: 190.93.245.51
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_212
-  server: 104.16.84.3
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇨🇷_哥斯达黎加_3
-  server: 190.93.247.175
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇨🇷_哥斯达黎加_4
-  server: 190.93.247.241
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_214
-  server: 104.19.179.134
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_215
-  server: 104.17.244.56
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_216
-  server: 104.17.187.143
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_217
-  server: 104.16.237.253
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_218
-  server: 104.19.241.19
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_219
-  server: 104.19.217.14
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_221
-  server: 108.162.198.58
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_222
-  server: 103.21.244.124
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_224
-  server: 104.18.90.113
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_225
-  server: 104.19.241.10
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_226
-  server: 104.16.90.228
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_227
-  server: 104.16.194.28
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇨🇷_哥斯达黎加_5
-  server: 190.93.247.101
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_228
-  server: 104.19.184.175
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- type: vless
-  name: 🇺🇸_美国_231
-  server: 104.17.68.120
-  port: 443
-  uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xcsb.ylks2024.us.kg
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      host: xcsb.ylks2024.us.kg
-- name: 🇭🇰 广港•香港143•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 28678
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: z143.hongkongnode.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 广港•香港259•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 24603
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: z259.hongkongnode.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 广港•香港278•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 20278
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: z278.hongkongnode.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 广港•香港279•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 20279
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: z279.hongkongnode.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 广港•香港294•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 20294
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: z294.hongkongnode.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇹🇼 中转•台湾91•原生 - 飞翔吧
-  server: gy.58n.net
-  port: 21247
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: x91.flybar.work
-  skip-cert-verify: true
-  udp: true
-- name: 🇹🇼 广港•台湾262•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 36821
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: z262.hongkongnode.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 中转•美国296•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 20296
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: z296.hongkongnode.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本•高速114•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 41767
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: x114.flybar.work
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本•高速115•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 54178
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: x115.flybar.work
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本•高速141•铂金 - 飞翔吧
-  server: gy.58n.net
-  port: 20141
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: z141.hongkongnode.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本•高速142•原生 - 飞翔吧
-  server: gy.58n.net
-  port: 20142
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: z142.hongkongnode.top
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本•高速59•青铜 - 飞翔吧
-  server: gy.58n.net
-  port: 20059
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: x59.flybar.work
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本•高速76•高速 - 飞翔吧
-  server: gy.58n.net
-  port: 20076
-  type: trojan
-  password: 6be2b311-51a2-3037-b0f9-43247af0a6ad
-  sni: x76.flybar.work
-  skip-cert-verify: true
-  udp: true
-- name: 阿拉伯联合酋长国 - 迪拜 - Amazon Technologies Inc. - 1
-  server: series-a2-mec.varzesh360.co
-  type: ss
-  country: 🇺🇸US
-  port: 443
-  password: u17T3BvpYaaiuW2c
-  cipher: chacha20-ietf-poly1305
-  delay: 2164
-- name: 2a13:a5c6:3a42:b18:3e0c:d513:3bb1:ff2d_OpenAI
-  network: tcp
-  password: 165ebad5-2f9b-307d-b7e4-2b2ee84a4530
-  port: 19213
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: HK_Hong Kong_Cnservers LLC_OpenAI_Claude
-  port: 45402
-  server: 183.236.48.158
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: HK_Hong Kong_Radishcloud Technology LLC_OpenAI1
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19209
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: HK_Hong Kong_Radishcloud Technology LLC_OpenAI2
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19210
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: HK_Sheung Wan_CTG Server Ltd._OpenAI_Claude1
-  port: 34493
-  server: 120.198.71.214
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: HK_Sheung Wan_CTG Server Ltd._OpenAI_Claude2
-  port: 41020
-  server: 183.236.51.23
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: JP_Shinagawa_Datacamp Limited_OpenAI_Claude1
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19244
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: JP_Shinagawa_Datacamp Limited_OpenAI_Claude2
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19242
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: JP_Shinagawa_Datacamp Limited_OpenAI_Claude3
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19243
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: JP_Shinagawa_Datacamp Limited_OpenAI_Claude4
-  network: tcp
-  password: 165ebad5-2f9b-307d-b7e4-2b2ee84a4530
-  port: 19242
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: JP_Shinagawa_Datacamp Limited_OpenAI_Claude5
-  network: tcp
-  password: 165ebad5-2f9b-307d-b7e4-2b2ee84a4530
-  port: 19244
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- cipher: chacha20-ietf
-  name: JP_Tokyo_Akari Networks_OpenAI_Claude
-  obfs: plain
-  obfs-param: 78fe8292462.microsoft.com
-  password: renzhecloud
-  port: 4506
-  protocol: auth_aes128_sha1
-  protocol-param: 292462:1rqNrm
-  server: pr3.jymzffbquawl.com
-  type: ssr
-- name: JP_Tokyo_DataCamp Limited_OpenAI_Claude
-  network: tcp
-  password: 165ebad5-2f9b-307d-b7e4-2b2ee84a4530
-  port: 19243
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: JP_Tokyo_Oracle Corporation_OpenAI_Claude1
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19246
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: JP_Tokyo_Oracle Corporation_OpenAI_Claude2
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19247
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: JP_Tokyo_Oracle Corporation_OpenAI_Claude3
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19245
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: SG_Singapore_DigitalOcean, LLC_OpenAI_Claude1
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19227
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: SG_Singapore_DigitalOcean, LLC_OpenAI_Claude2
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19229
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: SG_Singapore_Oracle Corporation_OpenAI_Claude
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19228
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: SG_Singapore_Radishcloud Technology LLC_OpenAI1
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19202
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: SG_Singapore_Radishcloud Technology LLC_OpenAI2
-  network: tcp
-  password: 165ebad5-2f9b-307d-b7e4-2b2ee84a4530
-  port: 19216
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: SG_Singapore_Radishcloud Technology LLC_OpenAI3
-  network: tcp
-  password: 165ebad5-2f9b-307d-b7e4-2b2ee84a4530
-  port: 19214
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: TW_Taipei_Radishcloud Technology LLC_OpenAI1
-  network: tcp
-  password: 1069121a-4774-38f5-876a-95b35d1a3fbf
-  port: 19214
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: TW_Taipei_Radishcloud Technology LLC_OpenAI2
-  network: tcp
-  password: 165ebad5-2f9b-307d-b7e4-2b2ee84a4530
-  port: 19215
-  server: 122.188.71.132
-  skip-cert-verify: true
-  type: trojan
-- name: 🇷🇺 俄罗斯-圣彼得堡-009-1R
-  server: 194.87.69.56
-  port: 20503
-  type: vmess
-  uuid: 7c782b62-7d5b-4752-834f-87f6b98a3139
-  alterId: 0
-  cipher: auto
-  tls: false
   network: ws
   ws-opts:
     path: /
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-007-1Z
-  server: 176.32.39.181
-  port: 37179
-  type: hysteria2
-  password: cb620f72-c51c-47ee-b2fb-a6e2889a0a1e
-  auth: cb620f72-c51c-47ee-b2fb-a6e2889a0a1e
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-2G
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 73c1f30e-a3f8-49c4-9146-ab860fcb5e26
-  auth: 73c1f30e-a3f8-49c4-9146-ab860fcb5e26
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-009-1T
-  server: 194.87.69.56
-  port: 37179
-  type: hysteria2
-  password: 58fe6ff4-1959-4b2f-9039-5048d76fafd1
-  auth: 58fe6ff4-1959-4b2f-9039-5048d76fafd1
-  up: 35
-  down: 35
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-1H
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: e031479b-369b-4882-a4b2-2ebba2cf797a
-  auth: e031479b-369b-4882-a4b2-2ebba2cf797a
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1C
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: d75c41fd-0b3e-481c-ba33-b81d062e0826
-  auth: d75c41fd-0b3e-481c-ba33-b81d062e0826
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-009-1I
-  server: 194.87.69.56
-  port: 37179
-  type: hysteria2
-  password: 239dca97-6ab8-47b4-8631-8eb7d31688eb
-  auth: 239dca97-6ab8-47b4-8631-8eb7d31688eb
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-1Z
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 22dd3d57-edeb-4a74-9673-3db1546869bb
-  auth: 22dd3d57-edeb-4a74-9673-3db1546869bb
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 欧洲-法兰克福-1-1B
-  server: oracle-arm-frankfurt1.lanmaoyun.icu
-  port: 30001
-  type: hysteria2
-  password: ce42711d-3f65-4116-a3f5-7c746f23744b
-  auth: ce42711d-3f65-4116-a3f5-7c746f23744b
-  sni: frankfurt1.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1L
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 568a6fc2-4678-4737-8e3f-11dcedcf9019
-  auth: 568a6fc2-4678-4737-8e3f-11dcedcf9019
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港01-1D
-  server: gy.666666222.shop
-  port: 34338
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8171641d-9dbb-40b9-870e-78b91f862ff8
-  udp: true
-- name: 🇺🇸 北美-US-圣何塞-2-1B
-  server: oracle-amd-san-jose2.lanmaoyun.icu
-  port: 30001
-  type: hysteria2
-  password: ce42711d-3f65-4116-a3f5-7c746f23744b
-  auth: ce42711d-3f65-4116-a3f5-7c746f23744b
-  sni: san-jose2.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1O
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: dd516ef5-7809-4c5f-ab64-88e9fc80445f
-  auth: dd516ef5-7809-4c5f-ab64-88e9fc80445f
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1G
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 2ee11461-7859-4bf7-a831-416de4091031
-  auth: 2ee11461-7859-4bf7-a831-416de4091031
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1S
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 7f87924f-ad28-4ef0-98e7-b65908acf6fb
-  auth: 7f87924f-ad28-4ef0-98e7-b65908acf6fb
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1B
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: e90c0fec-bc1b-4f2d-ae7f-ce9c62ef55ab
-  auth: e90c0fec-bc1b-4f2d-ae7f-ce9c62ef55ab
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1P
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 0c45e508-a158-48dc-93e4-e0653a1e3ab2
-  auth: 0c45e508-a158-48dc-93e4-e0653a1e3ab2
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇰🇷 韩国-首尔-1B
-  server: oracle-arm-seoul1.lanmaoyun.icu
-  port: 30001
-  type: hysteria2
-  password: ce42711d-3f65-4116-a3f5-7c746f23744b
-  auth: ce42711d-3f65-4116-a3f5-7c746f23744b
-  sni: korea.nodes.lanmaoyun.icu
-  up: 100
-  down: 1000
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1I
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: a278eadd-c35c-403f-a286-7767a74307c1
-  auth: a278eadd-c35c-403f-a286-7767a74307c1
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1Q
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: d7a6f3c2-5c25-46d9-bf7d-2b0e8cf1703d
-  auth: d7a6f3c2-5c25-46d9-bf7d-2b0e8cf1703d
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港01-1G
-  server: gy.666666222.shop
-  port: 34338
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c972cf99-8d54-42ad-8b9e-610c2f4626a4
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-009-1N
-  server: 194.87.69.56
-  port: 37179
-  type: hysteria2
-  password: 2018f303-01c2-4936-b33d-25f9cc03ca03
-  auth: 2018f303-01c2-4936-b33d-25f9cc03ca03
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-1V
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 7d42ff2d-662b-42c2-b8b8-7f53290675e8
-  auth: 7d42ff2d-662b-42c2-b8b8-7f53290675e8
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-2M
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: a480e0af-10e3-43bc-9076-004d3d26d1a5
-  auth: a480e0af-10e3-43bc-9076-004d3d26d1a5
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1W
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 49e5b399-1af3-476a-8c11-c0967e261f4a
-  auth: 49e5b399-1af3-476a-8c11-c0967e261f4a
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港01-1E
-  server: gy.666666222.shop
-  port: 34338
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: bfe73ff8-39f7-41a3-9d8c-7a557a0b69e0
-  udp: true
-- name: 🇷🇺 俄罗斯-2L
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: cdeae572-54d3-4855-8587-f0df97b085c8
-  auth: cdeae572-54d3-4855-8587-f0df97b085c8
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港01-1A
-  server: gy.666666222.shop
-  port: 34338
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 08512976-c459-446c-9b5e-e0cc062ed4f8
-  udp: true
-- name: 🇷🇺 俄罗斯-莫斯科-HY-002-1E
-  server: 46.17.44.62
-  port: 34580
-  type: hysteria2
-  password: bbd17811-292d-4463-82fa-26fbf79d4f47
-  auth: bbd17811-292d-4463-82fa-26fbf79d4f47
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDY2MDRjODQ5MjhkM2ZkNw==
-  udp: true
-- name: 🇷🇺 俄罗斯-莫斯科-HY-002-2A
-  server: 46.17.44.62
-  port: 34580
-  type: hysteria2
-  password: b9ed136f-9452-4241-bf48-d271fbcf0d17
-  auth: b9ed136f-9452-4241-bf48-d271fbcf0d17
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDY2MDRjODQ5MjhkM2ZkNw==
-  udp: true
-- name: 🇷🇺 俄罗斯-2C
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: e8f0d3be-edbe-47ac-b97a-4b9a23be02fe
-  auth: e8f0d3be-edbe-47ac-b97a-4b9a23be02fe
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-007-2B
-  server: 176.32.39.181
-  port: 37179
-  type: hysteria2
-  password: 84583993-591d-482b-9418-3d6c23f805e6
-  auth: 84583993-591d-482b-9418-3d6c23f805e6
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-009-1M
-  server: 194.87.69.56
-  port: 37179
-  type: hysteria2
-  password: 8268a4a1-2bcb-4eeb-89b1-1710a3301f3e
-  auth: 8268a4a1-2bcb-4eeb-89b1-1710a3301f3e
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-009-2D
-  server: 194.87.69.56
-  port: 37179
-  type: hysteria2
-  password: 6a328700-c5a5-4e2f-b8ea-91c2d9e956a4
-  auth: 6a328700-c5a5-4e2f-b8ea-91c2d9e956a4
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-2H
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 5a780bdb-e143-4f29-9b38-c51c7f7fe49f
-  auth: 5a780bdb-e143-4f29-9b38-c51c7f7fe49f
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-009-1V
-  server: 194.87.69.56
-  port: 37179
-  type: hysteria2
-  password: 0d792650-5b0d-4024-b849-bc916ac4cd40
-  auth: 0d792650-5b0d-4024-b849-bc916ac4cd40
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-1T
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: c273276b-91c9-4064-a7d1-e64a7cb88e0d
-  auth: c273276b-91c9-4064-a7d1-e64a7cb88e0d
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-2E
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: f5205596-1584-4a10-8a24-839c67a38c99
-  auth: f5205596-1584-4a10-8a24-839c67a38c99
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1A
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: ecc7f107-04e8-4fad-9eb8-e011343c93c5
-  auth: ecc7f107-04e8-4fad-9eb8-e011343c93c5
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-002-1D
-  server: 195.58.49.12
-  port: 19465
-  type: hysteria2
-  password: cf686f39-a8cb-4d55-8405-fba6d5c1e4a5
-  auth: cf686f39-a8cb-4d55-8405-fba6d5c1e4a5
-  up: 35
-  down: 35
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: MzliZDM5MDFhYmFlNTAyMA==
-  udp: true
-- name: 🇭🇰 香港01-1F
-  server: gy.666666222.shop
-  port: 34338
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ab3c080a-241b-4765-898b-a96c32345630
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-007-1E
-  server: 176.32.39.181
-  port: 37179
-  type: hysteria2
-  password: bbd17811-292d-4463-82fa-26fbf79d4f47
-  auth: bbd17811-292d-4463-82fa-26fbf79d4f47
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-2K
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: be32312d-5722-456f-8892-d9f878320276
-  auth: be32312d-5722-456f-8892-d9f878320276
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1Y
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 35bd3ddd-1ecc-4222-96c3-aed83cab48fd
-  auth: 35bd3ddd-1ecc-4222-96c3-aed83cab48fd
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-2B
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 0f5e40e0-29b9-4ce6-bb8d-248f431bfd5e
-  auth: 0f5e40e0-29b9-4ce6-bb8d-248f431bfd5e
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-009-1G
-  server: 194.87.69.56
-  port: 37179
-  type: hysteria2
-  password: de0970b9-1e83-4064-b428-88a8ebab8cb2
-  auth: de0970b9-1e83-4064-b428-88a8ebab8cb2
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇷🇺 俄罗斯-1U
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 440e5d7f-f7ad-45ab-bbec-ba0148824eea
-  auth: 440e5d7f-f7ad-45ab-bbec-ba0148824eea
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1N
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: f17ecf4c-645a-4941-b7a2-6718e8ed387f
-  auth: f17ecf4c-645a-4941-b7a2-6718e8ed387f
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港01-1C
-  server: gy.666666222.shop
-  port: 34338
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ca77c26c-475f-45a0-a4c2-144f206fd0c8
-  udp: true
-- name: 🇷🇺 俄罗斯-1M
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 7f2ac4c2-5f80-44b2-867b-41300e764483
-  auth: 7f2ac4c2-5f80-44b2-867b-41300e764483
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-圣彼得堡-HY-009-1E
-  server: 194.87.69.56
-  port: 37179
-  type: hysteria2
-  password: bbd17811-292d-4463-82fa-26fbf79d4f47
-  auth: bbd17811-292d-4463-82fa-26fbf79d4f47
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
-  udp: true
-- name: 🇭🇰 香港01-1I
-  server: gy.666666222.shop
-  port: 34338
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f7b5ac29-1807-4798-93d2-e1da323fbbd3
-  udp: true
-- name: 🇷🇺 俄罗斯-1J
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 02a91f57-31dd-42c5-9be4-80e52ab5573d
-  auth: 02a91f57-31dd-42c5-9be4-80e52ab5573d
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-1F
-  server: 45.140.169.231
-  port: 8080
-  type: hysteria2
-  password: 10f6dc8c-1181-416e-84f4-236409ba3f39
-  auth: 10f6dc8c-1181-416e-84f4-236409ba3f39
-  sni: www.bing.com
-  up: 50
-  down: 50
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇺 俄罗斯-莫斯科-HY-002-1C
-  server: 46.17.44.62
-  port: 34580
-  type: hysteria2
-  password: 29ac6682-87c8-4bf0-8191-5f55cfc34808
-  auth: 29ac6682-87c8-4bf0-8191-5f55cfc34808
-  up: 100
-  down: 100
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: NDY2MDRjODQ5MjhkM2ZkNw==
-  udp: true
-- name: 🇩🇪 DE_324
-  type: ss
-  server: 84.19.31.63
-  port: '50841'
-  cipher: chacha20-ietf-poly1305
-  password: 2EtPqn6HYjUNcHohLfUpFQwnfjCCQ5mh1mJdEMCBucuWZ9P1udkRKHnVxuo55k1KXz2Fo6jrgt18W66opty1e4bm1jzfCfBb
-  udp: true
-- name: 🇳🇴 NO_426
-  type: ss
-  server: 51.120.1.158
-  port: '32091'
-  cipher: chacha20-ietf-poly1305
-  password: xjzsiMfTByKjA9URbdXWNp
-  udp: true
-- name: 🇺🇸 US_470
-  type: ss
-  server: series-a1.samanehha.co
-  port: '443'
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: 🇺🇸 US_487
-  type: ss
-  server: series-a2-mec.varzesh360.co
-  port: '443'
-  cipher: chacha20-ietf-poly1305
-  password: u17T3BvpYaaiuW2c
-  udp: true
-- name: 🏁 ZZ_786
-  type: ss
-  server: soontw.soon.guru
-  port: '40020'
-  cipher: chacha20-ietf-poly1305
-  password: f0e7fd1e-0469-415f-95da-774021f16f36
-  udp: true
-- name: 🇨🇦 加拿大 | CAN 45
-  server: cucc.abyssvpn.com
-  port: 31161
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇦 加拿大 | CAN 46
-  server: cmcc.abyssvpn.com
-  port: 31161
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳 台湾 | TWN 6
-  server: tw.tianmaojichang.us.kg
-  port: 61523
-  client-fingerprint: chrome
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: NTRmYWY3NDI1ODhhZTY4YThiYTlmODlkMzIwMTFjYjc=:YmFmZGYyZmEtNDE4Ny00YjBjLWIwMWQtZDkxY2ViZDE=
-  udp: true
-- name: 🇨🇳 台湾 | TWN 8
-  server: tw.tianmaojichang.us.kg
-  port: 61823
-  client-fingerprint: chrome
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: NTRmYWY3NDI1ODhhZTY4YThiYTlmODlkMzIwMTFjYjc=:YmFmZGYyZmEtNDE4Ny00YjBjLWIwMWQtZDkxY2ViZDE=
-  udp: true
-- name: 🇨🇳 台湾 | TWN 9
-  server: tw.tianmaojichang.us.kg
-  port: 61022
-  client-fingerprint: chrome
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: NTRmYWY3NDI1ODhhZTY4YThiYTlmODlkMzIwMTFjYjc=:YmFmZGYyZmEtNDE4Ny00YjBjLWIwMWQtZDkxY2ViZDE=
-  udp: true
-- name: 🇨🇳 台湾 | TWN 16
-  server: tw.tianmaojichang.us.kg
-  port: 61593
-  client-fingerprint: chrome
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: NTRmYWY3NDI1ODhhZTY4YThiYTlmODlkMzIwMTFjYjc=:YmFmZGYyZmEtNDE4Ny00YjBjLWIwMWQtZDkxY2ViZDE=
-  udp: true
-- name: 🇭🇰 香港 | HKG 171
-  server: gy.666666222.shop
-  port: 34338
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: edda5ffd-1e75-4973-be7f-72277971494c
-  udp: true
-- name: 🇭🇰 香港 | HKG 183
-  server: gy.666666222.shop
-  port: 34338
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f5bcb10e-5a5c-4d2d-8713-ccef04393ac7
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: bgp.abyssvpn.com
-  port: 31119
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 6
-  server: cucc.abyssvpn.com
-  port: 31116
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 15
-  server: cucc.abyssvpn.com
-  port: 31120
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 16
-  server: cucc.abyssvpn.com
-  port: 31152
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 17
-  server: bgp.abyssvpn.com
-  port: 31152
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 23
-  server: cmcc.abyssvpn.com
-  port: 31116
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 29
-  server: bgp.abyssvpn.com
-  port: 31124
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 31
-  server: cucc.abyssvpn.com
-  port: 31106
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 47
-  server: cucc.abyssvpn.com
-  port: 31126
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 48
-  server: cmcc.abyssvpn.com
-  port: 31117
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 56
-  server: bgp.abyssvpn.com
-  port: 31106
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 64
-  server: cucc.abyssvpn.com
-  port: 31105
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 71
-  server: bgp.abyssvpn.com
-  port: 31116
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 72
-  server: cucc.abyssvpn.com
-  port: 31121
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 75
-  server: bgp.abyssvpn.com
-  port: 31105
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 84
-  server: cucc.abyssvpn.com
-  port: 31117
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  sni: apple.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 91
-  server: cucc.abyssvpn.com
-  port: 31118
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 92
-  server: bgp.abyssvpn.com
-  port: 31123
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 99
-  server: bgp.abyssvpn.com
-  port: 31120
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 110
-  server: cucc.abyssvpn.com
-  port: 31107
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 113
-  server: cucc.abyssvpn.com
-  port: 31124
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 116
-  server: bgp.abyssvpn.com
-  port: 31121
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 118
-  server: bgp.abyssvpn.com
-  port: 31126
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 124
-  server: bgp.abyssvpn.com
-  port: 31125
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 133
-  server: bgp.abyssvpn.com
-  port: 31118
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 141
-  server: bgp.abyssvpn.com
-  port: 31104
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 161
-  server: cucc.abyssvpn.com
-  port: 31129
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 164
-  server: cucc.abyssvpn.com
-  port: 31125
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇲 美国 | USA 175
-  server: cucc.abyssvpn.com
-  port: 31104
-  client-fingerprint: chrome
-  type: hysteria2
-  password: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  auth: 3a2a198b-40f6-4850-98ce-74805dc312f4
-  skip-cert-verify: true
-  udp: true
-- name: 管理员B
-  server: 183.236.48.163
-  port: 54882
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 香港HY-优化
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
+  server: yes.mojcn.com
+  port: 16632
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
   cipher: auto
-  tls: false
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 香港HY-优化2
+  type: vmess
+  server: m.cnmjin.net
+  port: 16632
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 香港wap-T
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  udp: true
+  sni: hinet.mjt000.com
+- name: 香港WAP-优化
+  type: vmess
+  server: yes.mojcn.com
+  port: 16622
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 香港WAP-优化2
+  type: vmess
+  server: m.cnmjin.net
+  port: 16622
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 台湾-优化
+  type: vmess
+  server: yes.mojcn.com
+  port: 16616
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 台湾-优化2-GPT
+  type: vmess
+  server: m.cnmjin.net
+  port: 16616
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 台湾-优化3
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16616
+  uuid: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 5a65fc0f36795c0b8119e96b7e6b3d8a.mobgslb.tbcache.com
+- name: 澳大利亚AU-T
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  udp: true
+  sni: au.mjt000.com
+- name: 英国UK-T
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: 5d335ddf-2ae7-4331-835d-6f9593fe8287
+  udp: true
+  sni: uk.mjt000.com
+- name: 日本JP-T-Rvm8
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: 79b25abf-8730-426a-ab47-7e92c6a68007
+  udp: true
+  sni: jp.mjt000.com
   skip-cert-verify: true
+- name: 新加坡SG-T-E4at
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: 79b25abf-8730-426a-ab47-7e92c6a68007
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-3Y1T
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: 79b25abf-8730-426a-ab47-7e92c6a68007
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-FGi6
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: 79b25abf-8730-426a-ab47-7e92c6a68007
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-YsHI
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: 79b25abf-8730-426a-ab47-7e92c6a68007
+  udp: true
+  sni: hinet.mjt000.com
+- name: 越南VN-T-om8a
+  type: trojan
+  server: vn.mjt000.com
+  port: 443
+  password: 79b25abf-8730-426a-ab47-7e92c6a68007
+  udp: true
+  sni: vn.mjt000.com
+- name: 澳大利亚AU-T-QzUC
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: 79b25abf-8730-426a-ab47-7e92c6a68007
+  udp: true
+  sni: au.mjt000.com
+- name: 英国UK-T-QSYS
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: 79b25abf-8730-426a-ab47-7e92c6a68007
+  udp: true
+  sni: uk.mjt000.com
+- name: 日本JP-T-ZtHY
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
+  udp: true
+  sni: jp.mjt000.com
+  skip-cert-verify: true
+- name: 新加坡SG-T-jQtE
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-mYmu
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-r5jt
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-D5GQ
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
+  udp: true
+  sni: hinet.mjt000.com
+- name: 澳大利亚AU-T-FTDp
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
+  udp: true
+  sni: au.mjt000.com
+- name: 英国UK-T-mLen
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
+  udp: true
+  sni: uk.mjt000.com
+- name: 日本JP-T-CjtL
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
+  udp: true
+  sni: jp.mjt000.com
+  skip-cert-verify: true
+- name: 新加坡SG-T-vCeE
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-w3b7
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-rJ3c
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-rfqh
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
+  udp: true
+  sni: hinet.mjt000.com
+- name: 越南VN-T-7IHa
+  type: trojan
+  server: vn.mjt000.com
+  port: 443
+  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
+  udp: true
+  sni: vn.mjt000.com
+- name: 澳大利亚AU-T-zgZq
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
+  udp: true
+  sni: au.mjt000.com
+- name: 新加坡SG-T-jC0K
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-Y2nU
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-R2sl
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-Orqz
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
+  udp: true
+  sni: hinet.mjt000.com
+- name: 澳大利亚AU-T-ulWr
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
+  udp: true
+  sni: au.mjt000.com
+- name: 英国UK-T-9bTO
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
+  udp: true
+  sni: uk.mjt000.com
+- name: 日本JP-T-oUJn
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: a6f0acd5-0852-432a-b191-854658db6a92
+  udp: true
+  sni: jp.mjt000.com
+  skip-cert-verify: true
+- name: 新加坡SG-T-oWPg
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: a6f0acd5-0852-432a-b191-854658db6a92
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-vy3b
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: a6f0acd5-0852-432a-b191-854658db6a92
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-PSM1
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: a6f0acd5-0852-432a-b191-854658db6a92
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-IPsy
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: a6f0acd5-0852-432a-b191-854658db6a92
+  udp: true
+  sni: hinet.mjt000.com
+- name: 澳大利亚AU-T-3ZjF
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: a6f0acd5-0852-432a-b191-854658db6a92
+  udp: true
+  sni: au.mjt000.com
+- name: 俄罗斯RU-T-tD89
+  type: trojan
+  server: ru.mjt000.com
+  port: 443
+  password: a6f0acd5-0852-432a-b191-854658db6a92
+  udp: true
+  sni: ru.mjt000.com
+- name: 英国UK-T-vTZH
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: a6f0acd5-0852-432a-b191-854658db6a92
+  udp: true
+  sni: uk.mjt000.com
+- name: 日本JP-T-TzPC
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: jp.mjt000.com
+  skip-cert-verify: true
+- name: 新加坡SG-T-tVHX
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-pa4s
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-EDPf
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-P9vS
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: hinet.mjt000.com
+- name: 越南VN-T-sNz8
+  type: trojan
+  server: vn.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: vn.mjt000.com
+- name: 澳大利亚AU-T-vXXU
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: au.mjt000.com
+- name: 葡萄牙PT-T-UUnA
+  type: trojan
+  server: pt.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: pt.mjt000.com
+- name: 俄罗斯RU-T-Mpbz
+  type: trojan
+  server: ru.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: ru.mjt000.com
+- name: 英国UK-T-AfQF
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: 06322978-709f-423e-b10b-fc2a845d9564
+  udp: true
+  sni: uk.mjt000.com
+- name: 日本JP-T-7fs6
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
+  udp: true
+  sni: jp.mjt000.com
+  skip-cert-verify: true
+- name: 新加坡SG-T-PkxV
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-ltA2
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-LPYd
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-S4e5
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
+  udp: true
+  sni: hinet.mjt000.com
+- name: 英国UK-T-2P69
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
+  udp: true
+  sni: uk.mjt000.com
+- name: 新加坡SG-T-3plv
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: 5adfc828-440d-4022-9571-0299a905b98e
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-tPYz
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: 5adfc828-440d-4022-9571-0299a905b98e
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-uHZT
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: 5adfc828-440d-4022-9571-0299a905b98e
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-7DFd
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: 5adfc828-440d-4022-9571-0299a905b98e
+  udp: true
+  sni: hinet.mjt000.com
+- name: 越南VN-T-3peq
+  type: trojan
+  server: vn.mjt000.com
+  port: 443
+  password: 5adfc828-440d-4022-9571-0299a905b98e
+  udp: true
+  sni: vn.mjt000.com
+- name: 澳大利亚AU-T-WtWF
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: 5adfc828-440d-4022-9571-0299a905b98e
+  udp: true
+  sni: au.mjt000.com
+- name: 英国UK-T-sbNh
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: 5adfc828-440d-4022-9571-0299a905b98e
+  udp: true
+  sni: uk.mjt000.com
+- name: 日本JP-T-KwGS
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: b6e5e633-a297-4614-88d5-49f94cda618f
+  udp: true
+  sni: jp.mjt000.com
+  skip-cert-verify: true
+- name: 新加坡SG-T-tcR4
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: b6e5e633-a297-4614-88d5-49f94cda618f
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-DiQe
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: b6e5e633-a297-4614-88d5-49f94cda618f
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-Lwj9
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: b6e5e633-a297-4614-88d5-49f94cda618f
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-PMfx
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: b6e5e633-a297-4614-88d5-49f94cda618f
+  udp: true
+  sni: hinet.mjt000.com
+- name: 澳大利亚AU-T-CdpO
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: b6e5e633-a297-4614-88d5-49f94cda618f
+  udp: true
+  sni: au.mjt000.com
+- name: 英国UK-T-l42w
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: b6e5e633-a297-4614-88d5-49f94cda618f
+  udp: true
+  sni: uk.mjt000.com
+- name: 日本JP-T-SiE6
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: f89748f5-cee5-44dd-89fd-f6d49645d060
+  udp: true
+  sni: jp.mjt000.com
+  skip-cert-verify: true
+- name: 新加坡SG-T-ZFaE
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: f89748f5-cee5-44dd-89fd-f6d49645d060
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-yIxS
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: f89748f5-cee5-44dd-89fd-f6d49645d060
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-oSBt
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: f89748f5-cee5-44dd-89fd-f6d49645d060
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-OMOZ
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: f89748f5-cee5-44dd-89fd-f6d49645d060
+  udp: true
+  sni: hinet.mjt000.com
+- name: 越南VN-T-DdWP
+  type: trojan
+  server: vn.mjt000.com
+  port: 443
+  password: f89748f5-cee5-44dd-89fd-f6d49645d060
+  udp: true
+  sni: vn.mjt000.com
+- name: 澳大利亚AU-T-B4AQ
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: f89748f5-cee5-44dd-89fd-f6d49645d060
+  udp: true
+  sni: au.mjt000.com
+- name: 英国UK-T-AMPf
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: f89748f5-cee5-44dd-89fd-f6d49645d060
+  udp: true
+  sni: uk.mjt000.com
+- name: 日本JP-T-pR3s
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: 14c564dd-aad6-4bf7-b6bb-02a360132dbf
+  udp: true
+  sni: jp.mjt000.com
+  skip-cert-verify: true
+- name: 新加坡SG-T-t5eV
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: 14c564dd-aad6-4bf7-b6bb-02a360132dbf
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 香港wap-T-pjhO
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: 14c564dd-aad6-4bf7-b6bb-02a360132dbf
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-OuC9
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: 14c564dd-aad6-4bf7-b6bb-02a360132dbf
+  udp: true
+  sni: hinet.mjt000.com
+- name: 澳大利亚AU-T-Ue1W
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: 14c564dd-aad6-4bf7-b6bb-02a360132dbf
+  udp: true
+  sni: au.mjt000.com
+- name: 日本JP-T-gEwa
+  type: trojan
+  server: jp.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: jp.mjt000.com
+  skip-cert-verify: true
+- name: 新加坡SG-T-z79J
+  type: trojan
+  server: sg.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: sg.mjt000.com
+  skip-cert-verify: true
+- name: 美国USLA-T-GPT-sOP7
+  type: trojan
+  server: usla.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: usla.mjt000.com
+- name: 香港wap-T-5tTm
+  type: trojan
+  server: waphk.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: waphk.mjt000.com
+- name: 台湾WAP-T-GPT-gfRi
+  type: trojan
+  server: hinet.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: hinet.mjt000.com
+- name: 越南VN-T-Al51
+  type: trojan
+  server: vn.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: vn.mjt000.com
+- name: 澳大利亚AU-T-gcKK
+  type: trojan
+  server: au.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: au.mjt000.com
+- name: 葡萄牙PT-T-HPGK
+  type: trojan
+  server: pt.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: pt.mjt000.com
+- name: 俄罗斯RU-T-hcQ5
+  type: trojan
+  server: ru.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: ru.mjt000.com
+- name: 英国UK-T-l5Gc
+  type: trojan
+  server: uk.mjt000.com
+  port: 443
+  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  udp: true
+  sni: uk.mjt000.com
+- name: 🇸🇬 新加坡(三网)
+  type: vmess
+  server: jp-az.jiedian.stream
+  port: 443
+  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gw.alicdn.com
+- name: 🇯🇵 日本(三网) 1
+  type: vmess
+  server: jp-1.jiedian.stream
+  port: 80
+  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+  ws-path: /
+  ws-headers:
+    Host: gw.alicdn.com
+- name: 🇯🇵 日本(三网) 2
+  type: vmess
+  server: jp-2.jiedian.stream
+  port: 80
+  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+  ws-path: /
+  ws-headers:
+    Host: gw.alicdn.com
+- name: 🇯🇵 日本(三网) 3
+  type: vmess
+  server: jp-3.jiedian.stream
+  port: 80
+  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+  ws-path: /
+  ws-headers:
+    Host: gw.alicdn.com
+- name: 🇸🇬 ip1 (预防dns污染)
+  type: vmess
+  server: 52.163.123.158
+  port: 443
+  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gw.alicdn.com
+- name: 🇺🇸 美国1 (预防时间错误)
+  type: vless
+  server: 172.67.203.211
+  port: 80
+  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 241231.cdn01.top
+- name: 🇺🇸 美国2 (预防时间错误)
+  type: vless
+  server: 172.64.204.101
+  port: 80
+  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 241015.cdn02.top
+- name: 🇺🇸 备用1 (预防dns污染)
+  type: vless
+  server: 192.9.241.40
+  port: 81
+  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇺🇸 备用2 (预防dns污染)
+  type: vless
+  server: 129.153.126.128
+  port: 81
+  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
 proxy-groups:
 - name: 节点选择
   type: select
@@ -4485,407 +1035,122 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - KR韩国(mibei77.com 米贝节点分享)
-  - JP_Shinagawa_Datacamp Limited_OpenAI_Claude5
-  - SG_Singapore_Oracle Corporation_OpenAI_Claude
-  - HK_Hong Kong_Radishcloud Technology LLC_OpenAI1
-  - HK_Hong Kong_Radishcloud Technology LLC_OpenAI2
-  - JP_Tokyo_Oracle Corporation_OpenAI_Claude3
-  - 🇭🇰 香港01-1G
-  - SG_Singapore_DigitalOcean, LLC_OpenAI_Claude2
-  - 🇭🇰 香港01-1D
-  - 0|--17
-  - KR韩国(mibei77.com 米贝节点分享) 2
-  - 0|--14
-  - 🇸🇬SG-13.250.110.56-6321
-  - SG_Singapore_DigitalOcean, LLC_OpenAI_Claude1
-  - 🇸🇬SG-54.151.223.9-6560
-  - 🇸🇬SG-54.169.63.80-6324
-  - JP_Shinagawa_Datacamp Limited_OpenAI_Claude1
-  - JP_Shinagawa_Datacamp Limited_OpenAI_Claude4
-  - 🇸🇬SG-18.143.139.72-6475
-  - 🇸🇬_SG_新加坡
-  - TW_Taipei_Radishcloud Technology LLC_OpenAI1
-  - JP_Tokyo_Oracle Corporation_OpenAI_Claude2
-  - 🇭🇰 香港01-1A
-  - JP_Shinagawa_Datacamp Limited_OpenAI_Claude3
-  - TW_Taipei_Radishcloud Technology LLC_OpenAI2
-  - JP_Shinagawa_Datacamp Limited_OpenAI_Claude2
-  - 0|--9
-  - 🇰🇷 韩国-首尔-1B
-  - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian-tdx8
-  - HK_Hong Kong_Cnservers LLC_OpenAI_Claude
-  - SG_Singapore_Radishcloud Technology LLC_OpenAI2
-  - SG_Singapore_Radishcloud Technology LLC_OpenAI3
-  - 🇭🇰 香港01-1I
-  - 🇭🇰 香港 | HKG 171
-  - JP_Tokyo_Oracle Corporation_OpenAI_Claude1
-  - 2a13:a5c6:3a42:b18:3e0c:d513:3bb1:ff2d_OpenAI
-  - JP_Tokyo_DataCamp Limited_OpenAI_Claude
-  - 0|--11
-  - US美国(mibei77.com 米贝节点分享) 11
-  - 16|d*********g.com_3
-  - 🇯🇵 免费-日本2-Ver.7
-  - 🇭🇰 香港01-1C
-  - '[Trojan] 🇺🇸 美国 佐治亚州亚特兰大市BellSouth公司'
-  - 🇺🇸_US_美国_2
-  - 🇭🇰 香港 | HKG 183
-  - 🇭🇰 香港01-1F
-  - 🇦🇺 澳大利亚
-  - 🇮🇩_印度尼西亚
-  - US_b5ce7_0021
-  - 🇯🇵 免费-日本4-Ver.7
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-79.110.53.169:8080
-  - 🇨🇳 台湾 | TWN 16
-  - 香港2
-  - US_b5ce7_0020
-  - 🇺🇸US-54.202.63.77-0399
-  - US美国(mibei77.com 米贝节点分享) 10
-  - 🇺🇸US-54.244.200.142-6345
-  - 0|--1
-  - 0|--8
-  - 0|--18
-  - 0|--3-JZxj
-  - 0|--4-tIUC
-  - hk1
-  - 🇯🇵JP-13.114.67.166-6257
-  - 管理员B
-  - 🇨🇳 台湾 | TWN 9
-  - 🇯🇵JP-94.177.131.71-5426
-  - 🇨🇳 台湾 | TWN 8
-  - HK_Sheung Wan_CTG Server Ltd._OpenAI_Claude1
-  - 🇯🇵 免费-日本6-Ver.7
-  - 🇺🇸_美国_145
-  - US_b5ce7_0022
-  - 🇺🇸_美国_169
-  - 🇺🇸_美国_55
-  - 🇺🇸_美国_207
-  - 🇺🇸_美国_79
-  - 🇭🇰 广港•香港143•高速 - 飞翔吧
-  - 🇺🇸_美国_179
-  - 🇨🇳 台湾 | TWN 6
-  - 🇷🇺 俄罗斯-1I
-  - 🇺🇸_美国_58
-  - 🇺🇸_美国_13
-  - 🇭🇰 广港•香港278•高速 - 飞翔吧
-  - 🇺🇸_美国_202
-  - 🇯🇵 日本
-  - 🇺🇸_美国_110
-  - 🇺🇸_美国_172
-  - 🇯🇵 日本 2
-  - 🇷🇺 俄罗斯-2E
-  - 🇺🇸_美国_107
-  - 🇷🇺 俄罗斯-1C
-  - DE德国(mibei77.com 米贝节点分享)
-  - 🇷🇺 俄罗斯-1Z
-  - 🇺🇸_美国_153
-  - 🇺🇸_美国_124
-  - 香港[07]中转
-  - 15|US_speednode_0029
-  - 🇺🇸_美国_206
-  - 香港1
-  - 🇺🇸_美国_59
-  - 🇭🇰 广港•香港294•高速 - 飞翔吧
-  - 🇳🇱 荷兰
-  - 🇺🇲 美国 | USA 15
-  - 0|--5
-  - 🇺🇸_美国_147
-  - 🇷🇺 俄罗斯-2K
-  - 🇺🇲 美国 | USA 75
-  - 🇺🇸_美国_219
-  - 🇷🇺 俄罗斯-1A
-  - 🇨🇷_哥斯达黎加_5
-  - 🇷🇺 俄罗斯-2B
-  - 香港[05]中转
-  - 🇧🇷_巴西_10
-  - 🇷🇺 俄罗斯-1U
-  - 🇺🇸_美国_114
-  - 🇺🇸_美国_181
-  - 🇷🇺 俄罗斯-1B
-  - xiaoer886_DE_2
-  - 🇺🇸_美国_162
-  - 🇯🇵2
-  - 🇸🇪_瑞典_1
-  - 🇷🇺 俄罗斯-1W
-  - 香港[04]中转
-  - 🇺🇸_美国_225
-  - 🇷🇺 俄罗斯-2G
-  - US_b5ce7_0039
-  - 🇺🇸_美国_222
-  - 🇳🇴 NO_426
-  - 🇺🇸_美国_4
-  - 🇺🇸_美国_174
-  - 🇷🇺 俄罗斯-1P
-  - 🇺🇸_美国_54
-  - 🇷🇺 俄罗斯-1J
-  - 🇺🇸_美国_146
-  - xiaoer886_AT_1
-  - 🇺🇸_美国_90
-  - 🇺🇸_美国_171
-  - 🇺🇸_美国_194
-  - 🇺🇸_美国_12
-  - 🇺🇸_美国_164
-  - 🇺🇸_美国_205
-  - 🇺🇲 美国 | USA 16
-  - 🇺🇸_美国_102
-  - 🇺🇸_美国_72
-  - 🇺🇸_美国_39
-  - 🇺🇸_美国_35
-  - 🇺🇸_美国_100
-  - 🇷🇺 俄罗斯-1M
-  - 🇺🇸_美国_139
-  - 🇷🇺 俄罗斯-1Q
-  - 🇱🇻_LV_拉脱维亚
-  - 🇺🇸_美国_109
-  - www.gov.se
-  - 🇺🇸_美国_121
-  - 🇺🇸_美国_180
-  - 🇺🇸_美国_136
-  - xiaoer886_AT_2
-  - 美国[02]中转
-  - 🇺🇸_美国_123
-  - 🇺🇸_美国_91
-  - 🇺🇸_美国_11
-  - 🇧🇷_巴西_7
-  - 🇺🇸_美国_34
-  - 🇺🇸_美国_46
-  - 🇺🇸_美国_98
-  - 🇺🇸_美国_70
-  - 🇺🇸_美国_74
-  - 🇩🇪 DE_324
-  - xiaoer886_US_164_2
-  - 🇺🇸_美国_176
-  - 🇺🇸_美国_168
-  - 🇺🇸_US_美国_1
-  - 🇺🇸_美国_115
-  - 🇺🇸_美国_69
-  - 🇺🇸_美国_128
-  - 🇺🇸_美国_67
-  - 🇺🇸_美国_148
-  - 🇺🇸_美国_129
-  - 🇺🇸_美国_127
-  - 🇧🇷_巴西_6
-  - 🇺🇸_美国_60
-  - 🇷🇺 俄罗斯-1Y
-  - 🇷🇺 俄罗斯-2C
-  - 🇺🇸_美国_165
-  - 🇺🇸_美国_151
-  - 🇺🇸_美国_131
-  - 🇺🇸_美国_96
-  - 🇺🇸_美国_150
-  - 🇺🇸_美国_193
-  - 🇺🇸_美国_132
-  - 🇺🇸_美国_8
-  - 🇷🇺 俄罗斯-1N
-  - 🇺🇸_美国_170
-  - 🇺🇸_美国_93
-  - 🇺🇸_美国_33
-  - 🇷🇺 俄罗斯-2M
-  - 🇺🇸_美国_89
-  - 🇺🇸_美国_118
-  - 🇺🇸_美国_83
-  - 🇺🇸_美国_177
-  - 🇺🇸_美国_135
-  - 🇨🇷_哥斯达黎加_4
-  - 🇺🇸_美国_73
-  - 🇺🇸_美国_95
-  - 🇺🇸_美国_119
-  - 英国[01]中转
-  - 🇺🇸_美国_188
-  - 🇺🇸_美国_16
-  - 阿拉伯联合酋长国 - 迪拜 - Amazon Technologies Inc. - 1
-  - 🇺🇸_美国_212
-  - 🇺🇸_美国_144
-  - 🇺🇸_美国_184
-  - 🇨🇷_哥斯达黎加_3
-  - 🇺🇸_美国_158
-  - 🇺🇸_美国_66
-  - 🇺🇸_美国_134
-  - 🇺🇸_美国_183
-  - 🇺🇲 美国 | USA 118
-  - xiaoer886_US_6_2
-  - JP_Tokyo_Akari Networks_OpenAI_Claude
-  - 🇺🇸_美国_31
-  - 🇷🇺 俄罗斯-1F
-  - www.wto.org
-  - 🇺🇸_美国_161
-  - 🇺🇸_美国_224
-  - 美国[03]中转
-  - 🇺🇸_美国_228
-  - 🇺🇸_美国_186
-  - VMESS-未知>美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-104.21.238.89:2086
-  - 🇺🇸_美国_231
-  - 🇺🇸_美国_143
-  - xiaoer886_US_2
-  - 🇧🇷_巴西_11
-  - 🇺🇸 US_470
-  - www.gov.ua
-  - 🇺🇸_美国_84
-  - 🇷🇺 俄罗斯-2L
-  - 🇨🇳 visa.cn
-  - 🇺🇸_美国_160
-  - 🇺🇸_美国_3
-  - 🇭🇰 icook.hk
-  - 🇺🇲 美国 | USA 133
-  - 🇺🇸_美国_82
-  - 🇺🇸_美国_53
-  - 🇺🇸_美国_7
-  - 🇺🇸_美国_1
-  - 🇺🇲 美国 | USA 56
-  - 🇺🇸_美国_104
-  - xiaoer886_US_3
-  - 🇺🇲 美国 | USA 161
-  - 🇷🇺 俄罗斯-1G
-  - 🇺🇸_美国_221
-  - 🇧🇷_巴西_12
-  - 🇺🇲 美国 | USA 124
-  - 🇺🇸_美国_42
-  - 🇺🇸_美国_63
-  - HK_Sheung Wan_CTG Server Ltd._OpenAI_Claude2
-  - DE_b5ce7_0006
-  - '[VMess] 🇺🇸 美国 加州'
-  - 🇺🇸_美国_157
-  - 🇺🇸_美国_18
-  - 🇺🇸_美国_155
-  - 🇺🇸_美国_175
-  - 🇺🇸_美国_88
-  - brazil.com
-  - 🇨🇷_哥斯达黎加_1
-  - 日本2
-  - 🇺🇲 美国 | USA 47
-  - 🇺🇸_美国_182
-  - 🇺🇲 美国 | USA 71
-  - 🇺🇸_美国_227
-  - 🇺🇸_美国_62
-  - 🇷🇺 俄罗斯-莫斯科-HY-002-1C
-  - 🇺🇲 美国 | USA 29
-  - fbi.gov
-  - 🇬🇧_英国_1
-  - 🇧🇷_巴西_4
-  - 🇯🇵 日本•高速76•高速 - 飞翔吧
-  - '[Trojan] 🇩🇪 德国 黑森州法兰克福AMazon数据中心'
-  - 🇺🇸_美国_40
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-009-1T
-  - 🇺🇸_美国_215
-  - 英国+伦敦Amazon数据中心-HmHY
-  - 🇯🇵 日本•高速115•高速 - 飞翔吧
-  - www.gco.gov.qa
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-009-2D
-  - 🇧🇷_巴西_8
-  - 🇺🇲 美国 | USA 99
-  - 🇷🇺 俄罗斯-1O
-  - 日本1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-009-1E
-  - 🇺🇸_美国_51
-  - 🇷🇺 俄罗斯-1S
-  - 🇫🇷FR-13.36.74.252-6286
-  - 🇺🇸_美国_41
-  - 🇺🇲 美国 | USA 6
-  - 🇺🇸_美国_30
-  - 🇺🇸_美国_15
-  - 🇺🇸_美国_201
-  - 🇺🇲 美国 | USA 113
-  - 🇮🇸 time.is
-  - 🇺🇸_美国_226
-  - 日本[01]
-  - 🇺🇲 美国 | USA 64
-  - 🇺🇸_美国_214
-  - 🇨🇷_哥斯达黎加_2
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-009-1G
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-009-1I
-  - 🇯🇵 日本•高速141•铂金 - 飞翔吧
-  - 🇺🇸_美国_218
-  - 🇺🇸_美国_71
-  - 🇭🇰 香港01-1E
-  - 🇭🇰 广港•香港279•高速 - 飞翔吧
-  - 🇺🇲 美国 | USA 92
-  - 🇷🇺 俄罗斯-1H
-  - 🇺🇸_美国_210
-  - 🇺🇸_美国_48
-  - 🇺🇸_美国_185
-  - 🇺🇸_美国_211
-  - 🇺🇸_美国_216
-  - 🇺🇲 美国 | USA 91
-  - 🇧🇷_巴西_1
-  - 🇺🇸_美国_204
-  - 🇺🇸_美国_52
-  - 🇧🇷_巴西_3
-  - 🇺🇸_美国_192
-  - 🇯🇵4
-  - 🇺🇸_美国_217
-  - US美国(mibei77.com 米贝节点分享) 16
-  - 🇭🇰 广港•香港259•高速 - 飞翔吧
-  - 台湾3
-  - 🇯🇵 日本•高速59•青铜 - 飞翔吧
-  - 🇺🇸 北美-US-圣何塞-2-1B
-  - 🇮🇪IE-34.242.191.20-6306
-  - 🇺🇸_美国_101
-  - 🇹🇼 中转•台湾91•原生 - 飞翔吧
-  - 🇺🇸_美国_141
-  - 🇺🇲 美国 | USA 17
-  - 亚太地区+V2CROSS.COM
-  - 🇺🇲 美国 | USA 84
-  - 🏁 ZZ_786
-  - 🇷🇺 俄罗斯-莫斯科-HY-002-2A
-  - 🇳🇴_挪威_1
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-009-1V
-  - 🇸🇪SE-13.50.211.85-6319
-  - 🇺🇲 美国 | USA 141
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-007-1E
-  - 🇷🇺 russia.com
-  - 🇺🇲 美国 | USA 164
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-007-1Z
-  - '[Trojan] 🇺🇸 美国 纽约(Prudential)'
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-009-1M
-  - US_b5ce7_0035
-  - 🇷🇺 俄罗斯-1L
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-002-1D
-  - 台湾2
-  - 🇺🇲 美国 | USA 48
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-009-1N
-  - 🇷🇺 俄罗斯-圣彼得堡-009-1R
-  - 🇺🇸 13,14|美国|@ripaojiedian
-  - 🇯🇵 日本•高速114•高速 - 飞翔吧
-  - 🇺🇸_美国_159
-  - 🇷🇺_RU_俄罗斯_6
-  - 美国3
-  - US_b5ce7_0025
-  - 🇺🇲 美国 | USA 116
-  - 🇺🇲 美国 | USA 110
-  - 🇺🇸_美国_173
-  - 🇺🇸 中转•美国296•高速 - 飞翔吧
-  - 🇷🇺 俄罗斯-1V
-  - US_b5ce7_0045
-  - DE_b5ce7_0008
-  - HK_b5ce7_0009
-  - 🇬🇧 英国
-  - 🇷🇺 俄罗斯-圣彼得堡-HY-007-2B
-  - 🇷🇺 俄罗斯-莫斯科-HY-002-1E
-  - 🇺🇸_美国_149
-  - 🇬🇧GB-18.135.173.157-1451
-  - 🇺🇸_美国_64
-  - 🇷🇺 俄罗斯-2H
-  - 🇷🇺 俄罗斯-1T
-  - 🇺🇲 美国 | USA 23
-  - 🇸🇬6
-  - KR_b5ce7_0012
-  - 0|--10
-  - 🇺🇲 美国 | USA 175
-  - 8|Mci-@V2ray_Raha-06
-  - 🇯🇵 日本•高速142•原生 - 飞翔吧
-  - 🇯🇵JP-74.226.136.204-3322
-  - 🇺🇲 美国 | USA 72
-  - 🇺🇲 美国 | USA 31
-  - 🇹🇼 广港•台湾262•高速 - 飞翔吧
-  - SG_Singapore_Radishcloud Technology LLC_OpenAI1
-  - 🇺🇸 US_487
-  - 🇨🇦 加拿大 | CAN 46
-  - US_b5ce7_0027
-  - 🇩🇪 欧洲-法兰克福-1-1B
-  - 🇨🇦 加拿大 | CAN 45
-  - 美国5
-  - 🇷🇺 俄罗斯 3
+  - 🇯🇵 日本(三网) 2
+  - 新加坡-优化3
+  - 🇯🇵 日本(三网) 3
+  - 香港wap-T-5tTm
+  - 香港wap-T-rJ3c
+  - 香港HY-优化2
+  - 台湾WAP-T-GPT-gfRi
+  - 台湾WAP-T-GPT
+  - 香港wap-T-EDPf
+  - 香港wap-T-R2sl
+  - 新加坡-优化
+  - 🇸🇬 新加坡(三网)
+  - 🇸🇬 ip1 (预防dns污染)
+  - 新加坡SG-T-z79J
+  - 香港wap-T
+  - 台湾WAP-T-GPT-Orqz
+  - 香港wap-T-oSBt
+  - 🇺🇸 备用1 (预防dns污染)
+  - 香港wap-T-PSM1
+  - 新加坡SG-T-E4at
+  - 日本-优化3
+  - 台湾WAP-T-GPT-P9vS
+  - 台湾WAP-T-GPT-7DFd
+  - 香港wap-T-uHZT
+  - 日本-优化2
+  - 香港wap-T-FGi6
+  - 新加坡SG-T
+  - 新加坡SG-T-jC0K
+  - 台湾WAP-T-GPT-S4e5
+  - 香港wap-T-LPYd
+  - 新加坡SG-T-3plv
+  - 台湾WAP-T-GPT-YsHI
+  - 新加坡SG-T-PkxV
+  - 台湾WAP-T-GPT-IPsy
+  - 日本JP-T-pR3s
+  - 香港wap-T-pjhO
+  - 新加坡SG-T-oWPg
+  - 日本JP-T-oUJn
+  - 日本JP-T-gEwa
+  - 台湾WAP-T-GPT-OMOZ
+  - 新加坡SG-T-vCeE
+  - 新加坡SG-T-tVHX
+  - 新加坡SG-T-ZFaE
+  - 日本JP-T-TzPC
+  - 台湾WAP-T-GPT-PMfx
+  - 香港HY-优化
+  - 香港wap-T-Lwj9
+  - 🇯🇵 日本(三网) 1
+  - 日本JP-T-SiE6
+  - 新加坡SG-T-jQtE
+  - 日本JP-T-ZtHY
+  - 新加坡SG-T-tcR4
+  - 台湾WAP-T-GPT-D5GQ
+  - 香港wap-T-r5jt
+  - 日本JP-T-CjtL
+  - 香港WAP-优化2
+  - 日本JP-T-KwGS
+  - 日本JP-T-Rvm8
+  - 台湾WAP-T-GPT-rfqh
+  - 美国USLA-T-GPT-vy3b
+  - 越南VN-T-Al51
+  - 英国UK-T-9bTO
+  - 英国UK-T-AMPf
+  - 美国USLA-T-GPT-sOP7
+  - 英国UK-T
+  - 美国USLA-T-GPT-pa4s
+  - 澳大利亚AU-T-vXXU
+  - 台湾WAP-T-GPT-OuC9
+  - 新加坡SG-T-t5eV
+  - 台湾-优化3
+  - 越南VN-T-sNz8
+  - 美国USLA-T-GPT
+  - 日本JP-T-7fs6
+  - 美国USLA-T-GPT-3Y1T
+  - 澳大利亚AU-T-3ZjF
+  - 台湾-优化2-GPT
+  - 英国UK-T-2P69
+  - 香港WAP-优化
+  - 英国UK-T-l5Gc
+  - 英国UK-T-vTZH
+  - 澳大利亚AU-T-gcKK
+  - 英国UK-T-AfQF
+  - 美国USLA-T-GPT-w3b7
+  - 美国USLA-T-GPT-ltA2
+  - 台湾-优化
+  - 剩余流量：98.85 GB
+  - 美国USLA-T-GPT-tPYz
+  - 英国UK-T-l42w
+  - 葡萄牙PT-T-HPGK
+  - 英国UK-T-QSYS
+  - 美国USLA-T-GPT-yIxS
+  - 葡萄牙PT-T-UUnA
+  - 美国USLA-T-GPT-mYmu
+  - 英国UK-T-mLen
+  - 美国USLA-T-GPT-Y2nU
+  - 英国UK-T-sbNh
+  - 美国USLA-T-GPT-DiQe
+  - 澳大利亚AU-T-Ue1W
+  - 澳大利亚AU-T-CdpO
+  - 澳大利亚AU-T-ulWr
+  - 🇺🇸 备用2 (预防dns污染)
+  - 越南VN-T-om8a
+  - 俄罗斯RU-T-tD89
+  - 澳大利亚AU-T-QzUC
+  - 越南VN-T-3peq
+  - 🇺🇸 美国2 (预防时间错误)
+  - 澳大利亚AU-T
+  - 澳大利亚AU-T-WtWF
+  - 俄罗斯RU-T-Mpbz
+  - 俄罗斯RU-T-hcQ5
+  - 越南VN-T-7IHa
+  - 澳大利亚AU-T-B4AQ
+  - 越南VN-T-DdWP
+  - 🇺🇸 美国1 (预防时间错误)
+  - 澳大利亚AU-T-zgZq
+  - 澳大利亚AU-T-FTDp
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
