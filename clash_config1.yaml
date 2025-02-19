@@ -1,4 +1,4 @@
-1port: 7890
+port: 7890
 socks-port: 7891
 redir-port: 7892
 allow-lan: true
@@ -32,51 +32,15 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 新加坡SG-T-E4at
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: 79b25abf-8730-426a-ab47-7e92c6a68007
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 美国USLA-T-GPT-3Y1T
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: 79b25abf-8730-426a-ab47-7e92c6a68007
-  udp: true
-  sni: usla.mjt000.com
-- name: 新加坡SG-T-jQtE
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 美国USLA-T-GPT-mYmu
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
-  udp: true
-  sni: usla.mjt000.com
-- name: 新加坡SG-T-vCeE
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 美国USLA-T-GPT-w3b7
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
-  udp: true
-  sni: usla.mjt000.com
+- {name: 18.141_OpenAI, server: 18.141.9.206, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+- {name: 52.195_OpenAI, server: 52.195.215.236, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+- {name: US_speednode_0146, server: 66.235.200.58, port: 80, client-fingerprint: chrome, type: vless, uuid: e497da22-d020-40fb-a1fa-bc294066a2d2, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1, headers: {Host: pormang.webhost99.workers.dev}}}
+- {name: US_speednode_0148, server: 66.235.200.191, port: 80, client-fingerprint: chrome, type: vless, uuid: e497da22-d020-40fb-a1fa-bc294066a2d2, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1, headers: {Host: pormang.webhost99.workers.dev}}}
+- {name: JP_Tokyo_Oracle, server: 172.67.73.163, port: 80, client-fingerprint: chrome, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.xn--i-sx6a60i.us.kg.}}}
+- {name: JP_Tokyo_Amazon, server: jp.mjt000.com, port: 443, client-fingerprint: chrome, type: trojan, password: 5adfc828-440d-4022-9571-0299a905b98e, sni: jp.mjt000.com, skip-cert-verify: false}
+- {name: US_Dallas, server: 104.17.147.22, port: 80, client-fingerprint: chrome, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, tfo: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/?ed=MARAMBASHI_MARAMBASHI/?ed=2560", headers: {Host: redw.pooriam.ir}}}
+- {name: "US_Portland6", server: 18.237.113.248, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+- {name: "US_Portland4", server: 52.41.168.231, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
 - name: 新加坡SG-T-jC0K
   type: trojan
   server: sg.mjt000.com
@@ -85,58 +49,6 @@ proxies:
   udp: true
   sni: sg.mjt000.com
   skip-cert-verify: true
-- name: 美国USLA-T-GPT-Y2nU
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
-  udp: true
-  sni: usla.mjt000.com
-- name: 新加坡SG-T-oWPg
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: a6f0acd5-0852-432a-b191-854658db6a92
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 美国USLA-T-GPT-vy3b
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: a6f0acd5-0852-432a-b191-854658db6a92
-  udp: true
-  sni: usla.mjt000.com
-- name: 新加坡SG-T-tVHX
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: 06322978-709f-423e-b10b-fc2a845d9564
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 美国USLA-T-GPT-pa4s
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: 06322978-709f-423e-b10b-fc2a845d9564
-  udp: true
-  sni: usla.mjt000.com
-- name: 新加坡SG-T-PkxV
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 美国USLA-T-GPT-ltA2
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
-  udp: true
-  sni: usla.mjt000.com
 - name: 新加坡SG-T-3plv
   type: trojan
   server: sg.mjt000.com
@@ -152,57 +64,11 @@ proxies:
   password: 5adfc828-440d-4022-9571-0299a905b98e
   udp: true
   sni: usla.mjt000.com
-- name: 新加坡SG-T-tcR4
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: b6e5e633-a297-4614-88d5-49f94cda618f
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 美国USLA-T-GPT-DiQe
+- name: 美国USLA-T-GPT-Y2nU
   type: trojan
   server: usla.mjt000.com
   port: 443
-  password: b6e5e633-a297-4614-88d5-49f94cda618f
-  udp: true
-  sni: usla.mjt000.com
-- name: 新加坡SG-T-ZFaE
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: f89748f5-cee5-44dd-89fd-f6d49645d060
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 美国USLA-T-GPT-yIxS
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: f89748f5-cee5-44dd-89fd-f6d49645d060
-  udp: true
-  sni: usla.mjt000.com
-- name: 新加坡SG-T-t5eV
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: 14c564dd-aad6-4bf7-b6bb-02a360132dbf
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 新加坡SG-T-z79J
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: 258e9750-51ef-4a49-9035-8409cc4649f8
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 美国USLA-T-GPT-sOP7
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: 258e9750-51ef-4a49-9035-8409cc4649f8
+  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
   udp: true
   sni: usla.mjt000.com
 proxy-groups:
@@ -217,26 +83,19 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 新加坡SG-T-z79J
-  - 新加坡SG-T-E4at
+  - 18.141_OpenAI
+  - 52.195_OpenAI
+  - US_speednode_0146
+  - US_speednode_0148
+  - JP_Tokyo_Oracle
+  - JP_Tokyo_Amazon
+  - US_Dallas
+  - US_Portland6
+  - US_Portland4 
   - 新加坡SG-T-jC0K
   - 新加坡SG-T-3plv
-  - 新加坡SG-T-PkxV
-  - 新加坡SG-T-oWPg
-  - 新加坡SG-T-vCeE
-  - 新加坡SG-T-tVHX
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-jQtE
-  - 新加坡SG-T-tcR4
-  - 美国USLA-T-GPT-vy3b
-  - 美国USLA-T-GPT-sOP7
-  - 美国USLA-T-GPT-pa4s
-  - 美国USLA-T-GPT-3Y1T
   - 美国USLA-T-GPT-tPYz
-  - 美国USLA-T-GPT-yIxS
-  - 美国USLA-T-GPT-mYmu
   - 美国USLA-T-GPT-Y2nU
-  - 美国USLA-T-GPT-DiQe
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
