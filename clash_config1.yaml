@@ -7,8 +7,8 @@ log-level: info
 external-controller: 127.0.0.1:9090
 geodata-mode: true
 geox-url:
-  geoip: https://slink.ltd/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
-  mmdb: https://slink.ltd/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb
+  geoip: https://gitdl.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
+  mmdb: https://gitdl.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb
 dns:
   enable: true
   ipv6: false
@@ -19,8 +19,8 @@ dns:
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   nameserver:
-  - https://dns.alidns.com/dns-query
   - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
   fallback:
   - https://doh.dns.sb/dns-query
   - https://dns.cloudflare.com/dns-query
@@ -32,45 +32,51 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- {name: 18.141_OpenAI, server: 18.141.9.206, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-- {name: 52.195_OpenAI, server: 52.195.215.236, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-- {name: US_speednode_0146, server: 66.235.200.58, port: 80, client-fingerprint: chrome, type: vless, uuid: e497da22-d020-40fb-a1fa-bc294066a2d2, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1, headers: {Host: pormang.webhost99.workers.dev}}}
-- {name: US_speednode_0148, server: 66.235.200.191, port: 80, client-fingerprint: chrome, type: vless, uuid: e497da22-d020-40fb-a1fa-bc294066a2d2, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1, headers: {Host: pormang.webhost99.workers.dev}}}
-- {name: JP_Tokyo_Oracle, server: 172.67.73.163, port: 80, client-fingerprint: chrome, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.xn--i-sx6a60i.us.kg.}}}
-- {name: JP_Tokyo_Amazon, server: jp.mjt000.com, port: 443, client-fingerprint: chrome, type: trojan, password: 5adfc828-440d-4022-9571-0299a905b98e, sni: jp.mjt000.com, skip-cert-verify: false}
-- {name: US_Dallas, server: 104.17.147.22, port: 80, client-fingerprint: chrome, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, tfo: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/?ed=MARAMBASHI_MARAMBASHI/?ed=2560", headers: {Host: redw.pooriam.ir}}}
-- {name: "US_Portland6", server: 18.237.113.248, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-- {name: "US_Portland4", server: 52.41.168.231, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-- name: 新加坡SG-T-jC0K
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
+- name: vpnshield
+  port: 80
+  server: 162.159.250.246
+  type: vless
+  network: ws
   udp: true
-  sni: sg.mjt000.com
   skip-cert-verify: true
-- name: 新加坡SG-T-3plv
+  ws-opts:
+    path: /
+    headers:
+      host: vpnshield5554.vpnvpnfree5.workers.dev
+  uuid: 63583ca2-b618-4bd8-96a1-08febe3a6730
+  client-fingerprint: chrome
+- name: csuzhou01-TLS
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  network: tcp
+  port: 13989
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 香港wap-T-sXm8
   type: trojan
-  server: sg.mjt000.com
+  server: waphk.mjt000.com
   port: 443
-  password: 5adfc828-440d-4022-9571-0299a905b98e
+  password: b6e5e633-a297-4614-88d5-49f94cda618f
   udp: true
-  sni: sg.mjt000.com
+  sni: waphk.mjt000.com
+- name: US-WS-1
+  port: 2082
+  server: 159.112.235.174
+  type: vless
+  network: ws
+  udp: true
   skip-cert-verify: true
-- name: 美国USLA-T-GPT-tPYz
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: 5adfc828-440d-4022-9571-0299a905b98e
-  udp: true
-  sni: usla.mjt000.com
-- name: 美国USLA-T-GPT-Y2nU
-  type: trojan
-  server: usla.mjt000.com
-  port: 443
-  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
-  udp: true
-  sni: usla.mjt000.com
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      host: workerr.schodog1.workers.dev
+  uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
+  client-fingerprint: chrome
 proxy-groups:
 - name: 节点选择
   type: select
@@ -83,19 +89,10 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - 18.141_OpenAI
-  - 52.195_OpenAI
-  - US_speednode_0146
-  - US_speednode_0148
-  - JP_Tokyo_Oracle
-  - JP_Tokyo_Amazon
-  - US_Dallas
-  - US_Portland6
-  - US_Portland4 
-  - 新加坡SG-T-jC0K
-  - 新加坡SG-T-3plv
-  - 美国USLA-T-GPT-tPYz
-  - 美国USLA-T-GPT-Y2nU
+  - vpnshield
+  - csuzhou01-TLS
+  - 香港wap-T-sXm8
+  - US-WS-1
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -103,7 +100,7 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: *id001
-  url: http://www.pinterest.com
+  url: http://www.gstatic.com/generate_204
   interval: 300
 - name: 手动选择
   type: select
