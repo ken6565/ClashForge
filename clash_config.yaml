@@ -1,710 +1,66 @@
-port: 7890
-socks-port: 7891
-redir-port: 7892
-allow-lan: true
-mode: rule
-log-level: info
-external-controller: 127.0.0.1:9090
-geodata-mode: true
-geox-url:
-  geoip: https://slink.ltd/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
-  mmdb: https://slink.ltd/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb
+allow-lan: false
 dns:
-  enable: true
-  ipv6: false
-  default-nameserver:
-  - 223.5.5.5
+  cache-algorithm: arc
+  default-nameserver: &id001
+  - 114.114.114.114
   - 119.29.29.29
+  - 211.136.17.107
+  - 211.136.20.203
+  - 211.137.58.20
+  - 211.137.64.163
+  - 223.5.5.5
+  direct-nameserver: *id001
+  enable: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  nameserver:
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  fallback:
-  - https://doh.dns.sb/dns-query
-  - https://dns.cloudflare.com/dns-query
-  - https://dns.twnic.tw/dns-query
-  - tls://8.8.4.4:853
+  fake-ip-filter:
+  - geosite:gfw,tld-!cn,geolocation-!cn
+  - rule-set:proxy,myProxy
+  fake-ip-filter-mode: whitelist
+  fallback: &id002
+  - https://1.1.1.1/dns-query#DNS
+  - https://8.8.8.8/dns-query#DNS
+  - https://9.9.9.9/dns-query#DNS
+  - https://185.222.222.222/dns-query#DNS
+  - https://208.67.222.222/dns-query#DNS
   fallback-filter:
     geoip: true
-    ipcidr:
-    - 240.0.0.0/4
-    - 0.0.0.0/32
+    geoip-code: CN
+  ipv6: true
+  listen: 0.0.0.0:53
+  nameserver: *id001
+  nameserver-policy:
+    geosite:cn,connectivity-check,private: *id001
+    geosite:gfw,tld-!cn,geolocation-!cn: *id002
+    rule-set:direct,myDirect: *id001
+    rule-set:proxy,myProxy: *id002
+  prefer-h3: false
+  proxy-server-nameserver: *id001
+  respect-rules: true
+  use-hosts: false
+  use-system-hosts: false
+external-controller-cors:
+  allow-origins:
+  - '*'
+  allow-private-network: true
+geo-auto-update: true
+geo-update-interval: 12
+geodata-loader: standard
+geodata-mode: true
+geox-url:
+  asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+  geoip: https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+  geosite: https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+ipv6: true
+log-level: error
+mixed-port: 7890
+mode: rule
+myDirectDNS: *id001
+myProxyDNS: *id002
+profile:
+  store-fake-ip: true
+  store-selected: true
 proxies:
-- name: www.wto.org
-  server: www.wto.org
-  port: 8443
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: c7dabe95.proxy-978.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
-- name: 12|🇭🇰 香港5|@ripaojiedian
-  type: vmess
-  server: 183.236.51.38
-  port: 41291
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  network: tcp
-  tls: false
-  ip-version: dual
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本2|@ripaojiedian
-  server: jp5v1.8vote.cn
-  port: 443
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 454f160a336b
-  tfo: false
-  plugin: v2ray-plugin
-  plugin-opts:
-    mode: websocket
-    host: jp5v1.8vote.cn
-    path: /yxyxmzudbkjq
-    tls: true
-    mux: true
-    skip-cert-verify: false
-- name: 🇪🇸 ES_136
-  type: ss
-  server: 212.34.150.176
-  port: '4199'
-  cipher: chacha20-ietf-poly1305
-  password: gpW0ffUApVv0u5q1NwGHAX
-  udp: true
-- name: 🇪🇸 ES_139
-  type: ss
-  server: 150.241.91.184
-  port: '8724'
-  cipher: chacha20-ietf-poly1305
-  password: hY4vxI8XY3YJghRe4Gp2g2
-  udp: true
-- name: 🇦🇺 AU_102
-  type: trojan
-  server: terture.meijireform.com
-  port: 443
-  password: 0FaYIOcSy4lBg38yRxnj7RlR3RZYSq3pC9OaSDAAOw6Oe8FCpy08u8pzx3eKZacDz3XE3
-  sni: ''
-  skip-cert-verify: false
-- name: 🇺🇸 US_275
-  type: vmess
-  server: 54.215.206.73
-  port: 25489
-  uuid: ced2db8f-0f4d-4e1c-fe07-0b6fcf856701
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: false
-  sni: ''
-  ws-opts: {}
-- name: 🇺🇸 US_289
-  type: vmess
-  server: hk2.lrzdx.uk
-  port: 443
-  uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  sni: ''
-  ws-opts:
-    path: /register
-    headers:
-      Host: ''
-- alterId: 0
-  cipher: auto
-  name: US美国(mibei77.com 米贝节点分享) 6
-  port: 14100
-  server: 144.255.36.254
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- alterId: 0
-  cipher: auto
-  name: HK香港(mibei77.com 米贝节点分享) 3
-  port: 34652
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: US美国(mibei77.com 米贝节点分享) 16
-  port: 43674
-  server: 120.234.102.229
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: HK香港(mibei77.com 米贝节点分享) 8
-  port: 57852
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: HK香港(mibei77.com 米贝节点分享) 11
-  port: 36609
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: NRT_1
-  network: ws
-  password: Aimer
-  port: 10443
-  server: 20.243.85.49
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: HK_1
-  network: ws
-  port: 443
-  server: 18.167.20.157
-  servername: edcca.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: HK_2
-  network: ws
-  port: 443
-  server: 18.167.37.206
-  servername: edcca.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_8
-  network: ws
-  password: Aimer
-  port: 443
-  server: 108.165.152.113
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_12
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 167.68.4.131
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_24
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 198.62.62.61
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_27
-  network: ws
-  password: Aimer
-  port: 443
-  server: 27.50.49.136
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_29
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 27.50.49.177
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_34
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 108.165.152.163
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_37
-  network: ws
-  password: Aimer
-  port: 443
-  server: 213.109.205.45
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_43
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 167.68.4.223
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_68
-  network: ws
-  password: Aimer
-  port: 2083
-  server: 154.197.64.228
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: SJC_86
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 167.68.5.248
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: LHR_1
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 5.144.181.144
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: '[VMess] 🇺🇸 美国 CloudFlare节点 7'
-  server: 104.21.64.1
-  port: 80
-  type: vmess
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rongseven?ed=2048
-    headers:
-      Host: us.freeyyds.dpdns.org
-  udp: true
-  tfo: false
-- name: 12|tg频道:@ripaojiedian
-  server: 15.165.15.197
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
-  server: 54.213.242.191
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 1|🌀2-PT
-  type: ss
-  server: 185.231.233.112
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: 1|🇰🇷4
-  type: ss
-  server: 52.78.191.143
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 1|🇯🇵6
-  type: ss
-  server: 35.72.13.151
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 1|🇩🇪7
-  type: vless
-  server: 172.67.204.84
-  port: 443
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  security: tls
-  tls: true
-  sni: ipsychO.SUEx12.Ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /re5izbz9izzmddtw?ed=2560flow=-udp443security=tlsflow=-udp443
-    headers:
-      Host: ipsychO.SUEx12.Ir
-- name: 1|🇺🇸42
-  type: ss
-  server: 44.248.72.70
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 1|🇺🇸45
-  type: ss
-  server: 54.184.71.212
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 1|🇰🇷10
-  type: ss
-  server: p231.panda004.net
-  port: 11389
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-- name: 🇬🇧_GB_英国->🏳️_unKnow_未知
-  type: ss
-  server: 62.100.205.48
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸_US_美国_3-P1OT
-  type: ss
-  server: 34.219.82.5
-  port: 443
-  password: amazongreatvpn
-  ip-version: dual
-  udp: true
-  cipher: aes-256-gcm
-- type: vless
-  name: 🇺🇸_美国_41
-  server: 192.9.139.160
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇺🇸_美国_49
-  server: kyree.ns.cloudflare.com
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇺🇸_美国_57
-  server: 160.79.105.142
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇺🇸_美国_59
-  server: steamdb.info
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇺🇸_美国_60
-  server: comicabc.com
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇺🇸_美国_64
-  server: 160.79.104.199
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇳🇱_荷兰_3
-  server: 185.133.35.112
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇺🇸_美国_72
-  server: 192.0.63.29
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇺🇸_美国_75
-  server: 160.79.104.195
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇺🇸_美国_82
-  server: 160.79.104.165
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vless
-  name: 🇺🇸_美国_86
-  server: 160.79.105.72
-  port: 443
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: s0.ylka.dpdns.org
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: s0.ylka.dpdns.org
-- type: vmess
-  name: 🇺🇸_美国_89
-  ws-opts:
-    path: /rongseven?ed=2048
-    headers:
-      host: us.freeyyds.dpdns.org
-  server: www.wn03.cc
-  port: '80'
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  alterId: '0'
-  cipher: auto
-  network: ws
-- name: 日本2
-  server: jpgmo102-cdn-route.couldflare-cdn.com
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: false
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-- name: 🇰🇷KR-3.35.68.33-1064
-  server: 3.35.68.33
-  port: 30327
-  type: ss
-  cipher: aes-256-gcm
-  password: L9OhTpFW
-- name: 🏁RELAY-162.159.140.127-1832
-  server: 162.159.140.127
-  port: 443
-  type: trojan
-  password: Aimer
-  sni: epcca.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: epcca.ambercc.filegear-sg.me
-- name: 🏁RELAY-104.21.80.1-1843
-  server: 104.21.80.1
-  port: 2053
-  type: vmess
-  uuid: 0245c2d4-0ad1-4f0f-eb9c-fbd5f1c47be7
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak2.890601.xyz
-- name: 🇯🇵JP-18.183.222.113-2746
-  server: jp-am48-6.eqnode.net
-  port: 8081
-  type: ssr
-  cipher: aes-256-cfb
-  password: eAokbaDN6
-  protocol: origin
-  obfs: tls1.2_ticket_auth
-  protocol-param: ''
-  obfs-param: ''
-- name: 🇺🇸US-15.197.162.184-3896
-  server: download2hkt.windowsupdate.lol
-  port: 443
-  type: trojan
-  password: 7778e684-f435-4166-bf9e-0256cb28bf10
-  skip-cert-verify: false
-- name: 🇭🇰HK-20.2.2.123-4148
-  server: sg02.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: cd41b9d7-df15-46ad-a778-257b0851525a
-  skip-cert-verify: false
-- name: 🇭🇰HK-20.2.2.123-4223
-  server: sg01.trojanyyds.xyz
-  port: 443
-  type: trojan
-  password: cd41b9d7-df15-46ad-a778-257b0851525a
-  skip-cert-verify: false
-- name: 🇺🇸US-15.197.162.184-4743
-  server: download2hkt.windowsupdate.lol
-  port: 443
-  type: trojan
-  password: af4d2493-9156-4514-9f6b-ee5d1a1e4713
-  skip-cert-verify: false
-- name: AlvinSingbox-2
-  type: hysteria
-  server: 176.32.35.226
-  port: 62003
-  auth_str: dongtaiwang.com
-  alpn:
-  - h3
-  tls: true
-  servername: apple.com
-  skip-cert-verify: true
-  up: 1000 Mbps
-  down: 1000 Mbps
 - name: vpnshield
   port: 80
   server: 162.159.250.246
@@ -718,2228 +74,382 @@ proxies:
       host: vpnshield5554.vpnvpnfree5.workers.dev
   uuid: 63583ca2-b618-4bd8-96a1-08febe3a6730
   client-fingerprint: chrome
-- name: SSR-英国-NF解锁英国地区非自制剧-ChatGPT-YouTube-62.100.205.48:989
-  type: ssr
-  server: 62.100.205.48
-  port: 989
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-52.27.107.177:443
-  type: ssr
-  server: 52.27.107.177
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.218.54.51:443
-  type: ssr
-  server: 54.218.54.51
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-54.190.1.15:443
-  type: ssr
-  server: 54.190.1.15
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.213.242.191:443
-  type: ssr
-  server: 54.213.242.191
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-44.248.72.70:443
-  type: ssr
-  server: 44.248.72.70
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- name: SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.184.71.212:443
-  type: ssr
-  server: 54.184.71.212
-  port: 443
-  password: amazonskr05
-  cipher: aes-256-cfb
-  protocol: origin
-  obfs: plain
-- type: vmess
-  name: xiaoer886_US_29
-  ws-opts:
-    path: /rongseven?ed=2048
-    headers:
-      host: us.freeyyds.dpdns.org
-  server: 104.21.64.1
-  port: '80'
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  alterId: '0'
-  cipher: auto
+- {name: US_speednode_0120, server: 135.84.79.177, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, skip-cert-verify: false, servername: ip.langmanshanxi.top, network: ws, ws-opts: {path: "/TELEGRAM-v2ray_configs_pools_v2ray_configs_pools_v2ray_configs_pools?ed=512", headers: {Host: ip.langmanshanxi.top}}, udp: true}
+- name: 美国-18
+  alterId: 0
   network: ws
-- type: vmess
-  name: xiaoer886_US_35
-  server: 54.215.206.73
-  port: '25489'
-  uuid: ced2db8f-0f4d-4e1c-fe07-0b6fcf856701
-  alterId: '0'
-  cipher: auto
-  network: tcp
-- name: 🇨🇳 台湾2 2
-  server: xdd.dashuai.cyou
-  port: 45077
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
+  port: 8880
+  server: 135.84.75.3
+  servername: Telegram-channel-v2ray_configs_pools
+  skip-cert-verify: false
   tls: false
-  skip-cert-verify: true
-- name: 🇮🇳 印度2
-  server: xdd.dashuai.cyou
-  port: 45073
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大1
-  server: haa.dashuai.cyou
-  port: 45064
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚原生1
-  server: haa.dashuai.cyou
-  port: 45062
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大2
-  server: xdd.dashuai.cyou
-  port: 45065
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国1
-  server: haa.dashuai.cyou
-  port: 45066
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本NO.1
-  server: haa.dashuai.cyou
-  port: 45056
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国2
-  server: xdd.dashuai.cyou
-  port: 45067
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国1
-  server: haa.dashuai.cyou
-  port: 45072
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国NO.1
-  server: haa.dashuai.cyou
-  port: 45052
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 泰国NO2
-  server: xdd.dashuai.cyou
-  port: 45061
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 香港NO.2
-  server: xdd.dashuai.cyou
-  port: 45051
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 香港NO.1
-  server: haa.dashuai.cyou
-  port: 45050
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡NO.2
-  server: xdd.dashuai.cyou
-  port: 45055
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚原生2
-  server: xdd.dashuai.cyou
-  port: 45063
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 专线NO2
-  server: xdd.dashuai.cyou
-  port: 45075
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本NO.2
-  server: xdd.dashuai.cyou
-  port: 45057
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇳 印度1
-  server: haa.dashuai.cyou
-  port: 45074
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇾 马来西亚专线NO2
-  server: xdd.dashuai.cyou
-  port: 45059
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 泰国NO1
-  server: haa.dashuai.cyou
-  port: 45060
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 专线NO1
-  server: haa.dashuai.cyou
-  port: 45076
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇳 台湾1 2
-  server: haa.dashuai.cyou
-  port: 45078
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡NO.1
-  server: haa.dashuai.cyou
-  port: 45054
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇲🇾 马来西亚专线NO1
-  server: haa.dashuai.cyou
-  port: 45058
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国2
-  server: xdd.dashuai.cyou
-  port: 45071
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: 🇺🇸 美国NO.2
-  server: xdd.dashuai.cyou
-  port: 45053
-  type: vmess
-  uuid: 9731a194-b64a-47b1-aa26-68355edecfce
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-- name: ❤注册免费送套餐
-  server: hkg01.dns-node.top
-  port: 45573
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇨🇳 台湾
-  server: tw01.dns-node.top
-  port: 45571
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇯🇵 日本 2
-  server: jp01.dns-node.top
-  port: 45612
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇰🇷 韩国
-  server: jp01.dns-node.top
-  port: 45572
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇸🇬 新加坡 9
-  server: sg04.dns-node.top
-  port: 45609
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇺🇸 美国 6
-  server: us01.dns-node.top
-  port: 45581
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇬🇧 英国 2
-  server: uk01.dns-node.top
-  port: 45615
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇲🇾 马来西亚
-  server: sg04.dns-node.top
-  port: 45610
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇳🇿 新西兰
-  server: sg04.dns-node.top
-  port: 45611
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇦🇺 澳大利亚 2
-  server: sg03.dns-node.top
-  port: 45607
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇵🇰 巴基斯坦
-  server: sg03.dns-node.top
-  port: 45800
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇦🇹 奥地利
-  server: eu.dns-node.top
-  port: 43800
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇩🇪 德国
-  server: eu.dns-node.top
-  port: 45594
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇪🇬 埃及
-  server: eu.dns-node.top
-  port: 45595
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇪🇸 西班牙
-  server: de01.dns-node.top
-  port: 45596
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇫🇷 法国
-  server: eu.dns-node.top
-  port: 45597
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇮🇹 意大利
-  server: de01.dns-node.top
-  port: 45599
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇹🇷 土耳其
-  server: eu.dns-node.top
-  port: 45602
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇺🇦 乌克兰
-  server: de01.dns-node.top
-  port: 45603
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 🇨🇦 加拿大 2
-  server: us_nord.dns-node.top
-  port: 45586
-  type: ss
-  cipher: aes-128-gcm
-  password: 90d35a96-2389-4498-b28c-b53b3457f652
-- name: 周润发维护
-  server: 103.160.204.50
-  port: 443
   type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
+  udp: true
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
   ws-opts:
-    path: /?ed=2560
     headers:
-      Host: vless3-5xq.pages.dev
-- name: 🇸🇬 进群获取最新
-  server: 27.50.48.8
-  port: 443
+      Host: bitget1.asdasd.click
+    path: /Telegram🇨🇳
+- name: 美国-9
+  alterId: 0
+  network: ws
+  port: '8880'
+  server: 63.141.128.177
+  skip-cert-verify: false
   type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
-    path: /?ed=2560
     headers:
-      Host: vless3-5xq.pages.dev
-- name: 请勿测速 2
-  server: 103.160.204.4
-  port: 443
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 美国-11
+  alterId: 0
+  network: ws
+  port: '8880'
+  server: 130.250.137.3
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
   type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
   ws-opts:
-    path: /?ed=2560
     headers:
-      Host: vless3-5xq.pages.dev
-- name: 请勿测速 4
-  server: 27.50.48.6
-  port: 443
+      Host: bitget1.asdasd.click
+    path: /Telegram🇨🇳
+- name: 美国-7
+  alterId: 0
+  network: ws
+  port: 8880
+  server: 135.84.79.177
+  servername: ip.langmanshanxi.top
+  skip-cert-verify: false
+  tls: false
   type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
-    path: /?ed=2560
     headers:
-      Host: vless3-5xq.pages.dev
-- name: 请勿测速 6
-  server: 154.218.15.1
-  port: 443
+      Host: ip.langmanshanxi.top
+    path: /TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
+- name: 美国-21
+  alterId: 0
+  network: ws
+  port: 8880
+  server: 199.34.229.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
   type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
-    path: /?ed=2560
     headers:
-      Host: vless3-5xq.pages.dev
-- name: 请勿测速 7
-  server: 27.50.48.2
-  port: 443
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳
+- name: 美国-14
+  alterId: 0
+  network: ws
+  port: '8880'
+  server: 141.193.213.177
+  skip-cert-verify: false
   type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
-    path: /?ed=2560
     headers:
-      Host: vless3-5xq.pages.dev
-- name: 请勿测速 9
-  server: 27.50.49.104
-  port: 443
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- name: 日本-14
+  alterId: 0
+  network: ws
+  port: '8880'
+  server: 91.193.58.1
+  servername: kjgx.laoyoutiao.link
+  tls: false
   type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
-    path: /?ed=2560
     headers:
-      Host: vless3-5xq.pages.dev
-- name: 请勿测速 10
-  server: 154.211.8.18
-  port: 443
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- name: 日本-37
+  alterId: 0
+  network: ws
+  port: 8880
+  server: 91.193.58.248
+  servername: sk.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
   type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
-    path: /?ed=2560
     headers:
-      Host: vless3-5xq.pages.dev
-- name: 请勿测速 11
-  server: 27.50.48.102
-  port: 443
+      Host: sk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3?ed=2048
+- name: 日本-1
+  alterId: 0
+  network: ws
+  port: 8880
+  server: 91.193.58.54
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
   type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
-    path: /?ed=2560
     headers:
-      Host: vless3-5xq.pages.dev
-- name: 🇰🇷 KR660
-  server: 121.130.138.102
-  port: 12231
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless3-5xq.pages.dev
-- name: 🇨🇳 TW1
-  server: 47.76.89.195
-  port: 48222
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless3-5xq.pages.dev
-- name: 🇸🇬 SG10
-  server: 54.169.229.188
-  port: 443
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless3-5xq.pages.dev
-- name: 🇯🇵 JP33
-  server: 152.70.101.24
-  port: 16401
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless3-5xq.pages.dev
-- name: CT 2
-  server: 162.159.152.81
-  port: 443
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless3-5xq.pages.dev
-- name: CT 4
-  server: 162.159.152.155
-  port: 443
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless3-5xq.pages.dev
-- name: CMCC 2
-  server: 104.18.83.92
-  port: 443
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless3-5xq.pages.dev
-- name: 🇺🇸 美国-bWHf
-  server: 154.17.224.10
-  port: 57496
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless3-5xq.pages.dev
-- name: 🇺🇸 美国 2-wFXt
-  server: 154.17.237.56
-  port: 26749
-  type: vless
-  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: vless3-5xq.pages.dev
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vless3-5xq.pages.dev
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
 proxy-groups:
-- name: 节点选择
-  type: select
+- name: 直连规则
   proxies:
-  - 自动选择
-  - 故障转移
   - DIRECT
-  - 手动选择
-- name: 自动选择
-  type: url-test
-  exclude-filter: (?i)中国|China|CN|电信|移动|联通
-  proxies:
-  - ❤注册免费送套餐
-  - 1|🇯🇵6
-  - 🇭🇰 香港NO.1
-  - 🇨🇳 台湾1 2
-  - HK香港(mibei77.com 米贝节点分享) 11
-  - 🇯🇵 日本NO.2
-  - 1|🇰🇷4
-  - 12|tg频道:@ripaojiedian
-  - 🇸🇬 新加坡 9
-  - 🇨🇳 台湾
-  - 🇲🇾 马来西亚
-  - 🇸🇬 新加坡NO.1
-  - HK_1
-  - 🇲🇾 马来西亚专线NO2
-  - 🇺🇸US-15.197.162.184-3896
-  - 🇨🇳 台湾2 2
-  - 🇯🇵 日本NO.1
-  - 🇯🇵 日本 2
-  - 🇰🇷KR-3.35.68.33-1064
-  - 🇹🇭 泰国NO1
-  - HK_2
-  - NRT_1
-  - 🇸🇬 新加坡NO.2
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-54.190.1.15:443
-  - 🇺🇸US-15.197.162.184-4743
-  - 🇭🇰 香港NO.2
-  - 🇰🇷 韩国 专线NO2
-  - 🇲🇾 马来西亚专线NO1
-  - 🇺🇸 US_289
-  - 🇨🇳 TW1
-  - 🇺🇸_US_美国_3-P1OT
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-52.27.107.177:443
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.184.71.212:443
-  - 🇺🇸 美国 2-wFXt
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-44.248.72.70:443
-  - 🇮🇳 印度1
-  - 🇺🇸_美国_82
-  - 🇰🇷 韩国
-  - 🇬🇧_GB_英国->🏳️_unKnow_未知
-  - HK香港(mibei77.com 米贝节点分享) 8
-  - 🇰🇷 韩国 专线NO1
-  - 🇺🇸 US_275
-  - SSR-英国-NF解锁英国地区非自制剧-ChatGPT-YouTube-62.100.205.48:989
-  - 🇦🇺 澳大利亚 2
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.218.54.51:443
-  - 请勿测速 7
-  - 12|🇭🇰 香港5|@ripaojiedian
-  - 🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
-  - 🇺🇸 美国NO.2
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.213.242.191:443
-  - 1|🇺🇸42
-  - 1|🇺🇸45
-  - 🇦🇺 澳大利亚原生1
-  - 1|🇰🇷10
-  - xiaoer886_US_35
-  - 🇯🇵JP-18.183.222.113-2746
-  - 🇺🇸_美国_41
-  - 🇺🇸 美国-bWHf
-  - 🇵🇰 巴基斯坦
-  - 🇳🇱_荷兰_3
-  - 🇨🇦 加拿大2
-  - 1|🌀2-PT
-  - 🇮🇳 印度2
-  - US美国(mibei77.com 米贝节点分享) 16
-  - vpnshield
-  - 🇭🇰HK-20.2.2.123-4148
-  - 🇺🇸_美国_75
-  - 🇺🇸 美国NO.1
-  - 🇺🇸 美国 6
-  - US美国(mibei77.com 米贝节点分享) 6
-  - 🇫🇷 法国1
-  - 🇯🇵 日本2|@ripaojiedian
-  - HK香港(mibei77.com 米贝节点分享) 3
-  - 🇬🇧 英国1
-  - 🇪🇸 ES_139
-  - 🇺🇸_美国_72
-  - 日本2
-  - 🇬🇧 英国 2
-  - 请勿测速 11
-  - SJC_43
-  - 🇸🇬 SG10
-  - SJC_34
-  - 🇮🇹 意大利
-  - CT 4
-  - 🇨🇦 加拿大1
-  - 请勿测速 2
-  - 🇩🇪 德国
-  - 请勿测速 6
-  - 🇳🇿 新西兰
-  - xiaoer886_US_29
-  - 🇦🇹 奥地利
-  - 🇫🇷 法国
-  - 1|🇩🇪7
-  - SJC_68
-  - 🇦🇺 AU_102
-  - 🇰🇷 KR660
-  - 🇺🇸_美国_86
-  - 🇪🇸 ES_136
-  - 🇺🇸_美国_49
-  - 🇺🇸_美国_57
-  - 🇹🇭 泰国NO2
-  - 请勿测速 4
-  - CT 2
-  - 🇺🇸_美国_59
-  - 🇪🇸 西班牙
-  - www.wto.org
-  - 🇦🇺 澳大利亚原生2
-  - AlvinSingbox-2
-  - 🇨🇦 加拿大 2
-  - 🇯🇵 JP33
-  - 🇬🇧 英国2
-  - 🇪🇬 埃及
-  - SJC_24
-  - 🇺🇦 乌克兰
-  - 🇫🇷 法国2
-  - SJC_27
-  - CMCC 2
-  - SJC_86
-  - '[VMess] 🇺🇸 美国 CloudFlare节点 7'
-  - LHR_1
-  - 🇹🇷 土耳其
-  - SJC_29
-  - 请勿测速 9
-  - SJC_37
-  - SJC_12
-  - 🇺🇸_美国_60
-  - SJC_8
-  - 🇺🇸_美国_64
-  - 周润发维护
-  - 🇭🇰HK-20.2.2.123-4223
-  - 🇺🇸_美国_89
-  - 🏁RELAY-162.159.140.127-1832
-  - 请勿测速 10
-  - 🏁RELAY-104.21.80.1-1843
-  - 🇸🇬 进群获取最新
-  url: http://www.pinterest.com
-  interval: 300
-  tolerance: 50
-- name: 故障转移
-  type: fallback
-  exclude-filter: (?i)中国|China|CN|电信|移动|联通
-  proxies:
-  - ❤注册免费送套餐
-  - 1|🇯🇵6
-  - 🇭🇰 香港NO.1
-  - 🇨🇳 台湾1 2
-  - HK香港(mibei77.com 米贝节点分享) 11
-  - 🇯🇵 日本NO.2
-  - 1|🇰🇷4
-  - 12|tg频道:@ripaojiedian
-  - 🇸🇬 新加坡 9
-  - 🇨🇳 台湾
-  - 🇲🇾 马来西亚
-  - 🇸🇬 新加坡NO.1
-  - HK_1
-  - 🇲🇾 马来西亚专线NO2
-  - 🇺🇸US-15.197.162.184-3896
-  - 🇨🇳 台湾2 2
-  - 🇯🇵 日本NO.1
-  - 🇯🇵 日本 2
-  - 🇰🇷KR-3.35.68.33-1064
-  - 🇹🇭 泰国NO1
-  - HK_2
-  - NRT_1
-  - 🇸🇬 新加坡NO.2
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-54.190.1.15:443
-  - 🇺🇸US-15.197.162.184-4743
-  - 🇭🇰 香港NO.2
-  - 🇰🇷 韩国 专线NO2
-  - 🇲🇾 马来西亚专线NO1
-  - 🇺🇸 US_289
-  - 🇨🇳 TW1
-  - 🇺🇸_US_美国_3-P1OT
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-52.27.107.177:443
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.184.71.212:443
-  - 🇺🇸 美国 2-wFXt
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-44.248.72.70:443
-  - 🇮🇳 印度1
-  - 🇺🇸_美国_82
-  - 🇰🇷 韩国
-  - 🇬🇧_GB_英国->🏳️_unKnow_未知
-  - HK香港(mibei77.com 米贝节点分享) 8
-  - 🇰🇷 韩国 专线NO1
-  - 🇺🇸 US_275
-  - SSR-英国-NF解锁英国地区非自制剧-ChatGPT-YouTube-62.100.205.48:989
-  - 🇦🇺 澳大利亚 2
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.218.54.51:443
-  - 请勿测速 7
-  - 12|🇭🇰 香港5|@ripaojiedian
-  - 🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
-  - 🇺🇸 美国NO.2
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.213.242.191:443
-  - 1|🇺🇸42
-  - 1|🇺🇸45
-  - 🇦🇺 澳大利亚原生1
-  - 1|🇰🇷10
-  - xiaoer886_US_35
-  - 🇯🇵JP-18.183.222.113-2746
-  - 🇺🇸_美国_41
-  - 🇺🇸 美国-bWHf
-  - 🇵🇰 巴基斯坦
-  - 🇳🇱_荷兰_3
-  - 🇨🇦 加拿大2
-  - 1|🌀2-PT
-  - 🇮🇳 印度2
-  - US美国(mibei77.com 米贝节点分享) 16
-  - vpnshield
-  - 🇭🇰HK-20.2.2.123-4148
-  - 🇺🇸_美国_75
-  - 🇺🇸 美国NO.1
-  - 🇺🇸 美国 6
-  - US美国(mibei77.com 米贝节点分享) 6
-  - 🇫🇷 法国1
-  - 🇯🇵 日本2|@ripaojiedian
-  - HK香港(mibei77.com 米贝节点分享) 3
-  - 🇬🇧 英国1
-  - 🇪🇸 ES_139
-  - 🇺🇸_美国_72
-  - 日本2
-  - 🇬🇧 英国 2
-  - 请勿测速 11
-  - SJC_43
-  - 🇸🇬 SG10
-  - SJC_34
-  - 🇮🇹 意大利
-  - CT 4
-  - 🇨🇦 加拿大1
-  - 请勿测速 2
-  - 🇩🇪 德国
-  - 请勿测速 6
-  - 🇳🇿 新西兰
-  - xiaoer886_US_29
-  - 🇦🇹 奥地利
-  - 🇫🇷 法国
-  - 1|🇩🇪7
-  - SJC_68
-  - 🇦🇺 AU_102
-  - 🇰🇷 KR660
-  - 🇺🇸_美国_86
-  - 🇪🇸 ES_136
-  - 🇺🇸_美国_49
-  - 🇺🇸_美国_57
-  - 🇹🇭 泰国NO2
-  - 请勿测速 4
-  - CT 2
-  - 🇺🇸_美国_59
-  - 🇪🇸 西班牙
-  - www.wto.org
-  - 🇦🇺 澳大利亚原生2
-  - AlvinSingbox-2
-  - 🇨🇦 加拿大 2
-  - 🇯🇵 JP33
-  - 🇬🇧 英国2
-  - 🇪🇬 埃及
-  - SJC_24
-  - 🇺🇦 乌克兰
-  - 🇫🇷 法国2
-  - SJC_27
-  - CMCC 2
-  - SJC_86
-  - '[VMess] 🇺🇸 美国 CloudFlare节点 7'
-  - LHR_1
-  - 🇹🇷 土耳其
-  - SJC_29
-  - 请勿测速 9
-  - SJC_37
-  - SJC_12
-  - 🇺🇸_美国_60
-  - SJC_8
-  - 🇺🇸_美国_64
-  - 周润发维护
-  - 🇭🇰HK-20.2.2.123-4223
-  - 🇺🇸_美国_89
-  - 🏁RELAY-162.159.140.127-1832
-  - 请勿测速 10
-  - 🏁RELAY-104.21.80.1-1843
-  - 🇸🇬 进群获取最新
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-- name: 手动选择
+  - 全球互联
   type: select
+- name: 漏网之鱼
   proxies:
-  - ❤注册免费送套餐
-  - 1|🇯🇵6
-  - 🇭🇰 香港NO.1
-  - 🇨🇳 台湾1 2
-  - HK香港(mibei77.com 米贝节点分享) 11
-  - 🇯🇵 日本NO.2
-  - 1|🇰🇷4
-  - 12|tg频道:@ripaojiedian
-  - 🇸🇬 新加坡 9
-  - 🇨🇳 台湾
-  - 🇲🇾 马来西亚
-  - 🇸🇬 新加坡NO.1
-  - HK_1
-  - 🇲🇾 马来西亚专线NO2
-  - 🇺🇸US-15.197.162.184-3896
-  - 🇨🇳 台湾2 2
-  - 🇯🇵 日本NO.1
-  - 🇯🇵 日本 2
-  - 🇰🇷KR-3.35.68.33-1064
-  - 🇹🇭 泰国NO1
-  - HK_2
-  - NRT_1
-  - 🇸🇬 新加坡NO.2
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-54.190.1.15:443
-  - 🇺🇸US-15.197.162.184-4743
-  - 🇭🇰 香港NO.2
-  - 🇰🇷 韩国 专线NO2
-  - 🇲🇾 马来西亚专线NO1
-  - 🇺🇸 US_289
-  - 🇨🇳 TW1
-  - 🇺🇸_US_美国_3-P1OT
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-52.27.107.177:443
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.184.71.212:443
-  - 🇺🇸 美国 2-wFXt
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-44.248.72.70:443
-  - 🇮🇳 印度1
-  - 🇺🇸_美国_82
-  - 🇰🇷 韩国
-  - 🇬🇧_GB_英国->🏳️_unKnow_未知
-  - HK香港(mibei77.com 米贝节点分享) 8
-  - 🇰🇷 韩国 专线NO1
-  - 🇺🇸 US_275
-  - SSR-英国-NF解锁英国地区非自制剧-ChatGPT-YouTube-62.100.205.48:989
-  - 🇦🇺 澳大利亚 2
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.218.54.51:443
-  - 请勿测速 7
-  - 12|🇭🇰 香港5|@ripaojiedian
-  - 🇰🇷 12|🇰🇷 韩国特殊|@ripaojiedian
-  - 🇺🇸 美国NO.2
-  - SSR-美国-NF解锁自制剧-ChatGPT-TikTok-YouTube-54.213.242.191:443
-  - 1|🇺🇸42
-  - 1|🇺🇸45
-  - 🇦🇺 澳大利亚原生1
-  - 1|🇰🇷10
-  - xiaoer886_US_35
-  - 🇯🇵JP-18.183.222.113-2746
-  - 🇺🇸_美国_41
-  - 🇺🇸 美国-bWHf
-  - 🇵🇰 巴基斯坦
-  - 🇳🇱_荷兰_3
-  - 🇨🇦 加拿大2
-  - 1|🌀2-PT
-  - 🇮🇳 印度2
-  - US美国(mibei77.com 米贝节点分享) 16
+  - DIRECT
+  - 全球互联
+  type: select
+- name: 全球互联
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: 私有节点
+  type: select
+  use:
+  - 我的机场
+- name: 共享节点
+  proxies:
+  - 共享节点-延迟最低
+  - 共享节点-故障转移
+  - 共享节点-负载均衡
+  - 共享节点-手动选择
+  - DIRECT
+  type: select
+- name: MYPROXY
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: TWITTER
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: YOUTUBE
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: GITHUB
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: TELEGRAM
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: AI
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: GAME
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: FORUMS
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: ENTERTAINMENT
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: GFW
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: GEOLOCATON-!CN
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: TLD-!CN
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: PROXY
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: DNS
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- interval: 360
+  name: 共享节点-延迟最低
+  proxies: &id003
   - vpnshield
-  - 🇭🇰HK-20.2.2.123-4148
-  - 🇺🇸_美国_75
-  - 🇺🇸 美国NO.1
-  - 🇺🇸 美国 6
-  - US美国(mibei77.com 米贝节点分享) 6
-  - 🇫🇷 法国1
-  - 🇯🇵 日本2|@ripaojiedian
-  - HK香港(mibei77.com 米贝节点分享) 3
-  - 🇬🇧 英国1
-  - 🇪🇸 ES_139
-  - 🇺🇸_美国_72
-  - 日本2
-  - 🇬🇧 英国 2
-  - 请勿测速 11
-  - SJC_43
-  - 🇸🇬 SG10
-  - SJC_34
-  - 🇮🇹 意大利
-  - CT 4
-  - 🇨🇦 加拿大1
-  - 请勿测速 2
-  - 🇩🇪 德国
-  - 请勿测速 6
-  - 🇳🇿 新西兰
-  - xiaoer886_US_29
-  - 🇦🇹 奥地利
-  - 🇫🇷 法国
-  - 1|🇩🇪7
-  - SJC_68
-  - 🇦🇺 AU_102
-  - 🇰🇷 KR660
-  - 🇺🇸_美国_86
-  - 🇪🇸 ES_136
-  - 🇺🇸_美国_49
-  - 🇺🇸_美国_57
-  - 🇹🇭 泰国NO2
-  - 请勿测速 4
-  - CT 2
-  - 🇺🇸_美国_59
-  - 🇪🇸 西班牙
-  - www.wto.org
-  - 🇦🇺 澳大利亚原生2
-  - AlvinSingbox-2
-  - 🇨🇦 加拿大 2
-  - 🇯🇵 JP33
-  - 🇬🇧 英国2
-  - 🇪🇬 埃及
-  - SJC_24
-  - 🇺🇦 乌克兰
-  - 🇫🇷 法国2
-  - SJC_27
-  - CMCC 2
-  - SJC_86
-  - '[VMess] 🇺🇸 美国 CloudFlare节点 7'
-  - LHR_1
-  - 🇹🇷 土耳其
-  - SJC_29
-  - 请勿测速 9
-  - SJC_37
-  - SJC_12
-  - 🇺🇸_美国_60
-  - SJC_8
-  - 🇺🇸_美国_64
-  - 周润发维护
-  - 🇭🇰HK-20.2.2.123-4223
-  - 🇺🇸_美国_89
-  - 🏁RELAY-162.159.140.127-1832
-  - 请勿测速 10
-  - 🏁RELAY-104.21.80.1-1843
-  - 🇸🇬 进群获取最新
+  - US_speednode_0120
+  - 美国-18
+  - 美国-9
+  - 美国-11
+  - 美国-7
+  - 美国-21
+  - 美国-14
+  - 日本-14
+  - 日本-37
+  - 日本-1
+  type: url-test
+  url: https://www.youtube.com/generate_204
+- interval: 360
+  name: 共享节点-故障转移
+  proxies: *id003
+  type: fallback
+  url: https://www.youtube.com/generate_204
+- interval: 360
+  name: 共享节点-负载均衡
+  proxies: *id003
+  type: load-balance
+  url: https://www.youtube.com/generate_204
+- name: 共享节点-手动选择
+  proxies: *id003
+  type: select
+proxy-providers:
+  我的机场:
+    health-check:
+      enable: true
+      expected-status: 204
+      interval: 14400
+      lazy: true
+      timeout: 5000
+      url: https://www.youtube.com/generate_204
+    interval: 86400
+    path: ./myOwn.yaml
+    type: file
+rule-providers:
+  apple:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/apple.txt
+    type: http
+    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt
+  direct:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/direct.txt
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+  icloud:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/icloud.txt
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+  myDirect:
+    behavior: domain
+    interval: 3600
+    path: ./ruleset/myDirect.txt
+    type: file
+  myProxy:
+    behavior: domain
+    interval: 3600
+    path: ./ruleset/myProxy.txt
+    type: file
+  proxy:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/proxy.txt
+    type: http
+    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
 rules:
-- DOMAIN,app.adjust.com,DIRECT
-- DOMAIN,bdtj.tagtic.cn,DIRECT
-- DOMAIN,log.mmstat.com,DIRECT
-- DOMAIN,sycm.mmstat.com,DIRECT
-- DOMAIN-SUFFIX,blog.google,DIRECT
-- DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
-- DOMAIN,dl.google.com,DIRECT
-- DOMAIN,dl.l.google.com,DIRECT
-- DOMAIN,fonts.googleapis.com,DIRECT
-- DOMAIN,fonts.gstatic.com,DIRECT
-- DOMAIN,mtalk.google.com,DIRECT
-- DOMAIN,alt1-mtalk.google.com,DIRECT
-- DOMAIN,alt2-mtalk.google.com,DIRECT
-- DOMAIN,alt3-mtalk.google.com,DIRECT
-- DOMAIN,alt4-mtalk.google.com,DIRECT
-- DOMAIN,alt5-mtalk.google.com,DIRECT
-- DOMAIN,alt6-mtalk.google.com,DIRECT
-- DOMAIN,alt7-mtalk.google.com,DIRECT
-- DOMAIN,alt8-mtalk.google.com,DIRECT
-- DOMAIN,fairplay.l.qq.com,DIRECT
-- DOMAIN,livew.l.qq.com,DIRECT
-- DOMAIN,vd.l.qq.com,DIRECT
-- DOMAIN,analytics.strava.com,DIRECT
-- DOMAIN,msg.umeng.com,DIRECT
-- DOMAIN,msg.umengcloud.com,DIRECT
-- PROCESS-NAME,com.ximalaya.ting.himalaya,节点选择
-- DOMAIN-SUFFIX,himalaya.com,节点选择
-- PROCESS-NAME,deezer.android.app,节点选择
-- DOMAIN-SUFFIX,deezer.com,节点选择
-- DOMAIN-SUFFIX,dzcdn.net,节点选择
-- PROCESS-NAME,com.tencent.ibg.joox,节点选择
-- PROCESS-NAME,com.tencent.ibg.jooxtv,节点选择
-- DOMAIN-SUFFIX,joox.com,节点选择
-- DOMAIN-KEYWORD,jooxweb-api,节点选择
-- PROCESS-NAME,com.skysoft.kkbox.android,节点选择
-- DOMAIN-SUFFIX,kkbox.com,节点选择
-- DOMAIN-SUFFIX,kkbox.com.tw,节点选择
-- DOMAIN-SUFFIX,kfs.io,节点选择
-- PROCESS-NAME,com.pandora.android,节点选择
-- DOMAIN-SUFFIX,pandora.com,节点选择
-- PROCESS-NAME,com.soundcloud.android,节点选择
-- DOMAIN-SUFFIX,p-cdn.us,节点选择
-- DOMAIN-SUFFIX,sndcdn.com,节点选择
-- DOMAIN-SUFFIX,soundcloud.com,节点选择
-- PROCESS-NAME,com.spotify.music,节点选择
-- DOMAIN-SUFFIX,pscdn.co,节点选择
-- DOMAIN-SUFFIX,scdn.co,节点选择
-- DOMAIN-SUFFIX,spotify.com,节点选择
-- DOMAIN-SUFFIX,spoti.fi,节点选择
-- DOMAIN-KEYWORD,spotify.com,节点选择
-- DOMAIN-KEYWORD,-spotify-com,节点选择
-- PROCESS-NAME,com.aspiro.tidal,节点选择
-- DOMAIN-SUFFIX,tidal.com,节点选择
-- PROCESS-NAME,com.google.android.apps.youtube.music,节点选择
-- PROCESS-NAME,com.google.android.youtube.tvmusic,节点选择
-- PROCESS-NAME,tv.abema,节点选择
-- DOMAIN-SUFFIX,abema.io,节点选择
-- DOMAIN-SUFFIX,abema.tv,节点选择
-- DOMAIN-SUFFIX,ameba.jp,节点选择
-- DOMAIN-SUFFIX,hayabusa.io,节点选择
-- DOMAIN-KEYWORD,abematv.akamaized.net,节点选择
-- PROCESS-NAME,com.channel4.ondemand,节点选择
-- DOMAIN-SUFFIX,c4assets.com,节点选择
-- DOMAIN-SUFFIX,channel4.com,节点选择
-- PROCESS-NAME,com.amazon.avod.thirdp,节点选择
-- DOMAIN-SUFFIX,aiv-cdn.net,节点选择
-- DOMAIN-SUFFIX,aiv-delivery.net,节点选择
-- DOMAIN-SUFFIX,amazonvideo.com,节点选择
-- DOMAIN-SUFFIX,primevideo.com,节点选择
-- DOMAIN-SUFFIX,media-amazon.com,节点选择
-- DOMAIN,atv-ps.amazon.com,节点选择
-- DOMAIN,fls-na.amazon.com,节点选择
-- DOMAIN,avodmp4s3ww-a.akamaihd.net,节点选择
-- DOMAIN,d25xi40x97liuc.cloudfront.net,节点选择
-- DOMAIN,dmqdd6hw24ucf.cloudfront.net,节点选择
-- DOMAIN,dmqdd6hw24ucf.cloudfront.net,节点选择
-- DOMAIN,d22qjgkvxw22r6.cloudfront.net,节点选择
-- DOMAIN,d1v5ir2lpwr8os.cloudfront.net,节点选择
-- DOMAIN,d27xxe7juh1us6.cloudfront.net,节点选择
-- DOMAIN-KEYWORD,avoddashs,节点选择
-- DOMAIN,linear.tv.apple.com,节点选择
-- DOMAIN,play-edge.itunes.apple.com,节点选择
-- PROCESS-NAME,tw.com.gamer.android.animad,节点选择
-- DOMAIN-SUFFIX,bahamut.com.tw,节点选择
-- DOMAIN-SUFFIX,gamer.com.tw,节点选择
-- DOMAIN,gamer-cds.cdn.hinet.net,节点选择
-- DOMAIN,gamer2-cds.cdn.hinet.net,节点选择
-- PROCESS-NAME,bbc.iplayer.android,节点选择
-- DOMAIN-SUFFIX,bbc.co.uk,节点选择
-- DOMAIN-SUFFIX,bbci.co.uk,节点选择
-- DOMAIN-KEYWORD,bbcfmt,节点选择
-- DOMAIN-KEYWORD,uk-live,节点选择
-- PROCESS-NAME,com.dazn,节点选择
-- DOMAIN-SUFFIX,dazn.com,节点选择
-- DOMAIN-SUFFIX,dazn-api.com,节点选择
-- DOMAIN,d151l6v8er5bdm.cloudfront.net,节点选择
-- DOMAIN-KEYWORD,voddazn,节点选择
-- PROCESS-NAME,com.disney.disneyplus,节点选择
-- DOMAIN-SUFFIX,bamgrid.com,节点选择
-- DOMAIN-SUFFIX,disneyplus.com,节点选择
-- DOMAIN-SUFFIX,disney-plus.net,节点选择
-- DOMAIN-SUFFIX,disney自动选择.com,节点选择
-- DOMAIN-SUFFIX,dssott.com,节点选择
-- DOMAIN,cdn.registerdisney.go.com,节点选择
-- PROCESS-NAME,com.dmm.app.movieplayer,节点选择
-- DOMAIN-SUFFIX,dmm.co.jp,节点选择
-- DOMAIN-SUFFIX,dmm.com,节点选择
-- DOMAIN-SUFFIX,dmm-extension.com,节点选择
-- PROCESS-NAME,com.tvbusa.encore,节点选择
-- DOMAIN-SUFFIX,encoretvb.com,节点选择
-- DOMAIN,edge.api.brightcove.com,节点选择
-- DOMAIN,bcbolt446c5271-a.akamaihd.net,节点选择
-- PROCESS-NAME,com.fox.now,节点选择
-- DOMAIN-SUFFIX,fox.com,节点选择
-- DOMAIN-SUFFIX,foxdcg.com,节点选择
-- DOMAIN-SUFFIX,theplatform.com,节点选择
-- DOMAIN-SUFFIX,uplynk.com,节点选择
-- DOMAIN-SUFFIX,foxplus.com,节点选择
-- DOMAIN,cdn-fox-networks-group-green.akamaized.net,节点选择
-- DOMAIN,d3cv4a9a9wh0bt.cloudfront.net,节点选择
-- DOMAIN,foxsports01-i.akamaihd.net,节点选择
-- DOMAIN,foxsports02-i.akamaihd.net,节点选择
-- DOMAIN,foxsports03-i.akamaihd.net,节点选择
-- DOMAIN,staticasiafox.akamaized.net,节点选择
-- PROCESS-NAME,com.hbo.hbonow,节点选择
-- DOMAIN-SUFFIX,hbo.com,节点选择
-- DOMAIN-SUFFIX,hbogo.com,节点选择
-- DOMAIN-SUFFIX,hbonow.com,节点选择
-- DOMAIN-SUFFIX,hbomax.com,节点选择
-- PROCESS-NAME,hk.hbo.hbogo,节点选择
-- DOMAIN-SUFFIX,hbogoasia.com,节点选择
-- DOMAIN-SUFFIX,hbogoasia.hk,节点选择
-- DOMAIN,bcbolthboa-a.akamaihd.net,节点选择
-- DOMAIN,players.brightcove.net,节点选择
-- DOMAIN,s3-ap-southeast-1.amazonaws.com,节点选择
-- DOMAIN,dai3fd1oh325y.cloudfront.net,节点选择
-- DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,节点选择
-- DOMAIN,hboasia1-i.akamaihd.net,节点选择
-- DOMAIN,hboasia2-i.akamaihd.net,节点选择
-- DOMAIN,hboasia3-i.akamaihd.net,节点选择
-- DOMAIN,hboasia4-i.akamaihd.net,节点选择
-- DOMAIN,hboasia5-i.akamaihd.net,节点选择
-- DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,节点选择
-- DOMAIN-SUFFIX,5itv.tv,节点选择
-- DOMAIN-SUFFIX,ocnttv.com,节点选择
-- PROCESS-NAME,com.hulu.plus,节点选择
-- DOMAIN-SUFFIX,hulu.com,节点选择
-- DOMAIN-SUFFIX,huluim.com,节点选择
-- DOMAIN-SUFFIX,hulustream.com,节点选择
-- PROCESS-NAME,jp.happyon.android,节点选择
-- DOMAIN-SUFFIX,happyon.jp,节点选择
-- DOMAIN-SUFFIX,hjholdings.jp,节点选择
-- DOMAIN-SUFFIX,hulu.jp,节点选择
-- PROCESS-NAME,air.ITVMobilePlayer,节点选择
-- DOMAIN-SUFFIX,itv.com,节点选择
-- DOMAIN-SUFFIX,itvstatic.com,节点选择
-- DOMAIN,itvpnpmobile-a.akamaihd.net,节点选择
-- PROCESS-NAME,com.kktv.kktv,节点选择
-- DOMAIN-SUFFIX,kktv.com.tw,节点选择
-- DOMAIN-SUFFIX,kktv.me,节点选择
-- DOMAIN,kktv-theater.kk.stream,节点选择
-- PROCESS-NAME,com.linecorp.linetv,节点选择
-- DOMAIN-SUFFIX,linetv.tw,节点选择
-- DOMAIN,d3c7rimkq79yfu.cloudfront.net,节点选择
-- PROCESS-NAME,com.litv.mobile.gp.litv,节点选择
-- DOMAIN-SUFFIX,litv.tv,节点选择
-- DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,节点选择
-- PROCESS-NAME,com.mobileiq.demand5,节点选择
-- DOMAIN-SUFFIX,channel5.com,节点选择
-- DOMAIN-SUFFIX,my5.tv,节点选择
-- DOMAIN,d349g9zuie06uo.cloudfront.net,节点选择
-- PROCESS-NAME,com.tvb.mytvsuper,节点选择
-- DOMAIN-SUFFIX,mytvsuper.com,节点选择
-- DOMAIN-SUFFIX,tvb.com,节点选择
-- PROCESS-NAME,com.netflix.mediaclient,节点选择
-- DOMAIN-SUFFIX,netflix.com,节点选择
-- DOMAIN-SUFFIX,netflix.net,节点选择
-- DOMAIN-SUFFIX,nflxext.com,节点选择
-- DOMAIN-SUFFIX,nflximg.com,节点选择
-- DOMAIN-SUFFIX,nflximg.net,节点选择
-- DOMAIN-SUFFIX,nflxso.net,节点选择
-- DOMAIN-SUFFIX,nflxvideo.net,节点选择
-- DOMAIN-SUFFIX,netflixdnstest0.com,节点选择
-- DOMAIN-SUFFIX,netflixdnstest1.com,节点选择
-- DOMAIN-SUFFIX,netflixdnstest2.com,节点选择
-- DOMAIN-SUFFIX,netflixdnstest3.com,节点选择
-- DOMAIN-SUFFIX,netflixdnstest4.com,节点选择
-- DOMAIN-SUFFIX,netflixdnstest5.com,节点选择
-- DOMAIN-SUFFIX,netflixdnstest6.com,节点选择
-- DOMAIN-SUFFIX,netflixdnstest7.com,节点选择
-- DOMAIN-SUFFIX,netflixdnstest8.com,节点选择
-- DOMAIN-SUFFIX,netflixdnstest9.com,节点选择
-- DOMAIN-KEYWORD,dualstack.api自动选择-device-prod-nlb-,节点选择
-- DOMAIN-KEYWORD,dualstack.ichnaea-web-,节点选择
-- IP-CIDR,23.246.0.0/18,节点选择,no-resolve
-- IP-CIDR,37.77.184.0/21,节点选择,no-resolve
-- IP-CIDR,45.57.0.0/17,节点选择,no-resolve
-- IP-CIDR,64.120.128.0/17,节点选择,no-resolve
-- IP-CIDR,66.197.128.0/17,节点选择,no-resolve
-- IP-CIDR,108.175.32.0/20,节点选择,no-resolve
-- IP-CIDR,192.173.64.0/18,节点选择,no-resolve
-- IP-CIDR,198.38.96.0/19,节点选择,no-resolve
-- IP-CIDR,198.45.48.0/20,节点选择,no-resolve
-- IP-CIDR,34.210.42.111/32,节点选择,no-resolve
-- IP-CIDR,52.89.124.203/32,节点选择,no-resolve
-- IP-CIDR,54.148.37.5/32,节点选择,no-resolve
-- PROCESS-NAME,jp.nicovideo.android,节点选择
-- DOMAIN-SUFFIX,dmc.nico,节点选择
-- DOMAIN-SUFFIX,nicovideo.jp,节点选择
-- DOMAIN-SUFFIX,nimg.jp,节点选择
-- PROCESS-NAME,com.pccw.nowemobile,节点选择
-- DOMAIN-SUFFIX,nowe.com,节点选择
-- DOMAIN-SUFFIX,nowestatic.com,节点选择
-- PROCESS-NAME,com.pbs.video,节点选择
-- DOMAIN-SUFFIX,pbs.org,节点选择
-- DOMAIN-SUFFIX,phncdn.com,节点选择
-- DOMAIN-SUFFIX,phprcdn.com,节点选择
-- DOMAIN-SUFFIX,pornhub.com,节点选择
-- DOMAIN-SUFFIX,pornhubpremium.com,节点选择
-- PROCESS-NAME,com.twgood.android,节点选择
-- DOMAIN-SUFFIX,skyking.com.tw,节点选择
-- DOMAIN,hamifans.emome.net,节点选择
-- PROCESS-NAME,com.ss.android.ugc.trill,节点选择
-- DOMAIN-SUFFIX,byteoversea.com,节点选择
-- DOMAIN-SUFFIX,ibytedtos.com,节点选择
-- DOMAIN-SUFFIX,muscdn.com,节点选择
-- DOMAIN-SUFFIX,musical.ly,节点选择
-- DOMAIN-SUFFIX,tiktok.com,节点选择
-- DOMAIN-SUFFIX,tik-tokapi.com,节点选择
-- DOMAIN-SUFFIX,tiktokcdn.com,节点选择
-- DOMAIN-SUFFIX,tiktokv.com,节点选择
-- DOMAIN-KEYWORD,-tiktokcdn-com,节点选择
-- PROCESS-NAME,tv.twitch.android.app,节点选择
-- DOMAIN-SUFFIX,jtvnw.net,节点选择
-- DOMAIN-SUFFIX,ttvnw.net,节点选择
-- DOMAIN-SUFFIX,twitch.tv,节点选择
-- DOMAIN-SUFFIX,twitchcdn.net,节点选择
-- PROCESS-NAME,com.hktve.viutv,节点选择
-- DOMAIN-SUFFIX,viu.com,节点选择
-- DOMAIN-SUFFIX,viu.tv,节点选择
-- DOMAIN,api.viu.now.com,节点选择
-- DOMAIN,d1k2us671qcoau.cloudfront.net,节点选择
-- DOMAIN,d2anahhhmp1ffz.cloudfront.net,节点选择
-- DOMAIN,dfp6rglgjqszk.cloudfront.net,节点选择
-- PROCESS-NAME,com.google.android.youtube,节点选择
-- PROCESS-NAME,com.google.android.youtube.tv,节点选择
-- DOMAIN-SUFFIX,googlevideo.com,节点选择
-- DOMAIN-SUFFIX,youtube.com,节点选择
-- DOMAIN,youtubei.googleapis.com,节点选择
-- DOMAIN-SUFFIX,biliapi.net,节点选择
-- DOMAIN-SUFFIX,bilibili.com,节点选择
-- DOMAIN,upos-hz-mirrorakam.akamaized.net,节点选择
-- DOMAIN-SUFFIX,iq.com,节点选择
-- DOMAIN,cache.video.iqiyi.com,节点选择
-- DOMAIN,cache-video.iq.com,节点选择
-- DOMAIN,intl.iqiyi.com,节点选择
-- DOMAIN,intl-rcd.iqiyi.com,节点选择
-- DOMAIN,intl-subscription.iqiyi.com,节点选择
-- DOMAIN-KEYWORD,oversea-tw.inter.iqiyi.com,节点选择
-- DOMAIN-KEYWORD,oversea-tw.inter.ptqy.gitv.tv,节点选择
-- IP-CIDR,103.44.56.0/22,节点选择,no-resolve
-- IP-CIDR,118.26.32.0/23,节点选择,no-resolve
-- IP-CIDR,118.26.120.0/24,节点选择,no-resolve
-- IP-CIDR,223.119.62.225/28,节点选择,no-resolve
-- IP-CIDR,23.40.242.10/32,节点选择,no-resolve
-- IP-CIDR,23.40.241.251/32,节点选择,no-resolve
-- DOMAIN-SUFFIX,api.mgtv.com,节点选择
-- DOMAIN-SUFFIX,wetv.vip,节点选择
-- DOMAIN-SUFFIX,wetvinfo.com,节点选择
-- DOMAIN,testflight.apple.com,节点选择
-- DOMAIN-SUFFIX,appspot.com,节点选择
-- DOMAIN-SUFFIX,blogger.com,节点选择
-- DOMAIN-SUFFIX,getoutline.org,节点选择
-- DOMAIN-SUFFIX,gvt0.com,节点选择
-- DOMAIN-SUFFIX,gvt3.com,节点选择
-- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,节点选择
-- DOMAIN-SUFFIX,ytimg.com,节点选择
-- DOMAIN-KEYWORD,google,节点选择
-- DOMAIN-KEYWORD,.blogspot.,节点选择
-- DOMAIN-SUFFIX,aka.ms,节点选择
-- DOMAIN-SUFFIX,onedrive.live.com,节点选择
-- DOMAIN,az416426.vo.msecnd.net,节点选择
-- DOMAIN,az668014.vo.msecnd.net,节点选择
-- DOMAIN-SUFFIX,cdninstagram.com,节点选择
-- DOMAIN-SUFFIX,facebook.com,节点选择
-- DOMAIN-SUFFIX,facebook.net,节点选择
-- DOMAIN-SUFFIX,fb.com,节点选择
-- DOMAIN-SUFFIX,fb.me,节点选择
-- DOMAIN-SUFFIX,fbaddins.com,节点选择
-- DOMAIN-SUFFIX,fbcdn.net,节点选择
-- DOMAIN-SUFFIX,fbsbx.com,节点选择
-- DOMAIN-SUFFIX,fbworkmail.com,节点选择
-- DOMAIN-SUFFIX,instagram.com,节点选择
-- DOMAIN-SUFFIX,m.me,节点选择
-- DOMAIN-SUFFIX,messenger.com,节点选择
-- DOMAIN-SUFFIX,oculus.com,节点选择
-- DOMAIN-SUFFIX,oculuscdn.com,节点选择
-- DOMAIN-SUFFIX,rocksdb.org,节点选择
-- DOMAIN-SUFFIX,whatsapp.com,节点选择
-- DOMAIN-SUFFIX,whatsapp.net,节点选择
-- DOMAIN-SUFFIX,pscp.tv,节点选择
-- DOMAIN-SUFFIX,periscope.tv,节点选择
-- DOMAIN-SUFFIX,t.co,节点选择
-- DOMAIN-SUFFIX,twimg.co,节点选择
-- DOMAIN-SUFFIX,twimg.com,节点选择
-- DOMAIN-SUFFIX,twitpic.com,节点选择
-- DOMAIN-SUFFIX,twitter.com,节点选择
-- DOMAIN-SUFFIX,x.com,节点选择
-- DOMAIN-SUFFIX,vine.co,节点选择
-- DOMAIN-SUFFIX,telegra.ph,节点选择
-- DOMAIN-SUFFIX,telegram.org,节点选择
-- IP-CIDR,91.108.4.0/22,节点选择,no-resolve
-- IP-CIDR,91.108.8.0/22,节点选择,no-resolve
-- IP-CIDR,91.108.12.0/22,节点选择,no-resolve
-- IP-CIDR,91.108.16.0/22,节点选择,no-resolve
-- IP-CIDR,91.108.20.0/22,节点选择,no-resolve
-- IP-CIDR,91.108.56.0/22,节点选择,no-resolve
-- IP-CIDR,149.154.160.0/20,节点选择,no-resolve
-- IP-CIDR,2001:b28:f23d::/48,节点选择,no-resolve
-- IP-CIDR,2001:b28:f23f::/48,节点选择,no-resolve
-- IP-CIDR,2001:67c:4e8::/48,节点选择,no-resolve
-- DOMAIN-SUFFIX,line.me,节点选择
-- DOMAIN-SUFFIX,line-apps.com,节点选择
-- DOMAIN-SUFFIX,line-scdn.net,节点选择
-- DOMAIN-SUFFIX,naver.jp,节点选择
-- IP-CIDR,103.2.30.0/23,节点选择,no-resolve
-- IP-CIDR,125.209.208.0/20,节点选择,no-resolve
-- IP-CIDR,147.92.128.0/17,节点选择,no-resolve
-- IP-CIDR,203.104.144.0/21,节点选择,no-resolve
-- DOMAIN-SUFFIX,amazon.co.jp,节点选择
-- DOMAIN,d3c33hcgiwev3.cloudfront.net,节点选择
-- DOMAIN,payments-jp.amazon.com,节点选择
-- DOMAIN,s3-ap-northeast-1.amazonaws.com,节点选择
-- DOMAIN,s3-ap-southeast-2.amazonaws.com,节点选择
-- DOMAIN,a248.e.akamai.net,节点选择
-- DOMAIN,a771.dscq.akamai.net,节点选择
-- DOMAIN-SUFFIX,4shared.com,节点选择
-- DOMAIN-SUFFIX,9cache.com,节点选择
-- DOMAIN-SUFFIX,9gag.com,节点选择
-- DOMAIN-SUFFIX,abc.com,节点选择
-- DOMAIN-SUFFIX,abc.net.au,节点选择
-- DOMAIN-SUFFIX,abebooks.com,节点选择
-- DOMAIN-SUFFIX,ao3.org,节点选择
-- DOMAIN-SUFFIX,apigee.com,节点选择
-- DOMAIN-SUFFIX,apkcombo.com,节点选择
-- DOMAIN-SUFFIX,apk-dl.com,节点选择
-- DOMAIN-SUFFIX,apkfind.com,节点选择
-- DOMAIN-SUFFIX,apkmirror.com,节点选择
-- DOMAIN-SUFFIX,apkmonk.com,节点选择
-- DOMAIN-SUFFIX,apkpure.com,节点选择
-- DOMAIN-SUFFIX,aptoide.com,节点选择
-- DOMAIN-SUFFIX,archive.is,节点选择
-- DOMAIN-SUFFIX,archive.org,节点选择
-- DOMAIN-SUFFIX,archiveofourown.com,节点选择
-- DOMAIN-SUFFIX,archiveofourown.org,节点选择
-- DOMAIN-SUFFIX,arte.tv,节点选择
-- DOMAIN-SUFFIX,artstation.com,节点选择
-- DOMAIN-SUFFIX,arukas.io,节点选择
-- DOMAIN-SUFFIX,ask.com,节点选择
-- DOMAIN-SUFFIX,avg.com,节点选择
-- DOMAIN-SUFFIX,avgle.com,节点选择
-- DOMAIN-SUFFIX,badoo.com,节点选择
-- DOMAIN-SUFFIX,bandwagonhost.com,节点选择
-- DOMAIN-SUFFIX,bangkokpost.com,节点选择
-- DOMAIN-SUFFIX,bbc.com,节点选择
-- DOMAIN-SUFFIX,behance.net,节点选择
-- DOMAIN-SUFFIX,bibox.com,节点选择
-- DOMAIN-SUFFIX,biggo.com.tw,节点选择
-- DOMAIN-SUFFIX,binance.com,节点选择
-- DOMAIN-SUFFIX,bit.ly,节点选择
-- DOMAIN-SUFFIX,bitcointalk.org,节点选择
-- DOMAIN-SUFFIX,bitfinex.com,节点选择
-- DOMAIN-SUFFIX,bitmex.com,节点选择
-- DOMAIN-SUFFIX,bit-z.com,节点选择
-- DOMAIN-SUFFIX,bloglovin.com,节点选择
-- DOMAIN-SUFFIX,bloomberg.cn,节点选择
-- DOMAIN-SUFFIX,bloomberg.com,节点选择
-- DOMAIN-SUFFIX,blubrry.com,节点选择
-- DOMAIN-SUFFIX,book.com.tw,节点选择
-- DOMAIN-SUFFIX,booklive.jp,节点选择
-- DOMAIN-SUFFIX,books.com.tw,节点选择
-- DOMAIN-SUFFIX,boslife.net,节点选择
-- DOMAIN-SUFFIX,box.com,节点选择
-- DOMAIN-SUFFIX,brave.com,节点选择
-- DOMAIN-SUFFIX,businessinsider.com,节点选择
-- DOMAIN-SUFFIX,buzzfeed.com,节点选择
-- DOMAIN-SUFFIX,bwh1.net,节点选择
-- DOMAIN-SUFFIX,castbox.fm,节点选择
-- DOMAIN-SUFFIX,cbc.ca,节点选择
-- DOMAIN-SUFFIX,cdw.com,节点选择
-- DOMAIN-SUFFIX,change.org,节点选择
-- DOMAIN-SUFFIX,channelnewsasia.com,节点选择
-- DOMAIN-SUFFIX,ck101.com,节点选择
-- DOMAIN-SUFFIX,clarionproject.org,节点选择
-- DOMAIN-SUFFIX,cloudcone.com,节点选择
-- DOMAIN-SUFFIX,clyp.it,节点选择
-- DOMAIN-SUFFIX,cna.com.tw,节点选择
-- DOMAIN-SUFFIX,comparitech.com,节点选择
-- DOMAIN-SUFFIX,conoha.jp,节点选择
-- DOMAIN-SUFFIX,crucial.com,节点选择
-- DOMAIN-SUFFIX,cts.com.tw,节点选择
-- DOMAIN-SUFFIX,cw.com.tw,节点选择
-- DOMAIN-SUFFIX,cyberctm.com,节点选择
-- DOMAIN-SUFFIX,dailymotion.com,节点选择
-- DOMAIN-SUFFIX,dailyview.tw,节点选择
-- DOMAIN-SUFFIX,daum.net,节点选择
-- DOMAIN-SUFFIX,daumcdn.net,节点选择
-- DOMAIN-SUFFIX,dcard.tw,节点选择
-- DOMAIN-SUFFIX,deadline.com,节点选择
-- DOMAIN-SUFFIX,deepdiscount.com,节点选择
-- DOMAIN-SUFFIX,depositphotos.com,节点选择
-- DOMAIN-SUFFIX,deviantart.com,节点选择
-- DOMAIN-SUFFIX,disconnect.me,节点选择
-- DOMAIN-SUFFIX,discordapp.com,节点选择
-- DOMAIN-SUFFIX,discordapp.net,节点选择
-- DOMAIN-SUFFIX,disqus.com,节点选择
-- DOMAIN-SUFFIX,dlercloud.com,节点选择
-- DOMAIN-SUFFIX,dmhy.org,节点选择
-- DOMAIN-SUFFIX,dns2go.com,节点选择
-- DOMAIN-SUFFIX,dowjones.com,节点选择
-- DOMAIN-SUFFIX,dropbox.com,节点选择
-- DOMAIN-SUFFIX,dropboxapi.com,节点选择
-- DOMAIN-SUFFIX,dropboxusercontent.com,节点选择
-- DOMAIN-SUFFIX,duckduckgo.com,节点选择
-- DOMAIN-SUFFIX,duyaoss.com,节点选择
-- DOMAIN-SUFFIX,dw.com,节点选择
-- DOMAIN-SUFFIX,dynu.com,节点选择
-- DOMAIN-SUFFIX,earthcam.com,节点选择
-- DOMAIN-SUFFIX,ebookservice.tw,节点选择
-- DOMAIN-SUFFIX,economist.com,节点选择
-- DOMAIN-SUFFIX,edgecastcdn.net,节点选择
-- DOMAIN-SUFFIX,edx-cdn.org,节点选择
-- DOMAIN-SUFFIX,elpais.com,节点选择
-- DOMAIN-SUFFIX,enanyang.my,节点选择
-- DOMAIN-SUFFIX,encyclopedia.com,节点选择
-- DOMAIN-SUFFIX,esoir.be,节点选择
-- DOMAIN-SUFFIX,etherscan.io,节点选择
-- DOMAIN-SUFFIX,euronews.com,节点选择
-- DOMAIN-SUFFIX,evozi.com,节点选择
-- DOMAIN-SUFFIX,exblog.jp,节点选择
-- DOMAIN-SUFFIX,feeder.co,节点选择
-- DOMAIN-SUFFIX,feedly.com,节点选择
-- DOMAIN-SUFFIX,feedx.net,节点选择
-- DOMAIN-SUFFIX,firech.at,节点选择
-- DOMAIN-SUFFIX,flickr.com,节点选择
-- DOMAIN-SUFFIX,flipboard.com,节点选择
-- DOMAIN-SUFFIX,flitto.com,节点选择
-- DOMAIN-SUFFIX,foreignpolicy.com,节点选择
-- DOMAIN-SUFFIX,fortawesome.com,节点选择
-- DOMAIN-SUFFIX,freetls.fastly.net,节点选择
-- DOMAIN-SUFFIX,friday.tw,节点选择
-- DOMAIN-SUFFIX,ft.com,节点选择
-- DOMAIN-SUFFIX,ftchinese.com,节点选择
-- DOMAIN-SUFFIX,ftimg.net,节点选择
-- DOMAIN-SUFFIX,gate.io,节点选择
-- DOMAIN-SUFFIX,genius.com,节点选择
-- DOMAIN-SUFFIX,getlantern.org,节点选择
-- DOMAIN-SUFFIX,getsync.com,节点选择
-- DOMAIN-SUFFIX,github.com,节点选择
-- DOMAIN-SUFFIX,github.io,节点选择
-- DOMAIN-SUFFIX,githubusercontent.com,节点选择
-- DOMAIN-SUFFIX,globalvoices.org,节点选择
-- DOMAIN-SUFFIX,goo.ne.jp,节点选择
-- DOMAIN-SUFFIX,goodreads.com,节点选择
-- DOMAIN-SUFFIX,gov.tw,节点选择
-- DOMAIN-SUFFIX,greatfire.org,节点选择
-- DOMAIN-SUFFIX,gumroad.com,节点选择
-- DOMAIN-SUFFIX,hbg.com,节点选择
-- DOMAIN-SUFFIX,heroku.com,节点选择
-- DOMAIN-SUFFIX,hightail.com,节点选择
-- DOMAIN-SUFFIX,hk01.com,节点选择
-- DOMAIN-SUFFIX,hkbf.org,节点选择
-- DOMAIN-SUFFIX,hkbookcity.com,节点选择
-- DOMAIN-SUFFIX,hkej.com,节点选择
-- DOMAIN-SUFFIX,hket.com,节点选择
-- DOMAIN-SUFFIX,hootsuite.com,节点选择
-- DOMAIN-SUFFIX,hudson.org,节点选择
-- DOMAIN-SUFFIX,huffpost.com,节点选择
-- DOMAIN-SUFFIX,hyread.com.tw,节点选择
-- DOMAIN-SUFFIX,ibtimes.com,节点选择
-- DOMAIN-SUFFIX,i-cable.com,节点选择
-- DOMAIN-SUFFIX,icij.org,节点选择
-- DOMAIN-SUFFIX,icoco.com,节点选择
-- DOMAIN-SUFFIX,imgur.com,节点选择
-- DOMAIN-SUFFIX,independent.co.uk,节点选择
-- DOMAIN-SUFFIX,initiummall.com,节点选择
-- DOMAIN-SUFFIX,inoreader.com,节点选择
-- DOMAIN-SUFFIX,insecam.org,节点选择
-- DOMAIN-SUFFIX,ipfs.io,节点选择
-- DOMAIN-SUFFIX,issuu.com,节点选择
-- DOMAIN-SUFFIX,istockphoto.com,节点选择
-- DOMAIN-SUFFIX,japantimes.co.jp,节点选择
-- DOMAIN-SUFFIX,jiji.com,节点选择
-- DOMAIN-SUFFIX,jinx.com,节点选择
-- DOMAIN-SUFFIX,jkforum.net,节点选择
-- DOMAIN-SUFFIX,joinmastodon.org,节点选择
-- DOMAIN-SUFFIX,justmysocks.net,节点选择
-- DOMAIN-SUFFIX,justpaste.it,节点选择
-- DOMAIN-SUFFIX,kadokawa.co.jp,节点选择
-- DOMAIN-SUFFIX,kakao.com,节点选择
-- DOMAIN-SUFFIX,kakaocorp.com,节点选择
-- DOMAIN-SUFFIX,kik.com,节点选择
-- DOMAIN-SUFFIX,kingkong.com.tw,节点选择
-- DOMAIN-SUFFIX,knowyourmeme.com,节点选择
-- DOMAIN-SUFFIX,kobo.com,节点选择
-- DOMAIN-SUFFIX,kobobooks.com,节点选择
-- DOMAIN-SUFFIX,kodingen.com,节点选择
-- DOMAIN-SUFFIX,lemonde.fr,节点选择
-- DOMAIN-SUFFIX,lepoint.fr,节点选择
-- DOMAIN-SUFFIX,lihkg.com,节点选择
-- DOMAIN-SUFFIX,linkedin.com,节点选择
-- DOMAIN-SUFFIX,limbopro.xyz,节点选择
-- DOMAIN-SUFFIX,listennotes.com,节点选择
-- DOMAIN-SUFFIX,livestream.com,节点选择
-- DOMAIN-SUFFIX,logimg.jp,节点选择
-- DOMAIN-SUFFIX,logmein.com,节点选择
-- DOMAIN-SUFFIX,mail.ru,节点选择
-- DOMAIN-SUFFIX,mailchimp.com,节点选择
-- DOMAIN-SUFFIX,marc.info,节点选择
-- DOMAIN-SUFFIX,matters.news,节点选择
-- DOMAIN-SUFFIX,maying.co,节点选择
-- DOMAIN-SUFFIX,medium.com,节点选择
-- DOMAIN-SUFFIX,mega.nz,节点选择
-- DOMAIN-SUFFIX,mergersandinquisitions.com,节点选择
-- DOMAIN-SUFFIX,mingpao.com,节点选择
-- DOMAIN-SUFFIX,mixi.jp,节点选择
-- DOMAIN-SUFFIX,mobile01.com,节点选择
-- DOMAIN-SUFFIX,mubi.com,节点选择
-- DOMAIN-SUFFIX,myspace.com,节点选择
-- DOMAIN-SUFFIX,myspacecdn.com,节点选择
-- DOMAIN-SUFFIX,nanyang.com,节点选择
-- DOMAIN-SUFFIX,nationalinterest.org,节点选择
-- DOMAIN-SUFFIX,naver.com,节点选择
-- DOMAIN-SUFFIX,nbcnews.com,节点选择
-- DOMAIN-SUFFIX,ndr.de,节点选择
-- DOMAIN-SUFFIX,neowin.net,节点选择
-- DOMAIN-SUFFIX,newstapa.org,节点选择
-- DOMAIN-SUFFIX,nexitally.com,节点选择
-- DOMAIN-SUFFIX,nhk.or.jp,节点选择
-- DOMAIN-SUFFIX,nii.ac.jp,节点选择
-- DOMAIN-SUFFIX,nikkei.com,节点选择
-- DOMAIN-SUFFIX,nitter.net,节点选择
-- DOMAIN-SUFFIX,nofile.io,节点选择
-- DOMAIN-SUFFIX,notion.so,节点选择
-- DOMAIN-SUFFIX,now.com,节点选择
-- DOMAIN-SUFFIX,nrk.no,节点选择
-- DOMAIN-SUFFIX,nuget.org,节点选择
-- DOMAIN-SUFFIX,nyaa.si,节点选择
-- DOMAIN-SUFFIX,nyt.com,节点选择
-- DOMAIN-SUFFIX,nytchina.com,节点选择
-- DOMAIN-SUFFIX,nytcn.me,节点选择
-- DOMAIN-SUFFIX,nytco.com,节点选择
-- DOMAIN-SUFFIX,nytimes.com,节点选择
-- DOMAIN-SUFFIX,nytimg.com,节点选择
-- DOMAIN-SUFFIX,nytlog.com,节点选择
-- DOMAIN-SUFFIX,nytstyle.com,节点选择
-- DOMAIN-SUFFIX,ok.ru,节点选择
-- DOMAIN-SUFFIX,okex.com,节点选择
-- DOMAIN-SUFFIX,on.cc,节点选择
-- DOMAIN-SUFFIX,orientaldaily.com.my,节点选择
-- DOMAIN-SUFFIX,overcast.fm,节点选择
-- DOMAIN-SUFFIX,paltalk.com,节点选择
-- DOMAIN-SUFFIX,parsevideo.com,节点选择
-- DOMAIN-SUFFIX,pawoo.net,节点选择
-- DOMAIN-SUFFIX,pbxes.com,节点选择
-- DOMAIN-SUFFIX,pcdvd.com.tw,节点选择
-- DOMAIN-SUFFIX,pchome.com.tw,节点选择
-- DOMAIN-SUFFIX,pcloud.com,节点选择
-- DOMAIN-SUFFIX,peing.net,节点选择
-- DOMAIN-SUFFIX,picacomic.com,节点选择
-- DOMAIN-SUFFIX,pinimg.com,节点选择
-- DOMAIN-SUFFIX,pixiv.net,节点选择
-- DOMAIN-SUFFIX,player.fm,节点选择
-- DOMAIN-SUFFIX,plurk.com,节点选择
-- DOMAIN-SUFFIX,po18.tw,节点选择
-- DOMAIN-SUFFIX,potato.im,节点选择
-- DOMAIN-SUFFIX,potatso.com,节点选择
-- DOMAIN-SUFFIX,prism-break.org,节点选择
-- DOMAIN-SUFFIX,proxifier.com,节点选择
-- DOMAIN-SUFFIX,pt.im,节点选择
-- DOMAIN-SUFFIX,pts.org.tw,节点选择
-- DOMAIN-SUFFIX,pubu.com.tw,节点选择
-- DOMAIN-SUFFIX,pubu.tw,节点选择
-- DOMAIN-SUFFIX,pureapk.com,节点选择
-- DOMAIN-SUFFIX,quora.com,节点选择
-- DOMAIN-SUFFIX,quoracdn.net,节点选择
-- DOMAIN-SUFFIX,qz.com,节点选择
-- DOMAIN-SUFFIX,radio.garden,节点选择
-- DOMAIN-SUFFIX,rakuten.co.jp,节点选择
-- DOMAIN-SUFFIX,rarbgprx.org,节点选择
-- DOMAIN-SUFFIX,reabble.com,节点选择
-- DOMAIN-SUFFIX,readingtimes.com.tw,节点选择
-- DOMAIN-SUFFIX,readmoo.com,节点选择
-- DOMAIN-SUFFIX,redbubble.com,节点选择
-- DOMAIN-SUFFIX,redd.it,节点选择
-- DOMAIN-SUFFIX,reddit.com,节点选择
-- DOMAIN-SUFFIX,redditmedia.com,节点选择
-- DOMAIN-SUFFIX,resilio.com,节点选择
-- DOMAIN-SUFFIX,reuters.com,节点选择
-- DOMAIN-SUFFIX,reutersmedia.net,节点选择
-- DOMAIN-SUFFIX,rfi.fr,节点选择
-- DOMAIN-SUFFIX,rixcloud.com,节点选择
-- DOMAIN-SUFFIX,roadshow.hk,节点选择
-- DOMAIN-SUFFIX,rsshub.app,节点选择
-- DOMAIN-SUFFIX,scmp.com,节点选择
-- DOMAIN-SUFFIX,scribd.com,节点选择
-- DOMAIN-SUFFIX,seatguru.com,节点选择
-- DOMAIN-SUFFIX,shadowsocks.org,节点选择
-- DOMAIN-SUFFIX,shindanmaker.com,节点选择
-- DOMAIN-SUFFIX,shopee.tw,节点选择
-- DOMAIN-SUFFIX,sina.com.hk,节点选择
-- DOMAIN-SUFFIX,slideshare.net,节点选择
-- DOMAIN-SUFFIX,softfamous.com,节点选择
-- DOMAIN-SUFFIX,spiegel.de,节点选择
-- DOMAIN-SUFFIX,ssrcloud.org,节点选择
-- DOMAIN-SUFFIX,startpage.com,节点选择
-- DOMAIN-SUFFIX,steamcommunity.com,节点选择
-- DOMAIN-SUFFIX,steemit.com,节点选择
-- DOMAIN-SUFFIX,steemitwallet.com,节点选择
-- DOMAIN-SUFFIX,straitstimes.com,节点选择
-- DOMAIN-SUFFIX,streamable.com,节点选择
-- DOMAIN-SUFFIX,streema.com,节点选择
-- DOMAIN-SUFFIX,t66y.com,节点选择
-- DOMAIN-SUFFIX,tapatalk.com,节点选择
-- DOMAIN-SUFFIX,teco-hk.org,节点选择
-- DOMAIN-SUFFIX,teco-mo.org,节点选择
-- DOMAIN-SUFFIX,teddysun.com,节点选择
-- DOMAIN-SUFFIX,textnow.me,节点选择
-- DOMAIN-SUFFIX,theguardian.com,节点选择
-- DOMAIN-SUFFIX,theinitium.com,节点选择
-- DOMAIN-SUFFIX,themoviedb.org,节点选择
-- DOMAIN-SUFFIX,thetvdb.com,节点选择
-- DOMAIN-SUFFIX,time.com,节点选择
-- DOMAIN-SUFFIX,tineye.com,节点选择
-- DOMAIN-SUFFIX,tiny.cc,节点选择
-- DOMAIN-SUFFIX,tinyurl.com,节点选择
-- DOMAIN-SUFFIX,torproject.org,节点选择
-- DOMAIN-SUFFIX,tumblr.com,节点选择
-- DOMAIN-SUFFIX,turbobit.net,节点选择
-- DOMAIN-SUFFIX,tutanota.com,节点选择
-- DOMAIN-SUFFIX,tvboxnow.com,节点选择
-- DOMAIN-SUFFIX,udn.com,节点选择
-- DOMAIN-SUFFIX,unseen.is,节点选择
-- DOMAIN-SUFFIX,upmedia.mg,节点选择
-- DOMAIN-SUFFIX,uptodown.com,节点选择
-- DOMAIN-SUFFIX,urbandictionary.com,节点选择
-- DOMAIN-SUFFIX,ustream.tv,节点选择
-- DOMAIN-SUFFIX,uwants.com,节点选择
-- DOMAIN-SUFFIX,v2fly.org,节点选择
-- DOMAIN-SUFFIX,v2ray.com,节点选择
-- DOMAIN-SUFFIX,viber.com,节点选择
-- DOMAIN-SUFFIX,videopress.com,节点选择
-- DOMAIN-SUFFIX,vimeo.com,节点选择
-- DOMAIN-SUFFIX,voachinese.com,节点选择
-- DOMAIN-SUFFIX,voanews.com,节点选择
-- DOMAIN-SUFFIX,voxer.com,节点选择
-- DOMAIN-SUFFIX,vzw.com,节点选择
-- DOMAIN-SUFFIX,w3schools.com,节点选择
-- DOMAIN-SUFFIX,washingtonpost.com,节点选择
-- DOMAIN-SUFFIX,wattpad.com,节点选择
-- DOMAIN-SUFFIX,whoer.net,节点选择
-- DOMAIN-SUFFIX,wikileaks.org,节点选择
-- DOMAIN-SUFFIX,wikimapia.org,节点选择
-- DOMAIN-SUFFIX,wikimedia.org,节点选择
-- DOMAIN-SUFFIX,wikinews.org,节点选择
-- DOMAIN-SUFFIX,wikipedia.org,节点选择
-- DOMAIN-SUFFIX,wikiquote.org,节点选择
-- DOMAIN-SUFFIX,wikiwand.com,节点选择
-- DOMAIN-SUFFIX,winudf.com,节点选择
-- DOMAIN-SUFFIX,wire.com,节点选择
-- DOMAIN-SUFFIX,wn.com,节点选择
-- DOMAIN-SUFFIX,wordpress.com,节点选择
-- DOMAIN-SUFFIX,workflow.is,节点选择
-- DOMAIN-SUFFIX,worldcat.org,节点选择
-- DOMAIN-SUFFIX,wsj.com,节点选择
-- DOMAIN-SUFFIX,wsj.net,节点选择
-- DOMAIN-SUFFIX,xhamster.com,节点选择
-- DOMAIN-SUFFIX,xn--90wwvt03e.com,节点选择
-- DOMAIN-SUFFIX,xn--i2ru8q2qg.com,节点选择
-- DOMAIN-SUFFIX,xnxx.com,节点选择
-- DOMAIN-SUFFIX,xvideos.com,节点选择
-- DOMAIN-SUFFIX,yahoo.com,节点选择
-- DOMAIN-SUFFIX,yandex.ru,节点选择
-- DOMAIN-SUFFIX,ycombinator.com,节点选择
-- DOMAIN-SUFFIX,yesasia.com,节点选择
-- DOMAIN-SUFFIX,yes-news.com,节点选择
-- DOMAIN-SUFFIX,yomiuri.co.jp,节点选择
-- DOMAIN-SUFFIX,you-get.org,节点选择
-- DOMAIN-SUFFIX,zaobao.com,节点选择
-- DOMAIN-SUFFIX,zb.com,节点选择
-- DOMAIN-SUFFIX,zello.com,节点选择
-- DOMAIN-SUFFIX,zeronet.io,节点选择
-- DOMAIN-SUFFIX,zoom.us,节点选择
-- DOMAIN,cc.tvbs.com.tw,节点选择
-- DOMAIN,ocsp.int-x3.letsencrypt.org,节点选择
-- DOMAIN,search.avira.com,节点选择
-- DOMAIN,us.weibo.com,节点选择
-- DOMAIN-KEYWORD,.pinterest.,节点选择
-- DOMAIN-SUFFIX,edu,节点选择
-- DOMAIN-SUFFIX,gov,节点选择
-- DOMAIN-SUFFIX,mil,节点选择
-- DOMAIN-SUFFIX,google,节点选择
-- DOMAIN-SUFFIX,abc.xyz,节点选择
-- DOMAIN-SUFFIX,advertisercommunity.com,节点选择
-- DOMAIN-SUFFIX,ampproject.org,节点选择
-- DOMAIN-SUFFIX,android.com,节点选择
-- DOMAIN-SUFFIX,androidify.com,节点选择
-- DOMAIN-SUFFIX,autodraw.com,节点选择
-- DOMAIN-SUFFIX,capitalg.com,节点选择
-- DOMAIN-SUFFIX,certificate-transparency.org,节点选择
-- DOMAIN-SUFFIX,chrome.com,节点选择
-- DOMAIN-SUFFIX,chromeexperiments.com,节点选择
-- DOMAIN-SUFFIX,chromestatus.com,节点选择
-- DOMAIN-SUFFIX,chromium.org,节点选择
-- DOMAIN-SUFFIX,creativelab5.com,节点选择
-- DOMAIN-SUFFIX,debug.com,节点选择
-- DOMAIN-SUFFIX,deepmind.com,节点选择
-- DOMAIN-SUFFIX,dialogflow.com,节点选择
-- DOMAIN-SUFFIX,firebaseio.com,节点选择
-- DOMAIN-SUFFIX,getmdl.io,节点选择
-- DOMAIN-SUFFIX,ggpht.com,节点选择
-- DOMAIN-SUFFIX,googleapis.cn,节点选择
-- DOMAIN-SUFFIX,gmail.com,节点选择
-- DOMAIN-SUFFIX,gmodules.com,节点选择
-- DOMAIN-SUFFIX,godoc.org,节点选择
-- DOMAIN-SUFFIX,golang.org,节点选择
-- DOMAIN-SUFFIX,gstatic.com,节点选择
-- DOMAIN-SUFFIX,gv.com,节点选择
-- DOMAIN-SUFFIX,gwtproject.org,节点选择
-- DOMAIN-SUFFIX,itasoftware.com,节点选择
-- DOMAIN-SUFFIX,madewithcode.com,节点选择
-- DOMAIN-SUFFIX,material.io,节点选择
-- DOMAIN-SUFFIX,page.link,节点选择
-- DOMAIN-SUFFIX,polymer-project.org,节点选择
-- DOMAIN-SUFFIX,recaptcha.net,节点选择
-- DOMAIN-SUFFIX,shattered.io,节点选择
-- DOMAIN-SUFFIX,synergyse.com,节点选择
-- DOMAIN-SUFFIX,telephony.goog,节点选择
-- DOMAIN-SUFFIX,tensorflow.org,节点选择
-- DOMAIN-SUFFIX,tfhub.dev,节点选择
-- DOMAIN-SUFFIX,tiltbrush.com,节点选择
-- DOMAIN-SUFFIX,waveprotocol.org,节点选择
-- DOMAIN-SUFFIX,waymo.com,节点选择
-- DOMAIN-SUFFIX,webmproject.org,节点选择
-- DOMAIN-SUFFIX,webrtc.org,节点选择
-- DOMAIN-SUFFIX,whatbrowser.org,节点选择
-- DOMAIN-SUFFIX,widevine.com,节点选择
-- DOMAIN-SUFFIX,x.company,节点选择
-- DOMAIN-SUFFIX,youtu.be,节点选择
-- DOMAIN-SUFFIX,yt.be,节点选择
-- DOMAIN-SUFFIX,ytimg.com,节点选择
-- DOMAIN-SUFFIX,t.me,节点选择
-- DOMAIN-SUFFIX,tdesktop.com,节点选择
-- DOMAIN-SUFFIX,telegram.me,节点选择
-- DOMAIN-SUFFIX,telesco.pe,节点选择
-- DOMAIN-KEYWORD,.facebook.,节点选择
-- DOMAIN-SUFFIX,facebookmail.com,节点选择
-- DOMAIN-SUFFIX,noxinfluencer.com,节点选择
-- DOMAIN-SUFFIX,smartmailcloud.com,节点选择
-- DOMAIN-SUFFIX,weebly.com,节点选择
-- DOMAIN-SUFFIX,twitter.jp,节点选择
-- DOMAIN-SUFFIX,appsto.re,节点选择
-- DOMAIN,books.itunes.apple.com,节点选择
-- DOMAIN,apps.apple.com,节点选择
-- DOMAIN,itunes.apple.com,节点选择
-- DOMAIN,api-glb-sea.smoot.apple.com,节点选择
-- DOMAIN-SUFFIX,smoot.apple.com,节点选择
-- DOMAIN,lookup-api.apple.com,节点选择
-- DOMAIN,beta.music.apple.com,节点选择
-- DOMAIN-SUFFIX,bing.com,节点选择
-- DOMAIN-SUFFIX,cccat.io,节点选择
-- DOMAIN-SUFFIX,dubox.com,节点选择
-- DOMAIN-SUFFIX,duboxcdn.com,节点选择
-- DOMAIN-SUFFIX,ifixit.com,节点选择
-- DOMAIN-SUFFIX,mangakakalot.com,节点选择
-- DOMAIN-SUFFIX,shopeemobile.com,节点选择
-- DOMAIN-SUFFIX,cloudcone.com.cn,节点选择
-- DOMAIN-SUFFIX,inkbunny.net,节点选择
-- DOMAIN-SUFFIX,metapix.net,节点选择
-- DOMAIN-SUFFIX,s3.amazonaws.com,节点选择
-- DOMAIN-SUFFIX,zaobao.com.sg,节点选择
-- DOMAIN,international-gfe.download.nvidia.com,节点选择
-- DOMAIN,ocsp.apple.com,节点选择
-- DOMAIN,store-images.s-microsoft.com,节点选择
-- DOMAIN-SUFFIX,qhres.com,DIRECT
-- DOMAIN-SUFFIX,qhimg.com,DIRECT
-- DOMAIN-SUFFIX,alibaba.com,DIRECT
-- DOMAIN-SUFFIX,alibabausercontent.com,DIRECT
-- DOMAIN-SUFFIX,alicdn.com,DIRECT
-- DOMAIN-SUFFIX,alikunlun.com,DIRECT
-- DOMAIN-SUFFIX,alipay.com,DIRECT
-- DOMAIN-SUFFIX,amap.com,DIRECT
-- DOMAIN-SUFFIX,autonavi.com,DIRECT
-- DOMAIN-SUFFIX,dingtalk.com,DIRECT
-- DOMAIN-SUFFIX,mxhichina.com,DIRECT
-- DOMAIN-SUFFIX,soku.com,DIRECT
-- DOMAIN-SUFFIX,taobao.com,DIRECT
-- DOMAIN-SUFFIX,tmall.com,DIRECT
-- DOMAIN-SUFFIX,tmall.hk,DIRECT
-- DOMAIN-SUFFIX,ykimg.com,DIRECT
-- DOMAIN-SUFFIX,youku.com,DIRECT
-- DOMAIN-SUFFIX,xiami.com,DIRECT
-- DOMAIN-SUFFIX,xiami.net,DIRECT
-- DOMAIN-SUFFIX,aaplimg.com,DIRECT
-- DOMAIN-SUFFIX,apple.co,DIRECT
-- DOMAIN-SUFFIX,apple.com,DIRECT
-- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
-- DOMAIN-SUFFIX,appstore.com,DIRECT
-- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
-- DOMAIN-SUFFIX,icloud.com,DIRECT
-- DOMAIN-SUFFIX,icloud-content.com,DIRECT
-- DOMAIN-SUFFIX,me.com,DIRECT
-- DOMAIN-SUFFIX,mzstatic.com,DIRECT
-- DOMAIN-KEYWORD,apple.com.akadns.net,DIRECT
-- DOMAIN-KEYWORD,icloud.com.akadns.net,DIRECT
-- DOMAIN-SUFFIX,baidu.com,DIRECT
-- DOMAIN-SUFFIX,baidubcr.com,DIRECT
-- DOMAIN-SUFFIX,baidupan.com,DIRECT
-- DOMAIN-SUFFIX,baidupcs.com,DIRECT
-- DOMAIN-SUFFIX,bdimg.com,DIRECT
-- DOMAIN-SUFFIX,bdstatic.com,DIRECT
-- DOMAIN-SUFFIX,yunjiasu-cdn.net,DIRECT
-- DOMAIN-SUFFIX,acgvideo.com,DIRECT
-- DOMAIN-SUFFIX,biliapi.com,DIRECT
-- DOMAIN-SUFFIX,biliapi.net,DIRECT
-- DOMAIN-SUFFIX,bilibili.com,DIRECT
-- DOMAIN-SUFFIX,bilibili.tv,DIRECT
-- DOMAIN-SUFFIX,hdslb.com,DIRECT
-- DOMAIN-SUFFIX,feiliao.com,DIRECT
-- DOMAIN-SUFFIX,pstatp.com,DIRECT
-- DOMAIN-SUFFIX,snssdk.com,DIRECT
-- DOMAIN-SUFFIX,iesdouyin.com,DIRECT
-- DOMAIN-SUFFIX,toutiao.com,DIRECT
-- DOMAIN-SUFFIX,cctv.com,DIRECT
-- DOMAIN-SUFFIX,cctvpic.com,DIRECT
-- DOMAIN-SUFFIX,livechina.com,DIRECT
-- DOMAIN-SUFFIX,didialift.com,DIRECT
-- DOMAIN-SUFFIX,didiglobal.com,DIRECT
-- DOMAIN-SUFFIX,udache.com,DIRECT
-- DOMAIN-SUFFIX,21cn.com,DIRECT
-- DOMAIN-SUFFIX,hitv.com,DIRECT
-- DOMAIN-SUFFIX,mgtv.com,DIRECT
-- DOMAIN-SUFFIX,iqiyi.com,DIRECT
-- DOMAIN-SUFFIX,iqiyipic.com,DIRECT
-- DOMAIN-SUFFIX,71.am,DIRECT
-- DOMAIN-SUFFIX,jd.com,DIRECT
-- DOMAIN-SUFFIX,jd.hk,DIRECT
-- DOMAIN-SUFFIX,jdpay.com,DIRECT
-- DOMAIN-SUFFIX,360buyimg.com,DIRECT
-- DOMAIN-SUFFIX,iciba.com,DIRECT
-- DOMAIN-SUFFIX,ksosoft.com,DIRECT
-- DOMAIN-SUFFIX,meitu.com,DIRECT
-- DOMAIN-SUFFIX,meitudata.com,DIRECT
-- DOMAIN-SUFFIX,meitustat.com,DIRECT
-- DOMAIN-SUFFIX,meipai.com,DIRECT
-- DOMAIN-SUFFIX,dianping.com,DIRECT
-- DOMAIN-SUFFIX,dpfile.com,DIRECT
-- DOMAIN-SUFFIX,meituan.com,DIRECT
-- DOMAIN-SUFFIX,meituan.net,DIRECT
-- DOMAIN-SUFFIX,duokan.com,DIRECT
-- DOMAIN-SUFFIX,mi.com,DIRECT
-- DOMAIN-SUFFIX,mi-img.com,DIRECT
-- DOMAIN-SUFFIX,miui.com,DIRECT
-- DOMAIN-SUFFIX,miwifi.com,DIRECT
-- DOMAIN-SUFFIX,xiaomi.com,DIRECT
-- DOMAIN-SUFFIX,xiaomi.net,DIRECT
-- DOMAIN-SUFFIX,hotmail.com,DIRECT
-- DOMAIN-SUFFIX,microsoft.com,DIRECT
-- DOMAIN-SUFFIX,msecnd.net,DIRECT
-- DOMAIN-SUFFIX,office365.com,DIRECT
-- DOMAIN-SUFFIX,outlook.com,DIRECT
-- DOMAIN-SUFFIX,s-microsoft.com,DIRECT
-- DOMAIN-SUFFIX,visualstudio.com,DIRECT
-- DOMAIN-SUFFIX,windows.com,DIRECT
-- DOMAIN-SUFFIX,windowsupdate.com,DIRECT
-- DOMAIN-SUFFIX,163.com,DIRECT
-- DOMAIN-SUFFIX,126.com,DIRECT
-- DOMAIN-SUFFIX,126.net,DIRECT
-- DOMAIN-SUFFIX,127.net,DIRECT
-- DOMAIN-SUFFIX,163yun.com,DIRECT
-- DOMAIN-SUFFIX,lofter.com,DIRECT
-- DOMAIN-SUFFIX,netease.com,DIRECT
-- DOMAIN-SUFFIX,ydstatic.com,DIRECT
-- DOMAIN-SUFFIX,paypal.com,DIRECT
-- DOMAIN-SUFFIX,paypal.me,DIRECT
-- DOMAIN-SUFFIX,paypalobjects.com,DIRECT
-- DOMAIN-SUFFIX,sina.com,DIRECT
-- DOMAIN-SUFFIX,weibo.com,DIRECT
-- DOMAIN-SUFFIX,weibocdn.com,DIRECT
-- DOMAIN-SUFFIX,sohu.com,DIRECT
-- DOMAIN-SUFFIX,sohucs.com,DIRECT
-- DOMAIN-SUFFIX,sohu-inc.com,DIRECT
-- DOMAIN-SUFFIX,v-56.com,DIRECT
-- DOMAIN-SUFFIX,sogo.com,DIRECT
-- DOMAIN-SUFFIX,sogou.com,DIRECT
-- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
-- DOMAIN-SUFFIX,steamcontent.com,DIRECT
-- DOMAIN-SUFFIX,steampowered.com,DIRECT
-- DOMAIN-SUFFIX,steamstatic.com,DIRECT
-- DOMAIN-SUFFIX,gtimg.com,DIRECT
-- DOMAIN-SUFFIX,idqqimg.com,DIRECT
-- DOMAIN-SUFFIX,igamecj.com,DIRECT
-- DOMAIN-SUFFIX,myapp.com,DIRECT
-- DOMAIN-SUFFIX,myqcloud.com,DIRECT
-- DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,qqmail.com,DIRECT
-- DOMAIN-SUFFIX,servicewechat.com,DIRECT
-- DOMAIN-SUFFIX,tencent.com,DIRECT
-- DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
-- DOMAIN-SUFFIX,tenpay.com,DIRECT
-- DOMAIN-SUFFIX,wechat.com,DIRECT
-- DOMAIN,file-igamecj.akamaized.net,DIRECT
-- DOMAIN-SUFFIX,ccgslb.com,DIRECT
-- DOMAIN-SUFFIX,ccgslb.net,DIRECT
-- DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
-- DOMAIN-SUFFIX,meixincdn.com,DIRECT
-- DOMAIN-SUFFIX,ourdvs.com,DIRECT
-- DOMAIN-SUFFIX,staticdn.net,DIRECT
-- DOMAIN-SUFFIX,wangsu.com,DIRECT
-- DOMAIN-SUFFIX,ipip.net,DIRECT
-- DOMAIN-SUFFIX,ip.la,DIRECT
-- DOMAIN-SUFFIX,ip.sb,DIRECT
-- DOMAIN-SUFFIX,ip-cdn.com,DIRECT
-- DOMAIN-SUFFIX,ipv6-test.com,DIRECT
-- DOMAIN-SUFFIX,myip.la,DIRECT
-- DOMAIN-SUFFIX,test-ipv6.com,DIRECT
-- DOMAIN-SUFFIX,whatismyip.com,DIRECT
-- DOMAIN,ip.istatmenus.app,DIRECT
-- DOMAIN,sms.imagetasks.com,DIRECT
-- DOMAIN-SUFFIX,netspeedtestmaster.com,DIRECT
-- DOMAIN,speedtest.macpaw.com,DIRECT
-- DOMAIN-SUFFIX,acg.rip,DIRECT
-- DOMAIN-SUFFIX,animebytes.tv,DIRECT
-- DOMAIN-SUFFIX,awesome-hd.me,DIRECT
-- DOMAIN-SUFFIX,broadcasthe.net,DIRECT
-- DOMAIN-SUFFIX,chdbits.co,DIRECT
-- DOMAIN-SUFFIX,classix-unlimited.co.uk,DIRECT
-- DOMAIN-SUFFIX,comicat.org,DIRECT
-- DOMAIN-SUFFIX,empornium.me,DIRECT
-- DOMAIN-SUFFIX,gazellegames.net,DIRECT
-- DOMAIN-SUFFIX,hdbits.org,DIRECT
-- DOMAIN-SUFFIX,hdchina.org,DIRECT
-- DOMAIN-SUFFIX,hddolby.com,DIRECT
-- DOMAIN-SUFFIX,hdhome.org,DIRECT
-- DOMAIN-SUFFIX,hdsky.me,DIRECT
-- DOMAIN-SUFFIX,icetorrent.org,DIRECT
-- DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
-- DOMAIN-SUFFIX,keepfrds.com,DIRECT
-- DOMAIN-SUFFIX,madsrevolution.net,DIRECT
-- DOMAIN-SUFFIX,morethan.tv,DIRECT
-- DOMAIN-SUFFIX,m-team.cc,DIRECT
-- DOMAIN-SUFFIX,myanonamouse.net,DIRECT
-- DOMAIN-SUFFIX,nanyangpt.com,DIRECT
-- DOMAIN-SUFFIX,ncore.cc,DIRECT
-- DOMAIN-SUFFIX,open.cd,DIRECT
-- DOMAIN-SUFFIX,ourbits.club,DIRECT
-- DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
-- DOMAIN-SUFFIX,privatehd.to,DIRECT
-- DOMAIN-SUFFIX,pterclub.com,DIRECT
-- DOMAIN-SUFFIX,redacted.ch,DIRECT
-- DOMAIN-SUFFIX,springsunday.net,DIRECT
-- DOMAIN-SUFFIX,tjupt.org,DIRECT
-- DOMAIN-SUFFIX,totheglory.im,DIRECT
-- DOMAIN-SUFFIX,cn,DIRECT
-- DOMAIN-SUFFIX,115.com,DIRECT
-- DOMAIN-SUFFIX,360in.com,DIRECT
-- DOMAIN-SUFFIX,51ym.me,DIRECT
-- DOMAIN-SUFFIX,8686c.com,DIRECT
-- DOMAIN-SUFFIX,99.com,DIRECT
-- DOMAIN-SUFFIX,abchina.com,DIRECT
-- DOMAIN-SUFFIX,accuweather.com,DIRECT
-- DOMAIN-SUFFIX,aicoinstorge.com,DIRECT
-- DOMAIN-SUFFIX,air-matters.com,DIRECT
-- DOMAIN-SUFFIX,air-matters.io,DIRECT
-- DOMAIN-SUFFIX,aixifan.com,DIRECT
-- DOMAIN-SUFFIX,amd.com,DIRECT
-- DOMAIN-SUFFIX,b612.net,DIRECT
-- DOMAIN-SUFFIX,bdatu.com,DIRECT
-- DOMAIN-SUFFIX,beitaichufang.com,DIRECT
-- DOMAIN-SUFFIX,booking.com,DIRECT
-- DOMAIN-SUFFIX,bstatic.com,DIRECT
-- DOMAIN-SUFFIX,cailianpress.com,DIRECT
-- DOMAIN-SUFFIX,camera360.com,DIRECT
-- DOMAIN-SUFFIX,chaoxing.com,DIRECT
-- DOMAIN-SUFFIX,chaoxing.com,DIRECT
-- DOMAIN-SUFFIX,chinaso.com,DIRECT
-- DOMAIN-SUFFIX,chuimg.com,DIRECT
-- DOMAIN-SUFFIX,chunyu.mobi,DIRECT
-- DOMAIN-SUFFIX,cmbchina.com,DIRECT
-- DOMAIN-SUFFIX,cmbimg.com,DIRECT
-- DOMAIN-SUFFIX,ctrip.com,DIRECT
-- DOMAIN-SUFFIX,dfcfw.com,DIRECT
-- DOMAIN-SUFFIX,dji.net,DIRECT
-- DOMAIN-SUFFIX,docschina.org,DIRECT
-- DOMAIN-SUFFIX,douban.com,DIRECT
-- DOMAIN-SUFFIX,doubanio.com,DIRECT
-- DOMAIN-SUFFIX,douyu.com,DIRECT
-- DOMAIN-SUFFIX,dxycdn.com,DIRECT
-- DOMAIN-SUFFIX,dytt8.net,DIRECT
-- DOMAIN-SUFFIX,eastmoney.com,DIRECT
-- DOMAIN-SUFFIX,eudic.net,DIRECT
-- DOMAIN-SUFFIX,feng.com,DIRECT
-- DOMAIN-SUFFIX,fengkongcloud.com,DIRECT
-- DOMAIN-SUFFIX,frdic.com,DIRECT
-- DOMAIN-SUFFIX,futu5.com,DIRECT
-- DOMAIN-SUFFIX,futunn.com,DIRECT
-- DOMAIN-SUFFIX,gandi.net,DIRECT
-- DOMAIN-SUFFIX,gcores.com,DIRECT
-- DOMAIN-SUFFIX,geilicdn.com,DIRECT
-- DOMAIN-SUFFIX,getpricetag.com,DIRECT
-- DOMAIN-SUFFIX,gifshow.com,DIRECT
-- DOMAIN-SUFFIX,godic.net,DIRECT
-- DOMAIN-SUFFIX,hicloud.com,DIRECT
-- DOMAIN-SUFFIX,hongxiu.com,DIRECT
-- DOMAIN-SUFFIX,hostbuf.com,DIRECT
-- DOMAIN-SUFFIX,huxiucdn.com,DIRECT
-- DOMAIN-SUFFIX,huya.com,DIRECT
-- DOMAIN-SUFFIX,ibm.com,DIRECT
-- DOMAIN-SUFFIX,infinitynewtab.com,DIRECT
-- DOMAIN-SUFFIX,ithome.com,DIRECT
-- DOMAIN-SUFFIX,java.com,DIRECT
-- DOMAIN-SUFFIX,jianguoyun.com,DIRECT
-- DOMAIN-SUFFIX,jianshu.com,DIRECT
-- DOMAIN-SUFFIX,jianshu.io,DIRECT
-- DOMAIN-SUFFIX,jidian.im,DIRECT
-- DOMAIN-SUFFIX,kaiyanapp.com,DIRECT
-- DOMAIN-SUFFIX,kaspersky-labs.com,DIRECT
-- DOMAIN-SUFFIX,keepcdn.com,DIRECT
-- DOMAIN-SUFFIX,kkmh.com,DIRECT
-- DOMAIN-SUFFIX,lanzous.com,DIRECT
-- DOMAIN-SUFFIX,licdn.com,DIRECT
-- DOMAIN-SUFFIX,luojilab.com,DIRECT
-- DOMAIN-SUFFIX,maoyan.com,DIRECT
-- DOMAIN-SUFFIX,maoyun.tv,DIRECT
-- DOMAIN-SUFFIX,mls-cdn.com,DIRECT
-- DOMAIN-SUFFIX,mobike.com,DIRECT
-- DOMAIN-SUFFIX,moke.com,DIRECT
-- DOMAIN-SUFFIX,mubu.com,DIRECT
-- DOMAIN-SUFFIX,myzaker.com,DIRECT
-- DOMAIN-SUFFIX,nim-lang-cn.org,DIRECT
-- DOMAIN-SUFFIX,nvidia.com,DIRECT
-- DOMAIN-SUFFIX,oracle.com,DIRECT
-- DOMAIN-SUFFIX,originlab.com,DIRECT
-- DOMAIN-SUFFIX,qdaily.com,DIRECT
-- DOMAIN-SUFFIX,qidian.com,DIRECT
-- DOMAIN-SUFFIX,qyer.com,DIRECT
-- DOMAIN-SUFFIX,qyerstatic.com,DIRECT
-- DOMAIN-SUFFIX,raychase.net,DIRECT
-- DOMAIN-SUFFIX,ronghub.com,DIRECT
-- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
-- DOMAIN-SUFFIX,sankuai.com,DIRECT
-- DOMAIN-SUFFIX,scomper.me,DIRECT
-- DOMAIN-SUFFIX,seafile.com,DIRECT
-- DOMAIN-SUFFIX,sm.ms,DIRECT
-- DOMAIN-SUFFIX,smzdm.com,DIRECT
-- DOMAIN-SUFFIX,snapdrop.net,DIRECT
-- DOMAIN-SUFFIX,snwx.com,DIRECT
-- DOMAIN-SUFFIX,s-reader.com,DIRECT
-- DOMAIN-SUFFIX,sspai.com,DIRECT
-- DOMAIN-SUFFIX,subhd.tv,DIRECT
-- DOMAIN-SUFFIX,takungpao.com,DIRECT
-- DOMAIN-SUFFIX,teamviewer.com,DIRECT
-- DOMAIN-SUFFIX,tianyancha.com,DIRECT
-- DOMAIN-SUFFIX,tophub.today,DIRECT
-- DOMAIN-SUFFIX,udacity.com,DIRECT
-- DOMAIN-SUFFIX,uning.com,DIRECT
-- DOMAIN-SUFFIX,weather.com,DIRECT
-- DOMAIN-SUFFIX,weico.cc,DIRECT
-- DOMAIN-SUFFIX,weidian.com,DIRECT
-- DOMAIN-SUFFIX,xiachufang.com,DIRECT
-- DOMAIN-SUFFIX,xiaoka.tv,DIRECT
-- DOMAIN-SUFFIX,ximalaya.com,DIRECT
-- DOMAIN-SUFFIX,xinhuanet.com,DIRECT
-- DOMAIN-SUFFIX,xmcdn.com,DIRECT
-- DOMAIN-SUFFIX,yangkeduo.com,DIRECT
-- DOMAIN-SUFFIX,yizhibo.com,DIRECT
-- DOMAIN-SUFFIX,zhangzishi.cc,DIRECT
-- DOMAIN-SUFFIX,zhihu.com,DIRECT
-- DOMAIN-SUFFIX,zhihuishu.com,DIRECT
-- DOMAIN-SUFFIX,zhimg.com,DIRECT
-- DOMAIN-SUFFIX,zhuihd.com,DIRECT
-- DOMAIN,download.jetbrains.com,DIRECT
-- DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
-- DOMAIN-SUFFIX,local,DIRECT
-- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
-- IP-CIDR6,::1/128,DIRECT,no-resolve
-- IP-CIDR6,fc00::/7,DIRECT,no-resolve
-- IP-CIDR6,fe80::/10,DIRECT,no-resolve
-- IP-CIDR6,fd00::/8,DIRECT,no-resolve
-- GEOIP,CN,DIRECT
-- MATCH,节点选择
+- RULE-SET,myProxy,MYPROXY
+- RULE-SET,myDirect,直连规则
+- RULE-SET,direct,直连规则
+- GEOSITE,category-ads-all,REJECT
+- GEOSITE,cn,直连规则
+- GEOSITE,connectivity-check,直连规则
+- RULE-SET,apple,直连规则
+- RULE-SET,icloud,直连规则
+- GEOSITE,private,直连规则
+- GEOSITE,category-speedtest@cn,直连规则
+- GEOIP,CN,直连规则,no-resolve
+- GEOSITE,twitter,TWITTER
+- GEOSITE,youtube,YOUTUBE
+- GEOSITE,github,GITHUB
+- GEOSITE,telegram,TELEGRAM
+- GEOSITE,category-ai-!cn,AI
+- GEOSITE,category-games-!cn,GAME
+- GEOSITE,category-forums,FORUMS
+- GEOSITE,category-entertainment,ENTERTAINMENT
+- GEOSITE,gfw,GFW
+- GEOSITE,geolocation-!cn,GEOLOCATON-!CN
+- GEOSITE,tld-!cn,TLD-!CN
+- GEOIP,telegram,TELEGRAM,no-resolve
+- GEOIP,twitter,TWITTER,no-resolve
+- RULE-SET,proxy,PROXY
+- MATCH,漏网之鱼
+sniffer:
+  enable: false
+  force-dns-mapping: true
+  force-domain:
+  - +.v2ex.com
+  override-destination: false
+  parse-pure-ip: true
+  skip-domain:
+  - Mijia Cloud
+  sniff:
+    HTTP:
+      override-destination: true
+      ports:
+      - 80
+      - 8080-8880
+    QUIC:
+      ports:
+      - 443
+      - 8443
+    TLS:
+      ports:
+      - 443
+      - 8443
+tcp-concurrent: true
+tun:
+  auto-detect-interface: true
+  auto-redirect: true
+  auto-route: true
+  device: Mihomo
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  enable: true
+  mtu: 1500
+  stack: mixed
+  strict-route: true
+unified-delay: false
