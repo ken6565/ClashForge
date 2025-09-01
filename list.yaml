@@ -1,0 +1,1032 @@
+allow-lan: false
+dns:
+  cache-algorithm: arc
+  default-nameserver: &id001
+  - 114.114.114.114
+  - 119.29.29.29
+  - 211.136.17.107
+  - 211.136.20.203
+  - 211.137.58.20
+  - 211.137.64.163
+  - 223.5.5.5
+  direct-nameserver: *id001
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - geosite:gfw,tld-!cn,geolocation-!cn
+  - rule-set:proxy,myProxy
+  fake-ip-filter-mode: whitelist
+  fallback: &id002
+  - https://1.1.1.1/dns-query#DNS
+  - https://8.8.8.8/dns-query#DNS
+  - https://9.9.9.9/dns-query#DNS
+  - https://185.222.222.222/dns-query#DNS
+  - https://208.67.222.222/dns-query#DNS
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+  ipv6: true
+  listen: 0.0.0.0:53
+  nameserver: *id001
+  nameserver-policy:
+    geosite:cn,connectivity-check,private: *id001
+    geosite:gfw,tld-!cn,geolocation-!cn: *id002
+    rule-set:direct,myDirect,apple,icloud: *id001
+    rule-set:proxy,myProxy: *id002
+  prefer-h3: false
+  proxy-server-nameserver: *id001
+  respect-rules: true
+  use-hosts: false
+  use-system-hosts: false
+external-controller-cors:
+  allow-origins:
+  - '*'
+  allow-private-network: true
+geo-auto-update: true
+geo-update-interval: 12
+geodata-loader: standard
+geodata-mode: true
+geox-url:
+  asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+  geoip: https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+  geosite: https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+ipv6: true
+log-level: error
+mixed-port: 7890
+mode: rule
+myDirectDNS: *id001
+myProxyDNS: *id002
+profile:
+  store-fake-ip: true
+  store-selected: true
+proxies:
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-1
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 47.129.100.149
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-2
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 47.129.217.4
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: fWydUhyG3woKe4a0kcKKKdx78
+  client-fingerprint: chrome
+  name: 新加坡-1
+  password: fWydUhyG3woKe4a0kcKKKdx78
+  port: '6467'
+  server: 8.219.232.60
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 美国-3
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 204.93.210.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+  name: 美国-5
+  password: L60nS04NhsoMpN2DDGbnMqLP8DY
+  port: 11243
+  server: 47.76.83.25
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 加拿大-1
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 205.233.181.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-9
+  network: ws
+  password: f282b878-8711-45a1-8c69-5564172123c1
+  port: 443
+  server: 104.21.72.109
+  skip-cert-verify: true
+  sni: vpn.stupidworld.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: vpn.stupidworld.web.id
+    path: /Stupid-World/103.106.228.126-2053
+- alterId: 0
+  name: 美国-10
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 209.46.30.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-11
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.177.56.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-12
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.34.228.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-13
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.34.230.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-14
+  password: L60nS04NhsoMpN2DDGbnMqLP8DY
+  port: '11243'
+  server: 47.76.83.25
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 美国-15
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 216.205.52.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-16
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.149.135.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-17
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.71.189.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-18
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.202.211.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 日本-1
+  password: yD0mxkCA18WgPD1uVGd3Eu1dc
+  port: '27789'
+  server: 47.245.0.72
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 新加坡-2
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.18.184.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-19
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 190.93.245.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-20
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.68.156.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-21
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.71.232.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-22
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.12.144.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-23
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.71.233.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-24
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.0.54.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-25
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.34.229.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-26
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.200.160.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-27
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.169.223.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-28
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.12.145.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-29
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.169.221.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-30
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.71.190.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-31
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.0.63.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-32
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 216.24.57.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-33
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.169.222.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-35
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.169.220.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-36
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.181.197.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alpn:
+  - http/1.1
+  alterId: 0
+  name: 美国-37
+  network: ws
+  password: bce0c7cb-08d1-46a7-b77b-7bff8b46252f
+  port: 443
+  server: 104.21.91.180
+  skip-cert-verify: false
+  sni: XXXXxxXxXc.666461.xyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: XXXXxxXxXc.666461.xyZ
+    path: /x9F83IcyjcEyBXZBROjL3Q5vTymr
+- alterId: 0
+  name: 美国-38
+  password: dongtaiwang.com
+  port: '5355'
+  server: 51.159.111.32
+  skip-cert-verify: true
+  sni: www.bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 美国-40
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.71.188.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 新加坡-3
+  password: lPK6OZ9ouqyXrCghO6ohUbbN5g
+  port: 33131
+  server: 8.222.183.55
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 新加坡-4
+  password: fWydUhyG3woKe4a0kcKKKdx78
+  port: 6467
+  server: 8.219.232.60
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 日本-2
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 美国-45
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 190.93.244.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-46
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.62.62.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-48
+  obfs: salamander
+  obfs-password: Telegram-->@Ln2Ray
+  password: Telegram-->@Ln2Ray
+  port: '45000'
+  server: gavazn.lnmarketplace.net
+  skip-cert-verify: true
+  sni: gavazn.55994421.xyz
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 美国-51
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: '35200'
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-53
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 35000
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-54
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: '36300'
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: true
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-56
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 35200
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-58
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 36600
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+proxy-groups:
+- name: 直连规则
+  proxies:
+  - DIRECT
+  - 全球互联
+  type: select
+- name: 漏网之鱼
+  proxies:
+  - DIRECT
+  - 全球互联
+  type: select
+- name: 全球互联
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: 私有节点
+  proxies:
+  - 私有节点-延迟最低
+  - 私有节点-故障转移
+  - 私有节点-负载均衡
+  - 私有节点-手动选择
+  - DIRECT
+  type: select
+- name: 共享节点
+  proxies:
+  - 共享节点-延迟最低
+  - 共享节点-故障转移
+  - 共享节点-负载均衡
+  - 共享节点-手动选择
+  - DIRECT
+  type: select
+- name: MYPROXY
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: TWITTER
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: YOUTUBE
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: GITHUB
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: TELEGRAM
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: AI
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: GAME
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: FORUMS
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: ENTERTAINMENT
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: GFW
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: GEOLOCATON-!CN
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: TLD-!CN
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: PROXY
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- name: DNS
+  proxies:
+  - 共享节点
+  - 私有节点
+  - DIRECT
+  type: select
+- interval: 360
+  name: 私有节点-延迟最低
+  type: url-test
+  url: https://www.youtube.com/generate_204
+  use: &id003
+  - 我的机场
+- interval: 360
+  name: 私有节点-故障转移
+  type: fallback
+  url: https://www.youtube.com/generate_204
+  use: *id003
+- interval: 360
+  name: 私有节点-负载均衡
+  type: load-balance
+  url: https://www.youtube.com/generate_204
+  use: *id003
+- name: 私有节点-手动选择
+  type: select
+  use: *id003
+- interval: 360
+  name: 共享节点-延迟最低
+  proxies: &id004
+  - 美国-1
+  - 美国-2
+  - 新加坡-1
+  - 美国-3
+  - 美国-5
+  - 加拿大-1
+  - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 美国-14
+  - 美国-15
+  - 美国-16
+  - 美国-17
+  - 美国-18
+  - 日本-1
+  - 新加坡-2
+  - 美国-19
+  - 美国-20
+  - 美国-21
+  - 美国-22
+  - 美国-23
+  - 美国-24
+  - 美国-25
+  - 美国-26
+  - 美国-27
+  - 美国-28
+  - 美国-29
+  - 美国-30
+  - 美国-31
+  - 美国-32
+  - 美国-33
+  - 美国-35
+  - 美国-36
+  - 美国-37
+  - 美国-38
+  - 美国-40
+  - 新加坡-3
+  - 新加坡-4
+  - 日本-2
+  - 美国-45
+  - 美国-46
+  - 美国-48
+  - 美国-52
+  - 美国-53
+  - 美国-54
+  - 美国-56
+  - 美国-58
+  type: url-test
+  url: https://www.youtube.com/generate_204
+- interval: 360
+  name: 共享节点-故障转移
+  proxies: *id004
+  type: fallback
+  url: https://www.youtube.com/generate_204
+- interval: 360
+  name: 共享节点-负载均衡
+  proxies: *id004
+  type: load-balance
+  url: https://www.youtube.com/generate_204
+- name: 共享节点-手动选择
+  proxies: *id004
+  type: select
+proxy-providers:
+  我的机场:
+    health-check:
+      enable: true
+      expected-status: 204
+      interval: 14400
+      lazy: true
+      timeout: 5000
+      url: https://www.youtube.com/generate_204
+    interval: 86400
+    override:
+      udp: true
+    path: ./myOwn.yaml
+    type: file
+rule-providers:
+  apple:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/apple.txt
+    type: http
+    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt
+  direct:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/direct.txt
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+  icloud:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/icloud.txt
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+  myDirect:
+    behavior: domain
+    interval: 3600
+    path: ./ruleset/myDirect.txt
+    type: file
+  myProxy:
+    behavior: domain
+    interval: 3600
+    path: ./ruleset/myProxy.txt
+    type: file
+  proxy:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/proxy.txt
+    type: http
+    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
+rules:
+- RULE-SET,myProxy,MYPROXY
+- RULE-SET,myDirect,直连规则
+- RULE-SET,direct,直连规则
+- GEOSITE,category-ads-all,REJECT
+- GEOSITE,cn,直连规则
+- GEOSITE,connectivity-check,直连规则
+- RULE-SET,apple,直连规则
+- RULE-SET,icloud,直连规则
+- GEOSITE,private,直连规则
+- GEOSITE,category-speedtest@cn,直连规则
+- GEOIP,CN,直连规则,no-resolve
+- GEOSITE,twitter,TWITTER
+- GEOSITE,youtube,YOUTUBE
+- GEOSITE,github,GITHUB
+- GEOSITE,telegram,TELEGRAM
+- GEOSITE,category-ai-!cn,AI
+- GEOSITE,category-games-!cn,GAME
+- GEOSITE,category-forums,FORUMS
+- GEOSITE,category-entertainment,ENTERTAINMENT
+- GEOSITE,gfw,GFW
+- GEOSITE,geolocation-!cn,GEOLOCATON-!CN
+- GEOSITE,tld-!cn,TLD-!CN
+- GEOIP,telegram,TELEGRAM,no-resolve
+- GEOIP,twitter,TWITTER,no-resolve
+- RULE-SET,proxy,PROXY
+- GEOIP,CN,直连规则
+- MATCH,漏网之鱼
+sniffer:
+  enable: false
+  force-dns-mapping: true
+  force-domain:
+  - +.v2ex.com
+  override-destination: false
+  parse-pure-ip: true
+  skip-domain:
+  - Mijia Cloud
+  sniff:
+    HTTP:
+      override-destination: true
+      ports:
+      - 80
+      - 8080-8880
+    QUIC:
+      ports:
+      - 443
+      - 8443
+    TLS:
+      ports:
+      - 443
+      - 8443
+tcp-concurrent: true
+tun:
+  auto-detect-interface: true
+  auto-redirect: true
+  auto-route: true
+  device: Mihomo
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  enable: true
+  mtu: 1500
+  stack: mixed
+  strict-route: true
+unified-delay: false
