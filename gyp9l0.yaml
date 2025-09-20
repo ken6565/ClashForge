@@ -136,6 +136,8 @@ proxies:
     headers:
       Host: baipiao.cmliussss.abrdns.com
     path: /snippets/ip=tw.tp81.netlib.re:81?ed=2560
+- {name: 日本2, server: 137.220.142.139, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 8808e9f11454, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: jp5v1.lingjfjkm002.com, path: /nvcnjrmkggoy, tls: true, mux: false, skip-cert-verify: false}}
+- {name: 日本3, server: 153.121.45.139, port: 327, client-fingerprint: chrome, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -158,6 +160,8 @@ proxy-groups:
   - us|9a6a
   - xx|9d54
   - no|f7de
+  - 日本2
+  - 日本3
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
