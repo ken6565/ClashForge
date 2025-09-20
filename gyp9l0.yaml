@@ -32,9 +32,22 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: xx|352f
+  password: dongtaiwang.com
+  port: 34997
+  reduce-rtt: true
+  server: 2001:bc8:32d7:302::16
+  skip-cert-verify: true
+  sni: bing.com
+  type: tuic
+  udp-relay-mode: native
+  uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
 - alterId: 0
   cipher: auto
-  name: hk|53b6|puddincat07@Telegram
+  name: hk|53b6
   network: http
   port: 32026
   server: 103.224.80.45
@@ -45,14 +58,14 @@ proxies:
   udp: true
   uuid: 1193769d-bea4-4f0e-bab7-70640e1a0b2e
 - cipher: aes-256-cfb
-  name: no|f7de|puddincat07@Telegram
+  name: no|f7de
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.213.23.226
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: xx|9d54|puddincat07@Telegram
+  name: xx|9d54
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
@@ -61,7 +74,7 @@ proxies:
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: xx|9fdc|puddincat07@Telegram
+  name: xx|9fdc
   port: 443
   reality-opts:
     public-key: oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ
@@ -74,19 +87,19 @@ proxies:
   udp: true
   uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
 - cipher: aes-256-cfb
-  name: us|9a6a|puddincat07@Telegram
+  name: us|9a6a
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
 - cipher: aes-256-cfb
-  name: kr|013c|puddincat07@Telegram
+  name: kr|013c
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
 - client-fingerprint: randomized
-  name: nl|713a|puddincat07@Telegram
+  name: nl|713a
   network: ws
   port: 443
   server: 104.248.193.151
@@ -102,14 +115,14 @@ proxies:
     path: /Free-VPN-CF-Geo-Project/NL10
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: xx|c054|puddincat07@Telegram
+  name: xx|c054
   password: Nk9asglDzHzjktVzTkvhaA
   port: 443
   server: arxfw2b78fi2q9hzylhn.freesocks.work
   skip-cert-verify: true
   tls: true
   type: ss
-- name: xx|bed9|puddincat07@Telegram
+- name: xx|bed9
   network: ws
   port: 443
   server: xn--ktff-jt6hr36l.tencentapp.cn
@@ -135,15 +148,16 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
-  - xx|9fdc|puddincat07@Telegram
-  - xx|c054|puddincat07@Telegram
-  - xx|bed9|puddincat07@Telegram
-  - kr|013c|puddincat07@Telegram
-  - nl|713a|puddincat07@Telegram
-  - hk|53b6|puddincat07@Telegram
-  - us|9a6a|puddincat07@Telegram
-  - xx|9d54|puddincat07@Telegram
-  - no|f7de|puddincat07@Telegram
+  - xx|352f
+  - xx|9fdc
+  - xx|c054
+  - xx|bed9
+  - kr|013c
+  - nl|713a
+  - hk|53b6
+  - us|9a6a
+  - xx|9d54
+  - no|f7de
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
