@@ -52,7 +52,7 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: http
-  username:mrwdfNTD8M79LCukCieldrqZWqs=
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: xx|9d54
@@ -87,7 +87,6 @@ proxy-groups:
   - Ruk1ng001_3313861
   - xx|c054
   - xx|9d54
-  - no|f7de
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
