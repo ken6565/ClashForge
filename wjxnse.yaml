@@ -52,7 +52,7 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: http
-  username:mrwdfNTD8M79LCukCieldrqZWqs=
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: chacha20-ietf-poly1305
   name: Ruk1ng001_31616265386233
   password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
@@ -836,6 +836,7 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
   - xx|352f
+  - Ruk1ng001_3313861
   - Ruk1ng001_6235366531373061
   - Ruk1ng001_3635363737393161
   - Ruk1ng001_6365663038333836
@@ -915,6 +916,7 @@ proxy-groups:
   type: select
   proxies:
   - xx|352f
+  - Ruk1ng001_3313861
   - Ruk1ng001_6235366531373061
   - Ruk1ng001_3635363737393161
   - Ruk1ng001_6365663038333836
