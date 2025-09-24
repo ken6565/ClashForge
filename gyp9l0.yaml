@@ -45,24 +45,14 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-- alterId: 0
-  cipher: auto
-  name: hk|53b6
-  network: http
-  port: 32026
-  server: 103.224.80.45
+- name: Ruk1ng001_3313861
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1193769d-bea4-4f0e-bab7-70640e1a0b2e
-- cipher: aes-256-cfb
-  name: no|f7de
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.213.23.226
-  type: ss
+  tls: true
+  type: http
+  username:mrwdfNTD8M79LCukCieldrqZWqs=
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: xx|9d54
@@ -72,47 +62,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: xx|9fdc
-  port: 443
-  reality-opts:
-    public-key: oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ
-    short-id: 2a22
-  server: poland20.clearorbitllc.com
-  servername: poland20.clearorbitllc.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
-- cipher: aes-256-cfb
-  name: us|9a6a
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- cipher: aes-256-cfb
-  name: kr|013c
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- client-fingerprint: randomized
-  name: nl|713a
-  network: ws
-  port: 443
-  server: 104.248.193.151
-  servername: joss.krikkrik.tech
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00fcbecb-d832-40a0-b2b1-76bb56df166b
-  ws-opts:
-    headers:
-      Host: joss.krikkrik.tech
-    path: /Free-VPN-CF-Geo-Project/NL10
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: xx|c054
@@ -122,22 +71,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- name: xx|bed9
-  network: ws
-  port: 443
-  server: xn--ktff-jt6hr36l.tencentapp.cn
-  servername: baipiao.cmliussss.abrdns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 11f76d4f-7477-4187-bce7-b010022944c3
-  ws-opts:
-    headers:
-      Host: baipiao.cmliussss.abrdns.com
-    path: /snippets/ip=tw.tp81.netlib.re:81?ed=2560
-- {name: 日本2, server: 137.220.142.139, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 8808e9f11454, tfo: false, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: jp5v1.lingjfjkm002.com, path: /nvcnjrmkggoy, tls: true, mux: false, skip-cert-verify: false}}
-- {name: 日本3, server: 153.121.45.139, port: 327, client-fingerprint: chrome, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -151,17 +84,10 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - xx|9fdc
+  - Ruk1ng001_3313861
   - xx|c054
-  - xx|bed9
-  - kr|013c
-  - nl|713a
-  - hk|53b6
-  - us|9a6a
   - xx|9d54
   - no|f7de
-  - 日本2
-  - 日本3
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
