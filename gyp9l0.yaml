@@ -92,8 +92,8 @@ proxies:
   uuid: 101e6a7d-7d10-4859-a626-8a76daab4547
   ws-opts:
     headers:
-        Host: nkAnG2rEpLACE.airlineSHoma.Com
-        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+      Host: nkAnG2rEpLACE.airlineSHoma.Com
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
     path: /?ed=2560
 proxy-groups:
 - name: 节点选择
