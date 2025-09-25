@@ -71,6 +71,30 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
+- name: Hong Kong IEPL01
+  type: ss
+  server: sbida.4waf46.cn
+  port: 26613
+  cipher: 2022-blake3-aes-128-gcm
+  password: MjdlZmY4YWIyZDU0OGNkNw==:ZGJmMTIyN2EtYTQzMS00Zg==
+  udp: true
+- client-fingerprint: randomized
+  name: Ruk1ng001_3623534
+  network: ws
+  port: 443
+  server: openai.com
+  servername: nkAnG2rEpLACE.airlineSHoma.Com
+  skip-cert-verify: true
+  tfo: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 101e6a7d-7d10-4859-a626-8a76daab4547
+  ws-opts:
+    headers:
+        Host: nkAnG2rEpLACE.airlineSHoma.Com
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+    path: /?ed=2560
 proxy-groups:
 - name: 节点选择
   type: select
@@ -84,7 +108,9 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
+  - Hong Kong IEPL01
   - Ruk1ng001_3313861
+  - Ruk1ng001_3623534
   - xx|c054
   - xx|9d54
   url: http://www.pinterest.com
