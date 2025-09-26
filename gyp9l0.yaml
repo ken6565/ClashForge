@@ -71,17 +71,14 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- name: stymei14
-  type: http
-  server: testkr3.ssv.vc
-  port: 30446
-  cipher: aes-256-cfb
-  password: test.+
-  udp: true
-  skip-cert-verify: true
-  tfo: false
+- name: xx|72d1
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
   tls: true
-  username: test
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - name: stymei15
   type: vless
   server: 192.9.162.122
@@ -113,7 +110,7 @@ proxy-groups:
   proxies: &id001
   - xx|352f
   - Ruk1ng001_3313861
-  - stymei14
+  - xx|72d1
   - stymei15
   - xx|c054
   - xx|9d54
