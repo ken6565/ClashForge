@@ -87,6 +87,19 @@ proxies:
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - {name: 美国-17, server: p141.panda001.net, port: 4652, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, tfo: false}
+- name: tuic5                          
+  server: rn.totowy.dpdns.org                      
+  port: 48651                                    
+  type: tuic
+  uuid: 61e468f8-9ce5-4423-a525-a05ce7fcc495       
+  password: 61e468f8-9ce5-4423-a525-a05ce7fcc495   
+  alpn: [h3]
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+  sni: rn.totowy.dpdns.org                                
+  skip-cert-verify: false
 proxy-groups:
 - name: 节点选择
   type: select
@@ -100,6 +113,7 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
+  - tuic5
   - Ruk1ng001_3313861
   - xx|72d1
   - 美国-17
