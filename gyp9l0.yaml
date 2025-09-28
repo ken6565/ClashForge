@@ -79,23 +79,7 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: stymei15
-  type: vless
-  server: 192.9.162.122
-  port: 1443
-  uuid: 7a169e43-ff85-4572-9843-ba7207d07319
-  alterId: 0
-  cipher: auto
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: null
-  servername: swdist.apple.com
-  reality-opts:
-    public-key: ZIBYUH_qQSeI1T6xImXG6MEZXP2yZW3NqGa8W69Cfyk
-    short-id: dde50f55d81116
-  client-fingerprint: ios
-  sni: swdist.apple.com
+- {name: 美国-17, server: p141.panda001.net, port: 4652, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, tfo: false}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -111,7 +95,7 @@ proxy-groups:
   - xx|352f
   - Ruk1ng001_3313861
   - xx|72d1
-  - stymei15
+  - 美国-17
   - xx|c054
   - xx|9d54
   url: http://www.pinterest.com
