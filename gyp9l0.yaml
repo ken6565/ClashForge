@@ -62,22 +62,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 2
-  cipher: auto
-  name: HK_1|5.1MB/s
-  network: ws
-  port: 80
-  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
-    path: /
-  xudp: true
 - name: xx|72d1
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
@@ -87,19 +71,6 @@ proxies:
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - {name: 美国-17, server: p141.panda001.net, port: 4652, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, tfo: false}
-- name: vpnshield
-  port: 80
-  server: 162.159.250.246
-  type: vless
-  network: ws
-  udp: true
-  skip-cert-verify: true
-  ws-opts:
-    path: /
-    headers:
-      host: vpnshield5554.vpnvpnfree5.workers.dev
-  uuid: 63583ca2-b618-4bd8-96a1-08febe3a6730
-  client-fingerprint: chrome
 proxy-groups:
 - name: 节点选择
   type: select
@@ -113,11 +84,9 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - vpnshield
   - Ruk1ng001_3313861
   - xx|72d1
   - 美国-17
-  - HK_1|5.1MB/s
   - xx|9d54
   url: http://www.pinterest.com
   interval: 300
