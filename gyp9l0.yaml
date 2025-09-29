@@ -87,27 +87,19 @@ proxies:
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - {name: 美国-17, server: p141.panda001.net, port: 4652, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, tfo: false}
-- name: tuic-V4
-  server: www.bing.com
-  port: 34998
-  type: tuic
-  token: a806923b-737c-4581-8b13-56666f911866
-  alpn: [ h3 ]
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: tuic-V5
-  server: www.bing.com
-  port: 34999
-  type: tuic
-  uuid: a806923b-737c-4581-8b13-56666f911866
-  password: a806923b-737c-4581-8b13-56666f911866
-  alpn: [ h3 ]
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+- name: vpnshield
+  port: 80
+  server: 162.159.250.246
+  type: vless
+  network: ws
+  udp: true
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      host: vpnshield5554.vpnvpnfree5.workers.dev
+  uuid: 63583ca2-b618-4bd8-96a1-08febe3a6730
+  client-fingerprint: chrome
 proxy-groups:
 - name: 节点选择
   type: select
@@ -121,8 +113,7 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - tuic-V4
-  - tuic-V5
+  - vpnshield
   - Ruk1ng001_3313861
   - xx|72d1
   - 美国-17
