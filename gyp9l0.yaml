@@ -62,94 +62,17 @@ proxies:
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - {name: 美国-17, server: p141.panda001.net, port: 4652, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, tfo: false}
-- name: 香港专线
-  server: 203.10.98.187
-  port: 20000
-  ports: 20000-55000
-  mport: 20000-55000
-  udp: true
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  password: 4bc7104a-2c65-4fde-ad17-67f7ecdefee1
-  auth: ""
-  fast-open: false
-  servername: www.bing.com
-- name: 解锁Netflix
-  server: 203.10.98.187
-  port: 20000
-  ports: 20000-55000
-  mport: 20000-55000
-  udp: true
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  password: 4bc7104a-2c65-4fde-ad17-67f7ecdefee1
-  auth: ""
-  fast-open: false
-  servername: www.bing.com
-- name: 解锁Disney
-  server: 203.10.98.187
-  port: 20000
-  ports: 20000-55000
-  mport: 20000-55000
-  udp: true
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  password: 4bc7104a-2c65-4fde-ad17-67f7ecdefee1
-  auth: ""
-  fast-open: false
-  servername: www.bing.com
-- name: 解锁HBO
-  server: 85.159.92.97
-  port: 20000
-  ports: 20000-55000
-  mport: 20000-55000
-  udp: true
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  password: 4bc7104a-2c65-4fde-ad17-67f7ecdefee1
-  auth: ""
-  fast-open: false
-  servername: www.bing.com
-- name: 解锁TikTok
-  type: vless
-  server: 204.10.194.78
-  port: 443
-  uuid: 4bc7104a-2c65-4fde-ad17-67f7ecdefee1
-  udp: true
-  tls: true
-  skip-cert-verify: null
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  servername: yfnl1.xn--4gq62f52gppi29k.com
-  alterId: 0
-  cipher: ""
-  reality-opts:
-    public-key: ""
-    short-id: ""
-  sni: yfnl1.xn--4gq62f52gppi29k.com
-- name: 解锁ChatGPT
-  type: vless
-  server: 63.141.128.173
-  port: 443
-  uuid: 4bc7104a-2c65-4fde-ad17-67f7ecdefee1
-  udp: true
-  tls: true
-  skip-cert-verify: null
-  flow: ''
-  client-fingerprint: ios
-  servername: nl1n.yfjc.sbs
-  network: ws
-  ws-opts:
-    path: /yfjc/knl1
-    headers:
-      Host: nl1n1.yfjc.sbs
-  alterId: 0
-  cipher: ""
-  sni: nl1n.yfjc.sbs
+- {name: DE022|999KB/s, server: de1.bot-hosting.net, port: 21474, type: tuic, password: X7IYBBns34Sz, uuid: 3e28cabc-7970-41a7-a848-40bad883f9b3, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: DE023|1MB/s, server: de1.bot-hosting.net, port: 21474, type: tuic, password: qiGauJOnrueK, uuid: 2d93b131-f077-4f5c-b7ec-2bc778bd0fdb, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: DE026|1MB/s, server: de3.bot-hosting.net, port: 20434, type: tuic, password: zpup8K6H0C7b, uuid: 15b98f96-2a3a-43a3-a4da-de643a343af1, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: DE028|1MB/s, server: de3.bot-hosting.net, port: 20434, type: tuic, password: DabPJO1qTQg2, uuid: ebfaa5f8-0eea-49dc-b9af-06d961430ad5, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: FI031|2MB/s, server: fi5.bot-hosting.net, port: 20800, type: tuic, password: IJYZCFTZjT7l, uuid: 20abb51c-dd55-4211-b926-ce1b3d7a3eaa, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: FI035|2MB/s, server: fi5.bot-hosting.net, port: 20800, type: tuic, password: fM2Ns1Hi7UiN, uuid: 95ccbe8c-ca30-4758-ae2e-317adeeb3143, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: FI037|2MB/s, server: fi11.bot-hosting.net, port: 20175, type: tuic, password: 2TjNKGD2NX0Q, uuid: 149e5f74-1a3a-4d71-97b4-6f3ca9f5d259, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: FI045|1MB/s, server: fi1.bot-hosting.net, port: 5097, type: tuic, password: YbMJmDUPvTPe, uuid: ea20a88d-c99a-4761-92a6-3ce64ca9326a, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: FI047|2MB/s, server: fi11.bot-hosting.net, port: 20175, type: tuic, password: ydpGT0jctyk6, uuid: 9eeace7c-ae06-4f21-8356-be8fe870cb5a, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: FI066|1MB/s, server: fi1.bot-hosting.net, port: 5097, type: tuic, password: G2rjh9btHX1F, uuid: 68b3ec0d-5cab-4f76-9f30-90a251ef7825, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
+- {name: GB145|2MB/s, server: 193.176.28.106, port: 25661, type: tuic, password: GKB6bK5qGFTy, uuid: 2b5ce7be-36b1-4ce1-b428-7d174507312c, sni: example.com, skip-cert-verify: true, disable-sni: false, reduce-rtt: false, request-timeout: 0, congestion-controller: bbr}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -166,12 +89,17 @@ proxy-groups:
   - Ruk1ng001_3313861
   - xx|72d1
   - 美国-17
-  - 香港专线
-  - 解锁Netflix
-  - 解锁Disney
-  - 解锁HBO
-  - 解锁TikTok
-  - 解锁ChatGPT
+  - DE022|999KB/s
+  - DE023|1MB/s
+  - DE026|1MB/s
+  - DE028|1MB/s
+  - FI031|2MB/s
+  - FI035|2MB/s
+  - FI037|2MB/s
+  - FI045|1MB/s
+  - FI047|2MB/s
+  - FI066|1MB/s
+  - GB145|2MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
