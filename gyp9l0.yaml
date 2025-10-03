@@ -62,6 +62,9 @@ proxies:
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - {name: 美国-17, server: p141.panda001.net, port: 4652, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, tfo: false}
+- {name: 美国-01, server: 8.889288.xyz, port: 443, client-fingerprint: randomized, type: vless, uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06, tls: true, tfo: false, skip-cert-verify: false, servername: snippets.jhb.edu.kg, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: snippets.jhb.edu.kg}}}
+- {name: 美国-02, server: 142.171.147.201, port: 20274, client-fingerprint: randomized, type: vless, uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06, tls: true, tfo: false, skip-cert-verify: false, servername: snippets.jhb.edu.kg, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: snippets.jhb.edu.kg}}}
+- {name: 美国-03, server: cf-cname.xingpingcn.top, port: 443, client-fingerprint: chrome, type: vless, uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51, tls: true, tfo: false, skip-cert-verify: false, servername: legend-us.lzjnb.shop, network: ws, ws-opts: {path: /t.me/lzjjjjjjjjjjj, headers: {Host: legend-us.lzjnb.shop}}}
 - {name: DE003|15MB/s, server: www.fbi.gov, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
 - {name: DE005|15MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
 - {name: AU009|12MB/s, server: www.npmjs.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
@@ -83,6 +86,9 @@ proxy-groups:
   - xx|352f
   - Ruk1ng001_3313861
   - xx|72d1
+  - 美国-01
+  - 美国-02
+  - 美国-03
   - 美国-17
   - DE003|15MB/s
   - DE005|15MB/s
