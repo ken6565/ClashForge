@@ -61,11 +61,20 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
+- {name: 美国-17, server: p141.panda001.net, port: 4652, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, tfo: false}
 - {name: DE003|15MB/s, server: www.fbi.gov, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
 - {name: DE005|15MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
 - {name: AU009|12MB/s, server: www.npmjs.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
 - {name: DE010|14MB/s, server: www.shopify.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
 - {name: NL014|15MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
+- {name: HK088|42KB/s, server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, servername: 🇭🇰HK-119.237.27.142-5154 | 0.153MB, network: ws, ws-opts: {path: /, headers: {Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com}}}
+- {name: HK347|61KB/s, server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
+- {name: HK282|357KB/s, server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com}}}
+- {name: US320|1MB/s, server: mg1.jjzcloud.top, port: 57238, type: hysteria2, password: b671e3e8-a271-4a36-b746-573d7c00e72c, auth: b671e3e8-a271-4a36-b746-573d7c00e72c, sni: mg1.jjzcloud.top, skip-cert-verify: true, udp: true}
+- {name: JP440|82KB/s, server: 139.162.83.77, port: 74, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
+- {name: DE022|4MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
+- {name: AU024|2MB/s, server: www.npmjs.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
+- {name: DE026|4MB/s, server: www.fbi.gov, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -87,6 +96,14 @@ proxy-groups:
   - AU009|12MB/s
   - DE010|14MB/s
   - NL014|15MB/s
+  - HK088|42KB/s
+  - HK347|61KB/s
+  - HK282|357KB/s
+  - US320|1MB/s
+  - JP440|82KB/s
+  - DE022|4MB/s
+  - AU024|2MB/s
+  - DE026|4MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
