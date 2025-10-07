@@ -61,15 +61,15 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- {name: DE003|15MB/s, server: www.fbi.gov, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
-- {name: JP440|82KB/s, server: 139.162.83.77, port: 74, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
+- {name: NL001|9MB/s, server: freeyx.cloudflare88.eu.org, port: 443, type: vless, uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06, tls: true, servername: 01.91md.fun, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 01.91md.fun}}}
+- {name: NL093|9MB/s, server: cf.zhetengsha.eu.org, port: 443, type: vless, uuid: f64bdc57-0f54-4705-bf75-cfd646d98c06, tls: true, servername: 01.91md.fun, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 01.91md.fun}}}
 - {name: DE001|25MB/s, server: www.shopify.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
-- {name: NL004|28MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: snippets.pusytroller.cf}}}
+- {name: JP440|82KB/s, server: 139.162.83.77, port: 74, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
 - {name: JP163|11MB/s, server: 139.162.83.82, port: 74, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
 - {name: JP183|3MB/s, server: 111.119.200.18, port: 48914, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
 - {name: JP185|11MB/s, server: 47.79.37.251, port: 13391, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
 - {name: JP189|2MB/s, server: 8.219.88.178, port: 51898, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
-- {name: US552|80KB/s, server: 104.26.12.31, port: 2096, type: vless, uuid: 6877b96c-a092-4f90-8e46-cbb4cad2bb9f, tls: true, servername: vless-10.webn.cc, client-fingerprint: chrome, network: ws, ws-opts: {path: "/snippets?ip=proxyip:port(443)&nat64=6to4", headers: {Host: vless-10.webn.cc}}, udp: true}
+- {name: US146|2MB/s, server: 111.119.200.18, port: 48914, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.luyuju.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.luyuju.dpdns.org}}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -86,14 +86,14 @@ proxy-groups:
   - Ruk1ng001_3313861
   - xx|72d1
   - DE001|25MB/s
-  - DE003|15MB/s
-  - NL004|28MB/s
+  - NL001|9MB/s
+  - NL093|9MB/s
   - JP440|82KB/s
   - JP163|11MB/s
   - JP183|3MB/s
   - JP185|11MB/s
   - JP189|2MB/s
-  - US552|80KB/s
+  - US146|2MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
