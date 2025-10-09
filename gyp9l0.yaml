@@ -69,6 +69,9 @@ proxies:
 - {name: JP183|3MB/s, server: 111.119.200.18, port: 48914, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
 - {name: JP185|11MB/s, server: 47.79.37.251, port: 13391, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
 - {name: JP189|2MB/s, server: 8.219.88.178, port: 51898, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
+- {name: JP193|3MB/s, server: 111.119.200.18, port: 48914, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
+- {name: JP224|2MB/s, server: 8.219.88.178, port: 51898, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.luyuju.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.luyuju.dpdns.org}}}
+- {name: JP267|5MB/s, server: 8.219.88.178, port: 51898, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
 - {name: US146|2MB/s, server: 111.119.200.18, port: 48914, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.luyuju.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.luyuju.dpdns.org}}}
 proxy-groups:
 - name: 节点选择
@@ -93,6 +96,9 @@ proxy-groups:
   - JP183|3MB/s
   - JP185|11MB/s
   - JP189|2MB/s
+  - JP193|3MB/s
+  - JP224|2MB/s
+  - JP267|5MB/s
   - US146|2MB/s
   url: http://www.pinterest.com
   interval: 300
