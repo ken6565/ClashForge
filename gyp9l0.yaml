@@ -69,8 +69,13 @@ proxies:
 - {name: JP267|5MB/s, server: 8.219.88.178, port: 51898, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
 - {name: JP123|5MB/s, server: 8.219.88.178, port: 51898, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.luyuju.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.luyuju.dpdns.org}}}
 - {name: SG353|17MB/s, server: 5.44.249.42, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (TG @WangCai2)26af988:57468}}
-- {name: NL004|2MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
 - {name: NL025|4MB/s, server: www.shopify.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
+proxies:
+- {name: NL001|27MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
+- {name: NL002|26MB/s, server: www.shopify.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
+- {name: NL003|19MB/s, server: www.shopify.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
+- {name: NL004|24MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
+- {name: NL043|17MB/s, server: www.fbi.gov, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -86,7 +91,11 @@ proxy-groups:
   - xx|352f
   - Ruk1ng001_3313861
   - xx|72d1
-  - NL004|2MB/s
+  - NL001|27MB/s
+  - NL002|26MB/s
+  - NL003|19MB/s
+  - NL004|24MB/s
+  - NL043|17MB/s
   - NL025|4MB/s
   - JP123|5MB/s
   - JP440|82KB/s
