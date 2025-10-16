@@ -75,6 +75,9 @@ proxies:
 - {name: NL003|19MB/s, server: www.shopify.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
 - {name: NL004|24MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
 - {name: NL043|17MB/s, server: www.fbi.gov, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
+- {name: US011|26MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}, udp: true}
+- {name: US019|28MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
+- {name: US023|30MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}, udp: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -103,6 +106,9 @@ proxy-groups:
   - JP189|2MB/s
   - JP224|2MB/s
   - JP267|5MB/s
+  - US011|26MB/s
+  - US019|28MB/s
+  - US023|30MB/s
   - SG353|17MB/s
   url: http://www.pinterest.com
   interval: 300
