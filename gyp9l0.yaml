@@ -78,6 +78,7 @@ proxies:
 - {name: US011|26MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}, udp: true}
 - {name: US019|28MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
 - {name: US023|30MB/s, server: openai.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}, udp: true}
+- {name: SG035|18MB/s, server: 5.44.249.42, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (TG @WangCai2)4fa101a:48723}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -109,6 +110,7 @@ proxy-groups:
   - US011|26MB/s
   - US019|28MB/s
   - US023|30MB/s
+  - SG035|18MB/s
   - SG353|17MB/s
   url: http://www.pinterest.com
   interval: 300
