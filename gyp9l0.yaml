@@ -47,13 +47,12 @@ proxies:
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
 - {name: JP440|82KB/s, server: 139.162.83.77, port: 74, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
 - {name: JP163|11MB/s, server: 139.162.83.82, port: 74, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
-- {name: JP185|11MB/s, server: 47.79.37.251, port: 13391, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: zybs.worker.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: zybs.worker.ddns-ip.net}}}
-- {name: NL003|19MB/s, server: www.shopify.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: freedom.pusytroller.cf}}}
 - {name: US015|8MB/s, server: 104.19.50.238, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram🇨🇳@wangcai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-- {name: US017|11MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fangbinxingnmsl.pusytroller.cf}}}
 - {name: US019|22MB/s, server: www.shopify.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fangbinxingnmsl.pusytroller.cf}}}
-- {name: US020|11MB/s, server: www.fbi.gov, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fangbinxingnmsl.pusytroller.cf}}}
+- {name: US022|12MB/s, server: 36.50.90.241, port: 47790, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram @freecodes /?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
 - {name: US023|10MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "x@节点狂魔/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
+- {name: US033|11MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "telegram @freecodes /?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
+- {name: HK001|11MB/s, server: 36.150.215.138, port: 4451, type: trojan, password: BxceQaOe, skip-cert-verify: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -70,12 +69,12 @@ proxy-groups:
   - NL003|19MB/s
   - JP440|82KB/s
   - JP163|11MB/s
-  - JP185|11MB/s
   - US015|8MB/s
-  - US017|11MB/s
   - US019|22MB/s
-  - US020|11MB/s
+  - US022|12MB/s
   - US023|10MB/s
+  - US033|11MB/s
+  - HK001|11MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
