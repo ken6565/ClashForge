@@ -53,6 +53,7 @@ proxies:
 - {name: US023|10MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "x@节点狂魔/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
 - {name: US033|11MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "telegram @freecodes /?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
 - {name: HK001|11MB/s, server: 36.150.215.138, port: 4451, type: trojan, password: BxceQaOe, skip-cert-verify: true}
+- {name: SG047|32MB/s, server: 36.156.102.115, port: 44095, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -75,6 +76,7 @@ proxy-groups:
   - US023|10MB/s
   - US033|11MB/s
   - HK001|11MB/s
+  - SG047|32MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
