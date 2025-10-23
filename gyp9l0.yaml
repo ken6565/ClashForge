@@ -49,21 +49,13 @@ proxies:
 - {name: US022|12MB/s, server: 36.50.90.241, port: 47790, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram @freecodes /?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
 - {name: US023|10MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "x@节点狂魔/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
 - {name: US033|11MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "telegram @freecodes /?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
-- {name: HK001|11MB/s, server: 36.150.215.138, port: 4451, type: trojan, password: BxceQaOe, skip-cert-verify: true}
 - {name: KR_1|2.3MB/s, server: 175.211.35.161, port: 50003, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, tfo: false, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /X@节点狂魔/, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-- {name: KR_4|2.3MB/s, server: 14.35.29.177, port: 15211, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, tfo: false, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /Telegram🇨🇳@WangCai2/, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
 - {name: KR_5|2.2MB/s, server: 121.165.101.69, port: 19413, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, tfo: false, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /Telegram@freecodes/, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-- {name: SG_1|2.9MB/s, server: cnamefuckxxs.yuchen.icu, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3155, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: SG_2|3.0MB/s, server: 104.18.35.38, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3155, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: HK_2|2.4MB/s, server: 36.150.215.138, port: 4451, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
 - {name: NL_1|2.4MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: NL_2|2.0MB/s, server: xn--b6gac.eu.org, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3155, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: NL_3|2.5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: NL_4|3.2MB/s, server: cf.877771.xyz, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3155, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: HK_4|2.3MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, tfo: false, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /X@freecodes/, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
 - {name: FR_1|2.3MB/s, server: 62.210.127.217, port: 35511, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: US_3|2.4MB/s, server: freeyx.cloudflare88.eu.org, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3155, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: US_4|2.6MB/s, server: 104.17.110.207, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3155, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
+- {name: US001|1MB/s, server: 104.19.50.238, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram🇨🇳@wangcai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -77,25 +69,17 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - NL003|19MB/s
+  - US001|1MB/s
   - US015|8MB/s
   - US022|12MB/s
   - US023|10MB/s
   - US033|11MB/s
-  - HK001|11MB/s
   - KR_1|2.3MB/s
-  - KR_4|2.3MB/s
   - KR_5|2.2MB/s
-  - SG_1|2.9MB/s
-  - SG_2|3.0MB/s
   - NL_1|2.4MB/s
-  - NL_2|2.0MB/s
   - NL_3|2.5MB/s
-  - NL_4|3.2MB/s
   - HK_4|2.3MB/s
   - FR_1|2.3MB/s
-  - US_3|2.4MB/s
-  - US_4|2.6MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
