@@ -5,30 +5,10 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - alpn:
-  - h3
-  congestion-controller: bbr
-  name: xx|352f
-  password: dongtaiwang.com
-  port: 34997
-  reduce-rtt: true
-  server: 2001:bc8:32d7:302::16
-  skip-cert-verify: true
-  sni: bing.com
-  type: tuic
-  udp-relay-mode: native
-  uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-  - {name: US015|8MB/s, server: 104.19.50.238, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram🇨🇳@wangcai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: US022|12MB/s, server: 36.50.90.241, port: 47790, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram @freecodes /?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
-  - {name: US023|10MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "x@节点狂魔/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
-  - {name: US033|11MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "telegram @freecodes /?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}}
-  - {name: KR_1|2.3MB/s, server: 175.211.35.161, port: 50003, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, tfo: false, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /X@节点狂魔/, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: KR_5|2.2MB/s, server: 121.165.101.69, port: 19413, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, tfo: false, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /Telegram@freecodes/, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: NL_1|2.4MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: NL_3|2.5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: HK_4|2.3MB/s, server: 36.50.90.241, port: 35951, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, tfo: false, skip-cert-verify: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: /X@freecodes/, headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
-  - {name: FR_1|2.3MB/s, server: 62.210.127.217, port: 35511, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-  - {name: US001|1MB/s, server: 104.19.50.238, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram🇨🇳@wangcai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: US001|11MB/s, server: 104.19.50.238, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram🇨🇳@wangcai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
+  - {name: NL050|5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
+  - {name: NL053|6MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+  - {name: NL077|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -44,18 +24,10 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - xx|352f
-      - US001|1MB/s
-      - US015|8MB/s
-      - US022|12MB/s
-      - US023|10MB/s
-      - US033|11MB/s
-      - KR_1|2.3MB/s
-      - KR_5|2.2MB/s
-      - NL_1|2.4MB/s
-      - NL_3|2.5MB/s
-      - HK_4|2.3MB/s
-      - FR_1|2.3MB/s
+      - US001|11MB/s
+      - NL050|5MB/s
+      - NL053|6MB/s
+      - NL077|5MB/s
   - name: 📲 电报消息
     type: select
     proxies:
@@ -246,7 +218,7 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - HK_4|2.3MB/s
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: select
     proxies:
@@ -254,11 +226,7 @@ proxy-groups:
   - name: 🇺🇲 美国节点
     type: select
     proxies:
-      - US001|1MB/s
-      - US015|8MB/s
-      - US022|12MB/s
-      - US023|10MB/s
-      - US033|11MB/s
+      - US001|11MB/s
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
@@ -270,8 +238,7 @@ proxy-groups:
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
-      - KR_1|2.3MB/s
-      - KR_5|2.2MB/s
+      - DIRECT
   - name: 🎥 奈飞节点
     type: select
     proxies:
