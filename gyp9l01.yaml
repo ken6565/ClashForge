@@ -9,6 +9,9 @@ proxies:
   - {name: NL050|5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
   - {name: NL053|6MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
   - {name: NL077|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
+  - {name: JP036|9MB/s, server: 43.165.191.25, port: 43083, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.saghv.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.saghv.filegear-sg.me}}}
+  - {name: JP037|7MB/s, server: 211.195.83.140, port: 13227, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.saghv.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.saghv.filegear-sg.me}}}
+  - {name: JP038|7MB/s, server: 211.38.201.172, port: 13302, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.saghv.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.saghv.filegear-sg.me}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -26,8 +29,9 @@ proxy-groups:
     proxies:
       - US001|11MB/s
       - NL050|5MB/s
-      - NL053|6MB/s
-      - NL077|5MB/s
+      - JP036|9MB/s
+      - JP037|7MB/s
+      - JP038|7MB/s
   - name: 📲 电报消息
     type: select
     proxies:
@@ -222,7 +226,9 @@ proxy-groups:
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - DIRECT
+      - JP036|9MB/s
+      - JP037|7MB/s
+      - JP038|7MB/s
   - name: 🇺🇲 美国节点
     type: select
     proxies:
