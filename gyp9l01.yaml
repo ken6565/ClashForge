@@ -12,8 +12,8 @@ proxies:
   - {name: JP036|9MB/s, server: 43.165.191.25, port: 43083, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.saghv.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.saghv.filegear-sg.me}}}
   - {name: JP037|7MB/s, server: 211.195.83.140, port: 13227, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.saghv.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.saghv.filegear-sg.me}}}
   - {name: JP038|7MB/s, server: 211.38.201.172, port: 13302, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.saghv.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.saghv.filegear-sg.me}}}
-- {name: 宿舍HK_1|1.2MB/s, server: cn.eans.top, port: 7009, type: hysteria2, password: 30585750-f3e8-4de8-af72-3a9d642cbb02, auth: 30585750-f3e8-4de8-af72-3a9d642cbb02, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
-- {name: 宿舍JP_1|2.4MB/s, server: 37.202.200.11, port: 12412, type: trojan, password: 898e1dca-14b2-4371-abc8-1b9f839bff6d, sni: wjp04.weyaf9sdoh2h.space, skip-cert-verify: true, udp: true}
+  - {name: 宿舍HK_1|1.2MB/s, server: cn.eans.top, port: 7009, type: hysteria2, password: 30585750-f3e8-4de8-af72-3a9d642cbb02, auth: 30585750-f3e8-4de8-af72-3a9d642cbb02, sni: h.eans.top, up: 50, down: 50, skip-cert-verify: true, udp: true}
+  - {name: 宿舍JP_1|2.4MB/s, server: 37.202.200.11, port: 12412, type: trojan, password: 898e1dca-14b2-4371-abc8-1b9f839bff6d, sni: wjp04.weyaf9sdoh2h.space, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
