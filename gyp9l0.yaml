@@ -68,12 +68,6 @@ proxies:
 - {name: Jsnzkpg09, server: 113.46.227.82, port: 9999, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
 - {name: Jsnzkpg11, server: 113.46.227.82, port: 9909, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
 - {name: Jsnzkpg12, server: 113.46.227.82, port: 9910, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
-- {name: Jsnzkpg13, server: 113.46.227.82, port: 9915, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
-- {name: Jsnzkpg14, server: 18.171.186.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-- {name: Jsnzkpg15, server: 3.99.179.0, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-- {name: Jsnzkpg16, server: 35.183.43.124, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-- {name: Jsnzkpg17, server: 51.20.89.221, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-proxy-groups:
 - name: 节点选择
   type: select
   proxies:
