@@ -66,7 +66,6 @@ proxies:
 - {name: JP005|17MB/s, server: 36.150.215.241, port: 1924, type: trojan, password: BxceQaOe, skip-cert-verify: true}
 - {name: Jsnzkpg08, server: 113.46.227.69, port: 9999, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
 - {name: Jsnzkpg09, server: 113.46.227.82, port: 9999, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
-- {name: Jsnzkpg10, server: 113.46.227.82, port: 9908, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
 - {name: Jsnzkpg11, server: 113.46.227.82, port: 9909, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
 - {name: Jsnzkpg12, server: 113.46.227.82, port: 9910, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
 - {name: Jsnzkpg13, server: 113.46.227.82, port: 9915, type: ss, cipher: chacha20-ietf-poly1305, password: 075bcce812668cf7, udp: true}
@@ -107,14 +106,8 @@ proxy-groups:
   - JP038|7MB/s
   - Jsnzkpg08
   - Jsnzkpg09
-  - Jsnzkpg10
   - Jsnzkpg11
   - Jsnzkpg12
-  - Jsnzkpg13
-  - Jsnzkpg14
-  - Jsnzkpg15
-  - Jsnzkpg16
-  - Jsnzkpg17
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
