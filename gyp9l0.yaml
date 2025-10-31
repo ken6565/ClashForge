@@ -45,18 +45,19 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-- {name: US015|8MB/s, server: 104.19.50.238, port: 2096, type: vless, uuid: f61a4285-7264-4d07-9408-7b9ba1922c26, tls: true, servername: gaosir.unfeeling.sbs, network: ws, ws-opts: {path: "/telegram🇨🇳@wangcai2/?ed=2560", headers: {Host: gaosir.unfeeling.sbs}}, udp: true}
 - {name: NL_1|2.4MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
 - {name: NL_3|2.5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
 - {name: NL050|5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: NL021|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
 - {name: NL035|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: NL045|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: JP036|9MB/s, server: 43.165.191.25, port: 43083, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.saghv.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.saghv.filegear-sg.me}}}
-- {name: JP037|7MB/s, server: 211.195.83.140, port: 13227, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.saghv.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.saghv.filegear-sg.me}}}
-- {name: JP038|7MB/s, server: 211.38.201.172, port: 13302, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: mot.saghv.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: /@Marisa_kristi, headers: {Host: mot.saghv.filegear-sg.me}}}
-- {name: NL001|6MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: US043|10MB/s, server: cdnjs.com, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.fangbinxingnmsl.workers.dev}}}
+- {name: Ruk1ng001, server: e744481a-t4whs0-t6blpv-1ldl3.hk1.hyhuawei.com, port: 443, type: hysteria2, password: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, auth: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng002, server: f8669d2a-t46kg0-tct1rd-1o0ch.hk2.hyhuawei.com, port: 443, type: hysteria2, password: d49e545e-0daf-11ee-a91f-f23c913c8d2b, auth: d49e545e-0daf-11ee-a91f-f23c913c8d2b, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng003, server: 6af7ab31-t46kg0-t83wtx-2rrb.hk2.hyhuawei.com, port: 443, type: hysteria2, password: ba64cdc5-c79a-326d-8e63-6903be8183a1, auth: ba64cdc5-c79a-326d-8e63-6903be8183a1, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng004, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng005, server: 58.152.53.3, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng006, server: dd79b209-t46kg0-t5wrvh-1rdqg.hk1.hyhuawei.com, port: 443, type: hysteria2, password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b, auth: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng007, server: 36.150.215.236, port: 487, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -70,17 +71,19 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - US015|8MB/s
   - NL_3|2.5MB/s
   - NL021|5MB/s
   - NL035|5MB/s
   - NL045|5MB/s
   - NL050|5MB/s
-  - JP036|9MB/s
-  - JP037|7MB/s
-  - JP038|7MB/s
   - NL001|6MB/s
-  - US043|10MB/s
+  - Ruk1ng001
+  - Ruk1ng002
+  - Ruk1ng003
+  - Ruk1ng004
+  - Ruk1ng005
+  - Ruk1ng006
+  - Ruk1ng007
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
