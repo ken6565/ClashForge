@@ -108,7 +108,6 @@ proxies:
 - {name: HK011|4MB/s, server: 45.207.195.134, port: 2321, type: vless, uuid: 196c9d53-d245-42e8-a96f-77c93d1d79c6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: VD-hhf8ttoaDti7kkDvKtedIBG-7z3emWvhcS9uOUww, short-id: "6fe4f66207bd30c3" }, servername: www.nazhumi.com, client-fingerprint: chrome, network: tcp}
 - {name: HK017|20MB/s, server: 36.151.192.242, port: 194, type: trojan, password: BxceQaOe, skip-cert-verify: true}
 - {name: KR046|12MB/s, server: testkr3.ssv.vc, port: 30446, type: http, username: test, password: test.+, tls: true, skip-cert-verify: true}
-1
 proxy-groups:
 - name: 节点选择
   type: select
