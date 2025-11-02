@@ -7,8 +7,8 @@ log-level: info
 external-controller: 127.0.0.1:9090
 geodata-mode: true
 geox-url:
-  geoip: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
-  mmdb: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb
+  geoip: https://raw.lgithub.xyz/Loyalsoldier/geoip/release/geoip.dat
+  mmdb: https://raw.lgithub.xyz/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb
 dns:
   enable: true
   ipv6: false
@@ -126,7 +126,6 @@ proxy-groups:
   - NL035|5MB/s
   - NL045|5MB/s
   - NL050|5MB/s
-  - NL001|6MB/s
   - Ruk1ng001
   - Ruk1ng002
   - Ruk1ng003
