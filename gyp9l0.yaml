@@ -45,19 +45,70 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
+- name: Jsnzkpg001
+  type: vless
+  server: linkbmhk4.evoay.com
+  port: 53244
+  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  sni: www.lamer.com.hk
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+  network: tcp
+  alterId: 0
+  cipher: ""
+  reality-opts:
+    public-key: ""
+    short-id: ""
+- name:Jsnzkpg002
+  type: vless
+  server: aws-linkidnvip2.evoay.com
+  port: 53300
+  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  sni: www.lamer.com.sg
+  servername: www.lamer.com.sg
+  client-fingerprint: chrome
+  network: tcp
+  alterId: 0
+  cipher: ""
+  reality-opts:
+    public-key: ""
+    short-id: ""
+- name: Jsnzkpg003
+  type: http
+  server: testkr3.ssv.vc
+  port: 30446
+  cipher: aes-256-cfb
+  password: test.+
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  username: test
 - {name: NL_1|2.4MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
 - {name: NL_3|2.5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
 - {name: NL050|5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: NL021|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
 - {name: NL035|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: NL045|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: Ruk1ng001, server: e744481a-t4whs0-t6blpv-1ldl3.hk1.hyhuawei.com, port: 443, type: hysteria2, password: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, auth: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, skip-cert-verify: true, udp: true}
-- {name: Ruk1ng002, server: f8669d2a-t46kg0-tct1rd-1o0ch.hk2.hyhuawei.com, port: 443, type: hysteria2, password: d49e545e-0daf-11ee-a91f-f23c913c8d2b, auth: d49e545e-0daf-11ee-a91f-f23c913c8d2b, skip-cert-verify: true, udp: true}
-- {name: Ruk1ng003, server: 6af7ab31-t46kg0-t83wtx-2rrb.hk2.hyhuawei.com, port: 443, type: hysteria2, password: ba64cdc5-c79a-326d-8e63-6903be8183a1, auth: ba64cdc5-c79a-326d-8e63-6903be8183a1, skip-cert-verify: true, udp: true}
-- {name: Ruk1ng004, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
-- {name: Ruk1ng005, server: 58.152.53.3, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
-- {name: Ruk1ng006, server: dd79b209-t46kg0-t5wrvh-1rdqg.hk1.hyhuawei.com, port: 443, type: hysteria2, password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b, auth: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b, skip-cert-verify: true, udp: true}
-- {name: Ruk1ng007, server: 36.150.215.236, port: 487, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng001, server: c1845db1-t46kg0-t4o3yx-1kcpe.hk2.hyhuawei.com, port: 443, type: hysteria2, password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9, auth: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng002, server: dcc40639-t3cxs0-tcj7b6-d70y.la.shifen.uk, port: 1743, type: hysteria2, password: 537d7098-fdbe-11ef-8ebc-f23c93141fad, auth: 537d7098-fdbe-11ef-8ebc-f23c93141fad, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng003, server: 61f04f6d-t4v9c0-t5amrp-b4pt.la.shifen.uk, port: 1743, type: hysteria2, password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad, auth: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad, skip-cert-verify: true, udp: true}
+- {name: HK011|4MB/s, server: 45.207.195.134, port: 2321, type: vless, uuid: 196c9d53-d245-42e8-a96f-77c93d1d79c6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: VD-hhf8ttoaDti7kkDvKtedIBG-7z3emWvhcS9uOUww, short-id: "6fe4f66207bd30c3" }, servername: www.nazhumi.com, client-fingerprint: chrome, network: tcp}
+- {name: HK017|20MB/s, server: 36.151.192.242, port: 194, type: trojan, password: BxceQaOe, skip-cert-verify: true}
+- {name: KR046|12MB/s, server: testkr3.ssv.vc, port: 30446, type: http, username: test, password: test.+, tls: true, skip-cert-verify: true}
+1
 proxy-groups:
 - name: 节点选择
   type: select
@@ -76,13 +127,16 @@ proxy-groups:
   - NL035|5MB/s
   - NL045|5MB/s
   - NL050|5MB/s
+  - NL001|6MB/s
   - Ruk1ng001
   - Ruk1ng002
   - Ruk1ng003
-  - Ruk1ng004
-  - Ruk1ng005
-  - Ruk1ng006
-  - Ruk1ng007
+  - HK011|4MB/s
+  - HK017|20MB/s
+  - KR046|12MB/s
+  - Jsnzkpg001
+  - Jsnzkpg002
+  - Jsnzkpg003
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
