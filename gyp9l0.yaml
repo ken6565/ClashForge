@@ -45,26 +45,6 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-- name: Jsnzkpg001
-  type: vless
-  server: linkbmhk4.evoay.com
-  port: 53244
-  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  sni: www.lamer.com.hk
-  servername: www.lamer.com.hk
-  client-fingerprint: chrome
-  network: tcp
-  alterId: 0
-  cipher: ""
-  reality-opts:
-    public-key: ""
-    short-id: ""
 - name:Jsnzkpg002
   type: vless
   server: aws-linkidnvip2.evoay.com
@@ -133,7 +113,6 @@ proxy-groups:
   - HK011|4MB/s
   - HK017|20MB/s
   - KR046|12MB/s
-  - Jsnzkpg001
   - Jsnzkpg002
   - Jsnzkpg003
   url: http://www.pinterest.com
