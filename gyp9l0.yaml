@@ -7,8 +7,8 @@ log-level: info
 external-controller: 127.0.0.1:9090
 geodata-mode: true
 geox-url:
-  geoip: https://raw.lgithub.xyz/Loyalsoldier/geoip/release/geoip.dat
-  mmdb: https://raw.lgithub.xyz/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb
+  geoip: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat
+  mmdb: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb
 dns:
   enable: true
   ipv6: false
@@ -45,69 +45,14 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-- name: Jsnzkpg001
-  type: vless
-  server: linkbmhk4.evoay.com
-  port: 53244
-  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  sni: www.lamer.com.hk
-  servername: www.lamer.com.hk
-  client-fingerprint: chrome
-  network: tcp
-  alterId: 0
-  cipher: ""
-  reality-opts:
-    public-key: ""
-    short-id: ""
-- name: Jsnzkpg002
-  type: vless
-  server: aws-linkidnvip2.evoay.com
-  port: 53300
-  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  sni: www.lamer.com.sg
-  servername: www.lamer.com.sg
-  client-fingerprint: chrome
-  network: tcp
-  alterId: 0
-  cipher: ""
-  reality-opts:
-    public-key: ""
-    short-id: ""
-- name: Jsnzkpg003
-  type: http
-  server: testkr3.ssv.vc
-  port: 30446
-  cipher: aes-256-cfb
-  password: test.+
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  username: test
-- {name: NL_1|2.4MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: NL_3|2.5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: NL050|5MB/s, server: 109.104.153.91, port: 37519, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, ports: 10000-20000, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: NL021|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: NL035|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: NL045|5MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: Ruk1ng001, server: c1845db1-t46kg0-t4o3yx-1kcpe.hk2.hyhuawei.com, port: 443, type: hysteria2, password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9, auth: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9, skip-cert-verify: true, udp: true}
-- {name: Ruk1ng002, server: dcc40639-t3cxs0-tcj7b6-d70y.la.shifen.uk, port: 1743, type: hysteria2, password: 537d7098-fdbe-11ef-8ebc-f23c93141fad, auth: 537d7098-fdbe-11ef-8ebc-f23c93141fad, skip-cert-verify: true, udp: true}
-- {name: Ruk1ng003, server: 61f04f6d-t4v9c0-t5amrp-b4pt.la.shifen.uk, port: 1743, type: hysteria2, password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad, auth: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad, skip-cert-verify: true, udp: true}
-- {name: HK011|4MB/s, server: 45.207.195.134, port: 2321, type: vless, uuid: 196c9d53-d245-42e8-a96f-77c93d1d79c6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: VD-hhf8ttoaDti7kkDvKtedIBG-7z3emWvhcS9uOUww, short-id: "6fe4f66207bd30c3" }, servername: www.nazhumi.com, client-fingerprint: chrome, network: tcp}
-- {name: HK017|20MB/s, server: 36.151.192.242, port: 194, type: trojan, password: BxceQaOe, skip-cert-verify: true}
-- {name: KR046|12MB/s, server: testkr3.ssv.vc, port: 30446, type: http, username: test, password: test.+, tls: true, skip-cert-verify: true}
+- {name: HK_001|7.8MB/s, server: 36.150.215.231, port: 1655, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+- {name: JP_002|7.5MB/s, server: 117.172.176.23, port: 316, type: trojan, password: e4e262d453466988575c397a30562337, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+- {name: JP_003|6.4MB/s, server: 36.150.215.137, port: 5156, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+- {name: US_005|1.9MB/s, server: 227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk, port: 1743, type: hysteria2, password: 6286105c-fb6d-11ef-be96-f23c93136cb3, auth: 6286105c-fb6d-11ef-be96-f23c93136cb3, sni: 227fd503-t4ssg0-t5vo4i-4550.la.shifen.uk, skip-cert-verify: true, udp: true}
+- {name: US_010|3.0MB/s, server: ssssssssssssfffffffgh.2032.pp.ua, port: 443, type: vless, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, tls: true, tfo: false, skip-cert-verify: true, servername: ssssssssssssfffffffgh.2032.pp.ua, network: ws, ws-opts: {path: /eAbAcRHV1QuhyXWGxgFnoFPw1, headers: {Host: ssssssssssssfffffffgh.2032.pp.ua}}, udp: true}
+- {name: US_014|1.2MB/s, server: f9a084a0-t4x400-t5ht86-dnss.la.shifen.uk, port: 1743, type: hysteria2, password: 16955d72-1794-11f0-a035-f23c95b6f51d, auth: 16955d72-1794-11f0-a035-f23c95b6f51d, sni: f9a084a0-t4x400-t5ht86-dnss.la.shifen.uk, skip-cert-verify: true, udp: true}
+- {name: US_015|1.6MB/s, server: 360311d5-t4v9c0-tcm6ys-deip.la.shifen.uk, port: 1743, type: hysteria2, password: 7a2512b4-09ee-11f0-8d46-f23c9313b177, auth: 7a2512b4-09ee-11f0-8d46-f23c9313b177, sni: 360311d5-t4v9c0-tcm6ys-deip.la.shifen.uk, skip-cert-verify: true, udp: true}
+- {name: NL_001|3.6MB/s, server: 51.159.226.1, port: 49003, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, fast-open: false, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -121,20 +66,14 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - NL_3|2.5MB/s
-  - NL021|5MB/s
-  - NL035|5MB/s
-  - NL045|5MB/s
-  - NL050|5MB/s
-  - Ruk1ng001
-  - Ruk1ng002
-  - Ruk1ng003
-  - HK011|4MB/s
-  - HK017|20MB/s
-  - KR046|12MB/s
-  - Jsnzkpg001
-  - Jsnzkpg002
-  - Jsnzkpg003
+  - HK_001|7.8MB/s
+  - JP_002|7.5MB/s
+  - JP_003|6.4MB/s
+  - US_005|1.9MB/s
+  - US_010|3.0MB/s
+  - US_014|1.2MB/s
+  - US_015|1.6MB/s
+  - NL_001|3.6MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
