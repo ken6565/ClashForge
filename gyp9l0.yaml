@@ -55,6 +55,7 @@ proxies:
 - {name: Jsnzkpg200, server: 3.8.172.214, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 - {name: Jsnzkpg10, server: 3.9.16.64, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
+- {name: US008|4MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.asshole-afc.workers.dev}}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -74,6 +75,7 @@ proxy-groups:
   - NL093
   - NL101
   - NL167
+  - US008|4MB/s
   - US_014|1.2MB/s
   - US_015|1.6MB/s
   - Jsnzkpg200
