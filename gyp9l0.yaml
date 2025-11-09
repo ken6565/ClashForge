@@ -45,6 +45,13 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
+- name: HK003|5.6MB/s
+  password: 1b57001bd214304027025a740b6cf1ac
+  port: 3841
+  server: 221.128.195.12
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - {name: NL040, server: 95.164.10.228, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo}
 - {name: NL091, server: 95.164.10.228, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo}
 - {name: NL093, server: 95.164.10.228, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo}
@@ -70,6 +77,7 @@ proxy-groups:
   proxies: &id001
   - xx|352f
   - HK002|6.1MB/s
+  - HK003|5.6MB/s
   - NL040
   - NL091
   - NL093
