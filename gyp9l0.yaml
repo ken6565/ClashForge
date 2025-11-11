@@ -45,24 +45,12 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-- name: HK003|5.6MB/s
-  password: 1b57001bd214304027025a740b6cf1ac
-  port: 3841
-  server: 221.128.195.12
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- {name: NL040, server: 95.164.10.228, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo}
-- {name: NL091, server: 95.164.10.228, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo}
-- {name: NL093, server: 95.164.10.228, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo}
-- {name: NL101, server: 95.164.10.228, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo}
-- {name: NL167, server: 95.164.10.228, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo, udp: true}
 - {name: US008|4MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.asshole-afc.workers.dev}}}
 - {name: US_014|1.2MB/s, server: f9a084a0-t4x400-t5ht86-dnss.la.shifen.uk, port: 1743, type: hysteria2, password: 16955d72-1794-11f0-a035-f23c95b6f51d, auth: 16955d72-1794-11f0-a035-f23c95b6f51d, sni: f9a084a0-t4x400-t5ht86-dnss.la.shifen.uk, skip-cert-verify: true, udp: true}
 - {name: US_015|1.6MB/s, server: 360311d5-t4v9c0-tcm6ys-deip.la.shifen.uk, port: 1743, type: hysteria2, password: 7a2512b4-09ee-11f0-8d46-f23c9313b177, auth: 7a2512b4-09ee-11f0-8d46-f23c9313b177, sni: 360311d5-t4v9c0-tcm6ys-deip.la.shifen.uk, skip-cert-verify: true, udp: true}
-- {name: FR178|406KB/s, server: 195.154.200.40, port: 15010, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 100, down: 100, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: HK004|45MB/s, server: q8vj6.4m4ow5.no8u9m8.vm331.cn, port: 58713, type: vmess, uuid: 0e05355a-dd6c-4d3a-8106-8e1e2c4927bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: q8vj6.4m4ow5.no8u9m8.vm331.cn}
+- {name: Ruk1ng001, server: 58.152.30.26, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+- {name: Ruk1ng002, server: 37a48ffc-t4whs0-t5a0jp-b4pt.la.shifen.uk, port: 1743, type: hysteria2, password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad, auth: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -77,17 +65,11 @@ proxy-groups:
   proxies: &id001
   - xx|352f
   - HK002|6.1MB/s
-  - HK003|5.6MB/s
-  - HK004|45MB/s
-  - NL040
-  - NL091
-  - NL093
-  - NL101
-  - NL167
   - US008|4MB/s
   - US_014|1.2MB/s
   - US_015|1.6MB/s
-  - FR178|406KB/s
+  - Ruk1ng001
+  - Ruk1ng002
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
