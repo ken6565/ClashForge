@@ -46,9 +46,11 @@ proxies:
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
 - {name: US008|4MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.asshole-afc.workers.dev}}}
-- {name: US_014|1.2MB/s, server: f9a084a0-t4x400-t5ht86-dnss.la.shifen.uk, port: 1743, type: hysteria2, password: 16955d72-1794-11f0-a035-f23c95b6f51d, auth: 16955d72-1794-11f0-a035-f23c95b6f51d, sni: f9a084a0-t4x400-t5ht86-dnss.la.shifen.uk, skip-cert-verify: true, udp: true}
-- {name: US_015|1.6MB/s, server: 360311d5-t4v9c0-tcm6ys-deip.la.shifen.uk, port: 1743, type: hysteria2, password: 7a2512b4-09ee-11f0-8d46-f23c9313b177, auth: 7a2512b4-09ee-11f0-8d46-f23c9313b177, sni: 360311d5-t4v9c0-tcm6ys-deip.la.shifen.uk, skip-cert-verify: true, udp: true}
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
+- {name: HK063|3MB/s, server: cf.090227.xyz, port: 443, type: vless, uuid: e9c198e7-ccec-49a8-b558-8688aa8ec515, tls: true, servername: guang-page.asong.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: guang-page.asong.eu.org}}}
+- {name: SG263|29MB/s, server: 36.150.215.147, port: 4666, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
+- {name: TW128|14MB/s, server: tw.xn--gmq00sc0nuve.shop, port: 21752, type: hysteria2, password: e8a8cb41-753c-4fd7-800d-2e49618f406d, auth: e8a8cb41-753c-4fd7-800d-2e49618f406d, skip-cert-verify: false, udp: true}
+- {name: KR129|14MB/s, server: testkr3.ssv.vc, port: 30446, type: http, username: test, password: test.+, tls: true, skip-cert-verify: true}
 - {name: stymei, server: 104.18.46.50, port: 443, type: vless, uuid: fbb5dd3f-6eb8-4397-acad-b887161eba54, tls: true, tfo: false, skip-cert-verify: true, servername: pq-jps.pqvip.top, network: ws, ws-opts: {path: /pq/jp1, headers: {Host: pq-jps.pqvip.top}}, udp: true}
 proxy-groups:
 - name: 节点选择
@@ -63,10 +65,12 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - HK002|6.1MB/s
   - US008|4MB/s
-  - US_014|1.2MB/s
-  - US_015|1.6MB/s
+  - HK002|6.1MB/s
+  - HK063|3MB/s
+  - SG263|29MB/s
+  - TW128|14MB/s
+  - KR129|14MB/s
   - stymei
   url: http://www.pinterest.com
   interval: 300
