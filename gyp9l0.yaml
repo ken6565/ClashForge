@@ -49,7 +49,9 @@ proxies:
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: HK063|3MB/s, server: cf.090227.xyz, port: 443, type: vless, uuid: e9c198e7-ccec-49a8-b558-8688aa8ec515, tls: true, servername: guang-page.asong.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: guang-page.asong.eu.org}}}
 - {name: KR129|14MB/s, server: testkr3.ssv.vc, port: 30446, type: http, username: test, password: test.+, tls: true, skip-cert-verify: true}
-- {name: stymei, server: 104.18.46.50, port: 443, type: vless, uuid: fbb5dd3f-6eb8-4397-acad-b887161eba54, tls: true, tfo: false, skip-cert-verify: true, servername: pq-jps.pqvip.top, network: ws, ws-opts: {path: /pq/jp1, headers: {Host: pq-jps.pqvip.top}}, udp: true}
+- {name: 59SG-HK_1|5.9MB/s, server: 108.162.195.200, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
+- {name: 59SG-HK_2|2.2MB/s, server: 162.159.16.180, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
+- {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -67,7 +69,9 @@ proxy-groups:
   - HK002|6.1MB/s
   - HK063|3MB/s
   - KR129|14MB/s
-  - stymei
+  - 59SG-HK_1|5.9MB/s
+  - 59SG-HK_2|2.2MB/s
+  - 59SG-HK_3|3.6MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
