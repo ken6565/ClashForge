@@ -56,7 +56,6 @@ proxies:
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: HK017|11MB/s, server: 8.217.206.25, port: 3721, type: vmess, uuid: 9acdcaad-ac14-44ae-a675-017ea1431789, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
 - {name: HK018|13MB/s, server: 8.217.85.61, port: 4728, type: vmess, uuid: 9c72b70e-7de9-4b04-8667-e3ea48cbbbdb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK019|6MB/s, server: 8.218.207.5, port: 20344, type: http, username: kZXMC3Z1, password: nOEy3w0R, tls: false}
 - {name: HK020|12MB/s, server: 8.210.134.183, port: 3721, type: vmess, uuid: e72f5c6b-220f-40b3-a115-2d81473458cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
 - {name: HK022|15MB/s, server: 8.218.199.111, port: 8080, type: vmess, uuid: f55db42d-ee52-4a47-880b-6f7b123ab222, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
 - {name: HK023|11MB/s, server: 8.218.17.136, port: 3721, type: vmess, uuid: 33755eb3-5c12-4ca7-b86e-6f1aa6e7ce27, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
@@ -67,9 +66,7 @@ proxies:
 - {name: HK029|12MB/s, server: 47.238.71.166, port: 3721, type: vmess, uuid: 0b3da6e0-2a41-49e4-8bee-cfa705d448fc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
 - {name: HK030|11MB/s, server: 8.217.176.108, port: 3721, type: vmess, uuid: 7836c516-70be-4cde-a4bd-7e225989241a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
 - {name: HK032|12MB/s, server: 47.238.71.166, port: 4728, type: vmess, uuid: 001a840d-6472-4374-95d7-a15a016a26cd, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: JP033|13MB/s, server: 15.168.8.205, port: 13651, type: http, username: H1FxNPkQk3, password: Jpc00Nqr4E, tls: false}
 - {name: HK035|12MB/s, server: 8.217.206.25, port: 4728, type: vmess, uuid: 894c08a6-3d76-443b-9ad8-00dfa396a4a1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: JP038|10MB/s, server: 15.168.8.205, port: 59290, type: http, username: JaMizejM4w, password: vXpOHi2BOT, tls: false}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -94,7 +91,6 @@ proxy-groups:
   - 59US-HK_2|1.3MB/s
   - HK017|11MB/s
   - HK018|13MB/s
-  - HK019|6MB/s
   - HK020|12MB/s
   - HK022|15MB/s
   - HK023|11MB/s
@@ -106,7 +102,6 @@ proxy-groups:
   - HK030|11MB/s
   - HK032|12MB/s
   - HK035|12MB/s
-  - JP038|10MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
