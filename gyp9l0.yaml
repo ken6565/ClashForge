@@ -45,6 +45,37 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
+- name: 59DE_4|5.0MB/s
+  encryption: none
+  network: ws
+  port: 2082
+  server: www.speedtest.net
+  type: vless
+  udp: true
+  uuid: d2cb6223-f6b2-42a2-df5d-8454c9efe4ce
+  ws-opts:
+    headers:
+      Host: >-
+        novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+      User-Agent: >-Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/65.0.3325.181 Safari/537.36
+      path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn
+  early-data-header-name: Sec-WebSocket-Protocol
+  max-early-data: 2082
+  xudp: true
+- name: 59US-HK_2|1.3MB/s
+  encryption: none
+  network: ws
+  port: 80
+  server: 104.18.168.174
+  type: vless
+  udp: true
+  uuid: df301b32-1152-4526-9a63-beedd93d3156
+  ws-opts:
+    headers:
+      Host: vl.dalazhi.cloudns.biz
+      User-Agent: >-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36(KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+      path: /%2F%3Fed%3D2048
+  xudp: true
 - {name: US008|4MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.asshole-afc.workers.dev}}}
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: "//?ed=2048", headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: HK063|3MB/s, server: cf.090227.xyz, port: 443, type: vless, uuid: e9c198e7-ccec-49a8-b558-8688aa8ec515, tls: true, servername: guang-page.asong.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: guang-page.asong.eu.org}}}
