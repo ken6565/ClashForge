@@ -52,21 +52,9 @@ proxies:
 - {name: 59SG-HK_1|5.9MB/s, server: 108.162.195.200, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_2|2.2MB/s, server: 162.159.16.180, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: 59DE_4|5.0MB/s, server: www.speedtest.net, port: 2082, type: vless, uuid: d2cb6223-f6b2-42a2-df5d-8454c9efe4ce, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn, headers: {Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.}}, udp: true}
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: HK017|11MB/s, server: 8.217.206.25, port: 3721, type: vmess, uuid: 9acdcaad-ac14-44ae-a675-017ea1431789, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK018|13MB/s, server: 8.217.85.61, port: 4728, type: vmess, uuid: 9c72b70e-7de9-4b04-8667-e3ea48cbbbdb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+- {name: TW023|10MB/s, server: tw.oomz.ru, port: 30000, type: hysteria2, password: e7965e64-e001-4e8c-8273-39c61ff4a094, auth: e7965e64-e001-4e8c-8273-39c61ff4a094, sni: bing.com, skip-cert-verify: true}
 - {name: HK020|12MB/s, server: 8.210.134.183, port: 3721, type: vmess, uuid: e72f5c6b-220f-40b3-a115-2d81473458cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK022|15MB/s, server: 8.218.199.111, port: 8080, type: vmess, uuid: f55db42d-ee52-4a47-880b-6f7b123ab222, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK023|11MB/s, server: 8.218.17.136, port: 3721, type: vmess, uuid: 33755eb3-5c12-4ca7-b86e-6f1aa6e7ce27, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK024|12MB/s, server: 8.218.17.136, port: 4728, type: vmess, uuid: a0e050ca-6d37-452f-bf5c-3e4e475ef36b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK025|11MB/s, server: 8.217.52.42, port: 4728, type: vmess, uuid: 9634862d-36cf-4bda-98ed-c695bbaafa72, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK026|12MB/s, server: 8.218.116.26, port: 3721, type: vmess, uuid: b967c212-7c4c-4567-80a8-fa7800394978, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK027|22MB/s, server: 8.217.52.42, port: 3721, type: vmess, uuid: f80b2b0d-df73-470c-8139-cc1ad613230b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK029|12MB/s, server: 47.238.71.166, port: 3721, type: vmess, uuid: 0b3da6e0-2a41-49e4-8bee-cfa705d448fc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK030|11MB/s, server: 8.217.176.108, port: 3721, type: vmess, uuid: 7836c516-70be-4cde-a4bd-7e225989241a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK032|12MB/s, server: 47.238.71.166, port: 4728, type: vmess, uuid: 001a840d-6472-4374-95d7-a15a016a26cd, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-- {name: HK035|12MB/s, server: 8.217.206.25, port: 4728, type: vmess, uuid: 894c08a6-3d76-443b-9ad8-00dfa396a4a1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -87,21 +75,9 @@ proxy-groups:
   - 59SG-HK_1|5.9MB/s
   - 59SG-HK_2|2.2MB/s
   - 59SG-HK_3|3.6MB/s
-  - 59DE_4|5.0MB/s
   - 59US-HK_2|1.3MB/s
-  - HK017|11MB/s
-  - HK018|13MB/s
+  - TW023|10MB/s
   - HK020|12MB/s
-  - HK022|15MB/s
-  - HK023|11MB/s
-  - HK024|12MB/s
-  - HK025|11MB/s
-  - HK026|12MB/s
-  - HK027|22MB/s
-  - HK029|12MB/s
-  - HK030|11MB/s
-  - HK032|12MB/s
-  - HK035|12MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
