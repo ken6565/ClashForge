@@ -58,6 +58,7 @@ proxies:
 - {name: JP8-HY2, server: jp8.dexlos.com, port: 15481, type: hysteria2, password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, auth: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, skip-cert-verify: true, udp: true}
 - {name: JP9-HY2, server: jp9.dexlos.com, port: 17712, type: hysteria2, password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, auth: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, skip-cert-verify: true, udp: true}
 - {name: JP10-HY2, server: jp10.dexlos.com, port: 19504, type: hysteria2, password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, auth: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, skip-cert-verify: true, udp: true}
+- {name: JP067|19MB/s, server: jp7.dexlos.com, port: 13735, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp7.dexlos.com, skip-cert-verify: false, udp: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -84,6 +85,7 @@ proxy-groups:
   - JP8-HY2
   - JP9-HY2
   - JP10-HY2
+  - JP067|19MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
