@@ -54,10 +54,8 @@ proxies:
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: TW023|10MB/s, server: tw.oomz.ru, port: 30000, type: hysteria2, password: e7965e64-e001-4e8c-8273-39c61ff4a094, auth: e7965e64-e001-4e8c-8273-39c61ff4a094, sni: bing.com, skip-cert-verify: true}
-- {name: JP7-HY2, server: jp7.dexlos.com, port: 13778, type: hysteria2, password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, auth: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, skip-cert-verify: true, udp: true}
-- {name: JP8-HY2, server: jp8.dexlos.com, port: 15481, type: hysteria2, password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, auth: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, skip-cert-verify: true, udp: true}
-- {name: JP9-HY2, server: jp9.dexlos.com, port: 17712, type: hysteria2, password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, auth: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, skip-cert-verify: true, udp: true}
-- {name: JP10-HY2, server: jp10.dexlos.com, port: 19504, type: hysteria2, password: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, auth: 95D27EEF-B7AE-4076-BA39-40FDFA3D0F61, skip-cert-verify: true, udp: true}
+- {name: JP051|17MB/s, server: jp9.dexlos.com, port: 17040, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp9.dexlos.com, skip-cert-verify: false, udp: true}
+- {name: JP071|18MB/s, server: jp8.dexlos.com, port: 15039, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp8.dexlos.com, skip-cert-verify: false, udp: true}
 - {name: JP067|19MB/s, server: jp7.dexlos.com, port: 13735, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp7.dexlos.com, skip-cert-verify: false, udp: true}
 proxy-groups:
 - name: 节点选择
@@ -81,10 +79,8 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - 59US-HK_2|1.3MB/s
   - TW023|10MB/s
-  - JP7-HY2
-  - JP8-HY2
-  - JP9-HY2
-  - JP10-HY2
+  - JP051|17MB/s
+  - JP071|18MB/s
   - JP067|19MB/s
   url: http://www.pinterest.com
   interval: 300
