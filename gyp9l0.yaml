@@ -47,15 +47,13 @@ proxies:
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
 - {name: US008|4MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.asshole-afc.workers.dev}}}
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
+- {name: HK009|6MB/s, server: 58.152.18.95, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
 - {name: HK063|3MB/s, server: cf.090227.xyz, port: 443, type: vless, uuid: e9c198e7-ccec-49a8-b558-8688aa8ec515, tls: true, servername: guang-page.asong.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: guang-page.asong.eu.org}}}
 - {name: KR129|14MB/s, server: testkr3.ssv.vc, port: 30446, type: http, username: test, password: test.+, tls: true, skip-cert-verify: true}
 - {name: 59SG-HK_1|5.9MB/s, server: 108.162.195.200, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_2|2.2MB/s, server: 162.159.16.180, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: TW023|10MB/s, server: tw.oomz.ru, port: 30000, type: hysteria2, password: e7965e64-e001-4e8c-8273-39c61ff4a094, auth: e7965e64-e001-4e8c-8273-39c61ff4a094, sni: bing.com, skip-cert-verify: true}
-- {name: JP051|17MB/s, server: jp9.dexlos.com, port: 17040, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp9.dexlos.com, skip-cert-verify: false, udp: true}
-- {name: JP071|18MB/s, server: jp8.dexlos.com, port: 15039, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp8.dexlos.com, skip-cert-verify: false, udp: true}
 - {name: JP067|19MB/s, server: jp7.dexlos.com, port: 13735, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp7.dexlos.com, skip-cert-verify: false, udp: true}
 - {name: JP520|13MB/s, server: jp7.dexlos.com, port: 13569, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp7.dexlos.com, skip-cert-verify: false, udp: true}
 proxy-groups:
@@ -73,15 +71,13 @@ proxy-groups:
   - xx|352f
   - US008|4MB/s
   - HK002|6.1MB/s
+  - HK009|6MB/s
   - HK063|3MB/s
   - KR129|14MB/s
   - 59SG-HK_1|5.9MB/s
   - 59SG-HK_2|2.2MB/s
   - 59SG-HK_3|3.6MB/s
   - 59US-HK_2|1.3MB/s
-  - TW023|10MB/s
-  - JP051|17MB/s
-  - JP071|18MB/s
   - JP067|19MB/s
   - JP520|13MB/s
   url: http://www.pinterest.com
