@@ -45,6 +45,29 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
+- name: 日本专线
+  server: iij.mggl.wang
+  port: 35789
+  udp: true
+  skip-cert-verify: false
+  sni: iij.mggl.wang
+  type: hysteria2
+  password: 024fea59-80d0-4901-a2ed-de6231d20ffa
+- name: 越南专线
+  server: vn.mggl.wang
+  port: 35789
+  udp: true
+  skip-cert-verify: false
+  type: hysteria2
+  password: 024fea59-80d0-4901-a2ed-de6231d20ffa
+- name: 香港专线
+  server: alhkfree.mggl.wang
+  port: 35789
+  udp: true
+  skip-cert-verify: false
+  sni: alhkfree.mggl.wang
+  type: hysteria2
+  password: 024fea59-80d0-4901-a2ed-de6231d20ffa
 - {name: US008|4MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.asshole-afc.workers.dev}}}
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: HK009|6MB/s, server: 58.152.18.95, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
@@ -69,6 +92,9 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
+  - 日本专线
+  - 越南专线
+  - 香港专线
   - US008|4MB/s
   - HK002|6.1MB/s
   - HK009|6MB/s
