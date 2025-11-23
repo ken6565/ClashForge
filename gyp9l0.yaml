@@ -81,7 +81,6 @@ proxies:
 - {name: HK018|34MB/s, server: 58.152.53.22, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
 - {name: JP046|6MB/s, server: jpjp.gzcloud.shop, port: 443, type: anytls, password: 7801c867-b767-4b6d-869d-14695820db30, udp: true, skip-cert-verify: true}
 - {name: FR250|672KB/s, server: 195.154.206.231, port: 33880, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
-1
 proxy-groups:
 - name: 节点选择
   type: select
