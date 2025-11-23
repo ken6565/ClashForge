@@ -53,13 +53,6 @@ proxies:
   sni: iij.mggl.wang
   type: hysteria2
   password: 024fea59-80d0-4901-a2ed-de6231d20ffa
-- name: 越南专线
-  server: vn.mggl.wang
-  port: 35789
-  udp: true
-  skip-cert-verify: false
-  type: hysteria2
-  password: 024fea59-80d0-4901-a2ed-de6231d20ffa
 - name: 香港专线
   server: alhkfree.mggl.wang
   port: 35789
@@ -81,6 +74,10 @@ proxies:
 - {name: HK018|34MB/s, server: 58.152.53.22, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
 - {name: JP046|6MB/s, server: jpjp.gzcloud.shop, port: 443, type: anytls, password: 7801c867-b767-4b6d-869d-14695820db30, udp: true, skip-cert-verify: true}
 - {name: FR250|672KB/s, server: 195.154.206.231, port: 33880, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
+- {name: JP005|17MB/s, server: jp7.dexlos.com, port: 13954, type: hysteria2, password: 14FD150A-579E-42A1-8212-9D2F6510A70C, auth: 14FD150A-579E-42A1-8212-9D2F6510A70C, sni: jp7.dexlos.com, up: 40 Mbps, down: 500 Mbps, skip-cert-verify: false, ports: 13000-14000, udp: true}
+- {name: JP146|23MB/s, server: jp6.dexlos.com, port: 11753, type: hysteria2, password: 14FD150A-579E-42A1-8212-9D2F6510A70C, auth: 14FD150A-579E-42A1-8212-9D2F6510A70C, sni: jp6.dexlos.com, up: 40 Mbps, down: 500 Mbps, skip-cert-verify: false, ports: 11000-12000, udp: true}
+- {name: US009|19MB/s, server: 52.68.194.189, port: 443, type: vless, uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e, tls: true, servername: kuangbao.xiejiang.dpdns.org, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: kuangbao.xiejiang.dpdns.org}}, udp: true}
+- {name: TW015|7MB/s, server: 83.229.121.12, port: 443, type: vless, uuid: 691f0692-ebcc-9b10-9ee6-7000b8e82b4d, tls: true, servername: act13.sni565.netlib.re, client-fingerprint: random, network: ws, ws-opts: {path: /proxyip=tw.sni2025.netlib.re, headers: {Host: act13.sni565.netlib.re}}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -95,7 +92,6 @@ proxy-groups:
   proxies: &id001
   - xx|352f
   - 日本专线
-  - 越南专线
   - 香港专线
   - US008|4MB/s
   - HK002|6.1MB/s
@@ -110,6 +106,10 @@ proxy-groups:
   - HK018|34MB/s
   - JP046|6MB/s
   - FR250|672KB/s
+  - JP005|17MB/s
+  - JP146|23MB/s
+  - US009|19MB/s
+  - TW015|7MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
