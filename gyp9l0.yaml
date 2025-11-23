@@ -77,8 +77,11 @@ proxies:
 - {name: 59SG-HK_2|2.2MB/s, server: 162.159.16.180, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: JP067|19MB/s, server: jp7.dexlos.com, port: 13735, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp7.dexlos.com, skip-cert-verify: false, udp: true}
-- {name: JP520|13MB/s, server: jp7.dexlos.com, port: 13569, type: hysteria2, password: D844AF30-5BCD-419E-94D5-3417C648366A, auth: D844AF30-5BCD-419E-94D5-3417C648366A, sni: jp7.dexlos.com, skip-cert-verify: false, udp: true}
+- {name: HK012|35MB/s, server: 58.152.53.22, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
+- {name: HK018|34MB/s, server: 58.152.53.22, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+- {name: JP046|6MB/s, server: jpjp.gzcloud.shop, port: 443, type: anytls, password: 7801c867-b767-4b6d-869d-14695820db30, udp: true, skip-cert-verify: true}
+- {name: FR250|672KB/s, server: 195.154.206.231, port: 33880, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
+1
 proxy-groups:
 - name: 节点选择
   type: select
@@ -104,8 +107,10 @@ proxy-groups:
   - 59SG-HK_2|2.2MB/s
   - 59SG-HK_3|3.6MB/s
   - 59US-HK_2|1.3MB/s
-  - JP067|19MB/s
-  - JP520|13MB/s
+  - HK012|35MB/s
+  - HK018|34MB/s
+  - JP046|6MB/s
+  - FR250|672KB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
