@@ -45,6 +45,29 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
+- name: 59FR_1|2.0MB/s
+  auth: dongtaiwang.com
+  password: dongtaiwang.com
+  port: 33880
+  server: 195.154.206.231
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+  udp: true
+- name: 59JP_2|3.3MB/s
+  network: ws
+  port: 2096
+  server: 108.162.198.24
+  tls: true
+  type: vless
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  ws-opts:
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+    path: /
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+  servername: kuangbao.xiejiang.dpdns.org
 - name: 日本专线
   server: iij.mggl.wang
   port: 35789
@@ -70,14 +93,6 @@ proxies:
 - {name: 59SG-HK_2|2.2MB/s, server: 162.159.16.180, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: HK012|35MB/s, server: 58.152.53.22, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
-- {name: HK018|34MB/s, server: 58.152.53.22, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-- {name: JP046|6MB/s, server: jpjp.gzcloud.shop, port: 443, type: anytls, password: 7801c867-b767-4b6d-869d-14695820db30, udp: true, skip-cert-verify: true}
-- {name: FR250|672KB/s, server: 195.154.206.231, port: 33880, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
-- {name: JP005|17MB/s, server: jp7.dexlos.com, port: 13954, type: hysteria2, password: 14FD150A-579E-42A1-8212-9D2F6510A70C, auth: 14FD150A-579E-42A1-8212-9D2F6510A70C, sni: jp7.dexlos.com, up: 40 Mbps, down: 500 Mbps, skip-cert-verify: false, ports: 13000-14000, udp: true}
-- {name: JP146|23MB/s, server: jp6.dexlos.com, port: 11753, type: hysteria2, password: 14FD150A-579E-42A1-8212-9D2F6510A70C, auth: 14FD150A-579E-42A1-8212-9D2F6510A70C, sni: jp6.dexlos.com, up: 40 Mbps, down: 500 Mbps, skip-cert-verify: false, ports: 11000-12000, udp: true}
-- {name: US009|19MB/s, server: 52.68.194.189, port: 443, type: vless, uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e, tls: true, servername: kuangbao.xiejiang.dpdns.org, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: kuangbao.xiejiang.dpdns.org}}, udp: true}
-- {name: TW015|7MB/s, server: 83.229.121.12, port: 443, type: vless, uuid: 691f0692-ebcc-9b10-9ee6-7000b8e82b4d, tls: true, servername: act13.sni565.netlib.re, client-fingerprint: random, network: ws, ws-opts: {path: /proxyip=tw.sni2025.netlib.re, headers: {Host: act13.sni565.netlib.re}}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -102,14 +117,8 @@ proxy-groups:
   - 59SG-HK_2|2.2MB/s
   - 59SG-HK_3|3.6MB/s
   - 59US-HK_2|1.3MB/s
-  - HK012|35MB/s
-  - HK018|34MB/s
-  - JP046|6MB/s
-  - FR250|672KB/s
-  - JP005|17MB/s
-  - JP146|23MB/s
-  - US009|19MB/s
-  - TW015|7MB/s
+  - 59FR_1|2.0MB/s
+  - 59JP_2|3.3MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
