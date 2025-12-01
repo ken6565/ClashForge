@@ -84,7 +84,26 @@ proxies:
   sni: alhkfree.mggl.wang
   type: hysteria2
   password: 024fea59-80d0-4901-a2ed-de6231d20ffa
-- {name: US008|4MB/s, server: cf.090227.xyz, port: 2095, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, client-fingerprint: randomized, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.asshole-afc.workers.dev}}}
+- name: 59NL_7|1.8MB/s
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+      - /
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: '31'
+  server: 94.228.210.70
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3b4d1c7f-4fd7-45bb-9251-79cd53a3e006
+  xudp: true
+  servername: hls-svod.itunes.apple.com
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: HK009|6MB/s, server: 58.152.18.95, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
 - {name: HK099|9MB/s, server: 69398ec0-t68n40-t7om7n-luwe.hk2.hyhuawei.com, port: 443, type: hysteria2, password: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, auth: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, ports: 30000-60000, udp: true}
@@ -93,6 +112,15 @@ proxies:
 - {name: 59SG-HK_2|2.2MB/s, server: 162.159.16.180, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
+- {name: 59NL_1|1.2MB/s, server: 82.38.31.179, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
+- {name: 59FR_1|3.1MB/s, server: 195.154.200.40, port: 15010, type: hysteria, protocol: udp, up: 100 Mbps, up-speed: 100, down: 100 Mbps, down-speed: 100, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
+- {name: 59US_2|1.4MB/s, server: 674c3aeb-t6ngg0-t8jzg2-1hd7v.us.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b, sni: 674c3aeb-t6ngg0-t8jzg2-1hd7v.us.hyhuawei.com}
+- {name: 59US_3|1.3MB/s, server: b35e4730-t6ngg0-tm53cm-1ol97.us.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, sni: b35e4730-t6ngg0-tm53cm-1ol97.us.hyhuawei.com}
+- {name: 59US_4|1.3MB/s, server: d26a9758-t6ngg0-tgzvop-hns7.us.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b, sni: d26a9758-t6ngg0-tgzvop-hns7.us.hyhuawei.com}
+- {name: 59US_5|1.4MB/s, server: b49b5d8e-t6ngg0-ta64ri-1qzi1.us.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: 8f99107c-f091-11ee-9935-f23c9164ca5d, sni: b49b5d8e-t6ngg0-ta64ri-1qzi1.us.hyhuawei.com}
+- {name: 59US_6|1.1MB/s, server: 9fa5329b-t6ngg0-tc5odo-1mh85.us.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: cf7331fa-bfeb-11ed-a807-f23c913c8d2b, sni: 9fa5329b-t6ngg0-tc5odo-1mh85.us.hyhuawei.com}
+- {name: 59US_7|1.2MB/s, server: ef72d68d-t6ngg0-tc9wl2-py5w.us.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: ae5338ae-9a70-58c9-3d47-7d54a5675715, sni: ef72d68d-t6ngg0-tc9wl2-py5w.us.hyhuawei.com}
+- {name: 59PT_1|1.8MB/s, server: 185.231.233.112, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -108,7 +136,7 @@ proxy-groups:
   - xx|352f
   - 日本专线
   - 香港专线
-  - US008|4MB/s
+  - 59NL_7|1.8MB/s
   - HK002|6.1MB/s
   - HK009|6MB/s
   - HK099|9MB/s
@@ -119,6 +147,15 @@ proxy-groups:
   - 59US-HK_2|1.3MB/s
   - 59FR_1|2.0MB/s
   - 59JP_2|3.3MB/s
+  - 59NL_1|1.2MB/s
+  - 59FR_1|3.1MB/s
+  - 59US_2|1.4MB/s
+  - 59US_3|1.3MB/s
+  - 59US_4|1.3MB/s
+  - 59US_5|1.4MB/s
+  - 59US_6|1.1MB/s
+  - 59US_7|1.2MB/s
+  - 59PT_1|1.8MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
