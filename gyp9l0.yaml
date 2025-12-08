@@ -142,6 +142,7 @@ proxies:
 - {name: 59HK_16|2.7MB/s, server: 5dfac59d-t6t0g0-tgplbc-hkb8.hk2.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: 21a70fd2-c69c-11eb-8673-f23c9164ca5d, sni: 5dfac59d-t6t0g0-tgplbc-hkb8.hk2.hyhuawei.com}
 - {name: 59US_3|3.1MB/s, server: 172.66.44.230, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: false, network: ws, ws-opts: {path: /tro8sFW1S91B6sZrM1, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
 - {name: HK170|5MB/s, server: 58.152.30.175, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+- {name: HK014|16MB/s, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -191,6 +192,7 @@ proxy-groups:
   - 59HK_16|2.7MB/s
   - 59US_3|3.1MB/s
   - HK170|5MB/s
+  - HK014|16MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
