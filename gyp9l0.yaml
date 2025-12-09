@@ -122,7 +122,6 @@ proxies:
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59NL_1|1.2MB/s, server: 82.38.31.179, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ}
 - {name: 59FR_1|3.1MB/s, server: 195.154.200.40, port: 15010, type: hysteria, protocol: udp, up: 100 Mbps, up-speed: 100, down: 100 Mbps, down-speed: 100, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: HK504|4MB/s, server: 112.118.116.66, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
 - {name: 59HK_1|3.2MB/s, server: 79b0129f-t6t0g0-t7hsj2-1gevg.hk1.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b, sni: 79b0129f-t6t0g0-t7hsj2-1gevg.hk1.hyhuawei.com}
 - {name: 59HK_2|2.6MB/s, server: eb4bfbaf-t6t0g0-t9uin7-19ord.hk1.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d, sni: eb4bfbaf-t6t0g0-t9uin7-19ord.hk1.hyhuawei.com}
 - {name: 59HK_3|1.5MB/s, server: 12f7c432-t6t0g0-t87m8y-1pr35.hk1.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b, sni: 12f7c432-t6t0g0-t87m8y-1pr35.hk1.hyhuawei.com}
@@ -141,8 +140,9 @@ proxies:
 - {name: 59HK_15|2.9MB/s, server: c9e6c89d-t6t0g0-t845bx-1la2q.hk2.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: 431026c8-7397-11ed-a8bf-f23c91cfbbc9, sni: c9e6c89d-t6t0g0-t845bx-1la2q.hk2.hyhuawei.com}
 - {name: 59HK_16|2.7MB/s, server: 5dfac59d-t6t0g0-tgplbc-hkb8.hk2.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: 21a70fd2-c69c-11eb-8673-f23c9164ca5d, sni: 5dfac59d-t6t0g0-tgplbc-hkb8.hk2.hyhuawei.com}
 - {name: 59US_3|3.1MB/s, server: 172.66.44.230, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: false, network: ws, ws-opts: {path: /tro8sFW1S91B6sZrM1, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-- {name: HK170|5MB/s, server: 58.152.30.175, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
 - {name: HK014|16MB/s, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+- {name: HK031|3MB/s, server: 35f78bc6-t6pb40-tcmtfl-1qudp.hk2.hyhuawei.com, port: 443, type: hysteria2, password: 99129cef-f705-11ee-ada6-f23c91cfbbc9, auth: 99129cef-f705-11ee-ada6-f23c91cfbbc9, sni: 35f78bc6-t6pb40-tcmtfl-1qudp.hk2.hyhuawei.com}
+- {name: HK032|2MB/s, server: b2eb54a7-t6pb40-t7do2j-1swry.hk2.hyhuawei.com, port: 443, type: hysteria2, password: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b, auth: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b, sni: b2eb54a7-t6pb40-t7do2j-1swry.hk2.hyhuawei.com}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -163,6 +163,10 @@ proxy-groups:
   - HK009|6MB/s
   - HK099|9MB/s
   - HK004|4MB/s
+  - HK031|3MB/s
+  - HK032|2MB/s
+  - HK014|16MB/s
+  - Ruk1ng001
   - 59SG-HK_1|5.9MB/s
   - 59SG-HK_2|2.2MB/s
   - 59SG-HK_3|3.6MB/s
@@ -171,8 +175,6 @@ proxy-groups:
   - 59JP_2|3.3MB/s
   - 59NL_1|1.2MB/s
   - 59FR_1|3.1MB/s
-  - HK504|4MB/s
-  - Ruk1ng001
   - 59HK_1|3.2MB/s
   - 59HK_2|2.6MB/s
   - 59HK_3|1.5MB/s
@@ -191,8 +193,6 @@ proxy-groups:
   - 59HK_15|2.9MB/s
   - 59HK_16|2.7MB/s
   - 59US_3|3.1MB/s
-  - HK170|5MB/s
-  - HK014|16MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
