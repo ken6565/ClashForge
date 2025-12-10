@@ -112,6 +112,20 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: US堪萨斯5G
+  type: vmess
+  server: us.node.3a.ink
+  port: 443
+  uuid: f3fb0c6c-cbe8-45ee-a3d4-391b0cd346cf
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: us.node.3a.ink
+  network: ws
+  ws-opts:
+    path: /f3fb0c6c-cbe8-45ee-a3d4-391b0cd346cf
+    headers:
+      Host: us.node.3a.ink
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: HK009|6MB/s, server: 58.152.18.95, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
 - {name: HK099|9MB/s, server: 69398ec0-t68n40-t7om7n-luwe.hk2.hyhuawei.com, port: 443, type: hysteria2, password: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, auth: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, ports: 30000-60000, udp: true}
@@ -158,6 +172,7 @@ proxy-groups:
   - xx|352f
   - 日本专线
   - 香港专线
+  - US堪萨斯5G
   - 59NL_7|1.8MB/s
   - HK002|6.1MB/s
   - HK009|6MB/s
