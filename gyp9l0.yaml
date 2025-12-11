@@ -102,6 +102,7 @@ proxies:
 - {name: HK004|3MB/s, server: 0db90c5a-t729s0-t7kytf-1mqag.hk2.hyhuawei.com, port: 443, type: hysteria2, password: b585dac6-dc69-11ef-9f1c-f23c913c8d2b, auth: b585dac6-dc69-11ef-9f1c-f23c913c8d2b, ports: 30000-60000, udp: true}
 - {name: HK005|15MB/s, server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com, port: 443, type: hysteria2, password: a305ac08-d136-11ee-b6db-f23c91cfbbc9, auth: a305ac08-d136-11ee-b6db-f23c91cfbbc9, sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com}
 - {name: HK007|25MB/s, server: 2d439b52-t6r5s0-t99b5n-1hhyy.hk2.hyhuawei.com, port: 443, type: hysteria2, password: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d, auth: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d, sni: 2d439b52-t6r5s0-t99b5n-1hhyy.hk2.hyhuawei.com}
+- {name: HK036|26MB/s, server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com, port: 443, type: hysteria2, password: a305ac08-d136-11ee-b6db-f23c91cfbbc9, auth: a305ac08-d136-11ee-b6db-f23c91cfbbc9, sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -126,6 +127,7 @@ proxy-groups:
   - HK007|25MB/s
   - HK099|9MB/s
   - HK014|16MB/s
+  - HK036|26MB/s
   - 59SG-HK_1|5.9MB/s
   - 59SG-HK_2|2.2MB/s
   - 59SG-HK_3|3.6MB/s
