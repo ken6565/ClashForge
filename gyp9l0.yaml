@@ -98,12 +98,8 @@ proxies:
 - {name: 59FR_1|3.1MB/s, server: 195.154.200.40, port: 15010, type: hysteria, protocol: udp, up: 100 Mbps, up-speed: 100, down: 100 Mbps, down-speed: 100, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: 59HK_15|2.9MB/s, server: c9e6c89d-t6t0g0-t845bx-1la2q.hk2.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: 431026c8-7397-11ed-a8bf-f23c91cfbbc9, sni: c9e6c89d-t6t0g0-t845bx-1la2q.hk2.hyhuawei.com}
 - {name: HK014|16MB/s, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-- {name: HK001|9MB/s, server: 2b3913c6-t744g0-tpw4i4-1pckg.hk2.hyhuawei.com, port: 443, type: hysteria2, password: 526a1128-7487-11ee-9bca-f23c913c8d2b, auth: 526a1128-7487-11ee-9bca-f23c913c8d2b, ports: 30000-60000, udp: true}
-- {name: HK004|3MB/s, server: 0db90c5a-t729s0-t7kytf-1mqag.hk2.hyhuawei.com, port: 443, type: hysteria2, password: b585dac6-dc69-11ef-9f1c-f23c913c8d2b, auth: b585dac6-dc69-11ef-9f1c-f23c913c8d2b, ports: 30000-60000, udp: true}
-- {name: HK005|15MB/s, server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com, port: 443, type: hysteria2, password: a305ac08-d136-11ee-b6db-f23c91cfbbc9, auth: a305ac08-d136-11ee-b6db-f23c91cfbbc9, sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com}
-- {name: HK007|25MB/s, server: 2d439b52-t6r5s0-t99b5n-1hhyy.hk2.hyhuawei.com, port: 443, type: hysteria2, password: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d, auth: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d, sni: 2d439b52-t6r5s0-t99b5n-1hhyy.hk2.hyhuawei.com}
-- {name: HK036|26MB/s, server: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com, port: 443, type: hysteria2, password: a305ac08-d136-11ee-b6db-f23c91cfbbc9, auth: a305ac08-d136-11ee-b6db-f23c91cfbbc9, sni: ffc60249-t53wg0-t92wi1-1qkeg.hk2.hyhuawei.com}
-- {name: JP002|19MB/s, server: 178.239.126.118, port: 2443, type: vless, uuid: d6b62381-8d75-4a0c-9946-bf8f40772afe, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc}, servername: pizzastrada.jp, client-fingerprint: chrome, network: tcp}
+- {name: FR210|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+- {name: FR223|1MB/s, server: 195.154.200.40, port: 15010, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 100, down: 100, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -121,21 +117,17 @@ proxy-groups:
   - 香港专线
   - US堪萨斯5G
   - 59NL_1|1.7MB/s
-  - HK001|9MB/s
   - HK002|6.1MB/s
-  - HK004|3MB/s
-  - HK005|15MB/s
-  - HK007|25MB/s
   - HK099|9MB/s
   - HK014|16MB/s
-  - HK036|26MB/s
   - 59SG-HK_1|5.9MB/s
   - 59SG-HK_2|2.2MB/s
   - 59SG-HK_3|3.6MB/s
   - 59US-HK_2|1.3MB/s
   - 59FR_1|3.1MB/s
   - 59HK_15|2.9MB/s
-  - JP002|19MB/s
+  - FR210|3MB/s
+  - FR223|1MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
