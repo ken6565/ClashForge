@@ -45,14 +45,6 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-- name: 日本专线
-  server: iij.mggl.wang
-  port: 35789
-  udp: true
-  skip-cert-verify: false
-  sni: iij.mggl.wang
-  type: hysteria2
-  password: 024fea59-80d0-4901-a2ed-de6231d20ffa
 - name: 香港专线
   server: alhkfree.mggl.wang
   port: 35789
@@ -61,20 +53,15 @@ proxies:
   sni: alhkfree.mggl.wang
   type: hysteria2
   password: 024fea59-80d0-4901-a2ed-de6231d20ffa
-- name: US堪萨斯5G
-  type: vmess
-  server: us.node.3a.ink
-  port: 443
-  uuid: f3fb0c6c-cbe8-45ee-a3d4-391b0cd346cf
+- name: US_1|1.1MB/s
   alterId: 0
   cipher: auto
-  tls: true
-  servername: us.node.3a.ink
-  network: ws
-  ws-opts:
-    path: /f3fb0c6c-cbe8-45ee-a3d4-391b0cd346cf
-    headers:
-      Host: us.node.3a.ink
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  servername: img14.360buyimg.com
 - name: 59NL_1|1.7MB/s
   alpn:
     - h3
@@ -86,7 +73,7 @@ proxies:
   server: 51.159.226.1
   skip-cert-verify: true
   sni: apple.com
-  type: hysteria
+  type: hysteria2
   udp: true
   up: 11
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
@@ -96,10 +83,9 @@ proxies:
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59FR_1|3.1MB/s, server: 195.154.200.40, port: 15010, type: hysteria, protocol: udp, up: 100 Mbps, up-speed: 100, down: 100 Mbps, down-speed: 100, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: 59HK_15|2.9MB/s, server: c9e6c89d-t6t0g0-t845bx-1la2q.hk2.hyhuawei.com, port: 443, type: hysteria2, ports: 30000-60000, password: 431026c8-7397-11ed-a8bf-f23c91cfbbc9, sni: c9e6c89d-t6t0g0-t845bx-1la2q.hk2.hyhuawei.com}
 - {name: HK014|16MB/s, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-- {name: FR210|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
-- {name: FR223|1MB/s, server: 195.154.200.40, port: 15010, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 100, down: 100, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
+- {name: FR210|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria2, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
+- {name: FR223|1MB/s, server: 195.154.200.40, port: 15010, type: hysteria2, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 100, down: 100, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -113,9 +99,8 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - 日本专线
   - 香港专线
-  - US堪萨斯5G
+  - US_1|1.1MB/s
   - 59NL_1|1.7MB/s
   - HK002|6.1MB/s
   - HK099|9MB/s
@@ -125,7 +110,6 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - 59US-HK_2|1.3MB/s
   - 59FR_1|3.1MB/s
-  - 59HK_15|2.9MB/s
   - FR210|3MB/s
   - FR223|1MB/s
   url: http://www.pinterest.com
