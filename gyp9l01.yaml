@@ -56,7 +56,6 @@ proxies:
   - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
   - {name: 59FR_1|3.1MB/s, server: 195.154.200.40, port: 15010, type: hysteria, protocol: udp, up: 100 Mbps, up-speed: 100, down: 100 Mbps, down-speed: 100, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
   - {name: HK014|16MB/s, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: FR210|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
   - {name: FR165|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
   - {name: FR183|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3], udp: true}
   - {name: FR197|1MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
@@ -96,7 +95,6 @@ proxy-groups:
       - 59SG-HK_3|3.6MB/s
       - 59US-HK_2|1.3MB/s
       - 59FR_1|3.1MB/s
-      - FR210|3MB/s
       - FR165|3MB/s
       - FR183|3MB/s
       - FR197|1MB/s
@@ -124,7 +122,6 @@ proxy-groups:
       - 59SG-HK_3|3.6MB/s
       - 59US-HK_2|1.3MB/s
       - 59FR_1|3.1MB/s
-      - FR210|3MB/s
       - FR165|3MB/s
       - FR183|3MB/s
       - FR197|1MB/s
@@ -152,7 +149,6 @@ proxy-groups:
       - 59SG-HK_3|3.6MB/s
       - 59US-HK_2|1.3MB/s
       - 59FR_1|3.1MB/s
-      - FR210|3MB/s
       - FR165|3MB/s
       - FR183|3MB/s
       - FR197|1MB/s
@@ -181,7 +177,6 @@ proxy-groups:
       - 59SG-HK_3|3.6MB/s
       - 59US-HK_2|1.3MB/s
       - 59FR_1|3.1MB/s
-      - FR210|3MB/s
       - FR165|3MB/s
       - FR183|3MB/s
       - FR197|1MB/s
