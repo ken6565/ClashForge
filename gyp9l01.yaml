@@ -86,7 +86,7 @@ proxy-groups:
       - xx|352f
       - 香港专线
       - US_1|1.1MB/s
-      - name: DE_2|1.3MB/s
+      - DE_2|1.3MB/s
       - HK002|6.1MB/s
       - HK099|9MB/s
       - HK014|16MB/s
@@ -113,7 +113,7 @@ proxy-groups:
       - xx|352f
       - 香港专线
       - US_1|1.1MB/s
-      - name: DE_2|1.3MB/s
+      - DE_2|1.3MB/s
       - HK002|6.1MB/s
       - HK099|9MB/s
       - HK014|16MB/s
@@ -140,7 +140,7 @@ proxy-groups:
       - xx|352f
       - 香港专线
       - US_1|1.1MB/s
-      - name: DE_2|1.3MB/s
+      - DE_2|1.3MB/s
       - HK002|6.1MB/s
       - HK099|9MB/s
       - HK014|16MB/s
@@ -168,7 +168,7 @@ proxy-groups:
       - xx|352f
       - 香港专线
       - US_1|1.1MB/s
-      - name: DE_2|1.3MB/s
+      - DE_2|1.3MB/s
       - HK002|6.1MB/s
       - HK099|9MB/s
       - HK014|16MB/s
