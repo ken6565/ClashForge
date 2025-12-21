@@ -75,14 +75,48 @@ proxies:
       Host: khiar.mrconfigur.site
     path: /
   servername: khiar.mrconfigur.site
+- name: 秋名山
+  server: cf.877774.xyz
+  port: 2087
+  type: trojan
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  sni: cm2-bpg.filegear-sg.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=210.61.97.241:81
+    headers:
+      Host: cm2-bpg.filegear-sg.me
+- name: 乌克兰
+  server: mfa.gov.ua
+  port: 2096
+  type: trojan
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  sni: cm2-bpg.filegear-sg.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=210.61.97.241:81
+    headers:
+      Host: cm2-bpg.filegear-sg.me
+- name: 虾皮
+  server: www.shopify.com
+  port: 2053
+  type: trojan
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  sni: cm2-bpg.filegear-sg.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /proxyip=210.61.97.241:81
+    headers:
+      Host: cm2-bpg.filegear-sg.me
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: HK099|9MB/s, server: 69398ec0-t68n40-t7om7n-luwe.hk2.hyhuawei.com, port: 443, type: hysteria2, password: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, auth: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, ports: 30000-60000, udp: true}
 - {name: 59SG-HK_1|5.9MB/s, server: 108.162.195.200, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_2|2.2MB/s, server: 162.159.16.180, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59FR_1|3.1MB/s, server: 195.154.200.40, port: 15010, type: hysteria, protocol: udp, up: 100 Mbps, up-speed: 100, down: 100 Mbps, down-speed: 100, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: HK014|16MB/s, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
 - {name: FR197|1MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 proxy-groups:
 - name: 节点选择
