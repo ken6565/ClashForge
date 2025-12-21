@@ -135,8 +135,9 @@ proxy-groups:
   - US_1|1.1MB/s
   - DE_2|1.3MB/s
   - HK002|6.1MB/s
-  - HK099|9MB/s
-  - HK014|16MB/s
+  - 秋名山
+  - 乌克兰
+  - 虾皮
   - 59SG-HK_1|5.9MB/s
   - 59SG-HK_2|2.2MB/s
   - 59SG-HK_3|3.6MB/s
