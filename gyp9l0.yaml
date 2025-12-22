@@ -124,6 +124,24 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: /
+- name: opFR_12|1.9MB/s
+  client-fingerprint: chrome
+  encryption: none
+  network: ws
+  port: 443
+  server: 104.17.202.10
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+      User-Agent: >-
+        Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /
+  xudp: true
+  servername: snippets.kkii.eu.org
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_1|5.9MB/s, server: 108.162.195.200, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_2|2.2MB/s, server: 162.159.16.180, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
@@ -171,6 +189,7 @@ proxy-groups:
   - FR048|3MB/s
   - FR049|4MB/s
   - FR050|4MB/s
+  - opFR_12|1.9MB/s
   - opFR_13|2.9MB/s
   - opFR_14|1.9MB/s
   - opUS_3|1.5MB/s
