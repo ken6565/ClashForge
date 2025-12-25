@@ -45,14 +45,54 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-- name: 香港专线
-  server: alhkfree.mggl.wang
-  port: 35789
-  udp: true
-  skip-cert-verify: false
-  sni: alhkfree.mggl.wang
-  type: hysteria2
-  password: 024fea59-80d0-4901-a2ed-de6231d20ffa
+- name: 自定义HK01
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 83.229.123.173
+  port: 443
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /83.229.123.173:443
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义HK06
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 103.69.128.41
+  port: 80
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /103.69.128.41:80
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义HK10
+  udp: false
+  skip-cert-verify: true
+  type: trojan
+  server: 83.229.123.173
+  port: 443
+  password: 5a2c16f9
+  tls: true
+  client-fingerprint: chrome
+  sni: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /83.229.123.173:443
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
 - name: US_1|1.1MB/s
   alterId: 0
   cipher: auto
@@ -172,7 +212,9 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - 香港专线
+  - 自定义HK01
+  - 自定义HK06
+  - 自定义HK10
   - US_1|1.1MB/s
   - DE_2|1.3MB/s
   - HK002|6.1MB/s
