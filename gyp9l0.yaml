@@ -115,6 +115,18 @@ proxies:
       Host: khiar.mrconfigur.site
     path: /
   servername: khiar.mrconfigur.site
+- name: CM
+  server: cf.090227.xyz
+  port: 2083
+  type: trojan
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  sni: cm2-bpg.filegear-sg.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /drama/zh-tw/proxyip=210.61.97.241:81?ed=2560
+    headers:
+      Host: cm2-bpg.filegear-sg.me
 - name: 秋名山
   server: cf.877774.xyz
   port: 2087
@@ -218,6 +230,7 @@ proxy-groups:
   - US_1|1.1MB/s
   - DE_2|1.3MB/s
   - HK002|6.1MB/s
+  - CM
   - 秋名山
   - 乌克兰
   - 虾皮
