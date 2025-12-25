@@ -155,12 +155,10 @@ proxies:
 - {name: opFR_13|2.9MB/s, server: 104.17.167.134, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}, udp: true}
 - {name: opFR_14|1.9MB/s, server: 777.ai7777777.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}, udp: true}
 - {name: opUS_3|1.5MB/s, server: 104.17.162.3, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /%2F, headers: {Host: snippets.kkii.eu.org}}}
-- {name: TW001|17MB/s, server: 104.17.167.134, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
-- {name: TW002|22MB/s, server: 172.64.229.205, port: 443, type: vless, uuid: 5a2c16f9-e365-4080-8d38-6924c3835586, tls: true, servername: snippets.kkii.eu.org, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
-- {name: TW003|913KB/s, server: 777.ai7777777.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
-- {name: TW004|21MB/s, server: 777.ai7777777.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 - {name: whatismyip, server: www.whatismyip.net, port: 2095, client-fingerprint: randomized, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.cnm-fangbinxing-fuckyou.workers.dev}}}
 - {name: Cloudflare, server: cloudflare-dns.com, port: 2095, client-fingerprint: randomized, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.cnm-fangbinxing-fuckyou.workers.dev}}}
+- {name: SG036|2MB/s, server: 103.190.179.55, port: 8080, type: hysteria2, password: d82321fd-df52-42e9-98a9-7b379310c361, auth: d82321fd-df52-42e9-98a9-7b379310c361, sni: sg12.352343.cc}
+- {name: TW028|17MB/s, server: cf.130519.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -195,12 +193,10 @@ proxy-groups:
   - opFR_13|2.9MB/s
   - opFR_14|1.9MB/s
   - opUS_3|1.5MB/s
-  - TW001|17MB/s
-  - TW002|22MB/s
-  - TW003|913KB/s
-  - TW004|21MB/s
+  - TW028|17MB/s
   - whatismyip
   - Cloudflare
+  - SG036|2MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
