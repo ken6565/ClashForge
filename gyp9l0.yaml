@@ -45,6 +45,41 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
+- name: www.shopify.com
+  type: trojan
+  server: www.shopify.com
+  port: 2087
+  password: '666'
+  udp: true
+  tfo: false
+  tls: true
+  sni: freesni.zjde5.de5.net
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: freesni.zjde5.de5.net
+- name: cf.877774.xyz
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: b7789765-c9fb-41c3-bea0-348b702eb816
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  sni: rt.372164885.xyz
+  servername: rt.372164885.xyz
+  network: ws
+  ws-opts:
+    path: /pk-vl
+    headers:
+      Host: rt.372164885.xyz
 - name: 自定义HK01
   udp: false
   skip-cert-verify: true
@@ -102,55 +137,6 @@ proxies:
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   servername: img14.360buyimg.com
-- name: DE_2|1.3MB/s
-  encryption: none
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  tls: true
-  type: vless
-  uuid: 88538870-5626-4cd7-9cda-1e0b6253c9ce
-  ws-opts:
-    headers:
-      Host: khiar.mrconfigur.site
-    path: /
-  servername: khiar.mrconfigur.site
-- name: CM
-  server: cf.090227.xyz
-  port: 2083
-  type: trojan
-  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-  sni: cm2-bpg.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /drama/zh-tw/proxyip=210.61.97.241:81?ed=2560
-    headers:
-      Host: cm2-bpg.filegear-sg.me
-- name: 秋名山
-  server: cf.877774.xyz
-  port: 2087
-  type: trojan
-  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-  sni: cm2-bpg.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=210.61.97.241:81
-    headers:
-      Host: cm2-bpg.filegear-sg.me
-- name: 乌克兰
-  server: mfa.gov.ua
-  port: 2096
-  type: trojan
-  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-  sni: cm2-bpg.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=210.61.97.241:81
-    headers:
-      Host: cm2-bpg.filegear-sg.me
 - name: 虾皮
   server: www.shopify.com
   port: 2053
@@ -176,40 +162,9 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: /
-- name: opFR_12|1.9MB/s
-  client-fingerprint: chrome
-  encryption: none
-  network: ws
-  port: 443
-  server: 104.17.202.10
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-      User-Agent: >-
-        Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /
-  xudp: true
-  servername: snippets.kkii.eu.org
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: 59SG-HK_1|5.9MB/s, server: 108.162.195.200, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: 59SG-HK_2|2.2MB/s, server: 162.159.16.180, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: 59US-HK_2|1.3MB/s, server: 104.18.168.174, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: 59FR_1|3.1MB/s, server: 195.154.200.40, port: 15010, type: hysteria, protocol: udp, up: 100 Mbps, up-speed: 100, down: 100 Mbps, down-speed: 100, auth-str: dongtaiwang.com, auth: ZG9uZ3RhaXdhbmcuY29t, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: FR197|1MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: FR048|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: FR049|4MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: FR050|4MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: opFR_13|2.9MB/s, server: 104.17.167.134, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}, udp: true}
-- {name: opFR_14|1.9MB/s, server: 777.ai7777777.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}, udp: true}
-- {name: opUS_3|1.5MB/s, server: 104.17.162.3, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /%2F, headers: {Host: snippets.kkii.eu.org}}}
-- {name: whatismyip, server: www.whatismyip.net, port: 2095, client-fingerprint: randomized, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.cnm-fangbinxing-fuckyou.workers.dev}}}
-- {name: Cloudflare, server: cloudflare-dns.com, port: 2095, client-fingerprint: randomized, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fuckingfangbinxing.cnm-fangbinxing-fuckyou.workers.dev}}}
-- {name: SG036|2MB/s, server: 103.190.179.55, port: 8080, type: hysteria2, password: d82321fd-df52-42e9-98a9-7b379310c361, auth: d82321fd-df52-42e9-98a9-7b379310c361, sni: sg12.352343.cc}
 - {name: TW028|17MB/s, server: cf.130519.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 proxy-groups:
 - name: 节点选择
@@ -224,34 +179,18 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
+  - www.shopify.com
+  - cf.877774.xyz
   - 自定义HK01
   - 自定义HK06
   - 自定义HK10
   - US_1|1.1MB/s
-  - DE_2|1.3MB/s
-  - HK002|6.1MB/s
-  - CM
-  - 秋名山
-  - 乌克兰
   - 虾皮
   - JP_3|4.3MB/s
-  - 59SG-HK_1|5.9MB/s
-  - 59SG-HK_2|2.2MB/s
+  - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - 59US-HK_2|1.3MB/s
-  - 59FR_1|3.1MB/s
   - FR197|1MB/s
-  - FR048|3MB/s
-  - FR049|4MB/s
-  - FR050|4MB/s
-  - opFR_12|1.9MB/s
-  - opFR_13|2.9MB/s
-  - opFR_14|1.9MB/s
-  - opUS_3|1.5MB/s
   - TW028|17MB/s
-  - whatismyip
-  - Cloudflare
-  - SG036|2MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
