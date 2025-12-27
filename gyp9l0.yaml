@@ -45,7 +45,7 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-- name: www.shopify.com
+- name: www.shopify.com-trojan
   type: trojan
   server: www.shopify.com
   port: 2087
@@ -63,6 +63,45 @@ proxies:
     path: /?ed=2560
     headers:
       Host: freesni.zjde5.de5.net
+- name: www.shopify.com-vless
+  type: vless
+  server: www.shopify.com
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: freesni.zjde5.de5.net
+  servername: freesni.zjde5.de5.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: freesni.zjde5.de5.net
+- name: www.shopify.com-vmess
+  type: vmess
+  server: www.shopify.com
+  port: 2096
+  uuid: 68f891b8-d7e8-47bf-a5f2-b7baf912f69c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: asuka.0061.my
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: asuka.0061.my
 - name: cf.877774.xyz
   type: vless
   server: cf.877774.xyz
@@ -179,7 +218,9 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies: &id001
   - xx|352f
-  - www.shopify.com
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
   - cf.877774.xyz
   - 自定义HK01
   - 自定义HK06
