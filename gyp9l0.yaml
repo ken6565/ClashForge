@@ -217,6 +217,9 @@ proxies:
   sni: t.me/ripaojiedian
   type: trojan
   udp: true
+- {name: CF, server: cf.090227.xyz, port: 2095, client-fingerprint: randomized, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cnmfangbinxing-nmsl.cnm-fangbinxingnmsl.workers.dev}}}
+- {name: Cdnjs, server: cdnjs.com, port: 2095, client-fingerprint: randomized, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cnmfangbinxing-nmsl.cnm-fangbinxingnmsl.workers.dev}}}
+- {name: Itarmy, server: itarmy.com.ua, port: 2095, client-fingerprint: randomized, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cnmfangbinxing-nmsl.cnm-fangbinxingnmsl.workers.dev}}}
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: FR197|1MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
@@ -248,6 +251,9 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59HK_1|9.1MB/s
   - 59HK_2|2.5MB/s
+  - CF
+  - Cdnjs
+  - Itarmy
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - TW028|17MB/s
