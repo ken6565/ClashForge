@@ -225,6 +225,11 @@ proxies:
 - {name: FR197|1MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: FR470|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: TW028|17MB/s, server: cf.130519.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+- {name: US¹-TW_15|2.8MB/s, server: 172.64.229.83, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+- {name: US¹-TW_65|1.7MB/s, server: 172.64.229.137, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+- {name: US¹-TW_86|3.8MB/s, server: 172.64.229.21, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+- {name: HK¹-TW_19|0.3MB/s, server: 172.64.229.0, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+- {name: HK¹_HK_1|11.8MB/s, server: 172.64.229.146, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -258,6 +263,11 @@ proxy-groups:
   - FR197|1MB/s
   - FR470|3MB/s
   - TW028|17MB/s
+  - US¹-TW_15|2.8MB/s
+  - US¹-TW_65|1.7MB/s
+  - US¹-TW_86|3.8MB/s
+  - HK¹-TW_19|0.3MB/s
+  - HK¹_HK_1|11.8MB/s
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
