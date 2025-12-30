@@ -167,6 +167,166 @@ proxies:
     headers:
       host: snippets.kkii.eu.org
   tfo: false
+- name: 自定义JP01
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 45.192.241.14
+  port: 443
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /45.192.241.14:443
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义JP02
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 154.31.113.67
+  port: 8880
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /154.31.113.67:8880
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义JP03
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 156.231.141.37
+  port: 2086
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /156.231.141.37:2086
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义JP04
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 156.231.140.164
+  port: 2083
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /156.231.140.164:2083
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义JP05
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 156.231.140.164
+  port: 2080
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /156.231.140.164:2080
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义JP06
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 156.231.141.37
+  port: 8443
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /156.231.141.37:8443
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义JP07
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 156.231.141.37
+  port: 2082
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /156.231.141.37:2082
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义JP08
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 156.231.141.9
+  port: 2083
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /156.231.141.9:2083
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义JP09
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 156.231.141.37
+  port: 2087
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /156.231.141.37:2087
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
+- name: 自定义JP10
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 156.231.141.37
+  port: 2052
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  tls: true
+  client-fingerprint: chrome
+  servername: snippets.kkii.eu.org
+  network: ws
+  ws-opts:
+    path: /156.231.141.37:2052
+    headers:
+      host: snippets.kkii.eu.org
+  tfo: false
 - name: US_1|1.1MB/s
   alterId: 0
   cipher: auto
@@ -176,18 +336,6 @@ proxies:
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   servername: img14.360buyimg.com
-- name: 虾皮
-  server: www.shopify.com
-  port: 2053
-  type: trojan
-  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-  sni: cm2-bpg.filegear-sg.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=210.61.97.241:81
-    headers:
-      Host: cm2-bpg.filegear-sg.me
 - name: JP_3|4.3MB/s
   network: ws
   password: 5a2c16f9
@@ -250,8 +398,17 @@ proxy-groups:
   - 自定义HK01
   - 自定义HK06
   - 自定义HK10
+  - 自定义JP01
+  - 自定义JP02
+  - 自定义JP03
+  - 自定义JP04
+  - 自定义JP05
+  - 自定义JP06
+  - 自定义JP07
+  - 自定义JP08
+  - 自定义JP09
+  - 自定义JP10
   - US_1|1.1MB/s
-  - 虾皮
   - JP_3|4.3MB/s
   - HK002|6.1MB/s
   - 59HK_1|9.1MB/s
