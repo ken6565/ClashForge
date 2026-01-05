@@ -362,14 +362,14 @@ proxies:
 - {name: US¹-TW_86|3.8MB/s, server: 172.64.229.21, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 - {name: HK¹-TW_19|0.3MB/s, server: 172.64.229.0, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 - {name: HK¹_HK_1|11.8MB/s, server: 172.64.229.146, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
-- {name: FR883|8MB/s, server: marseille-1.nezhasu.com, port: 52050, type: tuic, password: d9812081-7f61-456d-9340-a1fb8dfd603b, uuid: d9812081-7f61-456d-9340-a1fb8dfd603b, sni: marseille-1.nezhasu.com, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: native, congestion-controller: bbr}
-- {name: FR548|10MB/s, server: marseille-1.nezhasu.com, port: 65193, type: tuic, password: d9812081-7f61-456d-9340-a1fb8dfd603b, uuid: d9812081-7f61-456d-9340-a1fb8dfd603b, sni: marseille-1.nezhasu.com, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: native, congestion-controller: bbr}
 - {name: TW038|9MB/s, server: freeyx.cloudflare88.eu.org, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}, udp: true}
 - {name: TW932|17MB/s, server: 104.16.245.77, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 - {name: US152|8MB/s, server: cloudflare.182682.xyz, port: 443, type: vless, uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97, tls: true, servername: l.ayovo.netlib.re, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: l.ayovo.netlib.re}}}
 - {name: US155|9MB/s, server: cloudflare.182682.xyz, port: 443, type: vless, uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97, tls: true, servername: l.ayovo.netlib.re, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: l.ayovo.netlib.re}}}
 - {name: IN584|6MB/s, server: mumbai-2.nezhasu.com, port: 58717, type: hysteria2, password: d9812081-7f61-456d-9340-a1fb8dfd603b, auth: d9812081-7f61-456d-9340-a1fb8dfd603b, sni: mumbai-2.nezhasu.com, skip-cert-verify: true, udp: true}
 - {name: JP003|5MB/s, server: 160.16.75.254, port: 443, type: anytls, password: a2d12dc9-c111-45ac-b803-87e48f3484d8, client-fingerprint: chrome, udp: true, skip-cert-verify: true}
+- {name: FR548|10MB/s, server: marseille-1.nezhasu.com, port: 65193, type: tuic, password: d9812081-7f61-456d-9340-a1fb8dfd603b, uuid: d9812081-7f61-456d-9340-a1fb8dfd603b, sni: marseille-1.nezhasu.com, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: native, congestion-controller: bbr}
+- {name: FR883|8MB/s, server: marseille-1.nezhasu.com, port: 52050, type: tuic, password: d9812081-7f61-456d-9340-a1fb8dfd603b, uuid: d9812081-7f61-456d-9340-a1fb8dfd603b, sni: marseille-1.nezhasu.com, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: native, congestion-controller: bbr}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -410,14 +410,14 @@ proxy-groups:
   - FR197|1MB/s
   - FR470|3MB/s
   - TW028|17MB/s
-  - FR883|8MB/s
-  - FR548|10MB/s
   - TW038|9MB/s
   - TW932|17MB/s
   - US152|8MB/s
   - US152|8MB/s
   - IN584|6MB/s
   - JP003|5MB/s
+  - FR548|10MB/s
+  - FR883|8MB/s
   - US¹-TW_15|2.8MB/s
   - US¹-TW_65|1.7MB/s
   - US¹-TW_86|3.8MB/s
