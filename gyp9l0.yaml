@@ -327,7 +327,7 @@ proxies:
     headers:
       host: snippets.kkii.eu.org
   tfo: false
-- name: JP_3|4.3MB/s
+- name: JP_33|4.3MB/s
   network: ws
   password: 5a2c16f9
   port: 443
@@ -364,6 +364,9 @@ proxies:
 - {name: HK¹_HK_1|11.8MB/s, server: 172.64.229.146, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 - {name: FR883|8MB/s, server: marseille-1.nezhasu.com, port: 52050, type: tuic, password: d9812081-7f61-456d-9340-a1fb8dfd603b, uuid: d9812081-7f61-456d-9340-a1fb8dfd603b, sni: marseille-1.nezhasu.com, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: native, congestion-controller: bbr}
 - {name: FR 548|10MB/s, server: marseille-1.nezhasu.com, port: 65193, type: tuic, password: d9812081-7f61-456d-9340-a1fb8dfd603b, uuid: d9812081-7f61-456d-9340-a1fb8dfd603b, sni: marseille-1.nezhasu.com, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 15000, udp-relay-mode: native, congestion-controller: bbr}
+- {name: JP003|5MB/s, server: 160.16.75.254, port: 443, type: anytls, password: a2d12dc9-c111-45ac-b803-87e48f3484d8, client-fingerprint: chrome, udp: true, skip-cert-verify: true}
+- {name: TW038|9MB/s, server: freeyx.cloudflare88.eu.org, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}, udp: true}
+- {name: IN584|6MB/s, server: mumbai-2.nezhasu.com, port: 58717, type: hysteria2, password: d9812081-7f61-456d-9340-a1fb8dfd603b, auth: d9812081-7f61-456d-9340-a1fb8dfd603b, sni: mumbai-2.nezhasu.com, skip-cert-verify: true, udp: true}
 proxy-groups:
 - name: 节点选择
   type: select
@@ -394,7 +397,7 @@ proxy-groups:
   - 自定义JP08
   - 自定义JP09
   - 自定义JP10
-  - JP_3|4.3MB/s
+  - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59HK_2|2.5MB/s
   - CF
@@ -406,6 +409,9 @@ proxy-groups:
   - TW028|17MB/s
   - FR883|8MB/s
   - FR 548|10MB/s
+  - JP003|5MB/s
+  - TW038|9MB/s
+  - IN584|6MB/s
   - US¹-TW_15|2.8MB/s
   - US¹-TW_65|1.7MB/s
   - US¹-TW_86|3.8MB/s
