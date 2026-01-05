@@ -327,15 +327,6 @@ proxies:
     headers:
       host: snippets.kkii.eu.org
   tfo: false
-- name: US_1|1.1MB/s
-  alterId: 0
-  cipher: auto
-  network: tcp
-  port: 180
-  server: 82.198.246.97
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  servername: img14.360buyimg.com
 - name: JP_3|4.3MB/s
   network: ws
   password: 5a2c16f9
@@ -349,13 +340,6 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: /
-- name: 59HK_1|9.1MB/s
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 443
-  server: 112.118.116.8
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - name: 59HK_2|2.5MB/s
   client-fingerprint: chrome
   password: BxceQaOe
@@ -410,10 +394,8 @@ proxy-groups:
   - 自定义JP08
   - 自定义JP09
   - 自定义JP10
-  - US_1|1.1MB/s
   - JP_3|4.3MB/s
   - HK002|6.1MB/s
-  - 59HK_1|9.1MB/s
   - 59HK_2|2.5MB/s
   - CF
   - Cdnjs
