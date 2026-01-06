@@ -230,13 +230,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 1、美国
-    type: trojan
+    type: vless
     server: 45.143.128.122
     port: 7443
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
@@ -246,13 +246,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 2、美国
-    type: trojan
+    type: vless
     server: 154.19.242.20
     port: 443
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
@@ -262,13 +262,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 3、美国
-    type: trojan
+    type: vless
     server: 38.181.42.244
     port: 8020
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
@@ -278,13 +278,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 4、美国
-    type: trojan
+    type: vless
     server: 185.92.180.35
     port: 8443
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
@@ -294,13 +294,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 5、美国
-    type: trojan
+    type: vless
     server: 89.116.171.171
     port: 8443
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
@@ -310,13 +310,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 6、美国
-    type: trojan
+    type: vless
     server: 185.92.181.12
     port: 7443
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
@@ -326,13 +326,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 7、美国
-    type: trojan
+    type: vless
     server: 45.61.136.61
     port: 9443
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
@@ -342,13 +342,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 8、美国
-    type: trojan
+    type: vless
     server: 185.92.181.7
     port: 8443
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
@@ -358,13 +358,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 9、美国
-    type: trojan
+    type: vless
     server: 185.92.180.207
     port: 8443
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
@@ -374,13 +374,13 @@ proxies:
   - udp: false
     skip-cert-verify: true
     name: 10、美国
-    type: trojan
+    type: vless
     server: 185.92.182.237
     port: 8443
-    password: d342d11e
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
-    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
       path: /?ed=2560
