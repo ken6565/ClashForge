@@ -338,6 +338,191 @@ proxies:
   sni: dash.cloudflare.com
   skip-cert-verify: true
   port: 6443
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: xx|352f
+  password: dongtaiwang.com
+  port: 34997
+  reduce-rtt: true
+  server: 2001:bc8:32d7:302::16
+  skip-cert-verify: true
+  sni: bing.com
+  type: tuic
+  udp-relay-mode: native
+  uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
+- name: www.shopify.com-trojan
+  type: trojan
+  server: www.shopify.com
+  port: 2087
+  password: '666'
+  udp: true
+  tfo: false
+  tls: true
+  sni: freesni.zjde5.de5.net
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: freesni.zjde5.de5.net
+- name: www.shopify.com-vless
+  type: vless
+  server: www.shopify.com
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: freesni.zjde5.de5.net
+  servername: freesni.zjde5.de5.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: freesni.zjde5.de5.net
+- name: www.shopify.com-vmess
+  type: vmess
+  server: www.shopify.com
+  port: 2096
+  uuid: 68f891b8-d7e8-47bf-a5f2-b7baf912f69c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: asuka.0061.my
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: asuka.0061.my
+- name: cf.877774.xyz
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: b7789765-c9fb-41c3-bea0-348b702eb816
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  sni: rt.372164885.xyz
+  servername: rt.372164885.xyz
+  network: ws
+  ws-opts:
+    path: /pk-vl
+    headers:
+      Host: rt.372164885.xyz
+- name: snu香港002
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 103.69.128.41
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  client-fingerprint: chrome
+  servername: freesni.zjde5.de5.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: freesni.zjde5.de5.net
+  tfo: false
+- name: snu香港004
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 149.104.28.99
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  client-fingerprint: chrome
+  servername: freesni.zjde5.de5.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560149.104.28.99:443
+    headers:
+      host: freesni.zjde5.de5.net
+  tfo: false
+- name: snu香港006
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 192.142.4.33
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  client-fingerprint: chrome
+  servername: freesni.zjde5.de5.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560192.142.4.33:2053
+    headers:
+      host: freesni.zjde5.de5.net
+  tfo: false
+- name: snu香港007
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 149.104.28.14
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  client-fingerprint: chrome
+  servername: freesni.zjde5.de5.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560149.104.28.14:443
+    headers:
+      host: freesni.zjde5.de5.net
+  tfo: false
+- name: snu香港010
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 43.247.133.235
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  client-fingerprint: chrome
+  servername: freesni.zjde5.de5.net
+  network: ws
+  ws-opts:
+    path: /?ed=256043.247.133.235:443
+    headers:
+      host: freesni.zjde5.de5.net
+  tfo: false
+- name: JP_33|4.3MB/s
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: freeyx.cloudflare88.eu.org
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
+- {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
+- {name: FR197|1MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
+- {name: FR470|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
+- {name: TW028|17MB/s, server: cf.130519.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -389,6 +574,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -439,6 +640,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: 📹 YouTube
   type: select
   proxies:
@@ -487,6 +704,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -535,6 +768,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: 🎮️ 游戏平台
   type: select
   proxies:
@@ -584,6 +833,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
@@ -631,6 +896,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -680,6 +961,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: 📲 电报信息
   type: select
   proxies:
@@ -729,6 +1026,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -778,6 +1091,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: 🎯 国内直连
   type: select
   proxies:
@@ -827,6 +1156,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -876,6 +1221,22 @@ proxy-groups:
   - DE²_5|5.2MB/s
   - LV²_18|8.1MB/s
   - DE²_11|3.6MB/s
+  - xx|352f
+  - www.shopify.com-trojan
+  - www.shopify.com-vless
+  - www.shopify.com-vmess
+  - cf.877774.xyz
+  - snu香港002
+  - snu香港004
+  - snu香港006
+  - snu香港007
+  - snu香港010
+  - JP_33|4.3MB/s
+  - HK002|6.1MB/s
+  - 59SG-HK_3|3.6MB/s
+  - FR197|1MB/s
+  - FR470|3MB/s
+  - TW028|17MB/s
 rule-providers:
   Proxy:
     type: http
