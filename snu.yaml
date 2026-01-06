@@ -1,0 +1,337 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+geodata-mode: true
+geo-auto-update: true
+geodata-loader: standard
+geo-update-interval: 24
+geox-url:
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: >-
+    https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: >-
+    https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: >-
+    https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+rule-providers:
+  geolocation-cn:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-cn.mrs
+    path: ./ruleset/geolocation-cn.mrs
+    interval: 86400
+  cn:
+    type: http
+    format: mrs
+    behavior: ipcidr
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs
+    path: ./ruleset/cn.mrs
+    interval: 86400
+  geolocation-!cn:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-!cn.mrs
+    path: ./ruleset/geolocation-!cn.mrs
+    interval: 86400
+  private:
+    type: http
+    format: mrs
+    behavior: ipcidr
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs
+    path: ./ruleset/private.mrs
+    interval: 86400
+dns:
+  enable: true
+  ipv6: true
+  respect-rules: true
+  enhanced-mode: fake-ip
+  nameserver:
+    - https://120.53.53.53/dns-query
+    - https://223.5.5.5/dns-query
+  proxy-server-nameserver:
+    - https://120.53.53.53/dns-query
+    - https://223.5.5.5/dns-query
+  nameserver-policy:
+    geosite:cn,private:
+      - https://120.53.53.53/dns-query
+      - https://223.5.5.5/dns-query
+    geosite:geolocation-!cn:
+      - https://dns.cloudflare.com/dns-query
+      - https://dns.google/dns-query
+proxies:
+  - udp: false
+    skip-cert-verify: true
+    name: 1、香港
+    type: vless
+    server: 154.3.33.43
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560154.3.33.43:443
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 2、香港
+    type: vless
+    server: 103.69.128.41
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560103.69.128.41:443
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 3、香港
+    type: vless
+    server: 202.85.53.160
+    port: 7000
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560202.85.53.160:7000
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 4、香港
+    type: vless
+    server: 149.104.28.99
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560149.104.28.99:443
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 5、香港
+    type: vless
+    server: 149.104.30.73
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560149.104.30.73:443
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 6、香港
+    type: vless
+    server: 192.142.4.33
+    port: 2053
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560192.142.4.33:2053
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 7、香港
+    type: vless
+    server: 149.104.28.14
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560149.104.28.14:443
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 8、香港
+    type: vless
+    server: 149.104.28.170
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560149.104.28.170:443
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 9、香港
+    type: vless
+    server: 149.104.31.55
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560149.104.31.55:443
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 10、香港
+    type: vless
+    server: 43.247.133.235
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    client-fingerprint: chrome
+    servername: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=256043.247.133.235:443
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+proxy-groups:
+  - type: select
+    name: 🚀 节点选择
+    proxies:
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - 1、香港
+      - 2、香港
+      - 3、香港
+      - 4、香港
+      - 5、香港
+      - 6、香港
+      - 7、香港
+      - 8、香港
+      - 9、香港
+      - 10、香港
+  - name: ⚡ 自动选择
+    type: url-test
+    proxies:
+      - 1、香港
+      - 2、香港
+      - 3、香港
+      - 4、香港
+      - 5、香港
+      - 6、香港
+      - 7、香港
+      - 8、香港
+      - 9、香港
+      - 10、香港
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - type: select
+    name: 🏠 私有网络
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - 1、香港
+      - 2、香港
+      - 3、香港
+      - 4、香港
+      - 5、香港
+      - 6、香港
+      - 7、香港
+      - 8、香港
+      - 9、香港
+      - 10、香港
+  - type: select
+    name: 🔒 国内服务
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - 1、香港
+      - 2、香港
+      - 3、香港
+      - 4、香港
+      - 5、香港
+      - 6、香港
+      - 7、香港
+      - 8、香港
+      - 9、香港
+      - 10、香港
+  - type: select
+    name: 🌐 非中国
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - 1、香港
+      - 2、香港
+      - 3、香港
+      - 4、香港
+      - 5、香港
+      - 6、香港
+      - 7、香港
+      - 8、香港
+      - 9、香港
+      - 10、香港
+  - type: select
+    name: 🐟 漏网之鱼
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - 1、香港
+      - 2、香港
+      - 3、香港
+      - 4、香港
+      - 5、香港
+      - 6、香港
+      - 7、香港
+      - 8、香港
+      - 9、香港
+      - 10、香港
+rules:
+  - RULE-SET,geolocation-cn,🔒 国内服务
+  - RULE-SET,cn,🔒 国内服务
+  - RULE-SET,geolocation-!cn,🌐 非中国
+  - RULE-SET,private,🏠 私有网络,no-resolve
+  - RULE-SET,cn,🔒 国内服务,no-resolve
+  - MATCH,🐟 漏网之鱼
