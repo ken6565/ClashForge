@@ -417,7 +417,7 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-     - 1、香港
+      - 1、香港
       - 2、香港
       - 3、香港
       - 4、香港
@@ -474,7 +474,7 @@ proxy-groups:
       - DIRECT
       - REJECT
       - ⚡ 自动选择
-     - 1、香港
+      - 1、香港
       - 2、香港
       - 3、香港
       - 4、香港
@@ -501,7 +501,7 @@ proxy-groups:
       - DIRECT
       - REJECT
       - ⚡ 自动选择
-     - 1、香港
+      - 1、香港
       - 2、香港
       - 3、香港
       - 4、香港
@@ -528,7 +528,7 @@ proxy-groups:
       - DIRECT
       - REJECT
       - ⚡ 自动选择
-     - 1、香港
+      - 1、香港
       - 2、香港
       - 3、香港
       - 4、香港
