@@ -522,6 +522,60 @@ proxy-groups:
       - 9、美国
       - 10、美国
   - type: select
+    name: ♻️ 油管视频
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - 1、香港
+      - 2、香港
+      - 3、香港
+      - 4、香港
+      - 5、香港
+      - 6、香港
+      - 7、香港
+      - 8、香港
+      - 9、香港
+      - 10、香港
+      - 1、美国
+      - 2、美国
+      - 3、美国
+      - 4、美国
+      - 5、美国
+      - 6、美国
+      - 7、美国
+      - 8、美国
+      - 9、美国
+      - 10、美国
+  - type: select
+    name: 🐱 Github
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ⚡ 自动选择
+      - 1、香港
+      - 2、香港
+      - 3、香港
+      - 4、香港
+      - 5、香港
+      - 6、香港
+      - 7、香港
+      - 8、香港
+      - 9、香港
+      - 10、香港
+      - 1、美国
+      - 2、美国
+      - 3、美国
+      - 4、美国
+      - 5、美国
+      - 6、美国
+      - 7、美国
+      - 8、美国
+      - 9、美国
+      - 10、美国
+  - type: select
     name: 🐟 漏网之鱼
     proxies:
       - 🚀 节点选择
@@ -550,6 +604,9 @@ proxy-groups:
       - 10、美国
 rules:
   - RULE-SET,geolocation-cn,🔒 国内服务
+  - RULE-SET,youtube,♻️ 油管视频
+  - RULE-SET,github,🐱 Github
+  - RULE-SET,gitlab,🐱 Github
   - RULE-SET,cn,🔒 国内服务
   - RULE-SET,geolocation-!cn,🌐 非中国
   - RULE-SET,private,🏠 私有网络,no-resolve
