@@ -79,7 +79,7 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560154.3.33.43:443
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -95,7 +95,7 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560103.69.128.41:443
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -111,7 +111,7 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560202.85.53.160:7000
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -127,7 +127,7 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560149.104.28.99:443
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -143,7 +143,7 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560149.104.30.73:443
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -159,7 +159,7 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560192.142.4.33:2053
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -175,7 +175,7 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560149.104.28.14:443
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -191,7 +191,7 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560149.104.28.170:443
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -207,7 +207,7 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560149.104.31.55:443
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -223,7 +223,167 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=256043.247.133.235:443
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 1、美国
+    type: trojan
+    server: 45.143.128.122
+    port: 7443
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 2、美国
+    type: trojan
+    server: 154.19.242.20
+    port: 443
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 3、美国
+    type: trojan
+    server: 38.181.42.244
+    port: 8020
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 4、美国
+    type: trojan
+    server: 185.92.180.35
+    port: 8443
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 5、美国
+    type: trojan
+    server: 89.116.171.171
+    port: 8443
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 6、美国
+    type: trojan
+    server: 185.92.181.12
+    port: 7443
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 7、美国
+    type: trojan
+    server: 45.61.136.61
+    port: 9443
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 8、美国
+    type: trojan
+    server: 185.92.181.7
+    port: 8443
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 9、美国
+    type: trojan
+    server: 185.92.180.207
+    port: 8443
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: freesni.zjde5.de5.net
+    tfo: false
+  - udp: false
+    skip-cert-verify: true
+    name: 10、美国
+    type: trojan
+    server: 185.92.182.237
+    port: 8443
+    password: d342d11e
+    tls: true
+    client-fingerprint: chrome
+    sni: freesni.zjde5.de5.net
+    network: ws
+    ws-opts:
+      path: /?ed=2560
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
@@ -234,7 +394,7 @@ proxy-groups:
       - DIRECT
       - REJECT
       - ⚡ 自动选择
-      - 1、香港
+     - 1、香港
       - 2、香港
       - 3、香港
       - 4、香港
@@ -244,10 +404,20 @@ proxy-groups:
       - 8、香港
       - 9、香港
       - 10、香港
+      - 1、美国
+      - 2、美国
+      - 3、美国
+      - 4、美国
+      - 5、美国
+      - 6、美国
+      - 7、美国
+      - 8、美国
+      - 9、美国
+      - 10、美国
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 1、香港
+     - 1、香港
       - 2、香港
       - 3、香港
       - 4、香港
@@ -257,6 +427,16 @@ proxy-groups:
       - 8、香港
       - 9、香港
       - 10、香港
+      - 1、美国
+      - 2、美国
+      - 3、美国
+      - 4、美国
+      - 5、美国
+      - 6、美国
+      - 7、美国
+      - 8、美国
+      - 9、美国
+      - 10、美国
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -277,6 +457,16 @@ proxy-groups:
       - 8、香港
       - 9、香港
       - 10、香港
+      - 1、美国
+      - 2、美国
+      - 3、美国
+      - 4、美国
+      - 5、美国
+      - 6、美国
+      - 7、美国
+      - 8、美国
+      - 9、美国
+      - 10、美国
   - type: select
     name: 🔒 国内服务
     proxies:
@@ -284,7 +474,7 @@ proxy-groups:
       - DIRECT
       - REJECT
       - ⚡ 自动选择
-      - 1、香港
+     - 1、香港
       - 2、香港
       - 3、香港
       - 4、香港
@@ -294,6 +484,16 @@ proxy-groups:
       - 8、香港
       - 9、香港
       - 10、香港
+      - 1、美国
+      - 2、美国
+      - 3、美国
+      - 4、美国
+      - 5、美国
+      - 6、美国
+      - 7、美国
+      - 8、美国
+      - 9、美国
+      - 10、美国
   - type: select
     name: 🌐 非中国
     proxies:
@@ -301,7 +501,7 @@ proxy-groups:
       - DIRECT
       - REJECT
       - ⚡ 自动选择
-      - 1、香港
+     - 1、香港
       - 2、香港
       - 3、香港
       - 4、香港
@@ -311,6 +511,16 @@ proxy-groups:
       - 8、香港
       - 9、香港
       - 10、香港
+      - 1、美国
+      - 2、美国
+      - 3、美国
+      - 4、美国
+      - 5、美国
+      - 6、美国
+      - 7、美国
+      - 8、美国
+      - 9、美国
+      - 10、美国
   - type: select
     name: 🐟 漏网之鱼
     proxies:
@@ -318,7 +528,7 @@ proxy-groups:
       - DIRECT
       - REJECT
       - ⚡ 自动选择
-      - 1、香港
+     - 1、香港
       - 2、香港
       - 3、香港
       - 4、香港
@@ -328,6 +538,16 @@ proxy-groups:
       - 8、香港
       - 9、香港
       - 10、香港
+      - 1、美国
+      - 2、美国
+      - 3、美国
+      - 4、美国
+      - 5、美国
+      - 6、美国
+      - 7、美国
+      - 8、美国
+      - 9、美国
+      - 10、美国
 rules:
   - RULE-SET,geolocation-cn,🔒 国内服务
   - RULE-SET,cn,🔒 国内服务
