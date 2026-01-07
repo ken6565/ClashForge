@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 external-controller: 9090
 proxies:
+- type: anytls
+  name: JP²_31|0.4MB/s
+  server: 160.16.75.254
+  port: 443
+  password: a2d12dc9-c111-45ac-b803-87e48f3484d8
+  udp: true
+  sni: gw.alicdn.com
+  skip-cert-verify: true
 - name: SG²_11|11.5MB/s
   type: hysteria2
   server: 203.27.106.148
@@ -836,6 +844,7 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -943,6 +952,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -1048,6 +1058,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -1153,6 +1164,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -1259,6 +1271,7 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -1363,6 +1376,7 @@ proxy-groups:
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -1469,6 +1483,7 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -1575,6 +1590,7 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -1681,6 +1697,7 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -1787,6 +1804,7 @@ proxy-groups:
   proxies:
   - DIRECT
   - 🚀 手动切换
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
@@ -1893,6 +1911,7 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
+  - JP²_31|0.4MB/s
   - US001
   - US002
   - US003
