@@ -1,625 +1,449 @@
 proxies:
-  - name: JP²_29|3.9MB/s
-    type: hysteria2
-    server: rb.kaixincloud.top
-    port: 443
-    password: 254109dd-83fc-4bd2-a41e-fdee6d0805b3
-    sni: rb.kaixincloud.top
-    skip-cert-verify: true
-  - name: US²_01|0.7MB/s
-    type: hysteria2
-    server: 2a14:3f87:f001:9::a
-    port: 45000
-    obfs: salamander
-    obfs-password: Telegram-->@Ln2Ray
-    password: Telegram-->@Ln2Ray
-    sni: gavazn.55994421.xyz
-    skip-cert-verify: true
-  - name: US²_04|0.7MB/s
-    type: hysteria2
-    server: 2a02:180:6:1::1b3
-    port: 51435
-    password: 32d5901c-3cf6-43a9-b719-d71f1fb4f78e
-    sni: www.bing.com
-    skip-cert-verify: true
-  - name: CA²_1|3.6MB/s
-    type: hysteria2
-    server: xjp.kaixincloud.top
-    port: 443
-    password: 881c153c-cf33-4bfc-b7ff-4a90163c160f
-    sni: xjp.kaixincloud.top
-    skip-cert-verify: true
-  - name: DE²_5|5.2MB/s
-    type: hysteria2
-    server: 91.107.190.166
-    port: 8443
-    obfs: salamander
-    obfs-password: KLSADFIU43#$
-    password: xtGIM7iEx9
-    sni: dash.cloudflare.com
-    skip-cert-verify: true
-  - name: DE²_11|3.6MB/s
-    type: hysteria2
-    server: 130.61.50.75
-    port: 6443
-    password: zhangyang
-    sni: dash.cloudflare.com
-    skip-cert-verify: true
-  - name: DE²_5|5.2MB/s
-    type: hysteria2
-    server: 91.107.190.166
-    port: 8443
-    obfs: salamander
-    obfs-password: KLSADFIU43#$
-    password: xtGIM7iEx9
-    sni: dash.cloudflare.com
-    skip-cert-verify: true
-  - name: NL²002
-    type: hysteria2
-    server: 2a14:3f87:f001:13::a
-    port: 35000
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-    password: Yet-Another-Public-Config-1
-    sni: YAPC-1.afshin.ir
-    skip-cert-verify: true
-  - name: FR²_5|0.6MB/s
-    type: hysteria2
-    server: 2001:bc8:32d7:302::11
-    port: 20088
-    password: dongtaiwang.com
-    sni: рҹ”’
-    skip-cert-verify: true
-  - name: US002
-    type: hysteria2
-    server: 2a14:3f87:f001:13::a
-    port: 35200
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-    password: Yet-Another-Public-Config-1
-    sni: YAPC-1.afshin.ir
-    skip-cert-verify: true
-  - name: US²_88|2.1MB/s
-    type: hysteria2
-    server: 170.9.63.232
-    port: 26902
-    password: f19823db-48e6-44fc-8a6a-372ce3611763
-    sni: www.microsoft.com
-    skip-cert-verify: true
-  - name: US²_39|3.4MB/s
-    type: hysteria2
-    server: 170.9.63.232
-    port: 26902
-    password: f19823db-48e6-44fc-8a6a-372ce3611763
-    sni: dash.cloudflare.com
-    skip-cert-verify: true
-  - name: US²_29|3.5MB/s
-    type: hysteria2
-    server: 170.9.63.232
-    port: 26902
-    password: f19823db-48e6-44fc-8a6a-372ce3611763
-    sni: www.bing.com
-    skip-cert-verify: true
-  - name: US²_250|10.2MB/s
-    type: hysteria2
-    server: mg.dabache.top
-    port: 443
-    password: f9504f36-66bf-48ff-bb38-c73ffe2d6b96
-    sni: mg.dabache.top
-    skip-cert-verify: true
-  - name: AZ²002
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 443
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: CA²_1|3.6MB/s
-    type: hysteria2
-    server: xjp.kaixincloud.top
-    port: 443
-    password: 881c153c-cf33-4bfc-b7ff-4a90163c160f
-    sni: xjp.kaixincloud.top
-    skip-cert-verify: true
-  - name: LV²_18|8.1MB/s
-    type: hysteria2
-    server: channel4.saghetalaie.homes
-    port: 46914
-    obfs: salamander
-    obfs-password: "&O#28YB5qK!5t#U"
-    password: yhqy5AHofQq
-    sni: www.google.com
-    skip-cert-verify: true
-  - name: DE²_14|0.2MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: SG²_22|0.4MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: 27104fae-f047-4993-902a-9368d8a3e9bc
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: DE²_134|0.2MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: SG²_28|0.1MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: c6e0562f-7ad1-40fb-a255-26194b2de84a
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: GB²_10|0.2MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: DE²_31|0.2MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: 12929592-a7bd-41eb-ab4d-d804f76c4ff9
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: DE²_31|0.5MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: DE²_36|0.1MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: NL¹_1|4.8MB/s
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 51658
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: NL¹_5|1.3MB/s
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 54608
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: US²006
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 52318
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: NL¹_2|3.4MB/s
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 59220
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: NL¹_3|0.2MB/s
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 58262
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: NL¹_4|1.1MB/s
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 56269
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: NL²_4|7.2MB/s
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 57061
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: NL²_2|0.2MB/s
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 56654
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: NL²_7|3.6MB/s
-    type: hysteria2
-    server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-    port: 58576
-    obfs: salamander
-    obfs-password: FnFgQIckcMRtKq7i
-    password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-    sni: Ab.ac
-    skip-cert-verify: true
-  - name: NL²001
-    type: hysteria2
-    server: 2a14:3f87:f001:13::a
-    port: 36400
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-    password: Yet-Another-Public-Config-1
-    sni: YAPC-1.afshin.ir
-    skip-cert-verify: true
-  - name: UD²003
-    type: hysteria2
-    server: 2a14:3f87:f001:13::a
-    port: 36300
-    obfs: salamander
-    obfs-password: Yet-Another-Public-Config-1
-    password: Yet-Another-Public-Config-1
-    sni: YAPC-1.afshin.ir
-    skip-cert-verify: true
-  - name: US²004
-    type: hysteria2
-    server: 2001:bc8:32d7:302::11
-    port: 20088
-    password: dongtaiwang.com
-    sni: 🔒
-    skip-cert-verify: true
-  - name: US²005
-    type: hysteria2
-    server: 2001:bc8:32d7:302::11
-    port: 20088
-    password: dongtaiwang.com
-    sni: apple.com
-    skip-cert-verify: true
-  - name: FR²001
-    type: hysteria2
-    server: 2001:bc8:32d7:302::11
-    port: 20088
-    password: dongtaiwang.com
-    sni: 🔒 [By EbraSha] 
-    skip-cert-verify: true
-  - name: DE²_94|0.2MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: b2da9920-b0a7-4354-9e26-3833ab8d00d0
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: GB²_1|0.2MB/s
-    type: hysteria2
-    server: 5.83.150.108
-    port: 54365
-    password: b01d1e26-2f84-48da-88a1-1d06a77857f3
-    sni: imafake.locker
-    skip-cert-verify: true
-  - name: xx|352f
-    type: tuic
-    server: 2001:bc8:32d7:302::16
-    port: 34997
-    uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-    password: dongtaiwang.com
-    skip-cert-verify: true
-    disable-sni: true
-    alpn:
-      - h3
-    sni: bing.com
-    udp-relay-mode: native
-  - name: www.shopify.com-trojan
-    type: trojan
-    server: www.shopify.com
-    port: 2087
-    password: '666'
-    udp: true
-    tfo: false
-    tls: true
-    sni: freesni.zjde5.de5.net
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    alpn:
-    - http/1.1
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: freesni.zjde5.de5.net
-  - name: www.shopify.com-vless
-    type: vless
-    server: www.shopify.com
-    port: 2053
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    encryption: none
-    udp: true
-    skip-cert-verify: true
-    tfo: false
-    tls: true
-    sni: freesni.zjde5.de5.net
-    servername: freesni.zjde5.de5.net
-    client-fingerprint: chrome
-    alpn:
-    - http/1.1
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: freesni.zjde5.de5.net
-  - name: www.shopify.com-vmess
-    type: vmess
-    server: www.shopify.com
-    port: 2096
-    uuid: 68f891b8-d7e8-47bf-a5f2-b7baf912f69c
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: false
-    udp: true
-    network: ws
-    aead: true
-    tfo: false
-    sni: asuka.0061.my
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        Host: asuka.0061.my
-  - name: cf.877774.xyz
-    type: vless
-    server: cf.877774.xyz
-    port: 443
-    uuid: b7789765-c9fb-41c3-bea0-348b702eb816
-    encryption: none
-    udp: true
-    skip-cert-verify: false
-    tfo: false
-    tls: true
-    sni: rt.372164885.xyz
-    servername: rt.372164885.xyz
-    network: ws
-    ws-opts:
-      path: /pk-vl
-      headers:
-        Host: rt.372164885.xyz
-  - name: snu香港006
-    type: vless
-    server: 192.142.4.33
-    port: 2053
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560192.142.4.33:2053
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-    skip-cert-verify: true
-    flow: ""
-  - name: snu香港010
-    type: vless
-    server: 43.247.133.235
-    port: 443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=256043.247.133.235:443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-    skip-cert-verify: true
-    flow: ""
-  - name: HK002|6.1MB/s
-    type: vless
-    server: 104.18.46.69
-    port: 80
-    uuid: df301b32-1152-4526-9a63-beedd93d3156
-    tls: true
-    servername: vl.dalazhi.cloudns.biz
-    network: ws
-    ws-opts:
-      path: /%2F%3Fed%3D2048
-      headers:
-        host: vl.dalazhi.cloudns.biz
-    tfo: false
-    skip-cert-verify: false
-    flow: ""
-  - name: 59SG-HK_3|3.6MB/s
-    type: vless
-    server: 104.18.46.69
-    port: 80
-    uuid: df301b32-1152-4526-9a63-beedd93d3156
-    tls: true
-    servername: vl.dalazhi.cloudns.biz
-    network: ws
-    ws-opts:
-      path: /%2F%3Fed%3D2048
-      headers:
-        host: vl.dalazhi.cloudns.biz
-    tfo: false
-    skip-cert-verify: false
-    flow: ""
-  - name: FR197|1MB/s
-    type: hysteria2
-    server: 62.210.196.68
-    port: 26691
-    password: dongtaiwang.com
-    auth: dongtaiwang.com
-    up: 50
-    down: 80
-    sni: ""
-    skip-cert-verify: true
-  - name: FR470|3MB/s
-    type: hysteria2
-    server: 62.210.196.68
-    port: 26691
-    password: dongtaiwang.com
-    auth: dongtaiwang.com
-    up: 11
-    down: 55
-    sni: ""
-    skip-cert-verify: true
-  - {name: HK_104|10.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 783 ", skip-cert-verify: true}
-  - {name: HK_10|3.9MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+b2n.ir/v2ray-configs+", skip-cert-verify: true}
-  - {name: HK_10|8.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
-  - {name: HK_110|3.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: 58.152.46.60, skip-cert-verify: true}
-  - {name: HK_111|5.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs ", skip-cert-verify: true}
-  - {name: HK_113|0.2MB/, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20", skip-cert-verify: true}
-  - {name: HK_142|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+36+", skip-cert-verify: true}
-  - {name: HK_156|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 54 ", skip-cert-verify: true}
-  - {name: HK_15|1.8MB/s|YT", server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK_17|4.8MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 789 ", skip-cert-verify: true}
-  - {name: HK_181|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 178 ", skip-cert-verify: true}
-  - {name: HK_187|0.6MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 187 ", skip-cert-verify: true}
-  - {name: HK_18|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20", skip-cert-verify: true}
-  - {name: HK_18|4.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK_19|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] ", skip-cert-verify: true}
-  - {name: HK_19|4.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK_20|1.7MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 88 ", skip-cert-verify: true}
-  - {name: HK_237|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 127 ", skip-cert-verify: true}
-  - {name: HK_240|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 761 ", skip-cert-verify: true}
-  - {name: HK_255|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
-  - {name: HK_257|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 475 ", skip-cert-verify: true}
-  - {name: HK_264|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20", skip-cert-verify: true}
-  - {name: HK_27|0.1MB/s, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 843bcd0b-f2ab-482f-8262-6d09cf97f4b8, sni: green2.cdntencentmusic.com, skip-cert-verify: true}
-  - {name: HK_281|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: 🔒, skip-cert-verify: true}
-  - {name: HK_305|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 160 ", skip-cert-verify: true}
-  - {name: HK_308|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 868 ", skip-cert-verify: true}
-  - {name: HK_31|4.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 166 ", skip-cert-verify: true}
-  - {name: HK_32|6.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 934 ", skip-cert-verify: true}
-  - {name: HK_34|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 879 ", skip-cert-verify: true}
-  - {name: HK_35|0.5MB/s|YT", server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 78 ", skip-cert-verify: true}
-  - {name: HK_36|3.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK_37|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 816 ", skip-cert-verify: true}
-  - {name: HK_383|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi]", skip-cert-verify: true}
-  - {name: HK_38|3.0MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs ", skip-cert-verify: true}
-  - {name: HK_395|0.2MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+", skip-cert-verify: true}
-  - {name: HK_398|0.2MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 84 ", skip-cert-verify: true}
-  - {name: HK_403|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] trojan-HK ", skip-cert-verify: true}
-  - {name: HK_412|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 54 ", skip-cert-verify: true}
-  - {name: HK_416|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20", skip-cert-verify: true}
-  - {name: HK_428|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20", skip-cert-verify: true}
-  - {name: HK_42|10.8MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] ", skip-cert-verify: true}
-  - {name: HK_430|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20", skip-cert-verify: true}
-  - {name: HK_435|1.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20449%20", skip-cert-verify: true}
-  - {name: HK_436|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20", skip-cert-verify: true}
-  - {name: HK_438|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK_439|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 178 ", skip-cert-verify: true}
-  - {name: HK_454|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By DukeMehdi] b2n.ir/v2ray-configs | 934 ", skip-cert-verify: true}
-  - {name: HK_45|5.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] trojan-HK ", skip-cert-verify: true}
-  - {name: HK_475|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%5BBy%20EbraSha%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK_487|0.2MB/, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 152 ", skip-cert-verify: true}
-  - {name: HK_513|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] trojan-HK ", skip-cert-verify: true}
-  - {name: HK_520|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20761%20", skip-cert-verify: true}
-  - {name: HK_522|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: +, skip-cert-verify: true}
-  - {name: HK_52|2.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs ", skip-cert-verify: true}
-  - {name: HK_537|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 36 ", skip-cert-verify: true}
-  - {name: HK_546|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK_549|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK_561|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20", skip-cert-verify: true}
-  - {name: HK_564|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20885%20", skip-cert-verify: true}
-  - {name: HK_57|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
-  - {name: HK_583|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK_589|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK_593|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒\n[By EbraSha] b2n.ir/v2ray-configs | 868 ", skip-cert-verify: true}
-  - {name: HK_595|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+879+", skip-cert-verify: true}
-  - {name: HK_5|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true}
-  - {name: HK_5|7.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK_60|4.7MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
-  - {name: HK_618|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK_619|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] ", skip-cert-verify: true}
-  - {name: HK_621|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20", skip-cert-verify: true}
-  - {name: HK_62|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20", skip-cert-verify: true}
-  - {name: HK_635|0.3MB/, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "\n[By EbraSha] trojan-HK ", skip-cert-verify: true}
-  - {name: HK_639|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 160 ", skip-cert-verify: true}
-  - {name: HK_63|7.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20", skip-cert-verify: true}
-  - {name: HK_661|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
-  - {name: HK_66|3.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+83+", skip-cert-verify: true}
-  - {name: HK_678|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 166 ", skip-cert-verify: true}
-  - {name: HK_682|0.7MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 281 ", skip-cert-verify: true}
-  - {name: HK_683|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20", skip-cert-verify: true}
-  - {name: HK_685|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20", skip-cert-verify: true}
-  - {name: HK_68|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20", skip-cert-verify: true}
-  - {name: HK_697|0.3MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 831 ", skip-cert-verify: true}
-  - {name: HK_699|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20", skip-cert-verify: true}
-  - {name: HK_6|5.8MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true}
-  - {name: HK_703|1.5MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] trojan-HK ", skip-cert-verify: true}
-  - {name: HK_707|0.3MB/s|YT-CN|NF, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK_70|3.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 648 ", skip-cert-verify: true}
-  - {name: HK_716|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] ", skip-cert-verify: true}
-  - {name: HK_718|0.7MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+36+", skip-cert-verify: true}
-  - {name: HK_723|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 127 ", skip-cert-verify: true}
-  - {name: HK_735|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By DukeMehdi] trojan-HK ", skip-cert-verify: true}
-  - {name: HK_754|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK_75|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK_763|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK_76|3.8MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By DukeMehdi] b2n.io/v2ray-configs | 83 ", skip-cert-verify: true}
-  - {name: HK_772|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] ", skip-cert-verify: true}
-  - {name: HK_773|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20475%20", skip-cert-verify: true}
-  - {name: HK_785|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK_786|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 166 ", skip-cert-verify: true}
-  - {name: HK_795|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "+++++++[By+DukeMehdi]+b2n.ir/v2ray-configs+|+160+", skip-cert-verify: true}
-  - {name: HK_810|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20", skip-cert-verify: true}
-  - {name: HK_811|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 78 ", skip-cert-verify: true}
-  - {name: HK_81|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 17 ", skip-cert-verify: true}
-  - {name: HK_81|6.5MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 879 ", skip-cert-verify: true}
-  - {name: HK_822|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK_829|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
-  - {name: HK_83|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 945 ", skip-cert-verify: true}
-  - {name: HK_844|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK_84|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 789 ", skip-cert-verify: true}
-  - {name: HK_868|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 761 ", skip-cert-verify: true}
-  - {name: HK_86|1.0MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 941 ", skip-cert-verify: true}
-  - {name: HK_89|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK_89|0.7MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20", skip-cert-verify: true}
-  - {name: HK_89|3.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "+++++++[By+DukeMehdi]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK_8|0.7MB/s, server: n1761214919.mv7wh.tech, port: 443, type: vmess, uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1761214919.mv7wh.tech}}}
-  - {name: HK_8|5.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: HK_90|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20", skip-cert-verify: true}
-  - {name: HK_919|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK_91|6.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+340+", skip-cert-verify: true}
-  - {name: HK_92|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 36 ", skip-cert-verify: true}
-  - {name: HK_95|2.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20", skip-cert-verify: true}
-  - {name: HK_96|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 945 ", skip-cert-verify: true}
-  - {name: HK_98|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
-  - {name: HK_98|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: 🔒, skip-cert-verify: true}
-  - {name: HK_99|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
-  - {name: HK_9|1.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: 🔒, skip-cert-verify: true}
-  - {name: JP_36|1.2MB/s, server: n1753598446.wpg27.xyz, port: 443, type: vmess, uuid: a5047d95-24b8-451a-93e3-f2a387b93d5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1753598446.wpg27.xyz}}}
-  - {name: SC_6|0.2MB/s, server: 156.245.232.15, port: 53947, type: vmess, uuid: 8cb243df-fa82-472c-be25-b00acd4fcd3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/使用此节点需要先沐浴焚香然后给群主磕800个响头(ಡωಡ)]}}
-  - {name: US_27|1.1MB/s, server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io}}}
-  - {name: US_358|2.6MB/s, server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io}}}
-  - {name: US_549|1.7MB/s, server: 104.19.45.11, port: 443, type: vmess, uuid: f19823db-48e6-44fc-8a6a-372ce3611763, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess-argo, headers: {Host: york-headed-producer-stadium.trycloudflare.com}}}
-  - {name: US_633|3.2MB/s, server: d-4beD-b726-2c53a82e4925.664.qZz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: D-4bEd-b726-2c53A82E4925.664.qzZ.iO}}}
-  - {name: US_716|0.6MB/s, server: d-4bed-b726-2c53a82e4925.664.qzz.io, port: 443, type: trojan, password: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, sni: d-4bED-B726-2C53a82E4925.664.Qzz.iO, skip-cert-verify: true, network: ws, ws-opts: {path: /E2JXJM5geneWfr9noOhn, headers: {Host: d-4bED-B726-2C53a82E4925.664.Qzz.iO}}}
-  - {name: US_84|3.5MB/s, server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io}}}
-  - {name: ZA_1|3.4MB/s, server: boogeyman.chomba.tech, port: 443, type: vmess, uuid: 9b6a87ed-9949-49f6-ab6f-cf9ab15177d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: boogeyman.chomba.tech}}}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_433|8.5MB/s|3%|GPT⁺|YT|TK|NF|D+|X|KeepSucceed","server":"convera.com","port":2053,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"sni.111000.dynv6.net"},"path":"/x-aniu/"},"encryption":"none","servername":"sni.111000.dynv6.net"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_62|3.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed","server":"convera.com","port":2053,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"sni.111000.dynv6.net"},"path":"/"},"encryption":"none","servername":"sni.111000.dynv6.net"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_1182|5.4MB/s|3%|GPT⁺|YT|TK|NF|D+|X|KeepSucceed","server":"convera.com","port":2053,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"sni.111000.dynv6.net"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"sni.111000.dynv6.net"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_49|11.4MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed","server":"141.193.213.20","port":2053,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"sni.111000.dynv6.net"},"path":"/?ed=2560fp=chrome"},"encryption":"none","servername":"sni.111000.dynv6.net"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_252|1.5MB/s|3%|YT|TK|NF|D+|X","server":"172.64.145.118","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_62|2.7MB/s|GPT⁺|YT|TK|NF|D+|X","server":"172.64.145.118","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇭🇰HK¹⁺_2|6.5MB/s|YT|NF|X|Succeed|[广播|机房]","server":"hj.xmm1993.top","port":2087,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_359|9.2MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|sinspired/subs-check","server":"104.16.250.22","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"l.ayovo.netlib.re"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"l.ayovo.netlib.re"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_80|4.8MB/s|3%|GM|YT|TK|NF|D+|X","server":"104.18.40.176","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_82|1.3MB/s|3%|GPT⁺|YT|TK|NF|D+|X","server":"172.64.145.118","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"name":"www.85la.com🇭🇰HK²_8|0.7MB/s|YT|NF|X|KeepSucceed","type":"vmess","server":"n1761214919.mv7wh.tech","port":443,"cipher":"auto","uuid":"c592f040-faff-47dc-a464-9bccf2dd4e7b","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"Host":"n1761214919.mv7wh.tech"}},"client-fingerprint":"","servername":"n1761214919.mv7wh.tech"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20166%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_815|0.6MB/s|1%|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 160 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_540|0.2MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"type":"vless","name":"www.85la.com🇭🇰HK¹-JP⁰_1|3.6MB/s|3%|X","server":"83.229.126.122","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_278|0.3MB/s|YT-HK|NF|D+|X","server":"43.161.222.233","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"++[By+DukeMehdi]+trojan-HK+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_21|1.4MB/s|1%|YT-CN|NF|D+|X|[原生|住宅]"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-SG⁰_4|3.7MB/s|GM|YT|TK|NF|D+|X","server":"hj.xmm1993.top","port":2087,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_9|3.7MB/s|1%|NF|D+|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"+++++++[By+EbraSha]+b2n.ir/v2ray-configs+|+761+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_13|12.4MB/s|D+|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"58.152.46.60","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_110|3.1MB/s|YT-CN|X|History"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20868%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_597|0.3MB/s|1%|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 681 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_453|0.2MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_791|0.5MB/s|1%|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_65|0.9MB/s|1%|D+|X"}
+  - {"skip-cert-verify":true,"sni":"       [By+DukeMehdi]+b2n.ir/v2ray-configs | 789 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_671|0.2MB/s|1%|YT-CN|D+|X|KeepHistory"}
+  - {"type":"vless","name":"www.85la.com🇭🇰HK¹-JP⁰_12|0.5MB/s|3%|GPT⁺|NF|D+|X","server":"43.161.222.233","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇭🇰HK¹-TW⁰_3|8.4MB/s|GPT|YT|X|[广播|机房]","server":"43.161.222.233","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_4|0.3MB/s|YT|NF|D+|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2017%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_640|0.2MB/s|D+|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"       [By DukeMehdi] b2n.ir/v2ray-configs | 789 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_634|0.1MB/s|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_855|0.1MB/s|1%|NF|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_36|2.3MB/s|1%|NF|D+|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_43|0.3MB/s|1%|NF|D+|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_48|0.1MB/s|1%|YT-CN|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20trojan-HK%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_549|0.3MB/s|1%|NF|D+|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_706|0.4MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_592|0.2MB/s|1%|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_246|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_54|0.1MB/s|1%|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2017%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_774|0.3MB/s|YT-CN|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 83 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_915|0.6MB/s|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_809|0.7MB/s|1%|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"+[By+EbraSha]+trojan-HK+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_12|0.3MB/s|1%|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 78 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_35|0.5MB/s|YT|NF|D+|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_62|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By DukeMehdi] b2n.ir/v2ray-configs | 945 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_582|0.1MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20178%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_401|0.4MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_4|0.6MB/s|1%|YT-CN|NF|D+|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_820|0.4MB/s|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By+DukeMehdi]+b2n.ir/v2ray-configs ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_41|0.2MB/s|1%|X"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_90|0.3MB/s|1%|X"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20761%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_520|0.5MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_436|0.1MB/s|1%|NF|D+|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_699|0.6MB/s|D+|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_331|0.2MB/s|1%|YT-CN|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20868%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_111|0.4MB/s|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_57|0.2MB/s|NF|History|[原生|住宅]"}
+  - {"name":"www.85la.com🇯🇵JP²_36|1.2MB/s|GPT⁺|GM|YT|NF|X|KeepSucceed","type":"vmess","server":"n1753598446.wpg27.xyz","port":443,"cipher":"auto","uuid":"a5047d95-24b8-451a-93e3-f2a387b93d5a","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/","headers":{"Host":"n1753598446.wpg27.xyz"}},"client-fingerprint":"","servername":"n1753598446.wpg27.xyz"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_483|0.3MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_785|0.4MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By DukeMehdi] b2n.ir/v2ray-configs | 783 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_101|0.8MB/s|1%|YT-CN|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_8|0.2MB/s|1%|YT|NF|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 160 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_305|0.5MB/s|1%|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By EbraSha] b2n.ir/v2ray-configs ","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_38|3.0MB/s|1%|YT-CN|D+|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_632|0.7MB/s|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%5BBy%20DukeMehdi%5D%20trojan-HK%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_248|0.2MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_438|0.4MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"t.me%2Fripaojiedian","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_8|5.2MB/s|YT-CN|NF|X|Succeed|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 382 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_725|0.4MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20449%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_435|1.2MB/s|1%|NF|D+|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 783 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_30|0.2MB/s|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By EbraSha] b2n.ir/v2ray-configs | 449 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_394|0.3MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"+[By+DukeMehdi]+trojan-HK+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_7|0.3MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By EbraSha] b2n.ir/v2ray-configs | 83 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_246|0.2MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_264|0.3MB/s|1%|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_416|0.4MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_89|0.7MB/s|X|History"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20166%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_12|3.3MB/s|YT|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_910|0.8MB/s|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_99|0.3MB/s|1%|YT-CN|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"+++++++[By+EbraSha]+b2n.ir/v2ray-configs+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_47|2.8MB/s|1%|NF|D+|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_98|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%2B%2B%2B%2B%2B%2B%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_616|0.5MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"       [By DukeMehdi] b2n.ir/v2ray-configs | 160 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_711|0.2MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By EbraSha] b2n.ir/v2ray-configs ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_64|0.2MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 232 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_437|0.4MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By DukeMehdi] ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_739|0.4MB/s|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By DukeMehdi] b2n.io/v2ray-configs | 83 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_76|3.8MB/s|1%|D+|X|History"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 152 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_487|0.2MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_63|7.2MB/s|1%|X|History"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_95|2.1MB/s|1%|YT-CN|History"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20761%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_387|0.2MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] trojan-HK ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_224|0.1MB/s|1%|YT-CN|NF|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"\n[By EbraSha] trojan-HK ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_635|0.3MB/s|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"+++++++[By+DukeMehdi]+b2n.ir/v2ray-configs+|+78+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_532|0.5MB/s|YT-CN|D+|X"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_559|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_55|0.2MB/s|1%|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 868 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_395|0.2MB/s|1%|YT-CN|NF|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 885 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_38|1.9MB/s|1%|YT|X|History"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_938|0.2MB/s|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20trojan-HK%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_535|0.8MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_817|0.3MB/s|1%|YT-CN"}
+  - {"skip-cert-verify":true,"sni":"t.me%252Fripaojiedian","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_4|0.5MB/s|1%|YT|NF|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 934 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_32|6.2MB/s|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 193 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_81|0.6MB/s|YT|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_829|0.2MB/s|1%|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"t.me%252Fripaojiedian","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_447|0.1MB/s|NF|D+|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP¹-HK⁰_5|0.5MB/s|3%|GM|YT|NF|D+|X","server":"47.79.151.55","port":1443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BEbraSha%5D%2Btrojan-HK%2B","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_90|0.2MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"t.me/ripaojiedian","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_798|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By+DukeMehdi]+b2n.ir/v2ray-configs | 88 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_338|0.1MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 868 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_85|0.2MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By EbraSha] trojan-HK ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_6|0.9MB/s|1%|YT-CN|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_526|0.1MB/s|1%|YT|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 402 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_27|8.8MB/s|1%|NF|D+|Succeed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_602|0.2MB/s|1%|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 789 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_17|4.8MB/s|1%|NF|X|History"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_19|4.5MB/s|YT-CN|X|History"}
+  - {"skip-cert-verify":true,"sni":"       [By DukeMehdi] b2n.ir/v2ray-configs | 78 ","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_191|0.2MB/s|1%|YT-CN|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_546|0.4MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 934 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_669|0.4MB/s|1%|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20783%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_79|1.6MB/s|D+|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20402%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_55|0.1MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20402%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_89|0.1MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 54 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_500|0.4MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_108|0.4MB/s|1%|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"t.me%252525252Fripaojiedian","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_62|0.1MB/s|1%|YT-CN|NF|D+"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_472|0.6MB/s|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20%7C%20789%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_693|0.4MB/s|1%|YT-CN|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 166 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_678|0.4MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"t.me%25252Fripaojiedian","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_433|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒+[By+EbraSha]+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_602|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+879+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_73|2.2MB/s|YT-CN|X|History"}
+  - {"skip-cert-verify":true,"sni":"58.152.46.60","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_53|0.1MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_561|0.2MB/s|1%|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20trojan-HK%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_52|0.3MB/s|1%|D+|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"t.me%2Fripaojiedian","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_511|0.2MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By EbraSha] b2n.ir/v2ray-configs | 160 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_639|0.4MB/s|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 684 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_514|0.1MB/s|1%|YT-CN|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 36 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_780|0.1MB/s|1%|NF|D+|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_583|0.3MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By EbraSha] b2n.ir/v2ray-configs | 761 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_868|0.6MB/s|1%|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_26|2.6MB/s|YT|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 166 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_643|0.2MB/s|YT-CN|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_9|1.2MB/s|NF|X|History"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 281 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_682|0.7MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 54 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_156|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒+[By+EbraSha]+trojan-HK+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_589|0.1MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By DukeMehdi] trojan-HK ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_735|0.6MB/s|1%|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 941 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_86|1.0MB/s|1%|X|History"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_716|0.4MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By DukeMehdi] b2n.ir/v2ray-configs | 934 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_454|0.1MB/s|1%|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 36 ","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_92|0.2MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP¹-TW⁰_1|0.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X","server":"13.231.70.133","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+879+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_573|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 36 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_862|0.1MB/s|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 879 ","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_627|0.2MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+340+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_91|6.1MB/s|NF|D+|X|Succeed|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 843 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_714|0.3MB/s|1%|YT-CN|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_522|0.5MB/s|1%|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_844|0.2MB/s|1%|YT-CN|NF|D+|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 816 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_608|0.1MB/s|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_19|3.1MB/s|1%|YT-CN|NF|D+|X|History"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20trojan-HK%20","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_15|1.8MB/s|YT|D+|X|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 711 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_71|0.2MB/s|1%|YT-CN|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+36+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_890|0.5MB/s|1%|YT|D+|X"}
+  - {"skip-cert-verify":true,"sni":"%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_754|0.4MB/s|1%|YT-CN|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"+++++++[By+DukeMehdi]+b2n.ir/v2ray-configs+|+160+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_795|0.3MB/s|1%|YT-CN|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 182 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_911|0.2MB/s|1%|YT-CN|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 146 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_228|0.5MB/s|1%|NF|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 40 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_825|0.2MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+36+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_751|0.2MB/s|1%|YT-CN|NF|D+|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 127 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_237|0.1MB/s|1%|YT-CN|NF|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] trojan-HK ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_433|0.1MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_281|0.2MB/s|1%|D+|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG¹-HK⁰_2|0.4MB/s|3%|GPT|YT|NF|D+|X","server":"13.215.22.231","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 236 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_662|0.2MB/s|1%|YT|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 691 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_870|0.1MB/s|1%|NF|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 146 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_606|0.3MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_685|0.6MB/s|1%|YT-CN|X|KeepHistory"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_718|1.6MB/s|3%|GPT⁺|YT|TK|NF|D+|X","server":"104.17.25.173","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"l.ayovo.netlib.re"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"l.ayovo.netlib.re"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_24|1.5MB/s|GPT⁺|GM|YT|TK|NF|D+|X","server":"104.18.40.176","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇭🇰HK¹-TW⁰_6|2.7MB/s|GPT⁺|YT|NF|D+|X","server":"47.57.182.141","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 187 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_187|0.6MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 84 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_398|0.2MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] trojan-HK ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_703|1.5MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%5BBy%20DukeMehdi%5D%20trojan-HK%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_89|0.1MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_161|0.2MB/s|1%|YT-CN|D+|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 816 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_37|0.2MB/s|1%|NF|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_48|1.0MB/s|YT|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"t.me/ripaojiedian","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_21|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_919|0.2MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_810|0.3MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"58.152.25.86","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_77|10.6MB/s|YT-CN|X|Succeed"}
+  - {"type":"vless","name":"www.85la.com🇭🇰HK¹⁺_1|2.0MB/s|3%|NF|D+|X|[广播|机房]","server":"43.154.238.181","port":8443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 17 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_81|0.2MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20%7C%20789%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_255|0.1MB/s|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_772|0.2MB/s|1%|YT-CN|D+|KeepHistory"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG¹-HK⁰_1|0.2MB/s|3%|YT|TK|NF|D+|X","server":"13.215.22.231","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP¹-SE⁰_1|0.5MB/s|3%|GM|YT|TK-US|NF|D+|X","server":"18.183.79.148","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"www.nintendogames.net","type":"trojan","password":"381f2e86233720eacda26d50e9aa26da","server":"58.152.110.104","port":443,"name":"www.85la.com🇭🇰HK²_231|0.2MB/s|1%|YT|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"www.nintendogames.net","client-fingerprint":"chrome","type":"trojan","password":"381f2e86233720eacda26d50e9aa26da","server":"58.152.110.104","port":443,"name":"www.85la.com🇭🇰HK²_660|0.2MB/s|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"t.me%25252Fripaojiedian","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_5|0.2MB/s|1%|NF|D+|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"t.me/ripaojiedian","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_6|5.8MB/s|1%|YT-CN|X|Succeed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_247|0.2MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_109|0.1MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 127 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_723|0.2MB/s|1%|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"+++++++[By+DukeMehdi]+trojan-HK+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_89|3.4MB/s|X|History|[原生|住宅]"}
+  - {"type":"vless","name":"www.85la.com🇭🇰HK²_107|0.1MB/s|3%|YT|NF","server":"156.224.78.8","port":10001,"uuid":"9c79aceb-4649-44ea-9698-b5e9ecf6d6da","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"D_kMOsg1KCtT0tudPFVDXGuEcSqZGtUYqBB-BiIxmls","short-id":"f7223dab"},"network":"tcp","encryption":"none","servername":"www.icloud.com"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG²_28|3.6MB/s|46%|GPT|GM|YT|NF|X|KeepSucceed","server":"141.193.213.20","port":2096,"uuid":"7ec108c5-5c08-4a9f-ad1b-bf60328792d4","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"free-server.techsonic.cloud"},"path":"/free-server.techsonic.cloud"},"encryption":"none","servername":"free-server.techsonic.cloud"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_683|0.5MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi]","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_383|0.1MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"       [By EbraSha] b2n.ir/v2ray-configs | 761 ","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_240|0.6MB/s|1%|YT-CN|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"%20%5BBy%20EbraSha%5D%20trojan-HK%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_475|0.3MB/s|1%|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_68|0.6MB/s|1%|X|Succeed|[原生|住宅]"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP¹-SG⁰_2|0.4MB/s|3%|GPT|GM|YT|TK|NF|D+|X","server":"47.79.151.55","port":1443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20475%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_773|0.4MB/s|YT-CN|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_10|8.1MB/s|1%|YT-CN|D+|X|History"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP¹-TW⁰_3|0.5MB/s|GPT⁺|GM|YT|TK|NF|D+|X","server":"47.79.151.55","port":1443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG¹-HK⁰_1|6.8MB/s|3%|GPT⁺|TK|D+|X|[广播|机房]","server":"43.160.253.51","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG¹-JP⁰_3|0.3MB/s|0%|GPT⁺|GM|YT|TK|NF|D+|X","server":"4.194.96.10","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG¹-TW⁰_2|0.3MB/s|GPT⁺|GM|YT|NF|D+|X","server":"4.194.96.10","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG¹-HK⁰_5|0.3MB/s|GM|TK|D+|X","server":"4.194.96.10","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG¹⁺_1|5.3MB/s|0%|TK|NF|D+|[广播|机房]","server":"4.194.96.10","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"name":"www.85la.com🇸🇨SC²_6|0.2MB/s|0%|GM|YT-US|NF|X","type":"vmess","server":"156.245.232.15","port":53947,"cipher":"auto","uuid":"8cb243df-fa82-472c-be25-b00acd4fcd3f","alterId":0,"tls":false,"network":"http","http-opts":{"path":["/使用此节点需要先沐浴焚香然后给群主磕800个响头(ಡωಡ)"],"headers":{}},"client-fingerprint":""}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%20DukeMehdi%5D%20trojan-HK%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_707|0.3MB/s|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE¹⁺_89|1.5MB/s|3%|GPT⁺|X|KeepSucceed","server":"194.76.173.6","port":2053,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"sni.111000.de5.net"},"path":"/"},"encryption":"none","servername":"sni.111000.de5.net"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_60|4.7MB/s|X|History|[原生|住宅]"}
+  - {"skip-cert-verify":true,"sni":"馃敀+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+879+","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_50|10.5MB/s|YT-CN|NF|X|Succeed"}
+  - {"skip-cert-verify":true,"sni":"%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_36|3.4MB/s|1%|YT-CN|X|Succeed"}
+  - {"type":"vless","name":"www.85la.com🇮🇳IN¹-US⁰_1|5.9MB/s|3%|GPT⁺|GM|YT|NF|X|[广播|机房]","server":"cloudflare.182682.xyz","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"l.ayovo.netlib.re"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"l.ayovo.netlib.re"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_621|0.4MB/s|1%|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE¹⁺_81|0.2MB/s|3%|GPT⁺|YT|TK|NF|D+|X|KeepSucceed","server":"194.76.173.6","port":2053,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"sni.111000.de5.net"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"sni.111000.de5.net"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_18|0.1MB/s|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 178 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_181|0.2MB/s|1%|NF|D+|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG²_8|1.5MB/s|46%|GPT⁺|X|History","server":"news.zoom.us","port":2096,"uuid":"7ec108c5-5c08-4a9f-ad1b-bf60328792d4","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"free-server.techsonic.cloud"},"path":"/free-server.techsonic.cloud"},"encryption":"none","servername":"free-server.techsonic.cloud"}
+  - {"skip-cert-verify":true,"sni":"%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_430|0.2MB/s|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_113|0.2MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"type":"vless","name":"www.85la.com🇫🇷FR²_85|0.3MB/s|54%|GPT⁺|YT-US|TK|NF|X|sinspired/subs-check","server":"141.227.134.105","port":7005,"uuid":"3b259973-5f12-4fa8-8f2a-edb61e4b9258","tls":true,"client-fingerprint":"firefox","skip-cert-verify":false,"reality-opts":{"public-key":"Cz-qN4FxgYUmrKUyots3FCe0tHP9wvK-1KNZYaLyCnQ"},"network":"tcp","encryption":"none","servername":"refersion.com"}
+  - {"type":"vless","name":"www.85la.com🇪🇸ES²_1|0.4MB/s|63%|GPT⁺|YT-GB|TK|NF|X|sinspired/subs-check","server":"allison.kosmolet.xyz","port":443,"uuid":"613725ab-ca86-4d54-852e-a0bf45e812de","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"UgCLC1JdwUh-hgpvSfndN1tuH98620gziTq2UB0gOjI","short-id":"a369bfe440aba1a2"},"network":"tcp","encryption":"none","servername":"allison.kosmolet.xyz"}
+  - {"skip-cert-verify":true,"sni":"       [By EbraSha] b2n.ir/v2ray-configs | 648 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_70|3.1MB/s|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 945 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_96|0.1MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_344|0.2MB/s|GPT⁺|GM|YT|TK|NF|D+|X","server":"144.34.229.14","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww2.allxniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww2.allxniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇫🇷FR²_45|0.2MB/s|0%|GPT⁺|YT-RU|TK|NF|X|KeepSucceed","server":"145.223.69.171","port":443,"uuid":"c5c9d8ec-6c95-4f84-a395-de41ef895f34","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"JQHrZXZRnkZUOMdNHS7X1fPyMDqKjiQWlfTdntIOqzg","short-id":"97c6c4b8"},"network":"tcp","encryption":"none","servername":"www.vk.com"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20trojan-HK%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_60|0.1MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_228|0.7MB/s|3%|YT|TK|NF|D+|X","server":"104.18.34.125","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_59|2.8MB/s|GPT⁺|YT|TK|NF|D+|X","server":"104.18.29.133","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_85|0.5MB/s|3%|GPT⁺|YT|TK|NF|D+|X","server":"104.18.31.15","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-SG⁰_1|3.8MB/s|3%|GPT|GM|YT|TK|NF|D+|X","server":"104.18.30.238","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_41|5.0MB/s|3%|GM|YT|TK|NF|D+|X","server":"104.18.29.133","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇬🇧GB¹-AU⁰_1|2.4MB/s|0%|GPT⁺|YT|TK|NF|D+|X|[广播|机房]","server":"50.62.172.17","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww2.allxniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww2.allxniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇬🇧GB¹⁺_1|3.8MB/s|NF|X|[广播|机房]","server":"50.62.172.31","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww2.allxniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww2.allxniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_95|3.3MB/s|GPT⁺|YT|TK|NF|D+|X","server":"104.18.34.125","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_45|5.0MB/s|GPT⁺|YT|TK|NF|D+|X","server":"104.18.31.15","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"t.me%2525252Fripaojiedian","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_771|0.2MB/s|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"ts888.yumige.dpdns.org","client-fingerprint":"edge","alpn":["h3"],"network":"ws","ws-opts":{"path":"/http://45.32.19.198:30005/"},"type":"trojan","password":"f52d0a04-94ad-4f9e-9945-4c3d43374e36","server":"172.64.145.93","port":2096,"name":"www.85la.com🇯🇵JP²_2|2.6MB/s|39%|GPT|GM|YT|NF|X|History"}
+  - {"type":"vless","name":"www.85la.com🇬🇧GB¹-TW⁰_1|4.7MB/s|GPT|X|Succeed","server":"104.18.125.144","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_167|3.1MB/s|3%|YT|TK|NF|D+|X","server":"104.18.31.15","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"name":"www.85la.com🇫🇷FR²_6|0.2MB/s|GPT|NF|X","type":"vmess","server":"2001:bc8:32d7:2013::8","port":62211,"cipher":"auto","uuid":"e1786d49-ccba-466b-a0dd-e1ab59bd83bb","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/github.com/Alvin9999","headers":{"Host":"www.bing.com"}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_33|0.3MB/s|GPT⁺|YT|TK|NF|X|History|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"Host":"AZERB.NET"},"early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"client-fingerprint":""}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_17|3.3MB/s|GPT⁺|GM|YT|TK|NF|D+|X","server":"104.18.30.238","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG²_2|3.4MB/s|0%|GPT|TK-GB|NF|X|[广播|机房]","server":"50.62.172.8","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww2.allxniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww2.allxniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_260|1.9MB/s|3%|YT|TK|NF|D+|X","server":"104.18.34.125","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BEbraSha%5D%2Btrojan-HK%2B","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_763|0.1MB/s|X|KeepSucceed"}
+  - {"name":"www.85la.com🇫🇷FR²_1|0.3MB/s|TK|NF|X","type":"vmess","server":"2001:bc8:32d7:302::17","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"Host":"AZERB.NET"}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_29|0.2MB/s|GPT|NF|X|Succeed","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"Host":"AZERB.NET"}},"client-fingerprint":""}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_28|4.6MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X","server":"104.18.29.133","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"name":"www.85la.com🇫🇷FR²_45|0.2MB/s|GPT⁺|YT|TK|NF|X|History|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN","headers":{}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_8|0.2MB/s|GPT|X|Succeed|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10","headers":{}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_15|0.2MB/s|GPT|YT|TK|X","type":"vmess","server":"2001:bc8:32d7:302::16","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"Host":"AZERB.NET"}},"client-fingerprint":""}
+  - {"type":"vless","name":"www.85la.com🇬🇧GB¹-US⁰_1|7.4MB/s|GPT⁺|YT|TK|NF|X|[广播|机房]","server":"50.62.172.29","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww2.allxniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww2.allxniu.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_89|0.4MB/s|X|History"}
+  - {"name":"www.85la.com🇫🇷FR²_20|0.2MB/s|GPT|NF|X|History","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{},"early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2048},"client-fingerprint":""}
+  - {"skip-cert-verify":true,"sni":"ts888.yumige.dpdns.org","client-fingerprint":"chrome","alpn":["h3"],"network":"ws","ws-opts":{"path":"/http://45.32.19.198:30005"},"type":"trojan","password":"f52d0a04-94ad-4f9e-9945-4c3d43374e36","server":"172.64.145.93","port":2096,"name":"www.85la.com🇯🇵JP²_3|3.4MB/s|39%|GPT|YT|NF|X|History"}
+  - {"name":"www.85la.com🇫🇷FR²_39|3.3MB/s|GPT⁺|YT|TK|NF|X|History|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"Host":"AZERB.NET"}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_31|0.2MB/s|GPT|YT|TK|NF|X|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10","headers":{}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_4|1.3MB/s|X|Succeed","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"Host":"2001:bc8:32d7:302::10"},"early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2048},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_19|0.2MB/s|GPT|TK|X","type":"vmess","server":"2001:bc8:32d7:302::15","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"Host":"TURK.NET"}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_2|1.2MB/s|GPT|X|History|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_25|0.2MB/s|GPT⁺|NF|X|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::14","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"Host":"TABRIZ.NET"},"early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_13|0.2MB/s|GPT⁺|TK|X|Succeed|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN","headers":{"Host":"2001:bc8:32d7:302::10"}},"client-fingerprint":""}
+  - {"type":"vless","name":"www.85la.com🇬🇧GB¹-US⁰_3|5.6MB/s|3%|D+|X","server":"50.62.172.15","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww2.allxniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww2.allxniu.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 789 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_106|0.2MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"26z68w0ecxbuyf89.ukgogo202511.top","network":"ws","ws-opts":{"path":"/images","headers":{"Host":"26z68w0ecxbuyf89.ukgogo202511.top"}},"type":"trojan","password":"a544940a-2c1c-4723-96cc-d03053a95530","server":"141.193.213.199","port":443,"name":"www.85la.com🇺🇸US²_8|1.5MB/s|24%|GPT⁺|GM|YT-CN|TK|X|History|[广播|机房]"}
+  - {"skip-cert-verify":true,"sni":"ts888.yumige.dpdns.org","client-fingerprint":"edge","alpn":["h3"],"network":"ws","ws-opts":{"path":"/http://45.32.19.198:30005/"},"type":"trojan","password":"f52d0a04-94ad-4f9e-9945-4c3d43374e36","server":"104.18.42.163","port":2096,"name":"www.85la.com🇯🇵JP²_8|2.6MB/s|39%|X|History"}
+  - {"name":"www.85la.com🇫🇷FR²_41|3.5MB/s|GPT⁺|TK|NF|X|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::11","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"Host":"Azerb.NET"},"early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"client-fingerprint":""}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_618|0.2MB/s|1%|YT-CN|KeepSucceed"}
+  - {"name":"www.85la.com🇫🇷FR²_9|0.2MB/s|GPT⁺|YT|TK|NF|X|History|[原生|住宅拨号]","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/","headers":{"Host":"2001:bc8:32d7:302::10"}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_20|0.3MB/s|GPT⁺|YT|TK|NF|X|KeepSucceed","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"Host":"TURK1.NET.NET"}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇫🇷FR²_14|3.7MB/s|GPT⁺|YT|X|History","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{}},"client-fingerprint":""}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-SE⁰_4|2.5MB/s|3%|YT|TK|NF|D+|X","server":"104.18.30.238","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP¹-HK⁰_1|10.0MB/s|NF|D+","server":"8.219.155.125","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"skip-cert-verify":true,"sni":"ts888.yumige.dpdns.org","client-fingerprint":"edge","alpn":["h3"],"network":"ws","ws-opts":{"path":"/http://45.32.19.198:30005/"},"type":"trojan","password":"f52d0a04-94ad-4f9e-9945-4c3d43374e36","server":"www.shopify.com","port":2096,"name":"www.85la.com🇯🇵JP²_18|1.2MB/s|39%|GPT|GM|YT|NF|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇱🇻LV²_2|0.5MB/s|47%|GPT⁺|TK|NF|X","server":"lv.fasti.win","port":443,"uuid":"0d93b787-b66b-4696-a036-a0f549764f69","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"9ged75OhdD4P8yzPPXDESnRkdFM4br4I44OwXLWd_iY","short-id":"0a50b13e8fa3a7ef"},"network":"tcp","encryption":"none","servername":"lv.fasti.win"}
+  - {"type":"vless","name":"www.85la.com🇸🇬SG²_5|7.9MB/s|GPT|TK|NF|X|[广播|机房]","server":"yg2g.jiedian242.com","port":29877,"uuid":"1a598715-d629-4d8c-910b-dbe5ebdc0b53","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY"},"network":"tcp","encryption":"none","servername":"www.nvidia.com"}
+  - {"type":"vless","name":"www.85la.com🇫🇮FI²_26|0.5MB/s|0%|GPT⁺|YT-RU|TK|NF|D+|X|sinspired/subs-check","server":"217.16.23.39","port":4443,"uuid":"ee53756a-d4dc-4b1e-8645-e04b77420cc9","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"UohTC_vCYBbFnAoQ6cXgE5ab6xVjBHiELc-Ow2Uyg2I","short-id":"aa482c45443813a1"},"network":"tcp","encryption":"none","servername":"max.ru"}
+  - {"skip-cert-verify":true,"sni":"ts888.yumige.dpdns.org","client-fingerprint":"chrome","alpn":["h3"],"network":"ws","ws-opts":{"path":"/http://45.32.19.198:30005"},"type":"trojan","password":"f52d0a04-94ad-4f9e-9945-4c3d43374e36","server":"www.shopify.com","port":2096,"name":"www.85la.com🇯🇵JP²_17|3.6MB/s|39%|GPT|GM|YT|NF|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_15|5.3MB/s|9%|TK|X|sinspired/subs-check","server":"146.75.55.82","port":80,"uuid":"telegram-turboo-server","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"jone-turboo-server.com"},"path":"/ed=2056"},"encryption":"none"}
+  - {"skip-cert-verify":true,"sni":"ts888.yumige.dpdns.org","client-fingerprint":"chrome","alpn":["h3"],"network":"ws","ws-opts":{"path":"/http://45.32.19.198:30005"},"type":"trojan","password":"f52d0a04-94ad-4f9e-9945-4c3d43374e36","server":"104.18.42.163","port":2096,"name":"www.85la.com🇯🇵JP²_29|3.3MB/s|39%|GPT|GM|YT|NF|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","client-fingerprint":"chrome","type":"trojan","password":"843bcd0b-f2ab-482f-8262-6d09cf97f4b8","server":"green2.cdntencentmusic.com","port":31102,"name":"www.85la.com🇭🇰HK²_27|0.1MB/s|0%|YT|D+|X"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP²_3|4.7MB/s|X","server":"203.189.233.201","port":1140,"uuid":"08c7f096-d057-4d53-82fd-c739d372887b","tls":false,"skip-cert-verify":false,"network":"tcp","encryption":"none"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_75|0.3MB/s|X|History"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_29|2.4MB/s|0%|GPT⁺|YT|TK|NF|X|sinspired/subs-check","server":"aneta.kosmolet.xyz","port":443,"uuid":"613725ab-ca86-4d54-852e-a0bf45e812de","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"-uB8zIro9WM-NPpiSlOLWHouzZVXibfmT-MxwkacoQ0","short-id":"a67894cec8a930c4"},"network":"tcp","encryption":"none","servername":"aneta.kosmolet.xyz"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_105|1.0MB/s|YT|TK|X|KeepSucceed","server":"ru01-vlr01.tcp-reset-club.net","port":443,"uuid":"f13b15a6-d235-4161-b57a-274676335502","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg","short-id":"48720c"},"network":"tcp","encryption":"none","servername":"hls-svod.itunes.apple.com"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20885%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_564|0.2MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20","type":"trojan","password":"BxceQaOe","server":"58.152.46.60","port":443,"name":"www.85la.com🇭🇰HK²_661|0.4MB/s|1%|NF|D+|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP²_3|0.3MB/s|56%|GPT⁺|GM|YT|TK|NF|X|KeepSucceed","server":"2400:8902::f03c:95ff:fe48:2433","port":7001,"uuid":"b5826b46-3bc4-4e9c-88b8-d5e226dd3665","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"JY9uiVus5fHcZn_WzenI_1pRE-qLZpZrVm7g3LUbSn8","short-id":"98285ba8"},"network":"tcp","encryption":"none","servername":"www.bing.com"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_1|1.3MB/s|3%|GPT⁺|GM|TK|NF|D+|X|[原生|机房]","server":"162.159.45.232","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"l.ayovo.netlib.re"},"path":"/x-aniu/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"l.ayovo.netlib.re"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_55|0.4MB/s|GPT⁺|YT|TK-NL|NF|X|sinspired/subs-check","server":"balanced-rus-bridge.velvetvpn.xyz","port":7443,"uuid":"63d62292-0e4d-4b3e-b506-94bf53733b5a","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"qq","skip-cert-verify":false,"reality-opts":{"public-key":"DG904eM7xGecwV_nhjX73c-7g_fGEv8BgjbeAmTE8Bs","short-id":"505c94b8c65afb0a"},"network":"tcp","encryption":"none","servername":"yandex.ru"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_279|4.4MB/s|3%|YT|TK|NF|D+|X","server":"172.64.35.193","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP¹-MY⁰_1|5.4MB/s|GPT⁺|X|[广播|机房]","server":"8.219.155.125","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_57|6.9MB/s|GPT⁺|YT|TK|NF|D+|X","server":"198.41.211.79","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_187|1.2MB/s|3%|GPT|YT|TK|NF|D+|X","server":"198.41.211.79","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_36|4.3MB/s|GPT⁺|YT|TK|NF|D+|X","server":"162.159.19.174","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_72|2.5MB/s|GPT⁺|YT|TK|NF|D+|X","server":"www.wto.org","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_13|0.2MB/s|9%|GPT⁺|TK|NF|X","server":"server.ultra-irancell.com","port":80,"uuid":"telegram-turboo-server","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"jone-turboo-server.com"},"path":"/ed=2056"},"encryption":"none"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_63|5.0MB/s|3%|GPT⁺|YT|TK|NF|D+|X","server":"172.64.35.193","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_4|5.0MB/s|3%|YT|X","server":"104.19.205.122","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_59|3.7MB/s|3%|GM|YT|TK|NF|D+|X","server":"www.udacity.com","port":8443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP¹-HK⁰_2|5.3MB/s|3%|GM|X","server":"8.219.155.125","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇫🇮FI²_3|1.0MB/s|0%|GPT⁺|YT-RU|TK|NF|D+|X|KeepSucceed","server":"178.250.243.184","port":443,"uuid":"c3ef0f28-7123-4dd5-aa69-6a99b13fa65f","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"2Prv1-3tutblsIPl_DhQQp1opFzllqAcSPShoHlmr34","short-id":"da5f84e85736f625"},"network":"tcp","encryption":"none","servername":"max.ru"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_34|7.8MB/s|GPT⁺|YT|TK|NF|D+|X","server":"x.cf.090227.xyz","port":2096,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_48|3.6MB/s|3%|GPT⁺|YT|TK|NF|D+|X","server":"162.159.35.140","port":2087,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_130|0.6MB/s|7%|GPT⁺|YT-DE|TK|NF|X","server":"5.78.54.69","port":22955,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"encryption":"none","servername":"one-piece.com"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_15|6.8MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X","server":"x.cf.090227.xyz","port":2096,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_1362|1.1MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed","server":"162.159.44.142","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"l.ayovo.netlib.re"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"l.ayovo.netlib.re"}
+  - {"type":"vless","name":"www.85la.com🇭🇰HK¹-SG⁰_1|9.2MB/s|3%|YT|NF|D+|X","server":"download.yunzhongzhuan.com","port":2087,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_29|5.3MB/s|GPT⁺|YT|TK|NF|D+|X","server":"172.64.35.193","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_4|3.7MB/s|TK|D+|X","server":"172.64.151.220","port":2096,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_30|2.0MB/s|GPT⁺|YT|TK|NF|D+|X","server":"162.159.35.140","port":2087,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_1|3.7MB/s|3%|GPT|GM|YT|TK|NF|D+|X|[原生|机房]","server":"www.wto.org","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_70|2.5MB/s|GPT⁺|YT|TK|NF|D+|X","server":"download.yunzhongzhuan.com","port":2087,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_65|0.9MB/s|GPT⁺|YT|TK|NF|D+|X","server":"172.67.207.68","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_148|5.0MB/s|3%|GPT|YT|TK|NF|D+|X","server":"x.cf.090227.xyz","port":2096,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_212|0.4MB/s|7%|GPT⁺|YT-DE|TK|NF|X","server":"5.78.57.125","port":22955,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"encryption":"none","servername":"one-piece.com"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_164|3.2MB/s|3%|YT|TK|NF|D+|X","server":"www.udacity.com","port":8443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_138|1.0MB/s|3%|GPT⁺|YT|TK|NF|D+|X","server":"172.67.207.68","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇬🇧GB¹-CN⁰_1|4.8MB/s|0%|X|Succeed","server":"172.67.207.62","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-TW⁰_65|2.5MB/s|GPT⁺|YT|TK|NF|D+|X","server":"www.udacity.com","port":8443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"tw1.aniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"tw1.aniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇬🇧GB¹-JP⁰_1|4.3MB/s|0%|GPT|TK|D+|X|Succeed|[广播|机房]","server":"172.67.207.62","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_710|0.2MB/s|30%|GPT⁺|GM|YT|TK|NF|X|KeepSucceed","server":"107.174.41.88","port":25322,"uuid":"fae3a8d2-e605-448c-c7bc-ceffa1028f1c","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"R2gKMF0Tetlnesc1pPkZH9NaOeehw-f5_U9JKG_cLjU"},"network":"tcp","encryption":"none","servername":"www.yahoo.com"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_24|2.6MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X","server":"www.wto.org","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_9|1.7MB/s|GPT|X|History","server":"158.160.201.80","port":8443,"uuid":"329bd550-a8f8-4157-b2df-dc4503097a27","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"8f222b3475800821"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_93|4.5MB/s|3%|GPT⁺|YT|TK|NF|D+|X","server":"www.udacity.com","port":8443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_66|4.0MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed","server":"162.159.16.63","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"l.ayovo.netlib.re"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"l.ayovo.netlib.re"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-SE⁰_1|2.0MB/s|3%|GM|YT|TK|NF|D+|X","server":"download.yunzhongzhuan.com","port":2087,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"x-hk1.xaniusnippets.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"x-hk1.xaniusnippets.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-JP⁰_17|7.6MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X","server":"198.41.211.79","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"jp1.xaniusg2.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"jp1.xaniusg2.qzz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_975|2.7MB/s|3%|GPT⁺|YT|TK|NF|D+|X","server":"104.18.185.26","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"l.ayovo.netlib.re"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"l.ayovo.netlib.re"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_59|2.2MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed","server":"162.159.45.232","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"l.ayovo.netlib.re"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"l.ayovo.netlib.re"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-NL⁰_1|0.2MB/s|3%|GPT⁺|GM|YT|TK|NF|D+|X|History|[原生|机房]","server":"npmjs.com","port":80,"uuid":"82de262c-cd5e-402f-a709-f6979fc7c93e","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"fragrant-star-ebf2.daheg47484.workers.dev"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2048},"encryption":"none","servername":"fragrant-star-ebf2.daheg47484.workers.dev"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_7|0.8MB/s|19%|GPT⁺|YT-RU|TK|NF|X|KeepSucceed","server":"158.160.189.247","port":443,"uuid":"329bd550-a8f8-4157-b2df-dc4503097a27","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"1929ef620e9b34f5"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_487|0.3MB/s|7%|GPT⁺|NF|X","server":"5.78.72.175","port":22955,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"encryption":"none","servername":"one-piece.com"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_107|0.2MB/s|0%|GPT⁺|TK|NF|X|sinspired/subs-check","server":"51.250.29.71","port":1488,"uuid":"cc5be457-024a-4bd1-b769-90973ba5b06e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","short-id":"6ba85179e30d4fc2"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_2|4.9MB/s|0%|GPT⁺|X|sinspired/subs-check","server":"51.250.99.190","port":1488,"uuid":"cc5be457-024a-4bd1-b769-90973ba5b06e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","short-id":"6ba85179e30d4fc2"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇳🇱NL²_19|1.9MB/s|X|sinspired/subs-check|[广播|机房]","server":"51.250.19.168","port":2443,"uuid":"3d29bd40-5f23-4024-aab6-17258cd55a7e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8","short-id":"15affa0af66dfc79"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_4|3.2MB/s|0%|GPT⁺|D+|X|Succeed|[广播|商宽]","server":"51.250.29.132","port":1488,"uuid":"cc5be457-024a-4bd1-b769-90973ba5b06e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","short-id":"6ba85179e30d4fc2"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_3|0.6MB/s|X|History|[原生|机房]","server":"vkll.takovpn.ru","port":443,"uuid":"846c5d45-936c-42f6-9120-2d13830d5fa0","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"t0Gj0moa6d8jMp9LazLtWPenE3wl_M9tMHveifor8GU","short-id":"4d4421a0bac569"},"network":"tcp","encryption":"none","servername":"eh.vk.com"}
+  - {"name":"www.85la.com🇺🇸US²_549|1.7MB/s|GPT⁺|GM|YT|TK|NF|X|KeepHistory","type":"vmess","server":"104.19.45.11","port":443,"cipher":"auto","uuid":"f19823db-48e6-44fc-8a6a-372ce3611763","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/vmess-argo","headers":{"Host":"york-headed-producer-stadium.trycloudflare.com"}},"client-fingerprint":"","servername":"york-headed-producer-stadium.trycloudflare.com"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_52|0.8MB/s|19%|GPT⁺|YT-RU|NF|X|KeepSucceed","server":"158.160.201.80","port":443,"uuid":"329bd550-a8f8-4157-b2df-dc4503097a27","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"1929ef620e9b34f5"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_119|0.6MB/s|0%|GPT⁺|YT-RU|TK-RU|NF|D+|X|sinspired/subs-check","server":"51.250.16.101","port":1488,"uuid":"cc5be457-024a-4bd1-b769-90973ba5b06e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","short-id":"6ba85179e30d4fc2"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_8|1.1MB/s|YT|NF|X","server":"217.198.12.29","port":443,"uuid":"613725ab-ca86-4d54-852e-a0bf45e812de","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"IU2t096hBC7gAQ_rY1qwYsAtgiegzYI6loivZJxpx1E","short-id":"28e1270764a2464b"},"network":"tcp","encryption":"none","servername":"alisa.kosmolet.xyz"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_125|0.2MB/s|0%|GPT⁺|YT-RU|TK-RU|NF|D+|X|sinspired/subs-check","server":"51.250.16.101","port":1488,"uuid":"cc5be457-024a-4bd1-b769-90973ba5b06e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_142|0.3MB/s|0%|GPT⁺|YT-RU|TK-RU|NF|D+|X|sinspired/subs-check","server":"51.250.16.178","port":1488,"uuid":"cc5be457-024a-4bd1-b769-90973ba5b06e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇳🇱NL²_21|0.2MB/s|GPT|TK|NF|X|sinspired/subs-check|[广播|商宽]","server":"51.250.19.203","port":1488,"uuid":"84b24517-2989-4f23-b6df-a12effc3c432","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_75|0.4MB/s|19%|GPT⁺|YT-RU|TK|NF|X|KeepSucceed","server":"83.166.236.201","port":8443,"uuid":"329bd550-a8f8-4157-b2df-dc4503097a27","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"8f222b3475800821"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_6|5.0MB/s|NF|X|History|[广播|机房]","server":"83.166.236.201","port":8443,"uuid":"e329843c-02c3-4401-8289-cf196d5a6921","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"887c0d72e771a934"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_49|0.2MB/s|GPT⁺|YT-RU|TK|NF|X|KeepSucceed","server":"158.160.189.247","port":8443,"uuid":"329bd550-a8f8-4157-b2df-dc4503097a27","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"8f222b3475800821"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_20|0.4MB/s|19%|GPT⁺|YT-RU|TK|NF|X|KeepSucceed","server":"83.166.236.201","port":443,"uuid":"e329843c-02c3-4401-8289-cf196d5a6921","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"1929ef620e9b34f5"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_44|0.2MB/s|19%|GPT⁺|YT-RU|TK|NF|X|KeepSucceed","server":"158.160.201.80","port":443,"uuid":"e329843c-02c3-4401-8289-cf196d5a6921","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"1929ef620e9b34f5"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_55|0.8MB/s|22%|GPT⁺|YT-RU|TK|NF|X|KeepSucceed","server":"158.160.201.80","port":8443,"uuid":"e329843c-02c3-4401-8289-cf196d5a6921","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"887c0d72e771a934"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_18|0.5MB/s|0%|GPT⁺|YT-RU|TK-RU|NF|D+|X|sinspired/subs-check","server":"51.250.16.178","port":1488,"uuid":"cc5be457-024a-4bd1-b769-90973ba5b06e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","short-id":"6ba85179e30d4fc2"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_4|0.4MB/s|GPT|TK|X|sinspired/subs-check|[广播|机房]","server":"51.250.98.83","port":1488,"uuid":"cc5be457-024a-4bd1-b769-90973ba5b06e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","short-id":"6ba85179e30d4fc2"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇳🇱NL²_2|0.2MB/s|GPT|YT-RU|NF|X|sinspired/subs-check","server":"51.250.19.203","port":1488,"uuid":"cc5be457-024a-4bd1-b769-90973ba5b06e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"},"network":"tcp","encryption":"none","servername":"ads.x5.ru"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-SG⁰_2|8.1MB/s|GPT|NF|D+|X|History","server":"convera.com","port":2053,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"sni.111000.dynv6.net"},"path":"/?ed=2560fp=chrome"},"encryption":"none","servername":"sni.111000.dynv6.net"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_874|4.7MB/s|3%|GPT⁺|YT|TK|NF|D+|X|KeepSucceed","server":"convera.com","port":2053,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"sni.111000.dynv6.net"},"path":"/x-aniu/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"sni.111000.dynv6.net"}
+  - {"name":"www.85la.com🇺🇸US²_358|2.6MB/s|GPT⁺|YT|TK|D+|X|KeepSucceed","type":"vmess","server":"4D41-b510-Fc35f2D7ECd7.664.qzz.io","port":443,"cipher":"auto","uuid":"0507fbcd-b983-43a7-8e1d-2c561960ad4f","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/pyyY4ZVTyJV3vr9noOhn","headers":{"Host":"4D41-b510-fC35f2d7ecd7.664.qZz.io"}},"client-fingerprint":"","servername":"4D41-b510-fC35f2d7ecd7.664.qZz.io"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_126|5.4MB/s|0%|GPT⁺|GM|YT|TK|NF|X","server":"ashley.kosmolet.xyz","port":443,"uuid":"613725ab-ca86-4d54-852e-a0bf45e812de","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"cA3-aAVa0dZXMKbzXj5nLUyxB1AdgrOVU8UU_mJ67EA","short-id":"c78d9525a558f9f9"},"network":"tcp","encryption":"none","servername":"ashley.kosmolet.xyz"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_146|4.5MB/s|7%|GPT⁺|GM|YT|TK|NF|X|[广播|机房]","server":"hazmkardannn.info","port":22955,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"encryption":"none","servername":"one-piece.com"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_19|2.2MB/s|0%|GPT⁺|GM|YT|TK|NF|X","server":"104.167.197.79","port":443,"uuid":"613725ab-ca86-4d54-852e-a0bf45e812de","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"cA3-aAVa0dZXMKbzXj5nLUyxB1AdgrOVU8UU_mJ67EA","short-id":"c78d9525a558f9f9"},"network":"tcp","encryption":"none","servername":"ashley.kosmolet.xyz"}
+  - {"type":"vless","name":"www.85la.com🇵🇱PL²_42|0.3MB/s|19%|GPT⁺|YT-RU|TK|NF|X|KeepSucceed","server":"176.123.164.110","port":443,"uuid":"329bd550-a8f8-4157-b2df-dc4503097a27","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc","short-id":"1929ef620e9b34f5"},"network":"tcp","encryption":"none","servername":"m.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_101|0.3MB/s|7%|GPT⁺|GM|YT|TK|NF|X","server":"azizoarjmanddd.info","port":22955,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"encryption":"none","servername":"one-piece.com"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_275|0.7MB/s|0%|GPT⁺|GM|YT|TK|NF|X","server":"free1.barayekhudam.ir","port":2255,"uuid":"02b320ce-09f8-4cb5-9c46-9024f5585881","tls":true,"client-fingerprint":"firefox","skip-cert-verify":false,"reality-opts":{"public-key":"Cs7yLk8XXPksSjf6GB1JFYyFICqWVL3nL-10K7jQ7xc","short-id":"983c9303725c67"},"network":"tcp","encryption":"none","servername":"radar.arvancloud.ir"}
+  - {"type":"vless","name":"www.85la.com🇭🇰HK¹⁺_16|0.2MB/s|GPT|NF|D+|X","server":"43.161.222.233","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"ww1.sgxaniu.qzz.io"},"path":"/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"ww1.sgxaniu.qzz.io"}
+  - {"name":"🇫🇷 www.85.com 法国","type":"vmess","server":"2001:41d0:70e:c100::","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/linkvws","headers":{"Host":"serkat.org"}},"client-fingerprint":"","servername":"serkat.org"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_56|1.0MB/s|7%|GPT⁺|YT|TK|NF|X|[广播|机房]","server":"picassooo.info","port":22955,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"encryption":"none","servername":"one-piece.com"}
+  - {"name":"www.85la.com🇺🇸US²_7|0.2MB/s|GPT|TK|NF|X|Succeed","type":"vmess","server":"82.198.246.97","port":180,"cipher":"auto","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":0,"tls":false,"client-fingerprint":""}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_2|0.3MB/s|TK|X|KeepHistory","server":"45.139.26.152","port":7443,"uuid":"7fc953d6-ae75-46fb-a970-10b57d513487","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA","short-id":"fd88bd27db4cc661"},"network":"tcp","encryption":"none","servername":"eh.vk.com"}
+  - {"type":"vless","name":"www.85la.com🇫🇮FI²_14|0.3MB/s|7%|GPT⁺|YT-DE|TK|NF|X","server":"speedtest.net","port":80,"uuid":"ae3428dd-9732-40a2-94e5-6d146a93edd8","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"freebot.global.ssl.fastly.net"},"path":"/-telegram-@FreeV2rayChannel--telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel--","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2048},"encryption":"none"}
+  - {"type":"vless","name":"www.85la.com🇫🇮FI²_4|6.8MB/s|7%|GPT⁺|YT-DE|TK|NF|X|[广播|机房]","server":"speedtest.net","port":80,"uuid":"ae3428dd-9732-40a2-94e5-6d146a93edd8","tls":false,"client-fingerprint":"chrome","skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"freebot.global.ssl.fastly.net"},"path":"/-telegram-@FreeV2rayChannel--telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel-telegram-@FreeV2rayChannel--","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2048},"encryption":"none"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_5|0.9MB/s|X|sinspired/subs-check","server":"45.139.26.132","port":443,"uuid":"854eea7a-c834-4f62-9e17-ae63d1086f36","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ","short-id":"868419504747f6de"},"network":"tcp","encryption":"none","servername":"vk.com"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_11|0.5MB/s|YT|TK|X","server":"45.139.26.133","port":443,"uuid":"613725ab-ca86-4d54-852e-a0bf45e812de","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"IU2t096hBC7gAQ_rY1qwYsAtgiegzYI6loivZJxpx1E","short-id":"28e1270764a2464b"},"network":"tcp","encryption":"none","servername":"alisa.kosmolet.xyz"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_12|3.2MB/s|GPT⁺|YT|TK|NF|X","server":"45.139.26.33","port":443,"uuid":"613725ab-ca86-4d54-852e-a0bf45e812de","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"IU2t096hBC7gAQ_rY1qwYsAtgiegzYI6loivZJxpx1E","short-id":"28e1270764a2464b"},"network":"tcp","encryption":"none","servername":"alisa.kosmolet.xyz"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 340 ","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_630|0.1MB/s|1%|YT-CN|D+|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇳🇱NL²_139|0.4MB/s|0%|GPT|YT-RU|TK|NF|X","server":"nl02-vlr01.tcp-reset-club.net","port":443,"uuid":"b81c61f9-51d5-48a4-84a6-1715f41d89fb","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg","short-id":"31"},"network":"tcp","encryption":"none","servername":"hls-svod.itunes.apple.com"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 831 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_697|0.3MB/s|1%|YT|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 879 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_34|0.1MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"skip-cert-verify":true,"sni":"%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_428|0.1MB/s|1%|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇯🇵JP²_19|0.2MB/s|0%|GPT⁺|YT-CN|NF|X|sinspired/subs-check","server":"japan.geodema.network","port":443,"uuid":"a11ab9c5-4155-430b-9efc-7a7122531382","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"qq","skip-cert-verify":false,"reality-opts":{"public-key":"EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8","short-id":"1ed136481e0ede74"},"network":"tcp","encryption":"none","servername":"japan.geodema.network"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹⁺_590|4.3MB/s|3%|GPT⁺|YT|TK|NF|D+|X","server":"cloudflare.182682.xyz","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"l.ayovo.netlib.re"},"path":"/x-aniu/","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2560},"encryption":"none","servername":"l.ayovo.netlib.re"}
+  - {"type":"vless","name":"www.85la.com🇰🇿KZ²_3|0.4MB/s|0%|GPT|YT|NF|X","server":"aigul.kosmolet.xyz","port":443,"uuid":"613725ab-ca86-4d54-852e-a0bf45e812de","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"4tgpfnEvkdOoG1jGnODdaIglbQqGDauXokKhFBEvJxk","short-id":"8133508795292229"},"network":"tcp","encryption":"none","servername":"aigul.kosmolet.xyz"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_96|1.0MB/s|0%|TK|NF|D+|X|History|[广播|机房]","server":"us01-vlr01-gmn03.vpnvezdehod.net","port":443,"uuid":"e9dbc178-3656-40f8-8833-5023f306ef1d","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg","short-id":"86e999a2cdc2"},"network":"tcp","encryption":"none","servername":"hls-svod.itunes.apple.com"}
+  - {"type":"vless","name":"www.85la.com🇰🇿KZ²_5|0.2MB/s|0%|GPT⁺|YT-US|NF|X|KeepHistory","server":"5.39.253.14","port":443,"uuid":"db912ae7-7c2e-4777-897c-c49201e48cb9","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"VRZ6ZwSsMA9K5f7aoJ9KvQgQ4xoSaF792mcNbeh-TQ4","short-id":"f12d61f4"},"network":"tcp","encryption":"none","servername":"vk.com"}
+  - {"skip-cert-verify":true,"sni":"z9mifq7ujufk56im.jptimecsgo.xyz","client-fingerprint":"chrome","network":"ws","ws-opts":{"path":"/images"},"type":"trojan","password":"aff9928f-7ba3-45fb-b56d-4dec45653ca9","server":"23.227.38.33","port":443,"name":"www.85la.com🇨🇾CY²_8|2.3MB/s|19%|GPT⁺|YT-CN|NF|D+|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_10|0.3MB/s|9%|GPT⁺|YT-US|TK|NF|X|History|[原生|机房]","server":"2a01:4f8:1c17:e433::1","port":12122,"uuid":"77aeb4e4-0f85-48bc-9578-4f712ca908d9","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Db96VlxMFKESfK4XRBUnxPdeI21amMfbxcu7lqSoO2Y","short-id":"d5"},"network":"grpc","grpc-opts":{"grpc-service-name":"e"},"encryption":"none","servername":"www.speedtest.net"}
+  - {"type":"vless","name":"www.85la.com🇰🇿KZ²_1|0.5MB/s|GPT|YT|NF|X","server":"91.217.10.233","port":443,"uuid":"613725ab-ca86-4d54-852e-a0bf45e812de","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"4tgpfnEvkdOoG1jGnODdaIglbQqGDauXokKhFBEvJxk","short-id":"8133508795292229"},"network":"tcp","encryption":"none","servername":"aigul.kosmolet.xyz"}
+  - {"name":"www.85la.com🇩🇪DE²_10|1.8MB/s|9%|GPT|X|[原生|机房]","type":"vmess","server":"85.133.225.59","port":44701,"cipher":"auto","uuid":"a1e6e4d2-965a-4f23-de8d-e3f3bc3acbe9","alterId":0,"tls":false,"network":"http","http-opts":{"path":["/"],"headers":{"Host":["bmi.ir"]}},"client-fingerprint":""}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_16|2.8MB/s|9%|GPT⁺|YT-US|TK|NF|X|[原生|机房]","server":"mci-irancel.ir.pmgdrs.site","port":11125,"uuid":"be8fbfd6-f845-403b-8f17-02d7f04890a5","tls":false,"skip-cert-verify":false,"network":"tcp","encryption":"none"}
+  - {"skip-cert-verify":true,"sni":"z9mifq7ujufk56im.jptimecsgo.xyz","client-fingerprint":"chrome","network":"ws","ws-opts":{"path":"/images"},"type":"trojan","password":"a544940a-2c1c-4723-96cc-d03053a95530","server":"23.227.38.33","port":443,"name":"www.85la.com🇨🇾CY²_1|0.2MB/s|19%|GPT|NF|X|Succeed"}
+  - {"name":"www.85la.com🇿🇦ZA²_1|3.4MB/s|0%|GM","type":"vmess","server":"boogeyman.chomba.tech","port":443,"cipher":"auto","uuid":"9b6a87ed-9949-49f6-ab6f-cf9ab15177d7","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/vmess","headers":{"Host":"boogeyman.chomba.tech"}},"client-fingerprint":"","servername":"boogeyman.chomba.tech"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_66|0.4MB/s|0%|GPT⁺|YT-RU|NF|D+|X|KeepSucceed","server":"213.165.60.36","port":443,"uuid":"e9dbc178-3656-40f8-8833-5023f306ef1d","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg","short-id":"86e999a2cdc2"},"network":"tcp","encryption":"none","servername":"hls-svod.itunes.apple.com"}
+  - {"type":"vless","name":"www.85la.com🇦🇪AE²_14|0.4MB/s|GPT⁺|NF|X|KeepSucceed","server":"38.180.27.102","port":8443,"uuid":"eb162ab1-a006-4931-b1b3-8fc88a22b10e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"CWeNg8bNNdCHYhjNl01BTevvPnHsXd736dymoBEsbBI"},"network":"tcp","encryption":"none","servername":"eh.vk.com"}
+  - {"name":"www.85la.com🇺🇸US²_27|1.1MB/s|GPT|D+|X|History","type":"vmess","server":"4D41-b510-Fc35f2D7ECd7.664.qzz.io","port":443,"cipher":"auto","uuid":"0507fbcd-b983-43a7-8e1d-2c561960ad4f","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/pyyY4ZVTyJV3vr9noOhn","headers":{"Host":"4D41-b510-fC35f2d7ecd7.664.qZz.io"}},"client-fingerprint":"","servername":"4D41-b510-Fc35f2D7ECd7.664.qzz.io"}
+  - {"name":"www.85la.com🇺🇸US²_84|3.5MB/s|YT|TK|D+|X|History|[广播|机房]","type":"vmess","server":"4D41-b510-Fc35f2D7ECd7.664.qzz.io","port":443,"cipher":"auto","uuid":"0507fbcd-b983-43a7-8e1d-2c561960ad4f","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/pyyY4ZVTyJV3vr9noOhn","headers":{"Host":"4D41-b510-fC35f2d7ecd7.664.qZz.io"}},"client-fingerprint":"","alpn":["http/1.1"],"servername":"4d41-B510-FC35F2d7eCD7.664.QZz.io"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_8|7.5MB/s|34%|GPT⁺|X","server":"api.dark-coffe.com","port":2087,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"client-fingerprint":"chrome","alpn":["h3h2"],"skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"5JxGp6VrFh.SmArTtEcHzAaL.iNfO"},"path":"/"},"encryption":"none","servername":"5JxGp6VrFh.SmArTtEcHzAaL.iNfO"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_23|4.7MB/s|34%|YT-US|TK|X","server":"api.dark-coffe.com","port":443,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"GfV5t2331T.sMaRtTeChZaAl.InFo"},"path":"/"},"encryption":"none","servername":"GfV5t2331T.sMaRtTeChZaAl.InFo"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_4|3.6MB/s|TK|X","server":"api.dark-coffe.com","port":8443,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"TjLwH7cTdH.sMaRtTeChZaAl.InFo"},"path":"/"},"encryption":"none","servername":"TjLwH7cTdH.sMaRtTeChZaAl.InFo"}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_1|3.8MB/s|GPT|TK|X|[原生|商宽]","server":"api.dark-coffe.com","port":2096,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"TzS7v35LfD.sMaRtTeChZaAl.InFo"},"path":"/"},"encryption":"none","servername":"TzS7v35LfD.sMaRtTeChZaAl.InFo"}
+  - {"type":"vless","name":"www.85la.com🇮🇳IN²_8|0.3MB/s|GPT⁺|GM|YT-RU|NF|X|sinspired/subs-check","server":"176.109.104.107","port":443,"uuid":"cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw","short-id":"c7e42004e5f024be"},"network":"tcp","encryption":"none","servername":"sun6-21.userapi.com"}
+  - {"type":"vless","name":"www.85la.com🇮🇳IN²_23|0.2MB/s|GPT⁺|GM|NF|X|KeepSucceed","server":"87.242.100.40","port":443,"uuid":"cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw","short-id":"c7e42004e5f024be"},"network":"tcp","encryption":"none","servername":"sun6-21.userapi.com"}
+  - {"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","type":"trojan","password":"218167cf-6ccc-4df9-822f-b5d627ab5f65","server":"green2.cdntencentmusic.com","port":35502,"name":"www.85la.com🇺🇸US²_562|0.2MB/s|0%|GM|YT|TK"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_4|0.5MB/s|8%|GPT|YT-US|TK|X","server":"172.66.156.81","port":80,"uuid":"57f56a3c-0e10-4fb2-ad70-3db23a572b0f","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"websocket.network.www.speedtest.net.flutter.dev.russia.python.vegaskala.com.Shahin.vegaskala.com.fdf.vegaskala.com.vegafod.com."},"path":"/@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec"},"encryption":"none","servername":"websocket.network.www.speedtest.net.flutter.dev.russia.python.vegaskala.com.Shahin.vegaskala.com.fdf.vegaskala.com.vegafod.com."}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_93|0.6MB/s|8%|GPT|YT-US|TK|NF|X|KeepSucceed","server":"172.66.156.81","port":80,"uuid":"57f56a3c-0e10-4fb2-ad70-3db23a572b0f","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"websocket.network.www.speedtest.net.flutter.dev.russia.python.vegaskala.com.Shahin.vegaskala.com.fdf.vegaskala.com.vegafod.com."},"path":"/@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec"},"encryption":"none"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_31|0.8MB/s|YT|X|KeepSucceed","server":"khabarovsk.geodema.network","port":443,"uuid":"a91e64f0-9295-499d-bf4a-661ad99d4938","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8","short-id":"1ed136481e0ede74"},"network":"tcp","encryption":"none","servername":"khabarovsk.geodema.network"}
+  - {"type":"vless","name":"www.85la.com🇲🇩MD²_1|0.3MB/s|24%|TK-GR|X|[广播|机房]","server":"185.234.57.207","port":443,"uuid":"dd92c4f8-be88-4c61-84eb-d261f798071e","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ","short-id":"b5e0cd9ca194c0a5"},"network":"tcp","encryption":"none","servername":"teamdocs.su"}
+  - {"type":"vless","name":"www.85la.com🇮🇳IN²_4|0.3MB/s|GPT⁺|GM|YT-RU|NF|X|KeepHistory","server":"ru-mh-node-01.fromblancwithlove.com","port":443,"uuid":"cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw","short-id":"c7e42004e5f024be"},"network":"tcp","encryption":"none","servername":"sun6-21.userapi.com"}
+  - {"type":"vless","name":"www.85la.com🇮🇳IN²_1|3.6MB/s|GPT|GM|YT-RU|NF|X|History|[广播|机房]","server":"87.242.103.63","port":443,"uuid":"cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw","short-id":"c7e42004e5f024be"},"network":"tcp","encryption":"none","servername":"sun6-21.userapi.com"}
+  - {"type":"vless","name":"www.85la.com🇷🇺RU²_13|0.3MB/s|YT|TK|X","server":"91.243.82.82","port":443,"uuid":"a91e64f0-9295-499d-bf4a-661ad99d4938","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8","short-id":"1ed136481e0ede74"},"network":"tcp","encryption":"none","servername":"khabarovsk.geodema.network"}
+  - {"skip-cert-verify":true,"sni":"58.152.25.86","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_552|0.2MB/s|1%|YT-CN|NF|D+|X|KeepHistory"}
+  - {"name":"www.85la.com🇩🇪DE²_14|1.7MB/s|9%|GPT⁺|X|Succeed","type":"vmess","server":"pl37.salar4040.com","port":44701,"cipher":"auto","uuid":"a1e6e4d2-965a-4f23-de8d-e3f3bc3acbe9","alterId":0,"tls":false,"network":"http","http-opts":{"path":["/"],"headers":{"Host":["bmi.ir"]}},"client-fingerprint":""}
+  - {"type":"vless","name":"www.85la.com🇩🇪DE²_46|1.7MB/s|9%|GPT⁺|NF|X|KeepSucceed","server":"cr7.zx-shop.ir","port":2096,"uuid":"725f7cc0-af7e-40b8-e2c1-72e29bc00529","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"Nvm.website-game.ir"},"path":"/@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config-@Alfred_Config","early-data-header-name":"Sec-WebSocket-Protocol","max-early-data":2048},"encryption":"none","servername":"Nvm.website-game.ir"}
+  - {"name":"www.85la.com🇩🇪DE²_146|0.2MB/s|9%|GPT⁺|TK|X","type":"vmess","server":"pl37.salar4040.com","port":44701,"cipher":"auto","uuid":"a1e6e4d2-965a-4f23-de8d-e3f3bc3acbe9","alterId":0,"tls":false,"network":"http","http-opts":{"path":["/"],"headers":{"Host":["pl37.salar4040.com"]}},"client-fingerprint":""}
+  - {"name":"www.85la.com🇺🇸US²_633|3.2MB/s|GPT⁺|YT|NF|D+|X|KeepHistory","type":"vmess","server":"d-4beD-b726-2c53a82e4925.664.qZz.io","port":443,"cipher":"auto","uuid":"0507fbcd-b983-43a7-8e1d-2c561960ad4f","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/pyyY4ZVTyJV3vr9noOhn","headers":{"Host":"D-4bEd-b726-2c53A82E4925.664.qzZ.iO"}},"client-fingerprint":"","servername":"d-4beD-b726-2c53a82e4925.664.qZz.io"}
+  - {"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","client-fingerprint":"chrome","type":"trojan","password":"eab777de-fef2-4794-9a9f-fa63ed7b1360","server":"green2.cdntencentmusic.com","port":35501,"name":"www.85la.com🇺🇸US²_86|0.1MB/s|0%|GPT⁺|GM|YT|X|[广播|商宽]"}
+  - {"type":"vless","name":"www.85la.com🇫🇷FR²_40|0.3MB/s|sinspired/subs-check","server":"v22.vipshopkar8.shop","port":8412,"uuid":"27a351f2-63c3-4ca6-8e11-034bccc64549","tls":false,"skip-cert-verify":false,"network":"tcp","encryption":"none"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_472|5.6MB/s|50%|GPT⁺|X|KeepHistory","server":"435f-8550-7b7588cc4678.008880888.xyz","port":443,"uuid":"55821780-6970-49df-8a23-800c2c9b7d3a","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"435F-8550-7B7588CC4678.008880888.XyZ"},"path":"/4kMdPPOPDnAtNtvgyaVXm"},"encryption":"none","servername":"435F-8550-7B7588CC4678.008880888.XyZ"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_313|10.6MB/s|GPT⁺|YT|TK|NF|D+|X|KeepSucceed","server":"4d41-b510-fc35f2d7ecd7.664.qzz.io","port":443,"uuid":"0507fbcd-b983-43a7-8e1d-2c561960ad4f","tls":true,"client-fingerprint":"chrome","alpn":["http/1.1"],"skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"4d41-B510-FC35F2D7ecd7.664.Qzz.io"},"path":"/a0XhDU2Cxr9noOhn"},"encryption":"none","servername":"4d41-B510-Fc35f2D7EcD7.664.QzZ.IO"}
+  - {"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","client-fingerprint":"chrome","type":"trojan","password":"9dd4df8c-d016-412e-91f2-984c854f6dcf","server":"green2.cdntencentmusic.com","port":31103,"name":"www.85la.com🇭🇰HK²_99|0.2MB/s|YT|X"}
+  - {"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","type":"trojan","password":"9dd4df8c-d016-412e-91f2-984c854f6dcf","server":"green2.cdntencentmusic.com","port":31103,"name":"www.85la.com🇭🇰HK²_139|0.2MB/s|X"}
+  - {"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","type":"trojan","password":"91dd6cb4-3f5a-4bb0-8968-b398607fc487","server":"green2.cdntencentmusic.com","port":31103,"name":"www.85la.com🇭🇰HK²_15|0.5MB/s|D+|[广播|机房]"}
+  - {"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","client-fingerprint":"chrome","type":"trojan","password":"218167cf-6ccc-4df9-822f-b5d627ab5f65","server":"green2.cdntencentmusic.com","port":35502,"name":"www.85la.com🇺🇸US²_48|0.5MB/s|0%|D+|X"}
+  - {"skip-cert-verify":true,"sni":"green2.cdntencentmusic.com","type":"trojan","password":"9d7034dc-ae3f-4b90-8a39-ef9c79d4ed5f","server":"green2.cdntencentmusic.com","port":31102,"name":"www.85la.com🇭🇰HK²_625|0.2MB/s|0%|NF|D+|X"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By DukeMehdi] ","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_19|0.2MB/s|1%|X"}
+  - {"type":"vless","name":"www.85la.com🇨🇾CY²_24|5.2MB/s|19%|GPT⁺|YT-US|NF|X|KeepSucceed","server":"al-akhbar.com","port":443,"uuid":"defd03ed-ef26-415c-a64e-f95edd0d430e","tls":true,"client-fingerprint":"chrome","skip-cert-verify":true,"network":"ws","ws-opts":{"headers":{"Host":"rAyAn-cOnFiG-jp-1.pAriSa.dPdNs.oRg"},"path":"/ws"},"encryption":"none","servername":"rAyAn-cOnFiG-jp-1.pAriSa.dPdNs.oRg"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US²_657|5.4MB/s|1%|GPT⁺|GM|YT|TK|NF|D+|X|KeepSucceed","server":"104.160.42.64","port":38334,"uuid":"c9d7993a-d7fc-4ce5-9877-6567f174f1ef","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"xuPFNxANd1sLkWSgmtHKYs4Ha_IHOPYbTw75zyQIcgs","short-id":"253c19"},"network":"tcp","encryption":"none","servername":"tesla.com"}
+  - {"type":"vless","name":"www.85la.com🇳🇱NL²_41|2.0MB/s|0%|GPT⁺|YT-US|TK|NF|D+|X|KeepHistory","server":"141.11.37.185","port":48677,"uuid":"793ba358-8df3-40dd-b60c-035b7b45afe5","tls":false,"skip-cert-verify":false,"network":"tcp","encryption":"none"}
+  - {"skip-cert-verify":true,"sni":"d-4bED-B726-2C53a82E4925.664.Qzz.iO","client-fingerprint":"chrome","alpn":["http/1.1"],"network":"ws","ws-opts":{"path":"/E2JXJM5geneWfr9noOhn"},"type":"trojan","password":"0507fbcd-b983-43a7-8e1d-2c561960ad4f","server":"d-4bed-b726-2c53a82e4925.664.qzz.io","port":443,"name":"www.85la.com🇺🇸US²_716|0.6MB/s|X|KeepSucceed"}
+  - {"type":"vless","name":"www.85la.com🇺🇸US¹-HK⁰_66|3.4MB/s|GM|YT|TK|NF|D+|X|KeepSucceed","server":"141.101.120.156","port":8880,"uuid":"8a13ed66-d70a-4d32-8052-cbd8e0c5f7f4","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"joss.gvpn2.web.id"},"path":"/Free-VPN-CF-Geo-Project/HK"},"encryption":"none"}
+  - {"skip-cert-verify":true,"sni":"🔒 [By EbraSha] b2n.ir/v2ray-configs | 166 ","client-fingerprint":"chrome","type":"trojan","password":"BxceQaOe","server":"58.152.25.86","port":443,"name":"www.85la.com🇭🇰HK²_786|0.1MB/s|1%|NF|D+|X|KeepSucceed"}
