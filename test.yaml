@@ -1,9 +1,64 @@
 port: 7890
 socks-port: 7891
-allow-lan: true
+allow-lan: false
 mode: rule
 log-level: info
-external-controller: 9090
+geodata-mode: true
+geo-auto-update: true
+geodata-loader: standard
+geo-update-interval: 24
+geox-url:
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+rule-providers:
+  geolocation-cn:
+    type: http
+    format: mrs
+    behavior: domain
+    url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-cn.mrs
+    path: ./ruleset/geolocation-cn.mrs
+    interval: 86400
+  cn:
+    type: http
+    format: mrs
+    behavior: ipcidr
+    url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs
+    path: ./ruleset/cn.mrs
+    interval: 86400
+  geolocation-!cn:
+    type: http
+    format: mrs
+    behavior: domain
+    url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-!cn.mrs
+    path: ./ruleset/geolocation-!cn.mrs
+    interval: 86400
+  private:
+    type: http
+    format: mrs
+    behavior: ipcidr
+    url: https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs
+    path: ./ruleset/private.mrs
+    interval: 86400
+dns:
+  enable: true
+  ipv6: true
+  respect-rules: true
+  enhanced-mode: fake-ip
+  nameserver:
+    - https://120.53.53.53/dns-query
+    - https://223.5.5.5/dns-query
+  proxy-server-nameserver:
+    - https://120.53.53.53/dns-query
+    - https://223.5.5.5/dns-query
+  nameserver-policy:
+    geosite:cn,private:
+      - https://120.53.53.53/dns-query
+      - https://223.5.5.5/dns-query
+    geosite:geolocation-!cn:
+      - https://dns.cloudflare.com/dns-query
+      - https://dns.google/dns-query
 proxies:
   - name: JP²_29|3.9MB/s
     type: hysteria2
@@ -35,6 +90,15 @@ proxies:
     password: 881c153c-cf33-4bfc-b7ff-4a90163c160f
     sni: xjp.kaixincloud.top
     skip-cert-verify: true
+  - name: DE²_5|5.2MB/s
+    type: hysteria2
+    server: 91.107.190.166
+    port: 8443
+    obfs: salamander
+    obfs-password: KLSADFIU43#$
+    password: xtGIM7iEx9
+    sni: dash.cloudflare.com
+    skip-cert-verify: true
   - name: DE²_11|3.6MB/s
     type: hysteria2
     server: 130.61.50.75
@@ -51,7 +115,7 @@ proxies:
     password: xtGIM7iEx9
     sni: dash.cloudflare.com
     skip-cert-verify: true
-  - name: NL002
+  - name: NL²002
     type: hysteria2
     server: 2a14:3f87:f001:13::a
     port: 35000
@@ -104,7 +168,7 @@ proxies:
     password: f9504f36-66bf-48ff-bb38-c73ffe2d6b96
     sni: mg.dabache.top
     skip-cert-verify: true
-  - name: AZ001
+  - name: AZ²002
     type: hysteria2
     server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
     port: 443
@@ -203,7 +267,7 @@ proxies:
     password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
     sni: Ab.ac
     skip-cert-verify: true
-  - name: US006
+  - name: US²006
     type: hysteria2
     server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
     port: 52318
@@ -266,7 +330,7 @@ proxies:
     password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
     sni: Ab.ac
     skip-cert-verify: true
-  - name: NL001
+  - name: NL²001
     type: hysteria2
     server: 2a14:3f87:f001:13::a
     port: 36400
@@ -275,7 +339,7 @@ proxies:
     password: Yet-Another-Public-Config-1
     sni: YAPC-1.afshin.ir
     skip-cert-verify: true
-  - name: US003
+  - name: UD²003
     type: hysteria2
     server: 2a14:3f87:f001:13::a
     port: 36300
@@ -284,26 +348,26 @@ proxies:
     password: Yet-Another-Public-Config-1
     sni: YAPC-1.afshin.ir
     skip-cert-verify: true
-  - name: US004
+  - name: US²004
     type: hysteria2
     server: 2001:bc8:32d7:302::11
     port: 20088
     password: dongtaiwang.com
     sni: 🔒
     skip-cert-verify: true
-  - name: US005
+  - name: US²005
     type: hysteria2
     server: 2001:bc8:32d7:302::11
     port: 20088
     password: dongtaiwang.com
     sni: apple.com
     skip-cert-verify: true
-  - name: FR001
+  - name: FR²001
     type: hysteria2
     server: 2001:bc8:32d7:302::11
     port: 20088
     password: dongtaiwang.com
-    sni: "🔒 [By EbraSha] "
+    sni: 🔒 [By EbraSha] 
     skip-cert-verify: true
   - name: DE²_94|0.2MB/s
     type: hysteria2
@@ -331,20 +395,80 @@ proxies:
       - h3
     sni: bing.com
     udp-relay-mode: native
-  - name: www.shopify.com-trojan
-    type: trojan
-    server: www.shopify.com
-    port: 2087
-    password: "666"
-    tls: true
-    sni: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-    skip-cert-verify: true
+- name: www.shopify.com-trojan
+  type: trojan
+  server: www.shopify.com
+  port: 2087
+  password: '666'
+  udp: true
+  tfo: false
+  tls: true
+  sni: freesni.zjde5.de5.net
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: freesni.zjde5.de5.net
+- name: www.shopify.com-vless
+  type: vless
+  server: www.shopify.com
+  port: 2053
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: freesni.zjde5.de5.net
+  servername: freesni.zjde5.de5.net
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: freesni.zjde5.de5.net
+- name: www.shopify.com-vmess
+  type: vmess
+  server: www.shopify.com
+  port: 2096
+  uuid: 68f891b8-d7e8-47bf-a5f2-b7baf912f69c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  sni: asuka.0061.my
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: asuka.0061.my
+- name: cf.877774.xyz
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: b7789765-c9fb-41c3-bea0-348b702eb816
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  sni: rt.372164885.xyz
+  servername: rt.372164885.xyz
+  network: ws
+  ws-opts:
+    path: /pk-vl
+    headers:
+      Host: rt.372164885.xyz
   - name: snu香港006
     type: vless
     server: 192.142.4.33
@@ -425,162 +549,158 @@ proxies:
     down: 55
     sni: ""
     skip-cert-verify: true
-  - {name: HK²_104|10.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 783 ", skip-cert-verify: true}
-  - {name: HK²_10|3.9MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+b2n.ir/v2ray-configs+", skip-cert-verify: true}
-  - {name: HK²_10|8.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
-  - {name: HK²_110|3.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: 58.152.46.60, skip-cert-verify: true}
-  - {name: HK²_111|5.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs ", skip-cert-verify: true}
-  - {name: HK²_113|0.2MB/, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20", skip-cert-verify: true}
-  - {name: HK²_142|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+36+", skip-cert-verify: true}
-  - {name: HK²_156|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 54 ", skip-cert-verify: true}
-  - {name: HK²_15|1.8MB/s|YT", server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK²_17|4.8MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 789 ", skip-cert-verify: true}
-  - {name: HK²_181|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 178 ", skip-cert-verify: true}
-  - {name: HK²_187|0.6MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 187 ", skip-cert-verify: true}
-  - {name: HK²_18|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20", skip-cert-verify: true}
-  - {name: HK²_18|4.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK²_19|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] ", skip-cert-verify: true}
-  - {name: HK²_19|4.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK²_20|1.7MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 88 ", skip-cert-verify: true}
-  - {name: HK²_237|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 127 ", skip-cert-verify: true}
-  - {name: HK²_240|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 761 ", skip-cert-verify: true}
-  - {name: HK²_255|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
-  - {name: HK²_257|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 475 ", skip-cert-verify: true}
-  - {name: HK²_264|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20", skip-cert-verify: true}
-  - {name: HK²_27|0.1MB/s, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 843bcd0b-f2ab-482f-8262-6d09cf97f4b8, sni: green2.cdntencentmusic.com, skip-cert-verify: true}
-  - {name: HK²_281|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: 🔒, skip-cert-verify: true}
-  - {name: HK²_305|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 160 ", skip-cert-verify: true}
-  - {name: HK²_308|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 868 ", skip-cert-verify: true}
-  - {name: HK²_31|4.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 166 ", skip-cert-verify: true}
-  - {name: HK²_32|6.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 934 ", skip-cert-verify: true}
-  - {name: HK²_34|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 879 ", skip-cert-verify: true}
-  - {name: HK²_35|0.5MB/s|YT", server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 78 ", skip-cert-verify: true}
-  - {name: HK²_36|3.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK²_37|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 816 ", skip-cert-verify: true}
-  - {name: HK²_383|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi]", skip-cert-verify: true}
-  - {name: HK²_38|3.0MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs ", skip-cert-verify: true}
-  - {name: HK²_395|0.2MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+", skip-cert-verify: true}
-  - {name: HK²_398|0.2MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 84 ", skip-cert-verify: true}
-  - {name: HK²_403|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] trojan-HK ", skip-cert-verify: true}
-  - {name: HK²_412|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 54 ", skip-cert-verify: true}
-  - {name: HK²_416|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20", skip-cert-verify: true}
-  - {name: HK²_428|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20", skip-cert-verify: true}
-  - {name: HK²_42|10.8MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] ", skip-cert-verify: true}
-  - {name: HK²_430|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20", skip-cert-verify: true}
-  - {name: HK²_435|1.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20449%20", skip-cert-verify: true}
-  - {name: HK²_436|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20", skip-cert-verify: true}
-  - {name: HK²_438|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK²_439|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 178 ", skip-cert-verify: true}
-  - {name: HK²_454|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By DukeMehdi] b2n.ir/v2ray-configs | 934 ", skip-cert-verify: true}
-  - {name: HK²_45|5.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] trojan-HK ", skip-cert-verify: true}
-  - {name: HK²_475|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%5BBy%20EbraSha%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK²_487|0.2MB/, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 152 ", skip-cert-verify: true}
-  - {name: HK²_513|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] trojan-HK ", skip-cert-verify: true}
-  - {name: HK²_520|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20761%20", skip-cert-verify: true}
-  - {name: HK²_522|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: +, skip-cert-verify: true}
-  - {name: HK²_52|2.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs ", skip-cert-verify: true}
-  - {name: HK²_537|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 36 ", skip-cert-verify: true}
-  - {name: HK²_546|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK²_549|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK²_561|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20", skip-cert-verify: true}
-  - {name: HK²_564|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20885%20", skip-cert-verify: true}
-  - {name: HK²_57|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
-  - {name: HK²_583|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK²_589|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK²_593|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒\n[By EbraSha] b2n.ir/v2ray-configs | 868 ", skip-cert-verify: true}
-  - {name: HK²_595|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+879+", skip-cert-verify: true}
-  - {name: HK²_5|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true}
-  - {name: HK²_5|7.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK²_60|4.7MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
-  - {name: HK²_618|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK²_619|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] ", skip-cert-verify: true}
-  - {name: HK²_621|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20", skip-cert-verify: true}
-  - {name: HK²_62|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20", skip-cert-verify: true}
-  - {name: HK²_635|0.3MB/, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "\n[By EbraSha] trojan-HK ", skip-cert-verify: true}
-  - {name: HK²_639|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 160 ", skip-cert-verify: true}
-  - {name: HK²_63|7.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20", skip-cert-verify: true}
-  - {name: HK²_661|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
-  - {name: HK²_66|3.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+83+", skip-cert-verify: true}
-  - {name: HK²_678|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 166 ", skip-cert-verify: true}
-  - {name: HK²_682|0.7MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 281 ", skip-cert-verify: true}
-  - {name: HK²_683|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20", skip-cert-verify: true}
-  - {name: HK²_685|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20", skip-cert-verify: true}
-  - {name: HK²_68|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20", skip-cert-verify: true}
-  - {name: HK²_697|0.3MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 831 ", skip-cert-verify: true}
-  - {name: HK²_699|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20", skip-cert-verify: true}
-  - {name: HK²_6|5.8MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true}
-  - {name: HK²_703|1.5MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] trojan-HK ", skip-cert-verify: true}
-  - {name: HK²_707|0.3MB/s|YT-CN|NF, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK²_70|3.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 648 ", skip-cert-verify: true}
-  - {name: HK²_716|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] ", skip-cert-verify: true}
-  - {name: HK²_718|0.7MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+36+", skip-cert-verify: true}
-  - {name: HK²_723|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 127 ", skip-cert-verify: true}
-  - {name: HK²_735|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By DukeMehdi] trojan-HK ", skip-cert-verify: true}
-  - {name: HK²_754|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK²_75|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK²_763|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK²_76|3.8MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By DukeMehdi] b2n.io/v2ray-configs | 83 ", skip-cert-verify: true}
-  - {name: HK²_772|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] ", skip-cert-verify: true}
-  - {name: HK²_773|0.4MB/s|YT-CN, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20475%20", skip-cert-verify: true}
-  - {name: HK²_785|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK²_786|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 166 ", skip-cert-verify: true}
-  - {name: HK²_795|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "+++++++[By+DukeMehdi]+b2n.ir/v2ray-configs+|+160+", skip-cert-verify: true}
-  - {name: HK²_810|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20", skip-cert-verify: true}
-  - {name: HK²_811|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 78 ", skip-cert-verify: true}
-  - {name: HK²_81|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 17 ", skip-cert-verify: true}
-  - {name: HK²_81|6.5MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 879 ", skip-cert-verify: true}
-  - {name: HK²_822|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK²_829|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
-  - {name: HK²_83|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 945 ", skip-cert-verify: true}
-  - {name: HK²_844|0.2MB/s|NF, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
-  - {name: HK²_84|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 789 ", skip-cert-verify: true}
-  - {name: HK²_868|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 761 ", skip-cert-verify: true}
-  - {name: HK²_86|1.0MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 941 ", skip-cert-verify: true}
-  - {name: HK²_89|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK²_89|0.7MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20", skip-cert-verify: true}
-  - {name: HK²_89|3.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "+++++++[By+DukeMehdi]+trojan-HK+", skip-cert-verify: true}
-  - {name: HK²_8|0.7MB/s|YT, server: n1761214919.mv7wh.tech, port: 443, type: vmess, uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1761214919.mv7wh.tech}}}
-  - {name: HK²_8|5.2MB/s|YT-CN|NF", server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
-  - {name: HK²_90|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20", skip-cert-verify: true}
-  - {name: HK²_919|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
-  - {name: HK²_91|6.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+340+", skip-cert-verify: true}
-  - {name: HK²_92|0.2MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 36 ", skip-cert-verify: true}
-  - {name: HK²_95|2.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20", skip-cert-verify: true}
-  - {name: HK²_96|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 945 ", skip-cert-verify: true}
-  - {name: HK²_98|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
-  - {name: HK²_98|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: 🔒, skip-cert-verify: true}
-  - {name: HK²_99|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
-  - {name: HK²_9|1.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: 🔒, skip-cert-verify: true}
-  - {name: JP²_36|1.2MB/s, server: n1753598446.wpg27.xyz, port: 443, type: vmess, uuid: a5047d95-24b8-451a-93e3-f2a387b93d5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1753598446.wpg27.xyz}}}
-  - {name: SC²_6|0.2MB/s, server: 156.245.232.15, port: 53947, type: vmess, uuid: 8cb243df-fa82-472c-be25-b00acd4fcd3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/使用此节点需要先沐浴焚香然后给群主磕800个响头(ಡωಡ)]}}
-  - {name: US²_27|1.1MB/s, server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io}}}
-  - {name: US²_358|2.6MB/s, server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io}}}
-  - {name: US²_549|1.7MB/s, server: 104.19.45.11, port: 443, type: vmess, uuid: f19823db-48e6-44fc-8a6a-372ce3611763, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess-argo, headers: {Host: york-headed-producer-stadium.trycloudflare.com}}}
-  - {name: US²_633|3.2MB/s, server: d-4beD-b726-2c53a82e4925.664.qZz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: D-4bEd-b726-2c53A82E4925.664.qzZ.iO}}}
-  - {name: US²_716|0.6MB/s, server: d-4bed-b726-2c53a82e4925.664.qzz.io, port: 443, type: trojan, password: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, sni: d-4bED-B726-2C53a82E4925.664.Qzz.iO, skip-cert-verify: true, network: ws, ws-opts: {path: /E2JXJM5geneWfr9noOhn, headers: {Host: d-4bED-B726-2C53a82E4925.664.Qzz.iO}}}
-  - {name: US²_84|3.5MB/s, server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io}}}
-  - {name: ZA²_1|3.4MB/s, server: boogeyman.chomba.tech, port: 443, type: vmess, uuid: 9b6a87ed-9949-49f6-ab6f-cf9ab15177d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: boogeyman.chomba.tech}}}
+  - {name: HK_104|10.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 783 ", skip-cert-verify: true}
+  - {name: HK_10|3.9MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+b2n.ir/v2ray-configs+", skip-cert-verify: true}
+  - {name: HK_10|8.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
+  - {name: HK_110|3.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: 58.152.46.60, skip-cert-verify: true}
+  - {name: HK_111|5.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs ", skip-cert-verify: true}
+  - {name: HK_113|0.2MB/, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20", skip-cert-verify: true}
+  - {name: HK_142|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+36+", skip-cert-verify: true}
+  - {name: HK_156|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 54 ", skip-cert-verify: true}
+  - {name: HK_15|1.8MB/s|YT", server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20trojan-HK%20", skip-cert-verify: true}
+  - {name: HK_17|4.8MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 789 ", skip-cert-verify: true}
+  - {name: HK_181|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 178 ", skip-cert-verify: true}
+  - {name: HK_187|0.6MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 187 ", skip-cert-verify: true}
+  - {name: HK_18|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%2054%20", skip-cert-verify: true}
+  - {name: HK_18|4.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+trojan-HK+", skip-cert-verify: true}
+  - {name: HK_19|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] ", skip-cert-verify: true}
+  - {name: HK_19|4.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
+  - {name: HK_20|1.7MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 88 ", skip-cert-verify: true}
+  - {name: HK_237|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 127 ", skip-cert-verify: true}
+  - {name: HK_240|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 761 ", skip-cert-verify: true}
+  - {name: HK_255|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
+  - {name: HK_257|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 475 ", skip-cert-verify: true}
+  - {name: HK_264|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20", skip-cert-verify: true}
+  - {name: HK_27|0.1MB/s, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: 843bcd0b-f2ab-482f-8262-6d09cf97f4b8, sni: green2.cdntencentmusic.com, skip-cert-verify: true}
+  - {name: HK_281|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: 🔒, skip-cert-verify: true}
+  - {name: HK_305|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 160 ", skip-cert-verify: true}
+  - {name: HK_308|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 868 ", skip-cert-verify: true}
+  - {name: HK_31|4.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 166 ", skip-cert-verify: true}
+  - {name: HK_32|6.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 934 ", skip-cert-verify: true}
+  - {name: HK_34|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 879 ", skip-cert-verify: true}
+  - {name: HK_35|0.5MB/s|YT", server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 78 ", skip-cert-verify: true}
+  - {name: HK_36|3.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%2B%2B%2B%2B%2B%2B%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
+  - {name: HK_37|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 816 ", skip-cert-verify: true}
+  - {name: HK_383|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi]", skip-cert-verify: true}
+  - {name: HK_38|3.0MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs ", skip-cert-verify: true}
+  - {name: HK_395|0.2MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+", skip-cert-verify: true}
+  - {name: HK_398|0.2MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 84 ", skip-cert-verify: true}
+  - {name: HK_403|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] trojan-HK ", skip-cert-verify: true}
+  - {name: HK_412|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 54 ", skip-cert-verify: true}
+  - {name: HK_416|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20681%20", skip-cert-verify: true}
+  - {name: HK_428|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20", skip-cert-verify: true}
+  - {name: HK_42|10.8MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] ", skip-cert-verify: true}
+  - {name: HK_430|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2088%20", skip-cert-verify: true}
+  - {name: HK_435|1.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20449%20", skip-cert-verify: true}
+  - {name: HK_436|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20", skip-cert-verify: true}
+  - {name: HK_438|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
+  - {name: HK_439|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 178 ", skip-cert-verify: true}
+  - {name: HK_454|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By DukeMehdi] b2n.ir/v2ray-configs | 934 ", skip-cert-verify: true}
+  - {name: HK_45|5.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] trojan-HK ", skip-cert-verify: true}
+  - {name: HK_475|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%5BBy%20EbraSha%5D%20trojan-HK%20", skip-cert-verify: true}
+  - {name: HK_487|0.2MB/, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 152 ", skip-cert-verify: true}
+  - {name: HK_513|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] trojan-HK ", skip-cert-verify: true}
+  - {name: HK_520|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20761%20", skip-cert-verify: true}
+  - {name: HK_522|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: +, skip-cert-verify: true}
+  - {name: HK_52|2.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs ", skip-cert-verify: true}
+  - {name: HK_537|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 36 ", skip-cert-verify: true}
+  - {name: HK_546|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
+  - {name: HK_549|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
+  - {name: HK_561|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2078%20", skip-cert-verify: true}
+  - {name: HK_564|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20885%20", skip-cert-verify: true}
+  - {name: HK_57|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
+  - {name: HK_583|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
+  - {name: HK_589|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+trojan-HK+", skip-cert-verify: true}
+  - {name: HK_593|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒\n[By EbraSha] b2n.ir/v2ray-configs | 868 ", skip-cert-verify: true}
+  - {name: HK_595|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+879+", skip-cert-verify: true}
+  - {name: HK_5|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true}
+  - {name: HK_5|7.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+trojan-HK+", skip-cert-verify: true}
+  - {name: HK_60|4.7MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
+  - {name: HK_618|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
+  - {name: HK_619|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] ", skip-cert-verify: true}
+  - {name: HK_621|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20", skip-cert-verify: true}
+  - {name: HK_62|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20", skip-cert-verify: true}
+  - {name: HK_635|0.3MB/, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "\n[By EbraSha] trojan-HK ", skip-cert-verify: true}
+  - {name: HK_639|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 160 ", skip-cert-verify: true}
+  - {name: HK_63|7.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20160%20", skip-cert-verify: true}
+  - {name: HK_661|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
+  - {name: HK_66|3.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+DukeMehdi]+b2n.ir/v2ray-configs+|+83+", skip-cert-verify: true}
+  - {name: HK_678|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 166 ", skip-cert-verify: true}
+  - {name: HK_682|0.7MB/, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 281 ", skip-cert-verify: true}
+  - {name: HK_683|0.5MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20", skip-cert-verify: true}
+  - {name: HK_685|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20945%20", skip-cert-verify: true}
+  - {name: HK_68|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20", skip-cert-verify: true}
+  - {name: HK_697|0.3MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 831 ", skip-cert-verify: true}
+  - {name: HK_699|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%2083%20", skip-cert-verify: true}
+  - {name: HK_6|5.8MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true}
+  - {name: HK_703|1.5MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] trojan-HK ", skip-cert-verify: true}
+  - {name: HK_707|0.3MB/s|YT-CN|NF, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
+  - {name: HK_70|3.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 648 ", skip-cert-verify: true}
+  - {name: HK_716|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] ", skip-cert-verify: true}
+  - {name: HK_718|0.7MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+36+", skip-cert-verify: true}
+  - {name: HK_723|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 127 ", skip-cert-verify: true}
+  - {name: HK_735|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By DukeMehdi] trojan-HK ", skip-cert-verify: true}
+  - {name: HK_754|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
+  - {name: HK_75|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
+  - {name: HK_763|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%0A%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
+  - {name: HK_76|3.8MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By DukeMehdi] b2n.io/v2ray-configs | 83 ", skip-cert-verify: true}
+  - {name: HK_772|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] ", skip-cert-verify: true}
+  - {name: HK_773|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20475%20", skip-cert-verify: true}
+  - {name: HK_785|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BEbraSha%5D%2Btrojan-HK%2B", skip-cert-verify: true}
+  - {name: HK_786|0.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 166 ", skip-cert-verify: true}
+  - {name: HK_795|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "+++++++[By+DukeMehdi]+b2n.ir/v2ray-configs+|+160+", skip-cert-verify: true}
+  - {name: HK_810|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20934%20", skip-cert-verify: true}
+  - {name: HK_811|0.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 78 ", skip-cert-verify: true}
+  - {name: HK_81|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 17 ", skip-cert-verify: true}
+  - {name: HK_81|6.5MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 879 ", skip-cert-verify: true}
+  - {name: HK_822|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+trojan-HK+", skip-cert-verify: true}
+  - {name: HK_829|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
+  - {name: HK_83|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 945 ", skip-cert-verify: true}
+  - {name: HK_844|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%2B%5BBy%2BDukeMehdi%5D%2Btrojan-HK%2B", skip-cert-verify: true}
+  - {name: HK_84|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 789 ", skip-cert-verify: true}
+  - {name: HK_868|0.6MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "       [By EbraSha] b2n.ir/v2ray-configs | 761 ", skip-cert-verify: true}
+  - {name: HK_86|1.0MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 941 ", skip-cert-verify: true}
+  - {name: HK_89|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
+  - {name: HK_89|0.7MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20EbraSha%5D%20b2n.ir%2Fv2ray-configs%20%7C%20648%20", skip-cert-verify: true}
+  - {name: HK_89|3.4MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "+++++++[By+DukeMehdi]+trojan-HK+", skip-cert-verify: true}
+  - {name: HK_8|0.7MB/s, server: n1761214919.mv7wh.tech, port: 443, type: vmess, uuid: c592f040-faff-47dc-a464-9bccf2dd4e7b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1761214919.mv7wh.tech}}}
+  - {name: HK_8|5.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: HK_90|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20127%20", skip-cert-verify: true}
+  - {name: HK_919|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%20%5BBy%20DukeMehdi%5D%20trojan-HK%20", skip-cert-verify: true}
+  - {name: HK_91|6.1MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+340+", skip-cert-verify: true}
+  - {name: HK_92|0.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By EbraSha] b2n.ir/v2ray-configs | 36 ", skip-cert-verify: true}
+  - {name: HK_95|2.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20", skip-cert-verify: true}
+  - {name: HK_96|0.1MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "🔒 [By DukeMehdi] b2n.ir/v2ray-configs | 945 ", skip-cert-verify: true}
+  - {name: HK_98|0.2MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%2BDukeMehdi%5D%2Bb2n.ir%2Fv2ray-configs%20", skip-cert-verify: true}
+  - {name: HK_98|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: 🔒, skip-cert-verify: true}
+  - {name: HK_99|0.3MB/s, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: "%20%20%20%20%20%20%20%5BBy%20DukeMehdi%5D%20b2n.ir%2Fv2ray-configs%20%7C%20789%20", skip-cert-verify: true}
+  - {name: HK_9|1.2MB/s, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: 🔒, skip-cert-verify: true}
+  - {name: JP_36|1.2MB/s, server: n1753598446.wpg27.xyz, port: 443, type: vmess, uuid: a5047d95-24b8-451a-93e3-f2a387b93d5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1753598446.wpg27.xyz}}}
+  - {name: SC_6|0.2MB/s, server: 156.245.232.15, port: 53947, type: vmess, uuid: 8cb243df-fa82-472c-be25-b00acd4fcd3f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/使用此节点需要先沐浴焚香然后给群主磕800个响头(ಡωಡ)]}}
+  - {name: US_27|1.1MB/s, server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io}}}
+  - {name: US_358|2.6MB/s, server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io}}}
+  - {name: US_549|1.7MB/s, server: 104.19.45.11, port: 443, type: vmess, uuid: f19823db-48e6-44fc-8a6a-372ce3611763, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess-argo, headers: {Host: york-headed-producer-stadium.trycloudflare.com}}}
+  - {name: US_633|3.2MB/s, server: d-4beD-b726-2c53a82e4925.664.qZz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: D-4bEd-b726-2c53A82E4925.664.qzZ.iO}}}
+  - {name: US_716|0.6MB/s, server: d-4bed-b726-2c53a82e4925.664.qzz.io, port: 443, type: trojan, password: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, sni: d-4bED-B726-2C53a82E4925.664.Qzz.iO, skip-cert-verify: true, network: ws, ws-opts: {path: /E2JXJM5geneWfr9noOhn, headers: {Host: d-4bED-B726-2C53a82E4925.664.Qzz.iO}}}
+  - {name: US_84|3.5MB/s, server: 4D41-b510-Fc35f2D7ECd7.664.qzz.io, port: 443, type: vmess, uuid: 0507fbcd-b983-43a7-8e1d-2c561960ad4f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pyyY4ZVTyJV3vr9noOhn, headers: {Host: 4D41-b510-fC35f2d7ecd7.664.qZz.io}}}
+  - {name: ZA_1|3.4MB/s, server: boogeyman.chomba.tech, port: 443, type: vmess, uuid: 9b6a87ed-9949-49f6-ab6f-cf9ab15177d7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: boogeyman.chomba.tech}}}
 proxy-groups:
-    - name: 🚀 手动切换
-      type: select
-      proxies:
-      - ♻️ 自动选择
-      - ChatGPT、Claude、Gemini、微软AI、GROK
+  - type: select
+    name: 🚀 节点选择
+    proxies:
       - DIRECT
-      - JP²_29|3.9MB/s
-      - US²_01|0.7MB/s
-      - US²_04|0.7MB/s
-      - CA²_1|3.6MB/s
+      - REJECT
+      - ♻️ 自动选择
       - DE²_11|3.6MB/s
       - DE²_5|5.2MB/s
-      - NL002
+      - NL²002
       - FR²_5|0.6MB/s
       - US002
       - US²_88|2.1MB/s
       - US²_39|3.4MB/s
       - US²_29|3.5MB/s
       - US²_250|10.2MB/s
-      - AZ001
+      - AZ²002
       - CA²_1|3.6MB/s
       - LV²_18|8.1MB/s
       - DE²_14|0.2MB/s
@@ -593,18 +713,18 @@ proxy-groups:
       - DE²_36|0.1MB/s
       - NL¹_1|4.8MB/s
       - NL¹_5|1.3MB/s
-      - US006
+      - US²006
       - NL¹_2|3.4MB/s
       - NL¹_3|0.2MB/s
       - NL¹_4|1.1MB/s
       - NL²_4|7.2MB/s
       - NL²_2|0.2MB/s
       - NL²_7|3.6MB/s
-      - NL001
-      - US003
-      - US004
-      - US005
-      - FR001
+      - NL²001
+      - UD²003
+      - US²004
+      - US²005
+      - FR²001
       - DE²_94|0.2MB/s
       - GB²_1|0.2MB/s
       - xx|352f
@@ -615,1170 +735,264 @@ proxy-groups:
       - 59SG-HK_3|3.6MB/s
       - FR197|1MB/s
       - FR470|3MB/s
-- name: ♻️ 自动选择
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
-  proxies:
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-- name: 📹 YouTube
-  type: select
-  proxies:
-  - 🚀 手动切换
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-- name: 🎥 NETFLIX
-  type: select
-  proxies:
-  - 🚀 手动切换
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-- name: 🎮️ 游戏平台
-  type: select
-  proxies:
-  - 🎯 国内直连
-  - 🚀 手动切换
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-- name: ChatGPT、Claude、Gemini、微软AI、GROK
-  type: select
-  proxies:
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-- name: Ⓜ️ 微软服务
-  type: select
-  proxies:
-  - 🎯 国内直连
-  - 🚀 手动切换
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-- name: 📲 电报信息
-  type: select
-  proxies:
-  - 🚀 手动切换
-  - ♻️ 自动选择
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-- name: 🍎 苹果服务
-  type: select
-  proxies:
-  - 🎯 国内直连
-  - 🚀 手动切换
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-- name: 🎯 国内直连
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 手动切换
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-- name: 🐟 漏网之鱼
-  type: select
-  proxies:
-  - 🚀 手动切换
-  - 🎯 国内直连
-  - JP²_31|0.4MB/s
-  - US001
-  - US002
-  - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - NL001
-  - NL002
-  - AZ001
-  - SG²_11|11.5MB/s
-  - HK²_1|11.7MB/s
-  - JP²_3|11.5MB/s
-  - DE²_11|3.6MB/s
-  - DE²_5|5.2MB/s
-  - KR²_12|7.7MB/s
-  - FR²_48|5.6MB/s
-  - KR²_6|10.9MB/s
-  - FR²_23|1.6MB/s
-  - FR²_5|0.6MB/s
-  - AU²_2|5.8MB/s
-  - US²_8|7.5MB/s
-  - US²_88|2.1MB/s
-  - US²_41|4.6MB/s
-  - US²_39|3.4MB/s
-  - US²_29|3.5MB/s
-  - SG²_15|5.3MB/s
-  - SG²_7|5.1MB/s
-  - US²_72|5.1MB/s
-  - US²_183|9.3MB/s
-  - US²_425|5.7MB/s
-  - US²_732|9.1MB/s
-  - US²_740|5.7MB/s
-  - US²_780|8.1MB/s
-  - US²_681|9.4MB/s
-  - US²_372|9.6MB/s
-  - US²_87|5.6MB/s
-  - US²_518|8.4MB/s
-  - US²_459|10.1MB/s
-  - US²_146|8.6MB/s
-  - US²_564|5.7MB/s
-  - SG²_6|8.9MB/s
-  - US²_534|6.8MB/s
-  - US²_639|6.5MB/s
-  - US²_20|3.4MB/s
-  - US²_194|7.8MB/s
-  - US²_39|5.1MB/s
-  - US²_100|5.3MB/s
-  - US²_250|10.2MB/s
-  - CA²_2|4.4MB/s
-  - CA²_4|1.7MB/s
-  - CA²_1|3.6MB/s
-  - SG²_5|0.1MB/s
-  - DE²_3|0.5MB/s
-  - LV²_18|8.1MB/s
-  - SG²_21|0.4MB/s
-  - GB²_38|0.1MB/s
-  - US²_26|6.4MB/s
-  - FI²_1|3.5MB/s
-  - DE²_14|0.2MB/s
-  - JP²_16|12.5MB/s
-  - SG²_22|0.4MB/s
-  - DE²_20|0.3MB/s
-  - DE²_134|0.2MB/s
-  - GB²_8|0.5MB/s
-  - GB²_2|0.5MB/s
-  - SG²_28|0.1MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.2MB/s
-  - DE²_31|0.5MB/s
-  - DE²_36|0.1MB/s
-  - US²_4|2.2MB/s
-  - US²_200|12.8MB/s
-  - NL¹_1|4.8MB/s
-  - NL¹_5|1.3MB/s
-  - NL¹_2|3.4MB/s
-  - NL¹_3|0.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL²_4|7.2MB/s
-  - NL²_2|0.2MB/s
-  - NL²_7|3.6MB/s
-  - DE²_94|0.2MB/s
-  - CA²_6|4.7MB/s
-  - GB²_1|0.2MB/s
-  - DE²_45|4.8MB/s
-  - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
-  - cf.877774.xyz
-  - snu香港002
-  - snu香港004
-  - snu香港006
-  - snu香港007
-  - snu香港010
-  - JP_33|4.3MB/s
-  - HK002|6.1MB/s
-  - 59SG-HK_3|3.6MB/s
-  - FR197|1MB/s
-  - FR470|3MB/s
-  - TW028|17MB/s
-rule-providers:
-  Proxy:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/geolocation-!cn.yaml
-    path: ./ruleset/geolocation-!cn.yaml
-    interval: 86400
-    proxy: DIRECT
-    behavior: classical
-    format: yaml
-    size-limit: 0
-  YouTube:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/youtube.yaml
-    path: ./ruleset/YouTube.yaml
-    interval: 86400
-    proxy: DIRECT
-    behavior: classical
-    format: yaml
-    size-limit: 0
-  NETFLIXip:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/classical/netflix.yaml
-    path: ./ruleset/NETFLIXip.yaml
-    interval: 86400
-    proxy: DIRECT
-    behavior: classical
-    format: yaml
-    size-limit: 0
-  NETFLIX:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/netflix.yaml
-    path: ./ruleset/NETFLIX.yaml
-    interval: 86400
-    proxy: DIRECT
-    behavior: classical
-    format: yaml
-    size-limit: 0
-  游戏平台:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/category-games-!cn.yaml
-    path: ./ruleset/category-games-!cn.yaml
-    interval: 86400
-    proxy: DIRECT
-    behavior: classical
-    format: yaml
-    size-limit: 0
-  微软服务:
-    type: http
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
-    path: ./ruleset/微软服务.yaml
-    interval: 86400
-    proxy: DIRECT
-    behavior: classical
-    format: yaml
-    size-limit: 0
-  TELEGRAM:
-    type: http
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
-    path: ./ruleset/TELEGRAM.yaml
-    interval: 86400
-    proxy: DIRECT
-    behavior: classical
-    format: yaml
-    size-limit: 0
-  苹果服务:
-    type: http
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
-    path: ./ruleset/苹果服务.yaml
-    interval: 86400
-    proxy: DIRECT
-    behavior: classical
-    format: yaml
-    size-limit: 0
-  ChatGPT、Claude、Gemini、微软AI、GROK:
-    type: http
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/classical/category-ai-!cn.yaml
-    path: ./ruleset/category-ai-!cn.yaml
-    interval: 86400
-    proxy: DIRECT
-    behavior: classical
-    format: yaml
-    size-limit: 0
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - DE²_11|3.6MB/s
+      - DE²_5|5.2MB/s
+      - NL²002
+      - FR²_5|0.6MB/s
+      - US002
+      - US²_88|2.1MB/s
+      - US²_39|3.4MB/s
+      - US²_29|3.5MB/s
+      - US²_250|10.2MB/s
+      - AZ²002
+      - CA²_1|3.6MB/s
+      - LV²_18|8.1MB/s
+      - DE²_14|0.2MB/s
+      - SG²_22|0.4MB/s
+      - DE²_134|0.2MB/s
+      - SG²_28|0.1MB/s
+      - GB²_10|0.2MB/s
+      - DE²_31|0.2MB/s
+      - DE²_31|0.5MB/s
+      - DE²_36|0.1MB/s
+      - NL¹_1|4.8MB/s
+      - NL¹_5|1.3MB/s
+      - US²006
+      - NL¹_2|3.4MB/s
+      - NL¹_3|0.2MB/s
+      - NL¹_4|1.1MB/s
+      - NL²_4|7.2MB/s
+      - NL²_2|0.2MB/s
+      - NL²_7|3.6MB/s
+      - NL²001
+      - UD²003
+      - US²004
+      - US²005
+      - FR²001
+      - DE²_94|0.2MB/s
+      - GB²_1|0.2MB/s
+      - xx|352f
+      - www.shopify.com-trojan
+      - snu香港006
+      - snu香港010
+      - HK002|6.1MB/s
+      - 59SG-HK_3|3.6MB/s
+      - FR197|1MB/s
+      - FR470|3MB/s
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - type: select
+    name: 🏠 私有网络
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ♻️ 自动选择
+      - DE²_11|3.6MB/s
+      - DE²_5|5.2MB/s
+      - NL²002
+      - FR²_5|0.6MB/s
+      - US002
+      - US²_88|2.1MB/s
+      - US²_39|3.4MB/s
+      - US²_29|3.5MB/s
+      - US²_250|10.2MB/s
+      - AZ²002
+      - CA²_1|3.6MB/s
+      - LV²_18|8.1MB/s
+      - DE²_14|0.2MB/s
+      - SG²_22|0.4MB/s
+      - DE²_134|0.2MB/s
+      - SG²_28|0.1MB/s
+      - GB²_10|0.2MB/s
+      - DE²_31|0.2MB/s
+      - DE²_31|0.5MB/s
+      - DE²_36|0.1MB/s
+      - NL¹_1|4.8MB/s
+      - NL¹_5|1.3MB/s
+      - US²006
+      - NL¹_2|3.4MB/s
+      - NL¹_3|0.2MB/s
+      - NL¹_4|1.1MB/s
+      - NL²_4|7.2MB/s
+      - NL²_2|0.2MB/s
+      - NL²_7|3.6MB/s
+      - NL²001
+      - UD²003
+      - US²004
+      - US²005
+      - FR²001
+      - DE²_94|0.2MB/s
+      - GB²_1|0.2MB/s
+      - xx|352f
+      - www.shopify.com-trojan
+      - snu香港006
+      - snu香港010
+      - HK002|6.1MB/s
+      - 59SG-HK_3|3.6MB/s
+      - FR197|1MB/s
+      - FR470|3MB/s
+  - type: select
+    name: 🔒 国内服务
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ♻️ 自动选择
+      - DE²_11|3.6MB/s
+      - DE²_5|5.2MB/s
+      - NL²002
+      - FR²_5|0.6MB/s
+      - US002
+      - US²_88|2.1MB/s
+      - US²_39|3.4MB/s
+      - US²_29|3.5MB/s
+      - US²_250|10.2MB/s
+      - AZ²002
+      - CA²_1|3.6MB/s
+      - LV²_18|8.1MB/s
+      - DE²_14|0.2MB/s
+      - SG²_22|0.4MB/s
+      - DE²_134|0.2MB/s
+      - SG²_28|0.1MB/s
+      - GB²_10|0.2MB/s
+      - DE²_31|0.2MB/s
+      - DE²_31|0.5MB/s
+      - DE²_36|0.1MB/s
+      - NL¹_1|4.8MB/s
+      - NL¹_5|1.3MB/s
+      - US²006
+      - NL¹_2|3.4MB/s
+      - NL¹_3|0.2MB/s
+      - NL¹_4|1.1MB/s
+      - NL²_4|7.2MB/s
+      - NL²_2|0.2MB/s
+      - NL²_7|3.6MB/s
+      - NL²001
+      - UD²003
+      - US²004
+      - US²005
+      - FR²001
+      - DE²_94|0.2MB/s
+      - GB²_1|0.2MB/s
+      - xx|352f
+      - www.shopify.com-trojan
+      - snu香港006
+      - snu香港010
+      - HK002|6.1MB/s
+      - 59SG-HK_3|3.6MB/s
+      - FR197|1MB/s
+      - FR470|3MB/s
+  - type: select
+    name: 🌏 非中国
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ♻️ 自动选择
+      - DE²_11|3.6MB/s
+      - DE²_5|5.2MB/s
+      - NL²002
+      - FR²_5|0.6MB/s
+      - US002
+      - US²_88|2.1MB/s
+      - US²_39|3.4MB/s
+      - US²_29|3.5MB/s
+      - US²_250|10.2MB/s
+      - AZ²002
+      - CA²_1|3.6MB/s
+      - LV²_18|8.1MB/s
+      - DE²_14|0.2MB/s
+      - SG²_22|0.4MB/s
+      - DE²_134|0.2MB/s
+      - SG²_28|0.1MB/s
+      - GB²_10|0.2MB/s
+      - DE²_31|0.2MB/s
+      - DE²_31|0.5MB/s
+      - DE²_36|0.1MB/s
+      - NL¹_1|4.8MB/s
+      - NL¹_5|1.3MB/s
+      - US²006
+      - NL¹_2|3.4MB/s
+      - NL¹_3|0.2MB/s
+      - NL¹_4|1.1MB/s
+      - NL²_4|7.2MB/s
+      - NL²_2|0.2MB/s
+      - NL²_7|3.6MB/s
+      - NL²001
+      - UD²003
+      - US²004
+      - US²005
+      - FR²001
+      - DE²_94|0.2MB/s
+      - GB²_1|0.2MB/s
+      - xx|352f
+      - www.shopify.com-trojan
+      - snu香港006
+      - snu香港010
+      - HK002|6.1MB/s
+      - 59SG-HK_3|3.6MB/s
+      - FR197|1MB/s
+      - FR470|3MB/s
+  - type: select
+    name: 🐟 漏网之鱼
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      - REJECT
+      - ♻️ 自动选择
+      - DE²_11|3.6MB/s
+      - DE²_5|5.2MB/s
+      - NL²002
+      - FR²_5|0.6MB/s
+      - US002
+      - US²_88|2.1MB/s
+      - US²_39|3.4MB/s
+      - US²_29|3.5MB/s
+      - US²_250|10.2MB/s
+      - AZ²002
+      - CA²_1|3.6MB/s
+      - LV²_18|8.1MB/s
+      - DE²_14|0.2MB/s
+      - SG²_22|0.4MB/s
+      - DE²_134|0.2MB/s
+      - SG²_28|0.1MB/s
+      - GB²_10|0.2MB/s
+      - DE²_31|0.2MB/s
+      - DE²_31|0.5MB/s
+      - DE²_36|0.1MB/s
+      - NL¹_1|4.8MB/s
+      - NL¹_5|1.3MB/s
+      - US²006
+      - NL¹_2|3.4MB/s
+      - NL¹_3|0.2MB/s
+      - NL¹_4|1.1MB/s
+      - NL²_4|7.2MB/s
+      - NL²_2|0.2MB/s
+      - NL²_7|3.6MB/s
+      - NL²001
+      - UD²003
+      - US²004
+      - US²005
+      - FR²001
+      - DE²_94|0.2MB/s
+      - GB²_1|0.2MB/s
+      - xx|352f
+      - www.shopify.com-trojan
+      - snu香港006
+      - snu香港010
+      - HK002|6.1MB/s
+      - 59SG-HK_3|3.6MB/s
+      - FR197|1MB/s
+      - FR470|3MB/s
 rules:
-- RULE-SET,YouTube,📹 YouTube
-- RULE-SET,NETFLIX,🎥 NETFLIX
-- RULE-SET,NETFLIXip,🎥 NETFLIX
-- RULE-SET,游戏平台,🎮️ 游戏平台
-- RULE-SET,TELEGRAM,📲 电报信息
-- RULE-SET,苹果服务,🍎 苹果服务
-- RULE-SET,ChatGPT、Claude、Gemini、微软AI、GROK,ChatGPT、Claude、Gemini、微软AI、GROK
-- DOMAIN,copilot.microsoft.com,ChatGPT、Claude、Gemini、微软AI、GROK
-- DOMAIN,bat.bing.com,ChatGPT、Claude、Gemini、微软AI、GROK
-- DOMAIN,eu-mobile.events.data.microsoft.com,ChatGPT、Claude、Gemini、微软AI、GROK
-- DOMAIN,browser.events.data.microsoft.com,ChatGPT、Claude、Gemini、微软AI、GROK
-- DOMAIN,login.microsoftonline.com,ChatGPT、Claude、Gemini、微软AI、GROK
-- RULE-SET,微软服务,Ⓜ️ 微软服务
-- GEOSITE,geolocation-cn,🎯 国内直连
-- GEOIP,CN,🎯 国内直连
-- RULE-SET,Proxy,🚀 手动切换
-- MATCH,🐟 漏网之鱼
+  - RULE-SET,geolocation-cn,🔒 国内服务
+  - RULE-SET,cn,🔒 国内服务
+  - RULE-SET,geolocation-!cn,🌏 非中国
+  - RULE-SET,private,🏠 私有网络,no-resolve
+  - RULE-SET,cn,🔒 国内服务,no-resolve
+  - MATCH,🐟 漏网之鱼
