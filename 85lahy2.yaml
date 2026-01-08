@@ -3,16 +3,44 @@ socks-port: 7891
 allow-lan: true
 mode: rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: 9090
 proxies:
-- name: JP²_29|3.9MB/s
-  type: hysteria2
-  server: rb.kaixincloud.top
-  password: 254109dd-83fc-4bd2-a41e-fdee6d0805b3
-  sni: rb.kaixincloud.top
+- type: anytls
+  name: JP²_31|0.4MB/s
+  server: 160.16.75.254
+  port: 443
+  password: a2d12dc9-c111-45ac-b803-87e48f3484d8
+  udp: true
+  sni: gw.alicdn.com
   skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
+- name: SG²_11|11.5MB/s
+  type: hysteria2
+  server: 203.27.106.148
+  password: e343471a-aad3-40da-9dea-72cc8c7dce5f
+  sni: www.apple.com
+  skip-cert-verify: true
+  port: 443
+- name: HK²_1|11.7MB/s
+  type: hysteria2
+  server: 103.197.71.118
+  password: 863695e3-7b22-4822-b648-750f43140001
+  sni: www.lamer.com.hk
+  skip-cert-verify: true
+  port: 37000
+- name: JP²_3|11.5MB/s
+  type: hysteria2
+  server: 103.62.49.76
+  password: 863695e3-7b22-4822-b648-750f43140001
+  sni: www.apple.com
+  skip-cert-verify: true
+  port: 36000
+- name: DE²_11|3.6MB/s
+  type: hysteria2
+  server: 130.61.50.75
+  password: zhangyang
+  sni: dash.cloudflare.com
+  skip-cert-verify: true
+  port: 6443
 - name: DE²_5|5.2MB/s
   type: hysteria2
   server: 91.107.190.166
@@ -22,6 +50,15 @@ proxies:
   port: 8443
   obfs: salamander
   obfs-password: KLSADFIU43#$
+- name: KR²_12|7.7MB/s
+  type: hysteria2
+  server: kr1.miyazono-kaori.com
+  password: 1365fded-4e60-4057-b408-0e8fa083108e
+  sni: kr1.miyazono-kaori.com
+  skip-cert-verify: true
+  port: 42556
+  obfs: salamander
+  obfs-password: MKsqfibVxwhZ3pCf
 - name: FR²_48|5.6MB/s
   type: hysteria2
   server: 51.75.118.149
@@ -29,7 +66,22 @@ proxies:
   sni: dash.cloudflare.com
   skip-cert-verify: true
   port: 20248
-- name: US²_000|2.1M/s
+- name: KR²_6|10.9MB/s
+  type: hysteria2
+  server: kr2.miyazono-kaori.com
+  password: 1365fded-4e60-4057-b408-0e8fa083108e
+  sni: kr2.miyazono-kaori.com
+  skip-cert-verify: true
+  port: 41012
+  obfs: salamander
+  obfs-password: rVYx28ncsHBinunc
+- name: FR²_23|1.6MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  skip-cert-verify: true
+  port: 20088
+- name: US001
   type: hysteria2
   server: 2a14:3f87:f001:9::a
   password: Telegram--%3E%40Ln2Ray
@@ -38,22 +90,59 @@ proxies:
   port: 45000
   obfs: salamander
   obfs-password: Telegram-->@Ln2Ray
-- name: DE²_11|3.6MB/s
-  type: hysteria2
-  server: 130.61.50.75
-  password: zhangyang
-  sni: dash.cloudflare.com
-  skip-cert-verify: true
-  port: 6443
-- name: US²_001|2.1M/s
+- name: NL002
   type: hysteria2
   server: 2a14:3f87:f001:13::a
   password: Yet-Another-Public-Config-1
   sni: YAPC-1.afshin.ir
   skip-cert-verify: true
-  port: 36300
+  port: 35000
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
+- name: FR²_5|0.6MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: рҹ”’
+  skip-cert-verify: true
+  port: 20088
+- name: AU²_2|5.8MB/s
+  type: hysteria2
+  server: 158.179.18.251
+  password: e343471a-aad3-40da-9dea-72cc8c7dce5f
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  port: 443
+- name: US002
+  type: hysteria2
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  port: 35200
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+- name: US²_8|7.5MB/s
+  type: hysteria2
+  server: 142.171.46.180
+  password: sysadmin.sysadmin
+  sni: dash.cloudflare.com
+  skip-cert-verify: true
+  port: 57450
+- name: US²_88|2.1MB/s
+  type: hysteria2
+  server: 170.9.63.232
+  password: f19823db-48e6-44fc-8a6a-372ce3611763
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  port: 26902
+- type: anytls
+  name: US²_41|4.6MB/s
+  server: 155.94.145.166
+  port: 8443
+  password: tzjz55
+  udp: true
+  skip-cert-verify: true
 - name: US²_39|3.4MB/s
   type: hysteria2
   server: 170.9.63.232
@@ -68,13 +157,20 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   port: 26902
-- name: US²_88|2.1MB/s
+- name: SG²_15|5.3MB/s
   type: hysteria2
-  server: 170.9.63.232
-  password: f19823db-48e6-44fc-8a6a-372ce3611763
-  sni: www.microsoft.com
+  server: 152.69.220.212
+  password: e343471a-aad3-40da-9dea-72cc8c7dce5f
+  sni: api.push.apple.com
   skip-cert-verify: true
-  port: 26902
+  port: 443
+- name: SG²_7|5.1MB/s
+  type: hysteria2
+  server: 158.178.236.104
+  password: e343471a-aad3-40da-9dea-72cc8c7dce5f
+  sni: api.push.apple.com
+  skip-cert-verify: true
+  port: 443
 - name: US²_72|5.1MB/s
   type: hysteria2
   server: de5e5fce0hy2.jzcloud.xyz
@@ -82,39 +178,39 @@ proxies:
   sni: de5e5fce0hy2.jzcloud.xyz
   skip-cert-verify: true
   port: 32487
-- type: anytls
-  name: US²_41|4.6MB/s
-  server: 155.94.145.166
-  port: 8443
-  password: tzjz55
-  udp: true
-  skip-cert-verify: true
-- name: US²_518|8.4MB/s
+- name: US²_183|9.3MB/s
   type: hysteria2
-  server: c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com
-  password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-  sni: c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com
+  server: 3dfe7e6e-t55r40-t72h4q-1spnr.us.hyhuawei.com
+  password: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
+  sni: 3dfe7e6e-t55r40-t72h4q-1spnr.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
-- name: US²_418|5.2MB/s
+- name: US²_425|5.7MB/s
   type: hysteria2
-  server: 565f8879-t53wg0-taxf6m-ieln.us.hyhuawei.com
-  password: f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b
-  sni: 565f8879-t53wg0-taxf6m-ieln.us.hyhuawei.com
+  server: b298e447-t59gg0-tnjsrz-h8vf.us.hyhuawei.com
+  password: 4fb15f9c-f078-11ed-814b-f23c91369f2d
+  sni: b298e447-t59gg0-tnjsrz-h8vf.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
-- name: US²_186|9.8MB/s
+- name: US²_732|9.1MB/s
   type: hysteria2
-  server: f6bf48c8-t55r40-tds6bp-1hzyr.us.hyhuawei.com
-  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
-  sni: f6bf48c8-t55r40-tds6bp-1hzyr.us.hyhuawei.com
+  server: cee562fd-t59gg0-t6mgi0-1j6h0.us.hyhuawei.com
+  password: dcccacba-fa44-11ef-8400-f23c9164ca5d
+  sni: cee562fd-t59gg0-t6mgi0-1j6h0.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
-- name: US²_402|10.9MB/s
+- name: US²_740|5.7MB/s
   type: hysteria2
-  server: 97cc76e9-t53wg0-tiqsce-t6fv.us.hyhuawei.com
-  password: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
-  sni: 97cc76e9-t53wg0-tiqsce-t6fv.us.hyhuawei.com
+  server: 39a7b1d7-t53wg0-t7dv8l-1szgv.us.hyhuawei.com
+  password: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
+  sni: 39a7b1d7-t53wg0-t7dv8l-1szgv.us.hyhuawei.com
+  skip-cert-verify: true
+  port: 443
+- name: US²_780|8.1MB/s
+  type: hysteria2
+  server: cd84e9ec-t57ls0-t83bw1-1f596.us.hyhuawei.com
+  password: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
+  sni: cd84e9ec-t57ls0-t83bw1-1f596.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
 - name: US²_681|9.4MB/s
@@ -124,57 +220,6 @@ proxies:
   sni: 1ef9abf9-t53wg0-t9byd7-1jfvb.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
-- name: US²_834|8.8MB/s
-  type: hysteria2
-  server: b47e4158-t6pb40-tk5ls1-z7a1.us.hyhuawei.com
-  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-  sni: b47e4158-t6pb40-tk5ls1-z7a1.us.hyhuawei.com
-  skip-cert-verify: true
-  port: 443
-- name: US²_785|8.9MB/s
-  type: hysteria2
-  server: 29f2d862-t53wg0-tcr97d-2b2n.us.hyhuawei.com
-  password: fcd39788-ca23-11ed-86e2-f23c913c8d2b
-  sni: 29f2d862-t53wg0-tcr97d-2b2n.us.hyhuawei.com
-  skip-cert-verify: true
-  port: 443
-- name: NL²_7|3.6MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 58576
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: US²_72|9MB/s
-  type: hysteria2
-  server: 6e92b5bd-t53wg0-toa9ad-4w8.us.hyhuawei.com
-  password: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
-  sni: 6e92b5bd-t53wg0-toa9ad-4w8.us.hyhuawei.com
-  skip-cert-verify: true
-  port: 443
-- name: US²_314|11.3MB/s
-  type: hysteria2
-  server: a4cf26ca-t55r40-tcop2n-tl32.us.hyhuawei.com
-  password: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
-  sni: a4cf26ca-t55r40-tcop2n-tl32.us.hyhuawei.com
-  skip-cert-verify: true
-  port: 443
-- name: US²_523|4.9MB/s
-  type: hysteria2
-  server: cf715c79-t55r40-tl09la-1q91p.us.hyhuawei.com
-  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  sni: cf715c79-t55r40-tl09la-1q91p.us.hyhuawei.com
-  skip-cert-verify: true
-  port: 443
-- name: US²_646|9.7MB/s
-  type: hysteria2
-  server: 80636f16-t57ls0-t5ain7-zn8y.us.hyhuawei.com
-  password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
-  sni: 80636f16-t57ls0-t5ain7-zn8y.us.hyhuawei.com
-  skip-cert-verify: true
-  port: 443
 - name: US²_372|9.6MB/s
   type: hysteria2
   server: fa1586d7-t57ls0-t5j6xt-1fqef.us.hyhuawei.com
@@ -182,54 +227,60 @@ proxies:
   sni: fa1586d7-t57ls0-t5j6xt-1fqef.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
-- name: US²_177|9.3MB/s
+- name: US²_87|5.6MB/s
   type: hysteria2
-  server: 76eb5c92-t57ls0-t5s93b-1swry.us.hyhuawei.com
-  password: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b
-  sni: 76eb5c92-t57ls0-t5s93b-1swry.us.hyhuawei.com
+  server: c7b4b615-t59gg0-td1l1t-1s824.us.hyhuawei.com
+  password: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+  sni: c7b4b615-t59gg0-td1l1t-1s824.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
-- name: MX²_30|5.5MB/s
+- name: US²_518|8.4MB/s
   type: hysteria2
-  server: yg.kaixincloud.top
-  password: 34755bf3-5038-4ee7-9ae7-78c3369b6aaa
-  sni: yg.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-- name: US²_142|8.8MB/s
-  type: hysteria2
-  server: 881f1fb2-t6ngg0-tcdlur-1qwom.us.hyhuawei.com
-  password: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
-  sni: 881f1fb2-t6ngg0-tcdlur-1qwom.us.hyhuawei.com
+  server: c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com
+  password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
+  sni: c6914a2d-t57ls0-tb74a6-1q9g2.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
-- name: US²_285|8.6MB/s
+- name: US²_459|10.1MB/s
   type: hysteria2
-  server: 8b881221-t59gg0-t9uin7-19ord.us.hyhuawei.com
-  password: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
-  sni: 8b881221-t59gg0-t9uin7-19ord.us.hyhuawei.com
+  server: a9bc980e-t57ls0-t8wh4m-1hpo0.us.hyhuawei.com
+  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+  sni: a9bc980e-t57ls0-t8wh4m-1hpo0.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
-- name: US²_234|8.4MB/s
+- name: US²_146|8.6MB/s
   type: hysteria2
-  server: yg.kaixincloud.top
-  password: 89c9f4ce-825d-4111-b0b9-dd928d77214b
-  sni: yg.kaixincloud.top
+  server: 18c674f2-t53wg0-t5zsa5-1pr35.us.hyhuawei.com
+  password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
+  sni: 18c674f2-t53wg0-t5zsa5-1pr35.us.hyhuawei.com
   skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: US²_140|8.8MB/s
+  port: 443
+- name: US²_564|5.7MB/s
   type: hysteria2
-  server: yg.kaixincloud.top
-  password: 47db373b-d23c-4acb-bfd9-dace39c4f1e4
-  sni: yg.kaixincloud.top
+  server: 89f5a1b5-t53wg0-tn57fp-5ifr.us.hyhuawei.com
+  password: ecfab6c8-df5b-11ed-98a7-f23c913c8d2b
+  sni: 89f5a1b5-t53wg0-tn57fp-5ifr.us.hyhuawei.com
   skip-cert-verify: true
-  port: 25200
-- name: US²_209|10.8MB/s
+  port: 443
+- name: SG²_6|8.9MB/s
   type: hysteria2
-  server: a66f0097-t53wg0-t6eg6k-1pckg.us.hyhuawei.com
-  password: 526a1128-7487-11ee-9bca-f23c913c8d2b
-  sni: a66f0097-t53wg0-t6eg6k-1pckg.us.hyhuawei.com
+  server: 152.67.95.183
+  password: e343471a-aad3-40da-9dea-72cc8c7dce5f
+  sni: www.apple.com
+  skip-cert-verify: true
+  port: 443
+- name: US²_534|6.8MB/s
+  type: hysteria2
+  server: 4175f989-t53wg0-tbc0ig-1ssud.us.hyhuawei.com
+  password: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
+  sni: 4175f989-t53wg0-tbc0ig-1ssud.us.hyhuawei.com
+  skip-cert-verify: true
+  port: 443
+- name: US²_639|6.5MB/s
+  type: hysteria2
+  server: 679b6c8d-t53wg0-t9hghw-1sdoq.us.hyhuawei.com
+  password: 7c077572-6da9-11ef-b786-f23c91cfbbc9
+  sni: 679b6c8d-t53wg0-t9hghw-1sdoq.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
 - name: US²_20|3.4MB/s
@@ -240,244 +291,39 @@ proxies:
   skip-cert-verify: true
   port: 25200
   ports: 25200-26200
-- name: US²_182|8.4MB/s
+- name: US²_194|7.8MB/s
   type: hysteria2
-  server: yg.kaixincloud.top
-  password: 158d9b52-33a1-48d8-8e38-189a9f53c037
-  sni: yg.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: US²_1|4.9MB/s
-  type: hysteria2
-  server: us1.kaixincloud.top
-  password: 3f145aff-ef2c-46e8-ba1e-59a55e2072d5
-  sni: us1.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: US²_20|2.5MB/s
-  type: hysteria2
-  server: yg.kaixincloud.top
-  password: dc031685-c641-49c5-a620-d15f8412b753
-  sni: yg.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: US²_35|6MB/s
-  type: hysteria2
-  server: 758de273-t53wg0-tlm64c-xm0q.us.hyhuawei.com
-  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  sni: 758de273-t53wg0-tlm64c-xm0q.us.hyhuawei.com
+  server: eb7c40a5-t57ls0-tcop2n-tl32.us.hyhuawei.com
+  password: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  sni: eb7c40a5-t57ls0-tcop2n-tl32.us.hyhuawei.com
   skip-cert-verify: true
   port: 443
-- name: US²_106|2.6MB/s
+- name: US²_39|5.1MB/s
   type: hysteria2
-  server: yg.kaixincloud.top
-  password: 174ad6eb-d8d3-4ad4-8bfd-584ef863399c
-  sni: yg.kaixincloud.top
+  server: 23.27.249.60
+  password: ieshare2025
+  sni: www.microsoft.com
   skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: US²_769|5.2MB/s
+  port: 3457
+- name: US²_100|5.3MB/s
   type: hysteria2
-  server: yg.kaixincloud.top
-  password: 126e3ca3-90ef-421d-bb74-a958fd91beeb
-  sni: yg.kaixincloud.top
+  server: 23.27.249.60
+  password: ieshare2025
+  sni: dash.cloudflare.com
   skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: US13 CF20|0.7MB/s
+  port: 3457
+- name: US²_250|10.2MB/s
   type: hysteria2
-  server: yg.dabache.top
-  password: c10b9715-5cbd-4a1b-a13e-d4aae8d288d5
-  sni: yg.dabache.top
+  server: mg.dabache.top
+  password: f9504f36-66bf-48ff-bb38-c73ffe2d6b96
+  sni: mg.dabache.top
   skip-cert-verify: true
   port: 20000
-- name: US²_702|8.9MB/s
-  type: hysteria2
-  server: us1.kaixincloud.top
-  password: 76296b6e-09c2-4509-aa19-87d59d34dc2f
-  sni: us1.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: US²_107|8.7MB/s
-  type: hysteria2
-  server: efb9837b-t57ls0-tl09la-1q91p.us.hyhuawei.com
-  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  sni: efb9837b-t57ls0-tl09la-1q91p.us.hyhuawei.com
-  skip-cert-verify: true
-  port: 443
-- name: US²_3|4.1MB/s
-  type: hysteria2
-  server: yg.kaixincloud.top
-  password: ab6f2c9a-a4ea-4483-adb0-b24faf13caa5
-  sni: yg.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: US²_002|2.1M/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 52318
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL¹_1|4.8MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 51658
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: SG²_5|0.1MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: 6d600864-32da-49fd-baf4-7df051762454
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: AZ²_001|2.1M/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 443
-  ports: 50000-60000
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: FR²_001|2.1M/s
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  sni: '🔒 [By EbraSha] '
-  skip-cert-verify: true
-  port: 20088
-- name: GB²_8|0.5MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: c09f13ce-2cca-49b6-ad1e-597566cc89c6
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: DE²_20|0.3MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: 9631096d-3032-4942-9446-bdf12665682b
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: NL¹_3|0.2MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 58262
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: SG²_22|0.4MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: 27104fae-f047-4993-902a-9368d8a3e9bc
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: US²_003|2.1M/s
-  type: hysteria2
-  server: 2a14:3f87:f001:13::a
-  password: Yet-Another-Public-Config-1
-  sni: YAPC-1.afshin.ir
-  skip-cert-verify: true
-  port: 35200
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-- name: US²_004|2.1M/s
-  type: hysteria2
-  server: 2a02:180:6:1::1b3
-  password: 32d5901c-3cf6-43a9-b719-d71f1fb4f78e
-  sni: www.bing.com
-  skip-cert-verify: true
-  port: 51435
-- name: NL²_002|2.1M/s
-  type: hysteria2
-  server: 2a14:3f87:f001:13::a
-  password: Yet-Another-Public-Config-1
-  sni: YAPC-1.afshin.ir
-  skip-cert-verify: true
-  port: 35000
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-- name: NL²_4|7.2MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 57061
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL¹_4|1.1MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 56269
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL¹_2|3.4MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 59220
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL²_2|0.2MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 56654
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: CA²_3|3.9MB/s
+  ports: 20000-20500
+- name: CA²_2|4.4MB/s
   type: hysteria2
   server: xjp.kaixincloud.top
-  password: df621b3e-4e57-421d-b0b8-dc0f519cb09b
-  sni: xjp.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: CA²_40|3.8MB/s
-  type: hysteria2
-  server: xjp.kaixincloud.top
-  password: 351b8fa7-3ad4-4a81-8373-f4bc1ebb9310
-  sni: xjp.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: CA²_3|3.2MB/s
-  type: hysteria2
-  server: xjp.kaixincloud.top
-  password: 21db6b55-0f88-436e-9bd7-0e3c006de096
-  sni: xjp.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: CA²_6|4.7MB/s
-  type: hysteria2
-  server: xjp.kaixincloud.top
-  password: 47db373b-d23c-4acb-bfd9-dace39c4f1e4
+  password: 8b0afc8a-bff5-4657-8dfd-0ee371824027
   sni: xjp.kaixincloud.top
   skip-cert-verify: true
   port: 25200
@@ -490,38 +336,16 @@ proxies:
   skip-cert-verify: true
   port: 25200
   ports: 25200-26200
-- name: CA²_7|6.4MB/s
+- name: AZ001
   type: hysteria2
-  server: xjp.kaixincloud.top
-  password: 225a99f7-560d-4ae1-8342-998dea61b062
-  sni: xjp.kaixincloud.top
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
   skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: CA²_37|4.7MB/s
-  type: hysteria2
-  server: xjp.kaixincloud.top
-  password: abc73e1c-14a6-4767-9427-920eaa641e19
-  sni: xjp.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: CA²_2|4.4MB/s
-  type: hysteria2
-  server: xjp.kaixincloud.top
-  password: 8b0afc8a-bff5-4657-8dfd-0ee371824027
-  sni: xjp.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: CA²_29|4.9MB/s
-  type: hysteria2
-  server: jnd.dabache.top
-  password: c10b9715-5cbd-4a1b-a13e-d4aae8d288d5
-  sni: jnd.dabache.top
-  skip-cert-verify: true
-  port: 20000
-  ports: 20000-20500
+  port: 443
+  ports: 50000-60000
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
 - name: CA²_1|3.6MB/s
   type: hysteria2
   server: xjp.kaixincloud.top
@@ -530,91 +354,13 @@ proxies:
   skip-cert-verify: true
   port: 25200
   ports: 25200-26200
-- name: CA²_5|4.6MB/s
-  type: hysteria2
-  server: xjp.kaixincloud.top
-  password: 522d74df-dd98-461f-9c91-f217ce3b6f7e
-  sni: xjp.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: DE²_14|0.2MB/s
+- name: SG²_5|0.1MB/s
   type: hysteria2
   server: 5.83.150.108
-  password: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
+  password: 6d600864-32da-49fd-baf4-7df051762454
   sni: imafake.locker
   skip-cert-verify: true
   port: 54365
-- name: FR²_5|0.6MB/s
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  sni: рҹ”’
-  skip-cert-verify: true
-  port: 20088
-- name: AL²_2|4.4MB/s
-  type: hysteria2
-  server: 193.108.112.6
-  password: S1XZDIaoUX
-  skip-cert-verify: true
-  port: 50163
-  obfs: salamander
-  obfs-password: Parsashonam
-- name: SG²_21|0.4MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: 3b475934-cb2a-4d96-b260-5e50cca5d430
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: US²_35|4.8MB/s
-  type: hysteria2
-  server: yg.kaixincloud.top
-  password: a6f77097-a1ca-4b9c-80e2-daeace1ebad3
-  sni: yg.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: DE²_177|10MB/s
-  type: hysteria2
-  server: hl.kaixincloud.top
-  password: 13440c81-8886-49cb-9c4a-364381a3e2a5
-  sni: hl.kaixincloud.top
-  skip-cert-verify: true
-  port: 27200
-  ports: 27200-28000
-- name: DE²_288|3.8MB/s
-  type: hysteria2
-  server: hl.dabache.top
-  password: 2ac47595-52b3-4d81-9d46-9212491f7cc1
-  sni: hl.dabache.top
-  skip-cert-verify: true
-  port: 20000
-  ports: 20000-20500
-- name: DE²_16|3.8MB/s
-  type: hysteria2
-  server: hl.kaixincloud.top
-  password: ab6f2c9a-a4ea-4483-adb0-b24faf13caa5
-  sni: hl.kaixincloud.top
-  skip-cert-verify: true
-  port: 27200
-  ports: 27200-28000
-- name: US²_005|2.1M/s
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  port: 20088
-- name: NL²_001|2.1M/s
-  type: hysteria2
-  server: 2a14:3f87:f001:13::a
-  password: Yet-Another-Public-Config-1
-  sni: YAPC-1.afshin.ir
-  skip-cert-verify: true
-  port: 36400
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
 - name: DE²_3|0.5MB/s
   type: hysteria2
   server: 5.83.150.108
@@ -622,97 +368,19 @@ proxies:
   sni: imafake.locker
   skip-cert-verify: true
   port: 54365
-- name: GB²_1|0.2MB/s
+- name: LV²_18|8.1MB/s
   type: hysteria2
-  server: 5.83.150.108
-  password: b01d1e26-2f84-48da-88a1-1d06a77857f3
-  sni: imafake.locker
+  server: channel4.saghetalaie.homes
+  password: yhqy5AHofQq
+  sni: www.google.com
   skip-cert-verify: true
-  port: 54365
-- name: GB²_10|0.2MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: DE²_31|0.5MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: JP²_15|0.1MB/s
-  type: hysteria2
-  server: rb.kaixincloud.top
-  password: 174ad6eb-d8d3-4ad4-8bfd-584ef863399c
-  sni: rb.kaixincloud.top
-  skip-cert-verify: true
-  port: 25200
-  ports: 25200-26200
-- name: DE²_31|0.2MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: 12929592-a7bd-41eb-ab4d-d804f76c4ff9
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: SG²_28|0.1MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: c6e0562f-7ad1-40fb-a255-26194b2de84a
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: DE²_94|0.2MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: b2da9920-b0a7-4354-9e26-3833ab8d00d0
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: DE²_36|0.1MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: fa8f8911-2e9b-494e-9a8d-f80239ee2214
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: GB²_2|0.5MB/s
-  type: hysteria2
-  server: 5.83.150.108
-  password: 3786e67a-41eb-4b92-b31e-417e89493b93
-  sni: imafake.locker
-  skip-cert-verify: true
-  port: 54365
-- name: US²_000|2.1M/s
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  sni: 🔒
-  skip-cert-verify: true
-  port: 20088
-- name: US²_701|5.9MB/s
-  type: hysteria2
-  server: 8fb56d0b-t55r40-t6k7h7-1rcxl.us.hyhuawei.com
-  password: 9141f048-0b70-11ef-9eb1-f23c91cfbbc9
-  sni: 8fb56d0b-t55r40-t6k7h7-1rcxl.us.hyhuawei.com
-  skip-cert-verify: true
-  port: 443
-- name: NL¹_5|1.3MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 54608
+  port: 46914
   obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: DE²_134|0.2MB/s
+  obfs-password: '&O#28YB5qK!5t#U'
+- name: SG²_21|0.4MB/s
   type: hysteria2
   server: 5.83.150.108
-  password: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
+  password: 3b475934-cb2a-4d96-b260-5e50cca5d430
   sni: imafake.locker
   skip-cert-verify: true
   port: 54365
@@ -723,19 +391,267 @@ proxies:
   sni: imafake.locker
   skip-cert-verify: true
   port: 54365
-- name: US²_8|7.5MB/s
+- name: US²_26|6.4MB/s
   type: hysteria2
-  server: 142.171.46.180
-  password: sysadmin.sysadmin
+  server: mg.dabache.top
+  password: c10b9715-5cbd-4a1b-a13e-d4aae8d288d5
+  sni: mg.dabache.top
+  skip-cert-verify: true
+  port: 20000
+- name: FI²_1|3.5MB/s
+  type: hysteria2
+  server: 2a01:4f9:6b:47e9::19:52
+  password: ae2fbed9-592a-43c6-9a2e-29be6a514880
   sni: dash.cloudflare.com
   skip-cert-verify: true
-  port: 57450
-- name: FR²_23|1.6MB/s
+  port: 63139
+- name: DE²_14|0.2MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: 54a0bf6d-f2b5-4b2a-942c-798fb129527e
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: JP²_16|12.5MB/s
+  type: hysteria2
+  server: 85.121.51.24
+  password: 119bedb3-7bf7-4834-8eb0-451b0e58bc1a
+  sni: dash.cloudflare.com
+  skip-cert-verify: true
+  port: 28675
+- name: SG²_22|0.4MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: 27104fae-f047-4993-902a-9368d8a3e9bc
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: DE²_20|0.3MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: 9631096d-3032-4942-9446-bdf12665682b
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: DE²_134|0.2MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: f1a513d2-c32a-49dc-8e64-d4f8a2f1e001
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: GB²_8|0.5MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: c09f13ce-2cca-49b6-ad1e-597566cc89c6
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: GB²_2|0.5MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: 3786e67a-41eb-4b92-b31e-417e89493b93
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: SG²_28|0.1MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: c6e0562f-7ad1-40fb-a255-26194b2de84a
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: GB²_10|0.2MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: 35f332d0-0b05-4cc6-91cb-ec0d4465055f
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: DE²_31|0.2MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: 12929592-a7bd-41eb-ab4d-d804f76c4ff9
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: DE²_31|0.5MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: 254551f6-ec28-4938-ad0e-0aa4aa1965ec
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: DE²_36|0.1MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: fa8f8911-2e9b-494e-9a8d-f80239ee2214
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: US²_4|2.2MB/s
+  type: hysteria2
+  server: mg.dabache.top
+  password: a0bf700e-6606-4125-81c6-b4a1d3ccac4a
+  sni: mg.dabache.top
+  skip-cert-verify: true
+  port: 20000
+- name: US²_200|12.8MB/s
+  type: hysteria2
+  server: 5bca9536-t53wg0-t5xw8a-g3b3.us.hyhuawei.com
+  password: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
+  sni: 5bca9536-t53wg0-t5xw8a-g3b3.us.hyhuawei.com
+  skip-cert-verify: true
+  port: 443
+- name: NL¹_1|4.8MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 51658
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL¹_5|1.3MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 54608
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: US006
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 52318
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL¹_2|3.4MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 59220
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL¹_3|0.2MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 58262
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL¹_4|1.1MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 56269
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL²_4|7.2MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 57061
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL²_2|0.2MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 56654
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL²_7|3.6MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 58576
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL001
+  type: hysteria2
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  port: 36400
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+- name: US003
+  type: hysteria2
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  port: 36300
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+- name: US004
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   password: dongtaiwang.com
+  sni: 🔒
   skip-cert-verify: true
   port: 20088
+- name: US005
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  port: 20088
+- name: FR001
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: '🔒 [By EbraSha] '
+  skip-cert-verify: true
+  port: 20088
+- name: DE²_94|0.2MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: b2da9920-b0a7-4354-9e26-3833ab8d00d0
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: CA²_6|4.7MB/s
+  type: hysteria2
+  server: xjp.kaixincloud.top
+  password: 47db373b-d23c-4acb-bfd9-dace39c4f1e4
+  sni: xjp.kaixincloud.top
+  skip-cert-verify: true
+  port: 25200
+  ports: 25200-26200
+- name: GB²_1|0.2MB/s
+  type: hysteria2
+  server: 5.83.150.108
+  password: b01d1e26-2f84-48da-88a1-1d06a77857f3
+  sni: imafake.locker
+  skip-cert-verify: true
+  port: 54365
+- name: DE²_45|4.8MB/s
+  type: hysteria2
+  server: hl.dabache.top
+  password: 46dff9e6-c449-4a13-98b4-4b516427575d
+  sni: hl.dabache.top
+  skip-cert-verify: true
+  port: 20000
 - alpn:
   - h3
   congestion-controller: bbr
@@ -928,102 +844,92 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -1046,102 +952,92 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -1162,102 +1058,92 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -1278,102 +1164,92 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -1395,102 +1271,92 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -1510,102 +1376,92 @@ proxy-groups:
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -1627,102 +1483,92 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -1744,102 +1590,92 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -1861,102 +1697,92 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -1978,102 +1804,92 @@ proxy-groups:
   proxies:
   - DIRECT
   - 🚀 手动切换
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
@@ -2095,102 +1911,92 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
-  - JP²_29|3.9MB/s
-  - DE²_5|5.2MB/s
-  - FR²_48|5.6MB/s
-  - US²_000|2.1M/s
+  - JP²_31|0.4MB/s
+  - US001
+  - US002
+  - US003
+  - US004
+  - US005
+  - US006
+  - FR001
+  - NL001
+  - NL002
+  - AZ001
+  - SG²_11|11.5MB/s
+  - HK²_1|11.7MB/s
+  - JP²_3|11.5MB/s
   - DE²_11|3.6MB/s
-  - US²_001|2.1M/s
+  - DE²_5|5.2MB/s
+  - KR²_12|7.7MB/s
+  - FR²_48|5.6MB/s
+  - KR²_6|10.9MB/s
+  - FR²_23|1.6MB/s
+  - FR²_5|0.6MB/s
+  - AU²_2|5.8MB/s
+  - US²_8|7.5MB/s
+  - US²_88|2.1MB/s
+  - US²_41|4.6MB/s
   - US²_39|3.4MB/s
   - US²_29|3.5MB/s
-  - US²_88|2.1MB/s
+  - SG²_15|5.3MB/s
+  - SG²_7|5.1MB/s
   - US²_72|5.1MB/s
-  - US²_41|4.6MB/s
-  - US²_518|8.4MB/s
-  - US²_418|5.2MB/s
-  - US²_186|9.8MB/s
-  - US²_402|10.9MB/s
+  - US²_183|9.3MB/s
+  - US²_425|5.7MB/s
+  - US²_732|9.1MB/s
+  - US²_740|5.7MB/s
+  - US²_780|8.1MB/s
   - US²_681|9.4MB/s
-  - US²_834|8.8MB/s
-  - US²_785|8.9MB/s
-  - NL²_7|3.6MB/s
-  - US²_72|9MB/s
-  - US²_314|11.3MB/s
-  - US²_523|4.9MB/s
-  - US²_646|9.7MB/s
   - US²_372|9.6MB/s
-  - US²_177|9.3MB/s
-  - MX²_30|5.5MB/s
-  - US²_142|8.8MB/s
-  - US²_285|8.6MB/s
-  - US²_234|8.4MB/s
-  - US²_140|8.8MB/s
-  - US²_209|10.8MB/s
+  - US²_87|5.6MB/s
+  - US²_518|8.4MB/s
+  - US²_459|10.1MB/s
+  - US²_146|8.6MB/s
+  - US²_564|5.7MB/s
+  - SG²_6|8.9MB/s
+  - US²_534|6.8MB/s
+  - US²_639|6.5MB/s
   - US²_20|3.4MB/s
-  - US²_182|8.4MB/s
-  - US²_1|4.9MB/s
-  - US²_20|2.5MB/s
-  - US²_35|6MB/s
-  - US²_106|2.6MB/s
-  - US²_769|5.2MB/s
-  - US13 CF20|0.7MB/s
-  - US²_702|8.9MB/s
-  - US²_107|8.7MB/s
-  - US²_3|4.1MB/s
-  - US²_002|2.1M/s
-  - NL¹_1|4.8MB/s
-  - SG²_5|0.1MB/s
-  - AZ²_001|2.1M/s
-  - FR²_001|2.1M/s
-  - GB²_8|0.5MB/s
-  - DE²_20|0.3MB/s
-  - NL¹_3|0.2MB/s
-  - SG²_22|0.4MB/s
-  - US²_003|2.1M/s
-  - US²_004|2.1M/s
-  - NL²_002|2.1M/s
-  - NL²_4|7.2MB/s
-  - NL¹_4|1.1MB/s
-  - NL¹_2|3.4MB/s
-  - NL²_2|0.2MB/s
-  - CA²_3|3.9MB/s
-  - CA²_40|3.8MB/s
-  - CA²_3|3.2MB/s
-  - CA²_6|4.7MB/s
-  - CA²_4|1.7MB/s
-  - CA²_7|6.4MB/s
-  - CA²_37|4.7MB/s
+  - US²_194|7.8MB/s
+  - US²_39|5.1MB/s
+  - US²_100|5.3MB/s
+  - US²_250|10.2MB/s
   - CA²_2|4.4MB/s
-  - CA²_29|4.9MB/s
+  - CA²_4|1.7MB/s
   - CA²_1|3.6MB/s
-  - CA²_5|4.6MB/s
-  - DE²_14|0.2MB/s
-  - FR²_5|0.6MB/s
-  - AL²_2|4.4MB/s
-  - SG²_21|0.4MB/s
-  - US²_35|4.8MB/s
-  - DE²_177|10MB/s
-  - DE²_288|3.8MB/s
-  - DE²_16|3.8MB/s
-  - US²_005|2.1M/s
-  - NL²_001|2.1M/s
+  - SG²_5|0.1MB/s
   - DE²_3|0.5MB/s
-  - GB²_1|0.2MB/s
-  - GB²_10|0.2MB/s
-  - DE²_31|0.5MB/s
-  - JP²_15|0.1MB/s
-  - DE²_31|0.2MB/s
-  - SG²_28|0.1MB/s
-  - DE²_94|0.2MB/s
-  - DE²_36|0.1MB/s
-  - GB²_2|0.5MB/s
-  - US²_000|2.1M/s
-  - US²_701|5.9MB/s
-  - NL¹_5|1.3MB/s
-  - DE²_134|0.2MB/s
+  - LV²_18|8.1MB/s
+  - SG²_21|0.4MB/s
   - GB²_38|0.1MB/s
-  - US²_8|7.5MB/s
-  - FR²_23|1.6MB/s
+  - US²_26|6.4MB/s
+  - FI²_1|3.5MB/s
+  - DE²_14|0.2MB/s
+  - JP²_16|12.5MB/s
+  - SG²_22|0.4MB/s
+  - DE²_20|0.3MB/s
+  - DE²_134|0.2MB/s
+  - GB²_8|0.5MB/s
+  - GB²_2|0.5MB/s
+  - SG²_28|0.1MB/s
+  - GB²_10|0.2MB/s
+  - DE²_31|0.2MB/s
+  - DE²_31|0.5MB/s
+  - DE²_36|0.1MB/s
+  - US²_4|2.2MB/s
+  - US²_200|12.8MB/s
+  - NL¹_1|4.8MB/s
+  - NL¹_5|1.3MB/s
+  - NL¹_2|3.4MB/s
+  - NL¹_3|0.2MB/s
+  - NL¹_4|1.1MB/s
+  - NL²_4|7.2MB/s
+  - NL²_2|0.2MB/s
+  - NL²_7|3.6MB/s
+  - DE²_94|0.2MB/s
+  - CA²_6|4.7MB/s
+  - GB²_1|0.2MB/s
+  - DE²_45|4.8MB/s
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
