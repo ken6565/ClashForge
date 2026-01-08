@@ -334,80 +334,80 @@ proxies:
       - h3
     sni: bing.com
     udp-relay-mode: native
-- name: www.shopify.com-trojan
-  type: trojan
-  server: www.shopify.com
-  port: 2087
-  password: '666'
-  udp: true
-  tfo: false
-  tls: true
-  sni: freesni.zjde5.de5.net
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: freesni.zjde5.de5.net
-- name: www.shopify.com-vless
-  type: vless
-  server: www.shopify.com
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: freesni.zjde5.de5.net
-  servername: freesni.zjde5.de5.net
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: freesni.zjde5.de5.net
-- name: www.shopify.com-vmess
-  type: vmess
-  server: www.shopify.com
-  port: 2096
-  uuid: 68f891b8-d7e8-47bf-a5f2-b7baf912f69c
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  sni: asuka.0061.my
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: asuka.0061.my
-- name: cf.877774.xyz
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: b7789765-c9fb-41c3-bea0-348b702eb816
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: rt.372164885.xyz
-  servername: rt.372164885.xyz
-  network: ws
-  ws-opts:
-    path: /pk-vl
-    headers:
-      Host: rt.372164885.xyz
+  - name: www.shopify.com-trojan
+    type: trojan
+    server: www.shopify.com
+    port: 2087
+    password: '666'
+    udp: true
+    tfo: false
+    tls: true
+    sni: freesni.zjde5.de5.net
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    alpn:
+    - http/1.1
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: freesni.zjde5.de5.net
+  - name: www.shopify.com-vless
+    type: vless
+    server: www.shopify.com
+    port: 2053
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    encryption: none
+    udp: true
+    skip-cert-verify: true
+    tfo: false
+    tls: true
+    sni: freesni.zjde5.de5.net
+    servername: freesni.zjde5.de5.net
+    client-fingerprint: chrome
+    alpn:
+    - http/1.1
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: freesni.zjde5.de5.net
+  - name: www.shopify.com-vmess
+    type: vmess
+    server: www.shopify.com
+    port: 2096
+    uuid: 68f891b8-d7e8-47bf-a5f2-b7baf912f69c
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    udp: true
+    network: ws
+    aead: true
+    tfo: false
+    sni: asuka.0061.my
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: asuka.0061.my
+  - name: cf.877774.xyz
+    type: vless
+    server: cf.877774.xyz
+    port: 443
+    uuid: b7789765-c9fb-41c3-bea0-348b702eb816
+    encryption: none
+    udp: true
+    skip-cert-verify: false
+    tfo: false
+    tls: true
+    sni: rt.372164885.xyz
+    servername: rt.372164885.xyz
+    network: ws
+    ws-opts:
+      path: /pk-vl
+      headers:
+        Host: rt.372164885.xyz
   - name: snu香港006
     type: vless
     server: 192.142.4.33
