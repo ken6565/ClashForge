@@ -12,6 +12,46 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   port: 51435
+- name: UShy2_001
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  port: 20088
+- name: UShy2_002
+  type: hysteria2
+  server: 2a14:3f87:f001:9::a
+  password: Telegram--%3E%40Ln2Ray
+  sni: gavazn.55994421.xyz
+  skip-cert-verify: true
+  port: 45000
+  obfs: salamander
+  obfs-password: Telegram-->@Ln2Ray
+- name: UShy2_003
+  type: hysteria2
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  port: 36300
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+- name: UShy2_004
+  type: hysteria2
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  port: 35200
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+- FRhy2_005|1.6MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  skip-cert-verify: true
+  port: 20088
 - name: SG²_11|11.5MB/s
   type: hysteria2
   server: 203.27.106.148
@@ -713,11 +753,11 @@ proxies:
     path: /pk-vl
     headers:
       Host: rt.372164885.xyz
-- name: snu香港002
+- name: snu香港001
   udp: false
   skip-cert-verify: true
   type: vless
-  server: 103.69.128.41
+  server: 83.229.123.16
   port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
@@ -729,7 +769,55 @@ proxies:
     headers:
       host: freesni.zjde5.de5.net
   tfo: false
+- name: snu香港002
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 103.118.42.111
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  client-fingerprint: chrome
+  servername: freesni.zjde5.de5.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: freesni.zjde5.de5.net
+  tfo: false
+- name: snu香港003
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 45.196.220.114
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  client-fingerprint: chrome
+  servername: freesni.zjde5.de5.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: freesni.zjde5.de5.net
+  tfo: false
 - name: snu香港004
+  udp: false
+  skip-cert-verify: true
+  type: vless
+  server: 149.104.28.170
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  client-fingerprint: chrome
+  servername: freesni.zjde5.de5.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: freesni.zjde5.de5.net
+  tfo: false
+- name: snu香港005
   udp: false
   skip-cert-verify: true
   type: vless
@@ -777,7 +865,7 @@ proxies:
     headers:
       host: freesni.zjde5.de5.net
   tfo: false
-- name: snu香港010
+- name: snu香港008
   udp: false
   skip-cert-verify: true
   type: vless
@@ -819,6 +907,11 @@ proxy-groups:
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -906,11 +999,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -924,6 +1020,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1011,11 +1112,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1027,6 +1131,11 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1114,11 +1223,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1130,6 +1242,11 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1217,11 +1334,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1234,6 +1354,11 @@ proxy-groups:
   - 🎯 国内直连
   - 🚀 手动切换
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1321,11 +1446,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1336,6 +1464,11 @@ proxy-groups:
   type: select
   proxies:
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1423,11 +1556,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1440,6 +1576,11 @@ proxy-groups:
   - 🎯 国内直连
   - 🚀 手动切换
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1527,11 +1668,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1544,6 +1688,11 @@ proxy-groups:
   - 🚀 手动切换
   - ♻️ 自动选择
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1631,11 +1780,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1648,6 +1800,11 @@ proxy-groups:
   - 🎯 国内直连
   - 🚀 手动切换
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1735,11 +1892,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1752,6 +1912,11 @@ proxy-groups:
   - DIRECT
   - 🚀 手动切换
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1839,11 +2004,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
@@ -1856,6 +2024,11 @@ proxy-groups:
   - 🚀 手动切换
   - 🎯 国内直连
   - US²_004|2.1MB/s
+  - UShy2_001
+  - UShy2_002
+  - UShy2_003
+  - UShy2_004
+  - FRhy2_0015
   - US001
   - US002
   - US003
@@ -1943,11 +2116,14 @@ proxy-groups:
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - cf.877774.xyz
+  - snu香港001
   - snu香港002
+  - snu香港003
   - snu香港004
+  - snu香港005
   - snu香港006
   - snu香港007
-  - snu香港010
+  - snu香港008
   - JP_33|4.3MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
