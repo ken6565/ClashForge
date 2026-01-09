@@ -69,9 +69,9 @@ dns:
 proxies:
   - udp: false
     skip-cert-verify: true
-    name: 1-snu香港
+    name: 4、香港
     type: vless
-    server: 154.3.33.43
+    server: 83.229.123.16
     port: 443
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
@@ -79,15 +79,15 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560154.3.33.43:443
+      path: /?ed=256083.229.123.16:443
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
   - udp: false
     skip-cert-verify: true
-    name: 2-snu香港
+    name: 8、香港
     type: vless
-    server: 103.69.128.41
+    server: 103.118.42.111
     port: 443
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
@@ -95,93 +95,29 @@ proxies:
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560103.69.128.41:443
+      path: /?ed=2560103.118.42.111:443
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
   - udp: false
     skip-cert-verify: true
-    name: 3-snu香港
+    name: 6、香港
     type: vless
-    server: 202.85.53.160
-    port: 7000
+    server: 45.196.220.114
+    port: 8443
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
     client-fingerprint: chrome
     servername: freesni.zjde5.de5.net
     network: ws
     ws-opts:
-      path: /?ed=2560202.85.53.160:7000
+      path: /?ed=256045.196.220.114:8443
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
   - udp: false
     skip-cert-verify: true
-    name: 4-snu香港
-    type: vless
-    server: 149.104.28.99
-    port: 443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560149.104.28.99:443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 5-snu香港
-    type: vless
-    server: 149.104.30.73
-    port: 443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560149.104.30.73:443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 6-snu香港
-    type: vless
-    server: 192.142.4.33
-    port: 2053
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560192.142.4.33:2053
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 7-snu香港
-    type: vless
-    server: 149.104.28.14
-    port: 443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560149.104.28.14:443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 8-snu香港
+    name: 13、香港
     type: vless
     server: 149.104.28.170
     port: 443
@@ -195,363 +131,81 @@ proxies:
       headers:
         host: freesni.zjde5.de5.net
     tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 9-snu香港
-    type: vless
-    server: 149.104.31.55
-    port: 443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560149.104.31.55:443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 10-snu香港
-    type: vless
-    server: 43.247.133.235
-    port: 443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=256043.247.133.235:443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 1-snu美国
-    type: vless
-    server: 45.143.128.122
-    port: 7443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=256045.143.128.122:7443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 2-snu美国
-    type: vless
-    server: 38.181.42.244
-    port: 8020
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=256038.181.42.244:8020
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 3-snu美国
-    type: vless
-    server: 45.61.136.61
-    port: 9443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=256045.61.136.61:9443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 4-snu美国
-    type: vless
-    server: 185.92.182.237
-    port: 8443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560185.92.182.237:8443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 5-snu美国
-    type: vless
-    server: 154.19.242.20
-    port: 443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560154.19.242.20:443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 6-snu美国
-    type: vless
-    server: 185.92.181.12
-    port: 7443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560185.92.181.12:7443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 7-snu美国
-    type: vless
-    server: 89.116.171.171
-    port: 8443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=256089.116.171.171:8443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 8-snu美国
-    type: vless
-    server: 185.92.180.207
-    port: 8443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560185.92.180.207:8443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 9-snu美国
-    type: vless
-    server: 185.92.180.35
-    port: 8443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560185.92.180.35:8443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
-  - udp: false
-    skip-cert-verify: true
-    name: 10-snu美国
-    type: vless
-    server: 185.92.181.7
-    port: 8443
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    client-fingerprint: chrome
-    servername: freesni.zjde5.de5.net
-    network: ws
-    ws-opts:
-      path: /?ed=2560185.92.181.7:8443
-      headers:
-        host: freesni.zjde5.de5.net
-    tfo: false
 proxy-groups:
   - type: select
-    name: 节点选择
+    name: 🚀 节点选择
     proxies:
       - DIRECT
       - REJECT
-      - 自动选择
-      - 1-snu香港
-      - 2-snu香港
-      - 3-snu香港
-      - 4-snu香港
-      - 5-snu香港
-      - 6-snu香港
-      - 7-snu香港
-      - 8-snu香港
-      - 9-snu香港
-      - 10-snu香港
-      - 1-snu美国
-      - 2-snu美国
-      - 3-snu美国
-      - 4-snu美国
-      - 5-snu美国
-      - 6-snu美国
-      - 7-snu美国
-      - 8-snu美国
-      - 9-snu美国
-      - 10-snu美国
-  - name: 自动选择
+      - ⚡ 自动选择
+      - 4、香港
+      - 6、香港
+      - 8、香港
+      - 9、香港
+      - 13、香港
+  - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 1-snu香港
-      - 2-snu香港
-      - 3-snu香港
-      - 4-snu香港
-      - 5-snu香港
-      - 6-snu香港
-      - 7-snu香港
-      - 8-snu香港
-      - 9-snu香港
-      - 10-snu香港
-      - 1-snu美国
-      - 2-snu美国
-      - 3-snu美国
-      - 4-snu美国
-      - 5-snu美国
-      - 6-snu美国
-      - 7-snu美国
-      - 8-snu美国
-      - 9-snu美国
-      - 10-snu美国
+      - 4、香港
+      - 6、香港
+      - 8、香港
+      - 9、香港
+      - 13、香港
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - type: select
-    name: 私有网络
+    name: 🏠 私有网络
     proxies:
-      - 节点选择
+      - 🚀 节点选择
       - DIRECT
       - REJECT
-      - 自动选择
-      - 1-snu香港
-      - 2-snu香港
-      - 3-snu香港
-      - 4-snu香港
-      - 5-snu香港
-      - 6-snu香港
-      - 7-snu香港
-      - 8-snu香港
-      - 9-snu香港
-      - 10-snu香港
-      - 1-snu美国
-      - 2-snu美国
-      - 3-snu美国
-      - 4-snu美国
-      - 5-snu美国
-      - 6-snu美国
-      - 7-snu美国
-      - 8-snu美国
-      - 9-snu美国
-      - 10-snu美国
+      - ⚡ 自动选择
+      - 4、香港
+      - 6、香港
+      - 8、香港
+      - 9、香港
+      - 13、香港
   - type: select
-    name: 国内服务
+    name: 🔒 国内服务
     proxies:
-      - 节点选择
+      - 🚀 节点选择
       - DIRECT
       - REJECT
-      - 自动选择
-      - 1-snu香港
-      - 2-snu香港
-      - 3-snu香港
-      - 4-snu香港
-      - 5-snu香港
-      - 6-snu香港
-      - 7-snu香港
-      - 8-snu香港
-      - 9-snu香港
-      - 10-snu香港
-      - 1-snu美国
-      - 2-snu美国
-      - 3-snu美国
-      - 4-snu美国
-      - 5-snu美国
-      - 6-snu美国
-      - 7-snu美国
-      - 8-snu美国
-      - 9-snu美国
-      - 10-snu美国
+      - ⚡ 自动选择
+      - 4、香港
+      - 6、香港
+      - 8、香港
+      - 9、香港
+      - 13、香港
   - type: select
-    name: 非中国
+    name: 🌐 非中国
     proxies:
-      - 节点选择
+      - 🚀 节点选择
       - DIRECT
       - REJECT
-      - 自动选择
-      - 1-snu香港
-      - 2-snu香港
-      - 3-snu香港
-      - 4-snu香港
-      - 5-snu香港
-      - 6-snu香港
-      - 7-snu香港
-      - 8-snu香港
-      - 9-snu香港
-      - 10-snu香港
-      - 1-snu美国
-      - 2-snu美国
-      - 3-snu美国
-      - 4-snu美国
-      - 5-snu美国
-      - 6-snu美国
-      - 7-snu美国
-      - 8-snu美国
-      - 9-snu美国
-      - 10-snu美国
+      - ⚡ 自动选择
+      - 4、香港
+      - 6、香港
+      - 8、香港
+      - 9、香港
+      - 13、香港
   - type: select
-    name: 漏网之鱼
+    name: 🐟 漏网之鱼
     proxies:
-      - 节点选择
+      - 🚀 节点选择
       - DIRECT
       - REJECT
-      - 自动选择
-      - 1-snu香港
-      - 2-snu香港
-      - 3-snu香港
-      - 4-snu香港
-      - 5-snu香港
-      - 6-snu香港
-      - 7-snu香港
-      - 8-snu香港
-      - 9-snu香港
-      - 10-snu香港
-      - 1-snu美国
-      - 2-snu美国
-      - 3-snu美国
-      - 4-snu美国
-      - 5-snu美国
-      - 6-snu美国
-      - 7-snu美国
-      - 8-snu美国
-      - 9-snu美国
-      - 10-snu美国
+      - ⚡ 自动选择
+      - 4、香港
+      - 6、香港
+      - 8、香港
+      - 9、香港
+      - 13、香港
 rules:
-  - RULE-SET,geolocation-cn,国内服务
-  - RULE-SET,cn,国内服务
-  - RULE-SET,geolocation-!cn,非中国
-  - RULE-SET,private,私有网络,no-resolve
-  - RULE-SET,cn,国内服务,no-resolve
-  - MATCH,漏网之鱼
+  - RULE-SET,geolocation-cn,🔒 国内服务
+  - RULE-SET,cn,🔒 国内服务
+  - RULE-SET,geolocation-!cn,🌐 非中国
+  - RULE-SET,private,🏠 私有网络,no-resolve
+  - RULE-SET,cn,🔒 国内服务,no-resolve
+  - MATCH,🐟 漏网之鱼
