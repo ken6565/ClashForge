@@ -749,23 +749,21 @@ proxies:
     path: /
     headers:
       Host: asuka.0061.my
-- name: cf.877774.xyz
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: b7789765-c9fb-41c3-bea0-348b702eb816
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: rt.372164885.xyz
-  servername: rt.372164885.xyz
-  network: ws
-  ws-opts:
-    path: /pk-vl
-    headers:
-      Host: rt.372164885.xyz
+- name: youneed001
+  type: hysteria2
+  server: 193.108.112.6
+  password: S1XZDIaoUX
+  skip-cert-verify: true
+  port: 50163
+  obfs: salamander
+  obfs-password: Parsashonam
+- name: youneed002
+  type: hysteria2
+  server: 170.9.63.232
+  password: f19823db-48e6-44fc-8a6a-372ce3611763
+  sni: www.bing.com
+  skip-cert-verify: true
+  port: 26902
 - name: snu香港001
   udp: false
   skip-cert-verify: true
@@ -1010,7 +1008,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -1123,7 +1122,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -1234,7 +1234,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -1345,7 +1346,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -1457,7 +1459,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -1567,7 +1570,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -1679,7 +1683,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -1791,7 +1796,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -1903,7 +1909,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -2015,7 +2022,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
@@ -2127,7 +2135,8 @@ proxy-groups:
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
-  - cf.877774.xyz
+  - youneed001
+  - youneed002
   - snu香港001
   - snu香港002
   - snu香港003
