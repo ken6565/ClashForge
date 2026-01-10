@@ -666,6 +666,19 @@ proxies:
   sni: hl.dabache.top
   skip-cert-verify: true
   port: 20000
+- name: Hong001
+  server: 38.207.188.156
+  port: 3721
+  type: vmess
+  uuid: f9a9e293-e063-4fe2-97d7-aa1deb5388f8
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
 - alpn:
   - h3
   congestion-controller: bbr
@@ -898,7 +911,7 @@ proxies:
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: FR197|1MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 - {name: FR470|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: TW028|17MB/s, server: cf.130519.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+- {name: Hong001, server: cf.130519.xyz, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -1012,7 +1025,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1125,7 +1138,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: 📹 YouTube
   type: select
   proxies:
@@ -1236,7 +1249,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -1347,7 +1360,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: 🎮️ 游戏平台
   type: select
   proxies:
@@ -1459,7 +1472,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
@@ -1569,7 +1582,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -1681,7 +1694,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: 📲 电报信息
   type: select
   proxies:
@@ -1793,7 +1806,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -1905,7 +1918,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: 🎯 国内直连
   type: select
   proxies:
@@ -2017,7 +2030,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -2129,7 +2142,7 @@ proxy-groups:
   - 59SG-HK_3|3.6MB/s
   - FR197|1MB/s
   - FR470|3MB/s
-  - TW028|17MB/s
+  - Hong001
 rule-providers:
   Proxy:
     type: http
