@@ -516,6 +516,20 @@ proxies:
     path: /
     headers:
       Host: asuka.0061.my
+- name: Top20_3_88ms
+  type: vless
+  server: fenliu.072103.xyz
+  port: 443
+  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
+  udp: true
+  tls: true
+  network: ws
+  servername: 2new.ssdxz.cn
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 2new.ssdxz.cn
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: FR197|1MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
@@ -591,6 +605,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: ♻️ 自动选择
@@ -663,6 +678,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: 📹 YouTube
@@ -733,6 +749,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: 🎥 NETFLIX
@@ -803,6 +820,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: 🎮️ 游戏平台
@@ -874,6 +892,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
@@ -943,6 +962,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: Ⓜ️ 微软服务
@@ -1014,6 +1034,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: 📲 电报信息
@@ -1085,6 +1106,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: 🍎 苹果服务
@@ -1156,6 +1178,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: 🎯 国内直连
@@ -1227,6 +1250,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 - name: 🐟 漏网之鱼
@@ -1298,6 +1322,7 @@ proxy-groups:
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
+  - Top20_3_88ms
   - FR197|1MB/s
   - FR470|3MB/s
 rule-providers:
