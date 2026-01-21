@@ -104,13 +104,13 @@ proxies:
   port: 20088
 - name: UShys2_003
   type: hysteria2
-  server: 2a14:3f87:f001:9::a
-  password: Telegram--%3E%40Ln2Ray
-  sni: gavazn.55994421.xyz
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
   skip-cert-verify: true
-  port: 45000
+  port: 36300
   obfs: salamander
-  obfs-password: Telegram-->@Ln2Ray
+  obfs-password: Yet-Another-Public-Config-1
 - name: UShys2_004
   type: hysteria2
   server: 2a14:3f87:f001:13::a
@@ -149,13 +149,13 @@ proxies:
   obfs-password: Yet-Another-Public-Config-1
 - name: US003
   type: hysteria2
-  server: 2a14:3f87:f001:13::a
-  password: Yet-Another-Public-Config-1
-  sni: YAPC-1.afshin.ir
+  server: 2a14:3f87:f001:9::a
+  password: Telegram--%3E%40Ln2Ray
+  sni: gavazn.55994421.xyz
   skip-cert-verify: true
-  port: 36300
+  port: 45000
   obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
+  obfs-password: Telegram-->@Ln2Ray
 - name: HK001
   type: hysteria2
   server: 103.197.71.112
