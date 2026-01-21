@@ -5,6 +5,130 @@ mode: rule
 log-level: info
 external-controller: 9090
 proxies:
+- name: FRhys2_001
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: '🔒 [By EbraSha] '
+  skip-cert-verify: true
+  port: 20088
+- name: FRhys2_002
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: рҹ”’
+  skip-cert-verify: true
+  port: 20088
+- name: FRhys2_003
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  skip-cert-verify: true
+  port: 20088
+- name: NLhys2_001
+  type: hysteria2
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  port: 36400
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+- name: NLhys2_002
+  type: hysteria2
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  port: 35000
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+- name: NLhys2_003
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 58262
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NLhys2_004
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 56269
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NLhys2_005
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 54608
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NLhys2_006
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 51658
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NLhys2_007
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 58576
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: UShys2_001
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: 🔒
+  skip-cert-verify: true
+  port: 20088
+- name: UShys2_002
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  port: 20088
+- name: UShys2_003
+  type: hysteria2
+  server: 2a14:3f87:f001:9::a
+  password: Telegram--%3E%40Ln2Ray
+  sni: gavazn.55994421.xyz
+  skip-cert-verify: true
+  port: 45000
+  obfs: salamander
+  obfs-password: Telegram-->@Ln2Ray
+- name: UShys2_004
+  type: hysteria2
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  port: 35200
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+- name: UShys2_005
+  type: hysteria2
+  server: 2a14:3f87:f001:13::a
+  password: Yet-Another-Public-Config-1
+  sni: YAPC-1.afshin.ir
+  skip-cert-verify: true
+  port: 36300
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
 - name: NL001
   type: hysteria2
   server: 2a14:3f87:f001:13::a
@@ -23,72 +147,6 @@ proxies:
   port: 35000
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
-- name: UShys2_001
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  port: 20088
-- name: UShys2_002
-  type: hysteria2
-  server: 2a14:3f87:f001:9::a
-  password: Telegram--%3E%40Ln2Ray
-  sni: gavazn.55994421.xyz
-  skip-cert-verify: true
-  port: 45000
-  obfs: salamander
-  obfs-password: Telegram-->@Ln2Ray
-- name: UShys2_003
-  type: hysteria2
-  server: 2a14:3f87:f001:13::a
-  password: Yet-Another-Public-Config-1
-  sni: YAPC-1.afshin.ir
-  skip-cert-verify: true
-  port: 36300
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-- name: UShys2_004
-  type: hysteria2
-  server: 2a14:3f87:f001:13::a
-  password: Yet-Another-Public-Config-1
-  sni: YAPC-1.afshin.ir
-  skip-cert-verify: true
-  port: 35200
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-- name: UShys2_005
-  type: hysteria2
-  server: pq.us1.globals-download.com
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: www.apple.com
-  skip-cert-verify: true
-  port: 443
-- name: UShys2_006
-  type: hysteria2
-  server: pq.us4.globals-download.com
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: www.apple.com
-  skip-cert-verify: true
-  port: 443
-- name: US001
-  type: hysteria2
-  server: 2a14:3f87:f001:9::a
-  password: Telegram--%3E%40Ln2Ray
-  sni: gavazn.55994421.xyz
-  skip-cert-verify: true
-  port: 45000
-  obfs: salamander
-  obfs-password: Telegram-->@Ln2Ray
-- name: US002
-  type: hysteria2
-  server: 2a14:3f87:f001:13::a
-  password: Yet-Another-Public-Config-1
-  sni: YAPC-1.afshin.ir
-  skip-cert-verify: true
-  port: 35200
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
 - name: US003
   type: hysteria2
   server: 2a14:3f87:f001:13::a
@@ -98,105 +156,27 @@ proxies:
   port: 36300
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
-- name: US004
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  sni: 🔒
-  skip-cert-verify: true
-  port: 20088
-- name: US005
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  port: 20088
-- name: US006
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 52318
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: FR001
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  sni: '🔒 [By EbraSha] '
-  skip-cert-verify: true
-  port: 20088
-- name: FR002
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  skip-cert-verify: true
-  port: 20088
-- name: HKhys2_001
+- name: HK001
   type: hysteria2
   server: 103.197.71.112
   password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
   sni: www.apple.com
   skip-cert-verify: true
   port: 443
-- name: HKhys2_002
+- name: HK002
   type: hysteria2
   server: 103.197.71.113
   password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
   sni: www.apple.com
   skip-cert-verify: true
   port: 443
-- name: US²_004
-  type: hysteria2
-  server: 2a02:180:6:1::1b3
-  password: 32d5901c-3cf6-43a9-b719-d71f1fb4f78e
-  sni: www.bing.com
-  skip-cert-verify: true
-  port: 51435
-- name: US²_041
+- name: US登any_041
   type: anytls
   server: 155.94.145.166
   port: 8443
   password: tzjz55
   udp: true
   skip-cert-verify: true
-- name: HK登hys2_003
-  type: hysteria2
-  server: 103.197.71.114
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: www.apple.com
-  skip-cert-verify: true
-  port: 443
-- name: US登hys2_007
-  type: hysteria2
-  server: pq.us7.globals-download.com
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: www.apple.com
-  skip-cert-verify: true
-  port: 443
-- name: CH登hys2_001
-  type: hysteria2
-  server: 152.67.95.183
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: www.apple.com
-  skip-cert-verify: true
-  port: 35000
-- name: CH登hys2_002
-  type: hysteria2
-  server: 158.179.18.251
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: api.push.apple.com
-  skip-cert-verify: true
-  port: 35000
-- name: CH登hys2_003
-  type: hysteria2
-  server: 159.13.35.245
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: api.push.apple.com
-  skip-cert-verify: true
-  port: 35000
 - name: SG登hys2_001
   type: hysteria2
   server: sg3.xiaoliyu.cyou
@@ -222,34 +202,6 @@ proxies:
 - name: SG登hys2_004
   type: hysteria2
   server: 158.178.236.104
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: api.push.apple.com
-  skip-cert-verify: true
-  port: 35000
-- name: JP登hys2_003
-  type: hysteria2
-  server: pq.hy.jp3.yydjc.top
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: www.apple.com
-  skip-cert-verify: true
-  port: 60000
-- name: JP登hys2_004
-  type: hysteria2
-  server: pq.hy.jp4.yydjc.top
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: www.apple.com
-  skip-cert-verify: true
-  port: 60000
-- name: KR登hys2_001
-  type: hysteria2
-  server: 146.56.164.36
-  password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
-  sni: api.push.apple.com
-  skip-cert-verify: true
-  port: 35000
-- name: AU登hys2_001
-  type: hysteria2
-  server: 152.69.180.226
   password: a7967f5b-fe53-40f7-a09d-fcfdd7af7313
   sni: api.push.apple.com
   skip-cert-verify: true
@@ -324,24 +276,8 @@ proxies:
     path: /
     headers:
       Host: asuka.0061.my
-- name: Top20_3_88ms
-  type: vless
-  server: fenliu.072103.xyz
-  port: 443
-  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
-  udp: true
-  tls: true
-  network: ws
-  servername: 2new.ssdxz.cn
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 2new.ssdxz.cn
 - {name: HK002|6.1MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
 - {name: 59SG-HK_3|3.6MB/s, server: 104.18.46.69, port: 80, type: vless, uuid: df301b32-1152-4526-9a63-beedd93d3156, tls: false, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /%2F%3Fed%3D2048, headers: {Host: vl.dalazhi.cloudns.biz}}, udp: true}
-- {name: FR197|1MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 50, down: 80, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
-- {name: FR470|3MB/s, server: 62.210.196.68, port: 26691, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11 Mbps, down: 55 Mbps, protocol: udp, sni: apple.com, skip-cert-verify: true, alpn: [h3]}
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -349,515 +285,394 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: 🎮️ 游戏平台
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: 🎯 国内直连
   type: select
   proxies:
   - DIRECT
   - 🚀 手动切换
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
-  - NL001
-  - NL002
+  - FRhys2_001
+  - FRhys2_002
+  - FRhys2_003
+  - NLhys2_001
+  - NLhys2_002
+  - NLhys2_003
+  - NLhys2_004
+  - NLhys2_005
+  - NLhys2_006
+  - NLhys2_007
   - UShys2_001
   - UShys2_002
   - UShys2_003
   - UShys2_004
   - UShys2_005
-  - UShys2_006
-  - US001
-  - US002
+  - NL001
+  - NL002
   - US003
-  - US004
-  - US005
-  - US006
-  - FR001
-  - FR002
-  - HKhys2_001
-  - HKhys2_002
-  - US²_004
-  - US²_041
-  - HK登hys2_003
-  - US登hys2_007
-  - CH登hys2_001
-  - CH登hys2_002
-  - CH登hys2_003
+  - HK001
+  - HK002
+  - US登any_041
   - SG登hys2_001
   - SG登hys2_002
   - SG登hys2_003
   - SG登hys2_004
-  - JP登hys2_003
-  - JP登hys2_004
-  - KR登hys2_001
-  - AU登hys2_001
   - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - Top20_3_88ms
-  - FR197|1MB/s
-  - FR470|3MB/s
 rule-providers:
   Proxy:
     type: http
