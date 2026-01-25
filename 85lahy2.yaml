@@ -136,6 +136,19 @@ proxies:
   password: tzjz55
   udp: true
   skip-cert-verify: true
+- name: xx|352f
+  alpn:
+  - h3
+  congestion-controller: bbr
+  password: dongtaiwang.com
+  port: 34997
+  reduce-rtt: true
+  server: 2001:bc8:32d7:302::16
+  skip-cert-verify: true
+  sni: bing.com
+  type: tuic
+  udp-relay-mode: native
+  uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
 - name: www.shopify.com-trojan
   type: trojan
   server: www.shopify.com
@@ -293,6 +306,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -325,6 +339,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -355,6 +370,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -385,6 +401,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -416,6 +433,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -445,6 +463,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -476,6 +495,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -507,6 +527,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -516,6 +537,7 @@ proxy-groups:
   - TW+002
   - TW+003
   - TW+004
+  - KR+001
   - KR+001
 - name: 🍎 苹果服务
   type: select
@@ -538,6 +560,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -569,6 +592,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
@@ -600,6 +624,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
+  - xx|352f
   - www.shopify.com-trojan
   - www.shopify.com-vless
   - www.shopify.com-vmess
