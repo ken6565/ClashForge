@@ -283,6 +283,7 @@ proxies:
   sni: kr011t.goodyun.buzz
   skip-cert-verify: true
   network: tcp
+- {name: SGhy2_213, server: visg.556359.xyz, port: 19500, type: hysteria2, password: dbR4wwHGOi, auth: dbR4wwHGOi, sni: go.microsoft.com, skip-cert-verify: true, obfs: salamander, obfs-password: ikjnsdakjnasfdjkn}
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -317,6 +318,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -350,6 +352,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 - name: 📹 YouTube
   type: select
   proxies:
@@ -381,6 +384,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -412,6 +416,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 - name: 🎮️ 游戏平台
   type: select
   proxies:
@@ -444,6 +449,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
@@ -474,6 +480,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -506,6 +513,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 - name: 📲 电报信息
   type: select
   proxies:
@@ -539,6 +547,7 @@ proxy-groups:
   - TW+004
   - KR+001
   - KR+001
+  - SGhy2_213
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -571,6 +580,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 - name: 🎯 国内直连
   type: select
   proxies:
@@ -603,6 +613,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -635,6 +646,7 @@ proxy-groups:
   - TW+003
   - TW+004
   - KR+001
+  - SGhy2_213
 rule-providers:
   Proxy:
     type: http
