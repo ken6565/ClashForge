@@ -5,28 +5,7 @@ mode: rule
 log-level: info
 external-controller: 9090
 proxies:
-- name: 🇭🇰香港1
-  type: trojan
-  server: 58.152.53.45
-  port: 443
-  password: BxceQaOe
-  udp: true
-  tfo: false
-  tls: true
-  skip-cert-verify: true
-  network: tcp
-- name: 🇭🇰香港2
-  type: trojan
-  server: 219.76.135.98
-  port: 443
-  password: BxceQaOe
-  udp: true
-  tfo: false
-  tls: true
-  sni: 219.76.135.98
-  skip-cert-verify: true
-  network: tcp
-- name: 🇭🇰 香港 Home
+- name: 香港Home
   type: vless
   server: 2026.01.1.hk.aimirror.top
   port: 443
@@ -43,7 +22,7 @@ proxies:
   servername: www.icloud.com
   client-fingerprint: safari
   network: tcp
-- name: 🇹🇼台湾+5
+- name: 台湾+5
   type: ss
   server: stream-cdn-asia-06.silver-line.digital
   port: 38239
@@ -52,7 +31,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇹🇼台湾+6
+- name: 台湾+6
   type: ss
   server: stream-cdn-asia-06.silver-line.digital
   port: 39152
@@ -61,7 +40,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇨🇳 台湾 BGP
+- name: 台湾BGP
   type: vless
   server: mbqg940.26l6c42.rkzn8ni.vm331.cn
   port: 52135
@@ -78,7 +57,7 @@ proxies:
   servername: www.discoverasr.com
   client-fingerprint: firefox
   network: tcp
-- name: 🇳🇱 荷兰3
+- name: 荷兰3
   type: vless
   server: 158.101.195.118
   port: 443
@@ -95,7 +74,7 @@ proxies:
   servername: tv.apple.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇳🇱 荷兰 Host
+- name: 荷兰Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46046
@@ -104,7 +83,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸+US+01
+- name: US+01
   type: ss
   server: stream-cdn-asia-07.silver-line.digital
   port: 48987
@@ -113,7 +92,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸+US+02
+- name: US+02
   type: ss
   server: stream-cdn-asia-07.silver-line.digital
   port: 30198
@@ -122,7 +101,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸 美国5
+- name: 美国5
   type: vless
   server: 47.89.164.60
   port: 443
@@ -138,7 +117,7 @@ proxies:
   servername: cdn.userway.org
   client-fingerprint: chrome
   network: tcp
-- name: 🇺🇸 美国7
+- name: 美国7
   type: vless
   server: 165.1.68.155
   port: 443
@@ -155,7 +134,7 @@ proxies:
   servername: www.mi.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇺🇸 美国 BGP
+- name: 美国BGP
   type: vless
   server: mbqg940.26l6c42.rkzn8ni.vm331.cn
   port: 44513
@@ -172,7 +151,7 @@ proxies:
   servername: www.discoverasr.com
   client-fingerprint: firefox
   network: tcp
-- name: 🇺🇸 美国 EBGP
+- name: 美国EBGP
   type: ss
   server: mbqg940.26i6c42.rkzn8ni.vm331.cn
   port: 10019
@@ -181,7 +160,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇸🇬 新加坡 BGP
+- name: 新加坡BGP
   type: vless
   server: mbqg940.26l6c42.rkzn8ni.vm331.cn
   port: 58485
@@ -198,7 +177,7 @@ proxies:
   servername: www.discoverasr.com
   client-fingerprint: edge
   network: tcp
-- name: 🇯🇵 日本 BGP
+- name: 日本BGP
   type: vless
   server: mbqg940.26l6c42.rkzn8ni.vm331.cn
   port: 58494
@@ -215,7 +194,7 @@ proxies:
   servername: www.discoverasr.com
   client-fingerprint: safari
   network: tcp
-- name: 🇯🇵 日本 EBGP
+- name: 日本EBGP
   type: ss
   server: mbqg940.26i6c42.rkzn8ni.vm331.cn
   port: 12125
@@ -224,7 +203,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇰🇷韩国Seoul
+- name: 韩国Seoul
   type: trojan
   server: kr1.t11-a.app
   port: 11029
@@ -235,7 +214,7 @@ proxies:
   sni: kr011t.goodyun.buzz
   skip-cert-verify: true
   network: tcp
-- name: 🇰🇷 韩国 BGP
+- name: 韩国BGP
   type: vless
   server: mbqg940.26l6c42.rkzn8ni.vm331.cn
   port: 55515
@@ -252,7 +231,7 @@ proxies:
   servername: www.discoverasr.com
   client-fingerprint: qq
   network: tcp
-- name: 🇰🇷 韩国 EBGP
+- name: 韩国EBGP
   type: ss
   server: mbqg940.26i6c42.rkzn8ni.vm331.cn
   port: 10702
@@ -261,25 +240,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇲🇾 马来西亚 Host
-  type: ss
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  port: 46024
-  cipher: aes-128-gcm
-  password: 6H905uR3Pm0Lv7H
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇧🇩 孟加拉 Home
-  type: ss
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  port: 46016
-  cipher: aes-128-gcm
-  password: 6H905uR3Pm0Lv7H
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 越南 Home
+- name: 越南Home
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46013
@@ -288,7 +249,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇰🇬 吉尔吉斯斯坦 Host
+- name: 吉尔吉斯Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46023
@@ -297,7 +258,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇬🇧 英国 BGP
+- name: 英国BGP
   type: vless
   server: mbqg940.26l6c42.rkzn8ni.vm331.cn
   port: 55543
@@ -314,16 +275,7 @@ proxies:
   servername: www.discoverasr.com
   client-fingerprint: edge
   network: tcp
-- name: 🇨🇿 捷克 Host
-  type: ss
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  port: 46060
-  cipher: aes-128-gcm
-  password: 6H905uR3Pm0Lv7H
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇩🇪 德国 Host
+- name: 德国Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46045
@@ -332,7 +284,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇷🇺 俄罗斯 Host
+- name: 俄罗斯Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46022
@@ -341,7 +293,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇦 乌克兰 Home
+- name: 乌克兰Home
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46063
@@ -350,7 +302,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇸🇪 瑞典 Host
+- name: 瑞典Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46043
@@ -359,7 +311,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇳🇴 挪威 Host
+- name: 挪威Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46047
@@ -368,43 +320,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇳🇿 新西兰 Host
-  type: ss
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  port: 46028
-  cipher: aes-128-gcm
-  password: 6H905uR3Pm0Lv7H
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇹🇷 土耳其 Host
-  type: ss
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  port: 46026
-  cipher: aes-128-gcm
-  password: 6H905uR3Pm0Lv7H
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇫🇷 法国 Home
-  type: ss
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  port: 46041
-  cipher: aes-128-gcm
-  password: 6H905uR3Pm0Lv7H
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇧🇬 保加利亚 Host
-  type: ss
-  server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
-  port: 46048
-  cipher: aes-128-gcm
-  password: 6H905uR3Pm0Lv7H
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇳🇬 尼日利亚 Host
+- name: 尼日利亚Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46074
@@ -413,7 +329,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇹🇭 泰国 Host
+- name: 泰国Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46012
@@ -422,7 +338,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇧🇷 巴西 Host
+- name: 巴西Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46033
@@ -431,7 +347,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇮🇶 伊拉克 Host
+- name: 伊拉克Host
   type: ss
   server: mbqg94o.26l6c42.rkzn8ni.vm331.cn
   port: 46020
@@ -571,14 +487,6 @@ proxies:
   password: tzjz55
   udp: true
   skip-cert-verify: true
-- name: JPany_039
-  type: anytls
-  server: 160.16.75.254
-  port: 443
-  password: a2d12dc9-c111-45ac-b803-87e48f3484d8
-  udp: true
-  sni: gw.alicdn.com
-  skip-cert-verify: true
 - name: xx|352f
   alpn:
   - h3
@@ -592,63 +500,6 @@ proxies:
   type: tuic
   udp-relay-mode: native
   uuid: 8687b6e0-ef24-4cd2-bcd2-02d3732bf554
-- name: www.shopify.com-trojan
-  type: trojan
-  server: www.shopify.com
-  port: 2087
-  password: '666'
-  udp: true
-  tfo: false
-  tls: true
-  sni: freesni.zjde5.de5.net
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: freesni.zjde5.de5.net
-- name: www.shopify.com-vless
-  type: vless
-  server: www.shopify.com
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: freesni.zjde5.de5.net
-  servername: freesni.zjde5.de5.net
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: freesni.zjde5.de5.net
-- name: www.shopify.com-vmess
-  type: vmess
-  server: www.shopify.com
-  port: 2096
-  uuid: 68f891b8-d7e8-47bf-a5f2-b7baf912f69c
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  sni: asuka.0061.my
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: asuka.0061.my
 - name: HK002|6.1MB/s
   type: vless
   server: 104.18.46.69
@@ -697,45 +548,36 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -752,11 +594,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
@@ -766,45 +604,36 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -821,11 +650,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
@@ -833,45 +658,36 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -888,11 +704,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
@@ -900,45 +712,36 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -955,11 +758,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
@@ -968,45 +767,36 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -1023,56 +813,43 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -1089,11 +866,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
@@ -1102,45 +875,36 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -1157,11 +921,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
@@ -1170,45 +930,36 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -1225,11 +976,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
@@ -1238,45 +985,36 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -1293,11 +1031,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
@@ -1306,45 +1040,36 @@ proxy-groups:
   proxies:
   - DIRECT
   - 🚀 手动切换
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -1361,11 +1086,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
@@ -1374,45 +1095,36 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
-  - 🇭🇰香港1
-  - 🇭🇰香港2
-  - 🇭🇰 香港 Home
-  - 🇹🇼台湾+5
-  - 🇹🇼台湾+6
-  - 🇨🇳 台湾 BGP
-  - 🇳🇱 荷兰3
-  - 🇳🇱 荷兰 Host
-  - 🇺🇸 美国5
-  - 🇺🇸 美国7
-  - 🇺🇸+US+01
-  - 🇺🇸+US+02
-  - 🇺🇸 美国 BGP
-  - 🇺🇸 美国 EBGP
-  - 🇸🇬 新加坡 BGP
-  - 🇯🇵 日本 BGP
-  - 🇯🇵 日本 EBGP
-  - 🇰🇷韩国Seoul
-  - 🇰🇷 韩国 BGP
-  - 🇰🇷 韩国 EBGP
-  - 🇲🇾 马来西亚 Host
-  - 🇧🇩 孟加拉 Home
-  - 🇻🇳 越南 Home
-  - 🇰🇬 吉尔吉斯斯坦 Host
-  - 🇬🇧 英国 BGP
-  - 🇨🇿 捷克 Host
-  - 🇩🇪 德国 Host
-  - 🇷🇺 俄罗斯 Host
-  - 🇺🇦 乌克兰 Home
-  - 🇸🇪 瑞典 Host
-  - 🇳🇴 挪威 Host
-  - 🇳🇿 新西兰 Host
-  - 🇹🇷 土耳其 Host
-  - 🇫🇷 法国 Home
-  - 🇧🇬 保加利亚 Host
-  - 🇳🇬 尼日利亚 Host
-  - 🇹🇭 泰国 Host
-  - 🇧🇷 巴西 Host
-  - 🇮🇶 伊拉克 Hos
+  - 香港Home
+  - 台湾+5
+  - 台湾+6
+  - 台湾BGP
+  - 荷兰3
+  - 荷兰Host
+  - 美国5
+  - 美国7
+  - US+01
+  - US+02
+  - 美国BGP
+  - 美国EBGP
+  - 新加坡BGP
+  - 日本BGP
+  - 日本EBGP
+  - 韩国Seoul
+  - 韩国BGP
+  - 韩国EBGP
+  - 越南Home
+  - 吉尔吉斯Host
+  - 英国BGP
+  - 德国Host
+  - 俄罗斯Host
+  - 乌克兰Home
+  - 瑞典Host
+  - 挪威Host
+  - 尼日利亚Host
+  - 泰国Host
+  - 巴西Host
+  - 伊拉克Hos
   - UShys2_001
   - UShys2_002
   - UShys2_003
@@ -1429,11 +1141,7 @@ proxy-groups:
   - NL001hy2
   - NL002hy2
   - US登any_041
-  - JPany_039
   - xx|352f
-  - www.shopify.com-trojan
-  - www.shopify.com-vless
-  - www.shopify.com-vmess
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - KR+001
