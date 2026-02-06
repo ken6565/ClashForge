@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 unified-delay: true
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: 9090
 proxies:
 - type: anytls
   name: US登any_041
