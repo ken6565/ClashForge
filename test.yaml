@@ -6,904 +6,1061 @@ unified-delay: true
 log-level: info
 external-controller: 9090
 proxies:
-- name: 🇬🇧[UK]英国Coventry01-BBC优化
-  type: trojan
-  server: uk1.t11-a.app
-  port: 11003
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: uk01t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇬🇧[UK]英国Coventry02-BBC优化
-  type: trojan
-  server: uk2.t11-a.app
-  port: 11005
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: uk02t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇩🇪[DE]德国-Frankfurt01
-  type: trojan
-  server: de1.t11-a.app
-  port: 11006
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: de01t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇩🇪[DE]德国-Frankfurt02
-  type: trojan
-  server: de2.t11-a.app
-  port: 11007
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: d2.t11-a2.click
-  skip-cert-verify: false
-  network: tcp
-- name: 🇨🇦[CA]加拿大-Toronto
-  type: trojan
-  server: ca1.t11-a.app
-  port: 11008
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: ca01t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇳🇱[NL]荷兰-Amsterdam
-  type: trojan
-  server: nl1.t11-a.app
-  port: 11009
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: nl01t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇷🇺[RU]俄罗斯-Moscow
-  type: trojan
-  server: ru1.t11-a.app
-  port: 11010
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: ru01t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇮🇳[IN]印度-bangalore
-  type: trojan
-  server: in1.t11-a.app
-  port: 11033
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: in01tt.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇰🇷[KR]韩国-Seoul
-  type: trojan
-  server: kr1.t11-a.app
-  port: 11029
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: kr011t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇻🇳[VN]越南-HoChiMinh
-  type: trojan
-  server: vn1.t11-a.app
-  port: 11015
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: vn01t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇦🇺[AU]澳大利亚-Sydney
-  type: trojan
-  server: au1.t11-a.app
-  port: 11016
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: au01t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇳🇬[NG]尼日利亚-Lagos
-  type: trojan
-  server: ng1.t11-a.app
-  port: 11017
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: ng01t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇦🇷[AR]阿根廷-BuenosAires
-  type: trojan
-  server: ar1.t11-a.app
-  port: 11018
-  password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
-  udp: true
-  tfo: false
-  tls: true
-  sni: ar01t.goodyun.buzz
-  skip-cert-verify: false
-  network: tcp
-- name: 🇭🇰香港+01
-  type: ss
-  server: oss.aliyuncs.waf.sh.zmsw1.kunlunaqx.com
-  port: 36100
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇭🇰香港+21
-  type: ss
-  server: oss.aliyuncs.waf.sh.zmsw1.kunlunaqx.com
-  port: 36116
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇭🇰香港+02
-  type: ss
-  server: oss.aliyuncs.waf.sh.zmsw1.kunlunaqx.com
-  port: 36101
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇭🇰香港+04
-  type: ss
-  server: oss.aliyuncs.waf.sh.zmsw1.kunlunaqx.com
-  port: 36103
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇸🇬新加坡+05
-  type: ss
-  server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
-  port: 36104
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇸🇬新加坡+06
-  type: ss
-  server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
-  port: 36105
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇸🇬新加坡+17
-  type: ss
-  server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
-  port: 36114
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇯🇵日本+08
-  type: ss
-  server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
-  port: 36107
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇯🇵日本+15
-  type: ss
-  server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
-  port: 36113
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇰🇷韩国+22
-  type: ss
-  server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
-  port: 36117
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇰🇷韩国+25
-  type: ss
-  server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
-  port: 36125
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇹🇼台湾+24
-  type: ss
-  server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
-  port: 36128
-  cipher: chacha20-ietf-poly1305
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇹🇼台湾+09
-  type: ss
-  server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
-  port: 36108
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸美国+10n
-  type: ss
-  server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
-  port: 36109
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸美国+11
-  type: ss
-  server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
-  port: 36110
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸美国+19
-  type: ss
-  server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
-  port: 36115
-  cipher: aes-256-gcm
-  password: 76021f91-05e7-470d-9cf8-bd5a328c2fb3
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: HK1
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 39287
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: HK2
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 17433
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: HK3
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 32086
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: HK4
-  type: vmess
-  server: cn02.gene.7xn.cn
-  port: 11090
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: JP1
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 48445
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: JP2
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 18693
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: JP3
-  type: vmess
-  server: cn02.gene.7xn.cn
-  port: 22367
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: SG1
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 37797
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: SG2
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 36585
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: SG3
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 50940
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: TW1
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 18565
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: TW2
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 18368
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: KR1
-  type: vmess
-  server: cn01.gene.7xn.cn
-  port: 25283
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US1
-  type: vmess
-  server: cn02.gene.7xn.cn
-  port: 38735
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US2
-  type: vmess
-  server: cn02.gene.7xn.cn
-  port: 21969
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: US3
-  type: vmess
-  server: cn02.gene.7xn.cn
-  port: 38740
-  uuid: 6ed88635-e815-4c01-82aa-a4737114065b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: 🇭🇰 香港_03
-  type: vmess
-  server: hk03.stimaysmhy8.com
-  port: 44552
-  uuid: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ''
-- name: 🇭🇰+香港-07
-  type: trojan
-  server: hk07.jsytongxin.com
-  port: 44302
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇭🇰 香港_09
-  type: vmess
-  server: hk18.stimaysmhy8.com
-  port: 51254
-  uuid: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ''
-- name: 🇯🇵+日本-13
-  type: trojan
-  server: jp13.stimaysmhy8.com
-  port: 30502
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇯🇵+日本-14
-  type: trojan
-  server: jp14.jsyjiedian8.com
-  port: 39204
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇯🇵+日本-15
-  type: trojan
-  server: jp15.stimaysmhy8.com
-  port: 39555
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇸🇬+新加坡-13
-  type: trojan
-  server: sg13.stimaysmhy8.com
-  port: 45177
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇸🇬+新加坡-14
-  type: trojan
-  server: sg14.jsyjiedian8.com
-  port: 45078
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇸🇬+新加坡-15
-  type: trojan
-  server: sg15.stimaysmhy8.com
-  port: 45179
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇺🇸 美国-08
-  type: vmess
-  server: us05.stimaysmhy8.com
-  port: 40601
-  uuid: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ''
-- name: 🇺🇸 美国-09
-  type: vmess
-  server: us09.stimaysmhy8.com
-  port: 40706
-  uuid: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ''
-- name: 🇺🇸 美国-10
-  type: vmess
-  server: us10.jsyjiedian8.com
-  port: 40707
-  uuid: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ''
-- name: 🇰🇷+韩国-01
-  type: trojan
-  server: kr01.jsylianjie6.com
-  port: 48705
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇰🇷+韩国-02
-  type: trojan
-  server: kr02.jsylianjie6.com
-  port: 48702
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇰🇷+韩国-03
-  type: trojan
-  server: kr03.jsylianjie6.com
-  port: 48505
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇮🇳+印度-1
-  type: trojan
-  server: in01.jsylianjie5.com
-  port: 25538
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇮🇳+印度-2
-  type: trojan
-  server: in02.jsylianjie5.com
-  port: 44856
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇳🇱+荷兰
-  type: trojan
-  server: nl01.jsylianjie6.com
-  port: 30012
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇵🇭+菲律宾
-  type: trojan
-  server: ph01.jsylianjie6.com
-  port: 19190
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇦🇷+阿根廷
-  type: trojan
-  server: ar01.jsylianjie5.com
-  port: 45715
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇮🇹+意大利
-  type: trojan
-  server: it01.jsylianjie5.com
-  port: 15004
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇹🇭+泰国
-  type: trojan
-  server: th01.jsylianjie6.com
-  port: 45709
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇹🇷+土耳其
-  type: trojan
-  server: tr01.jsylianjie6.com
-  port: 43719
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇻🇳+越南
-  type: trojan
-  server: vn01.jsylianjie6.com
-  port: 40511
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇩🇪+德国
-  type: trojan
-  server: de01.jsylianjie5.com
-  port: 34177
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇲🇾+马来西亚
-  type: trojan
-  server: my01.jsylianjie6.com
-  port: 45720
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇫🇷+法国
-  type: trojan
-  server: fr01.jsylianjie5.com
-  port: 15713
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇦🇺+澳大利亚
-  type: trojan
-  server: au01.jsylianjie5.com
-  port: 35303
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇮🇩+印度尼西亚
-  type: trojan
-  server: id01.jsylianjie5.com
-  port: 40710
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇷🇺+俄罗斯
-  type: trojan
-  server: ru01.jsylianjie6.com
-  port: 42721
-  password: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  udp: true
-  tfo: false
-  tls: true
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: false
-  network: tcp
-- name: 🇨🇦 加拿大
-  type: vmess
-  server: ca01.jsylianjie5.com
-  port: 40717
-  uuid: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ''
-- name: 🇧🇷 巴西
-  type: vmess
-  server: br01.jsylianjie5.com
-  port: 18132
-  uuid: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ''
-- name: 🇬🇧 英国
-  type: vmess
-  server: gb01.jsylianjie5.com
-  port: 45712
-  uuid: 47076488-01a3-4b5e-a068-ada3c0a2e13f
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    headers:
-      Host: ''
+  - name: 🇹🇼台湾+01
+    type: ss
+    server: stream-cdn-asia-06.silver-line.digital
+    port: 39152
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇹🇼台湾+02
+    type: ss
+    server: stream-cdn-asia-06.silver-line.digital
+    port: 38239
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇭🇰+HK+01
+    type: ss
+    server: stream-cdn-asia-06.silver-line.digital
+    port: 49556
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇭🇰+HK+02
+    type: ss
+    server: stream-cdn-asia-06.silver-line.digital
+    port: 32784
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇯🇵+JP+01
+    type: ss
+    server: stream-cdn-asia-07.silver-line.digital
+    port: 37098
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇯🇵+JP+02
+    type: ss
+    server: stream-cdn-asia-07.silver-line.digital
+    port: 49816
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇸🇬+SG+01
+    type: ss
+    server: stream-cdn-asia-06.silver-line.digital
+    port: 33288
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇸🇬+SG+02
+    type: ss
+    server: stream-cdn-asia-06.silver-line.digital
+    port: 35531
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇺🇸+US+01
+    type: ss
+    server: stream-cdn-asia-07.silver-line.digital
+    port: 48987
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇺🇸+US+02
+    type: ss
+    server: stream-cdn-asia-07.silver-line.digital
+    port: 30198
+    cipher: chacha20-ietf-poly1305
+    password: d886c28e-1c03-47ea-b5dc-233c83d2fbe3
+  - name: 🇫🇷[FR]法国-Paris01
+    type: trojan
+    server: fr1.t11-a.app
+    port: 11001
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: fr01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇫🇷[FR]法国-Paris02
+    type: trojan
+    server: fr2.t11-a.app
+    port: 11002
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: fr02t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇬🇧[UK]英国Coventry01-BBC优化
+    type: trojan
+    server: uk1.t11-a.app
+    port: 11003
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: uk01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇬🇧[UK]英国Coventry02-BBC优化
+    type: trojan
+    server: uk2.t11-a.app
+    port: 11005
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: uk02t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇩🇪[DE]德国-Frankfurt01
+    type: trojan
+    server: de1.t11-a.app
+    port: 11006
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: de01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇩🇪[DE]德国-Frankfurt02
+    type: trojan
+    server: de2.t11-a.app
+    port: 11007
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: d2.t11-a2.click
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇨🇦[CA]加拿大-Toronto
+    type: trojan
+    server: ca1.t11-a.app
+    port: 11008
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: ca01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇳🇱[NL]荷兰-Amsterdam
+    type: trojan
+    server: nl1.t11-a.app
+    port: 11009
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: nl01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇷🇺[RU]俄罗斯-Moscow
+    type: trojan
+    server: ru1.t11-a.app
+    port: 11010
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: ru01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇹🇷[TR]土耳其-Istanbul
+    type: trojan
+    server: tr1.t11-a.app
+    port: 11051
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: tr01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇮🇳[IN]印度-bangalore
+    type: trojan
+    server: in1.t11-a.app
+    port: 11033
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: in01tt.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇰🇷[KR]韩国-Seoul
+    type: trojan
+    server: kr1.t11-a.app
+    port: 11029
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: kr011t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇻🇳[VN]越南-HoChiMinh
+    type: trojan
+    server: vn1.t11-a.app
+    port: 11015
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: vn01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇦🇺[AU]澳大利亚-Sydney
+    type: trojan
+    server: au1.t11-a.app
+    port: 11016
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: au01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇳🇬[NG]尼日利亚-Lagos
+    type: trojan
+    server: ng1.t11-a.app
+    port: 11017
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: ng01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇦🇷[AR]阿根廷-BuenosAires
+    type: trojan
+    server: ar1.t11-a.app
+    port: 11018
+    password: 4a2ed7af-d29a-4d89-a077-dfd2956afba0
+    tls: true
+    sni: ar01t.goodyun.buzz
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇭🇰香港+01
+    type: ss
+    server: oss.aliyuncs.waf.sh.zmsw1.kunlunaqx.com
+    port: 36100
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇭🇰香港+21
+    type: ss
+    server: oss.aliyuncs.waf.sh.zmsw1.kunlunaqx.com
+    port: 36116
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇭🇰香港+02
+    type: ss
+    server: oss.aliyuncs.waf.sh.zmsw1.kunlunaqx.com
+    port: 36101
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇭🇰香港netsyo
+    type: ss
+    server: oss.aliyuncs.waf.sh.zmsw1.kunlunaqx.com
+    port: 36102
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇸🇬新加坡+05
+    type: ss
+    server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
+    port: 36104
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇸🇬新加坡+06
+    type: ss
+    server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
+    port: 36105
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇸🇬新加坡+17
+    type: ss
+    server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
+    port: 36114
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇯🇵日本+07
+    type: ss
+    server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
+    port: 36106
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇯🇵日本+08
+    type: ss
+    server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
+    port: 36107
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇯🇵日本+15
+    type: ss
+    server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
+    port: 36113
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇯🇵日本netsyo
+    type: ss
+    server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
+    port: 36118
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇰🇷韩国+22
+    type: ss
+    server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
+    port: 36117
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇰🇷韩国+25
+    type: ss
+    server: oss.aliyuncs.waf.hz.zn2xw.kunlunaqx.com
+    port: 36125
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇹🇼台湾+24
+    type: ss
+    server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
+    port: 36128
+    cipher: chacha20-ietf-poly1305
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇹🇼台湾+09
+    type: ss
+    server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
+    port: 36108
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇺🇸美国+10n
+    type: ss
+    server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
+    port: 36109
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇺🇸美国+20
+    type: ss
+    server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
+    port: 36129
+    cipher: chacha20-ietf-poly1305
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇺🇸美国+11
+    type: ss
+    server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
+    port: 36110
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: 🇺🇸美国+19
+    type: ss
+    server: oss.aliyuncs.waf.gz.3xwkk.kunlunaqx.com
+    port: 36115
+    cipher: aes-256-gcm
+    password: c6132819-df88-40b0-80e7-e3de2715303f
+  - name: HK1
+    type: ss
+    server: cname-kna5xzrk6jhwkbe8.sf62sr.xin
+    port: 54011
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: HK2
+    type: ss
+    server: cname-nntr5js5hss7bwef.sf62sr.xin
+    port: 54011
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: JP1
+    type: ss
+    server: cname-kna5xzrk6jhwkbe8.sf62sr.xin
+    port: 54021
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: JP2
+    type: ss
+    server: cname-nntr5js5hss7bwef.sf62sr.xin
+    port: 54021
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: US1
+    type: ss
+    server: cname-kna5xzrk6jhwkbe8.sf62sr.xin
+    port: 54031
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: US2
+    type: ss
+    server: cname-nntr5js5hss7bwef.sf62sr.xin
+    port: 54031
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: SG1
+    type: ss
+    server: cname-kna5xzrk6jhwkbe8.sf62sr.xin
+    port: 54041
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: SG2
+    type: ss
+    server: cname-nntr5js5hss7bwef.sf62sr.xin
+    port: 54041
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: TW1
+    type: ss
+    server: cname-kna5xzrk6jhwkbe8.sf62sr.xin
+    port: 54051
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: TW2
+    type: ss
+    server: cname-nntr5js5hss7bwef.sf62sr.xin
+    port: 54051
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇰🇷+South+Korea
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54061
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇨🇦+Canada
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54062
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇷🇺+Russia
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54063
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇩🇪+Germany
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54064
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇫🇷+France
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54065
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇬🇧+United+Kingdom
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54066
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇦🇺+Australia
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54067
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇮🇳+India
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54068
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇲🇽+Mexico
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54069
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇵🇱+Poland
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54070
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇸🇪+Sweden
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54071
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇳🇱+Amsterdam
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54073
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇮🇱+Israel
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54074
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇿🇦+South+Africa
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54075
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇧🇷+Brazil
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54076
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇨🇱+Chile
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54077
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇹🇷+Türkiye
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54078
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇦🇷++Argentina
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54079
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇦🇹+Austria
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54080
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇮🇪+Ireland
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54081
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: 🇲🇴+Macao
+    type: ss
+    server: aaaa-dws75rnrbtfr25hx.kc28zn.xin
+    port: 54082
+    cipher: chacha20-ietf-poly1305
+    password: 42c1223f-11dd-484c-93e8-ce72b2465021
+  - name: HK1 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 39287
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: HK2 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 28373
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: HK3
+    type: vmess
+    server: cn02.gene.7xn.cn
+    port: 11090
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: JP1 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 48445
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: JP2 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 18693
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: JP3
+    type: vmess
+    server: cn02.gene.7xn.cn
+    port: 22367
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: SG1 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 37797
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: SG2 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 36585
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: SG3
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 50940
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: TW1 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 18565
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: TW2 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 18368
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: KR1
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 25283
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: US1 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 25507
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: US2 2
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 35510
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: US3
+    type: vmess
+    server: cn01.gene.7xn.cn
+    port: 38733
+    uuid: 82603e44-061f-4564-92d1-04dc3942afbb
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+  - name: 🇭🇰 香港_03
+    type: vmess
+    server: hk03.stimaysmhy8.com
+    port: 44552
+    uuid: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        host: ''
+  - name: 🇭🇰+香港-07
+    type: trojan
+    server: hk07.jsytongxin.com
+    port: 44302
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇭🇰 香港_09
+    type: vmess
+    server: hk18.stimaysmhy8.com
+    port: 51254
+    uuid: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        host: ''
+  - name: 🇯🇵+日本-13
+    type: trojan
+    server: jp13.stimaysmhy8.com
+    port: 30502
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇯🇵+日本-14
+    type: trojan
+    server: jp14.jsyjiedian8.com
+    port: 39204
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇯🇵+日本-15
+    type: trojan
+    server: jp15.stimaysmhy8.com
+    port: 39555
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇸🇬+新加坡-13
+    type: trojan
+    server: sg13.stimaysmhy8.com
+    port: 45177
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇸🇬+新加坡-14
+    type: trojan
+    server: sg14.jsyjiedian8.com
+    port: 45078
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇸🇬+新加坡-15
+    type: trojan
+    server: sg15.stimaysmhy8.com
+    port: 45179
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇺🇸 美国-08
+    type: vmess
+    server: us05.stimaysmhy8.com
+    port: 40601
+    uuid: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        host: ''
+  - name: 🇺🇸 美国-09
+    type: vmess
+    server: us09.stimaysmhy8.com
+    port: 40706
+    uuid: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        host: ''
+  - name: 🇺🇸 美国-10
+    type: vmess
+    server: us10.jsyjiedian8.com
+    port: 40707
+    uuid: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        host: ''
+  - name: 🇰🇷+韩国-01
+    type: trojan
+    server: kr01.jsylianjie6.com
+    port: 48705
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇰🇷+韩国-02
+    type: trojan
+    server: kr02.jsylianjie6.com
+    port: 48702
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇰🇷+韩国-03
+    type: trojan
+    server: kr03.jsylianjie6.com
+    port: 48505
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇮🇳+印度-1
+    type: trojan
+    server: in01.jsylianjie5.com
+    port: 25538
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇮🇳+印度-2
+    type: trojan
+    server: in02.jsylianjie5.com
+    port: 44856
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇳🇱+荷兰
+    type: trojan
+    server: nl01.jsylianjie6.com
+    port: 30012
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇵🇭+菲律宾
+    type: trojan
+    server: ph01.jsylianjie6.com
+    port: 19190
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇦🇷+阿根廷
+    type: trojan
+    server: ar01.jsylianjie5.com
+    port: 45715
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇮🇹+意大利
+    type: trojan
+    server: it01.jsylianjie5.com
+    port: 15004
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇹🇷+土耳其
+    type: trojan
+    server: tr01.jsylianjie6.com
+    port: 43719
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇻🇳+越南
+    type: trojan
+    server: vn01.jsylianjie6.com
+    port: 40511
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇦🇪+迪拜
+    type: trojan
+    server: ae01.jsylianjie5.com
+    port: 40708
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇲🇾+马来西亚
+    type: trojan
+    server: my01.jsylianjie6.com
+    port: 45720
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇫🇷+法国
+    type: trojan
+    server: fr01.jsylianjie5.com
+    port: 15713
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇦🇺+澳大利亚
+    type: trojan
+    server: au01.jsylianjie5.com
+    port: 35303
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇪🇸+西班牙
+    type: trojan
+    server: es01.jsylianjie5.com
+    port: 40523
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇲🇽+墨西哥
+    type: trojan
+    server: mx01.jsylianjie6.com
+    port: 35661
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇷🇺+俄罗斯
+    type: trojan
+    server: ru01.jsylianjie6.com
+    port: 42721
+    password: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    tls: true
+    sni: jsygouer.weixin-baidu-qq.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+  - name: 🇨🇦 加拿大
+    type: vmess
+    server: ca01.jsylianjie5.com
+    port: 40717
+    uuid: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        host: ''
+  - name: 🇧🇷 巴西
+    type: vmess
+    server: br01.jsylianjie5.com
+    port: 18132
+    uuid: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        host: ''
+  - name: 🇬🇧 英国
+    type: vmess
+    server: gb01.jsylianjie5.com
+    port: 45712
+    uuid: 7bcc439b-e4e3-4616-b923-07f83b08e09d
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: ''
+      headers:
+        host: ''
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -911,911 +1068,1417 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: 🎮️ 游戏平台
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: 🎯 国内直连
   type: select
   proxies:
   - DIRECT
   - 🚀 手动切换
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
-  - 🇬🇧[UK]英国Coventry01-BBC优化
-  - 🇬🇧[UK]英国Coventry02-BBC优化
-  - 🇩🇪[DE]德国-Frankfurt01
-  - 🇩🇪[DE]德国-Frankfurt02
-  - 🇨🇦[CA]加拿大-Toronto
-  - 🇳🇱[NL]荷兰-Amsterdam
-  - 🇷🇺[RU]俄罗斯-Moscow
-  - 🇮🇳[IN]印度-bangalore
-  - 🇰🇷[KR]韩国-Seoul
-  - 🇻🇳[VN]越南-HoChiMinh
-  - 🇦🇺[AU]澳大利亚-Sydney
-  - 🇳🇬[NG]尼日利亚-Lagos
-  - 🇦🇷[AR]阿根廷-BuenosAires
-  - 🇭🇰香港+01
-  - 🇭🇰香港+21
-  - 🇭🇰香港+02
-  - 🇭🇰香港+04
-  - 🇸🇬新加坡+05
-  - 🇸🇬新加坡+06
-  - 🇸🇬新加坡+17
-  - 🇯🇵日本+08
-  - 🇯🇵日本+15
-  - 🇰🇷韩国+22
-  - 🇰🇷韩国+25
-  - 🇹🇼台湾+24
-  - 🇹🇼台湾+09
-  - 🇺🇸美国+10n
-  - 🇺🇸美国+11
-  - 🇺🇸美国+19
-  - HK1
-  - HK2
-  - HK3
-  - HK4
-  - JP1
-  - JP2
-  - JP3
-  - SG1
-  - SG2
-  - SG3
-  - TW1
-  - TW2
-  - KR1
-  - US1
-  - US2
-  - US3
-  - 🇭🇰 香港_03
-  - 🇭🇰+香港-07
-  - 🇭🇰 香港_09
-  - 🇯🇵+日本-13
-  - 🇯🇵+日本-14
-  - 🇯🇵+日本-15
-  - 🇸🇬+新加坡-13
-  - 🇸🇬+新加坡-14
-  - 🇸🇬+新加坡-15
-  - 🇺🇸 美国-08
-  - 🇺🇸 美国-09
-  - 🇺🇸 美国-10
-  - 🇰🇷+韩国-01
-  - 🇰🇷+韩国-02
-  - 🇰🇷+韩国-03
-  - 🇮🇳+印度-1
-  - 🇮🇳+印度-2
-  - 🇳🇱+荷兰
-  - 🇵🇭+菲律宾
-  - 🇦🇷+阿根廷
-  - 🇮🇹+意大利
-  - 🇹🇭+泰国
-  - 🇹🇷+土耳其
-  - 🇻🇳+越南
-  - 🇩🇪+德国
-  - 🇲🇾+马来西亚
-  - 🇫🇷+法国
-  - 🇦🇺+澳大利亚
-  - 🇮🇩+印度尼西亚
-  - 🇷🇺+俄罗斯
-  - 🇨🇦 加拿大
-  - 🇧🇷 巴西
-  - 🇬🇧 英国
+      - 🇹🇼台湾+01
+      - 🇹🇼台湾+02
+      - 🇭🇰+HK+01
+      - 🇭🇰+HK+02
+      - 🇯🇵+JP+01
+      - 🇯🇵+JP+02
+      - 🇸🇬+SG+01
+      - 🇸🇬+SG+02
+      - 🇺🇸+US+01
+      - 🇺🇸+US+02
+      - 🇫🇷[FR]法国-Paris01
+      - 🇫🇷[FR]法国-Paris02
+      - 🇬🇧[UK]英国Coventry01-BBC优化
+      - 🇬🇧[UK]英国Coventry02-BBC优化
+      - 🇩🇪[DE]德国-Frankfurt01
+      - 🇩🇪[DE]德国-Frankfurt02
+      - 🇨🇦[CA]加拿大-Toronto
+      - 🇳🇱[NL]荷兰-Amsterdam
+      - 🇷🇺[RU]俄罗斯-Moscow
+      - 🇹🇷[TR]土耳其-Istanbul
+      - 🇮🇳[IN]印度-bangalore
+      - 🇰🇷[KR]韩国-Seoul
+      - 🇻🇳[VN]越南-HoChiMinh
+      - 🇦🇺[AU]澳大利亚-Sydney
+      - 🇳🇬[NG]尼日利亚-Lagos
+      - 🇦🇷[AR]阿根廷-BuenosAires
+      - 🇭🇰香港+01
+      - 🇭🇰香港+21
+      - 🇭🇰香港+02
+      - 🇭🇰香港netsyo
+      - 🇸🇬新加坡+05
+      - 🇸🇬新加坡+06
+      - 🇸🇬新加坡+17
+      - 🇯🇵日本+07
+      - 🇯🇵日本+08
+      - 🇯🇵日本+15
+      - 🇯🇵日本netsyo
+      - 🇰🇷韩国+22
+      - 🇰🇷韩国+25
+      - 🇹🇼台湾+24
+      - 🇹🇼台湾+09
+      - 🇺🇸美国+10n
+      - 🇺🇸美国+20
+      - 🇺🇸美国+11
+      - 🇺🇸美国+19
+      - HK1
+      - HK2
+      - JP1
+      - JP2
+      - US1
+      - US2
+      - SG1
+      - SG2
+      - TW1
+      - TW2
+      - 🇰🇷+South+Korea
+      - 🇨🇦+Canada
+      - 🇷🇺+Russia
+      - 🇩🇪+Germany
+      - 🇫🇷+France
+      - 🇬🇧+United+Kingdom
+      - 🇦🇺+Australia
+      - 🇮🇳+India
+      - 🇲🇽+Mexico
+      - 🇵🇱+Poland
+      - 🇸🇪+Sweden
+      - 🇳🇱+Amsterdam
+      - 🇮🇱+Israel
+      - 🇿🇦+South+Africa
+      - 🇧🇷+Brazil
+      - 🇨🇱+Chile
+      - 🇹🇷+Türkiye
+      - 🇦🇷++Argentina
+      - 🇦🇹+Austria
+      - 🇮🇪+Ireland
+      - 🇲🇴+Macao
+      - HK1 2
+      - HK2 2
+      - HK3
+      - JP1 2
+      - JP2 2
+      - JP3
+      - SG1 2
+      - SG2 2
+      - SG3
+      - TW1 2
+      - TW2 2
+      - KR1
+      - US1 2
+      - US2 2
+      - US3
+      - 🇭🇰 香港_03
+      - 🇭🇰+香港-07
+      - 🇭🇰 香港_09
+      - 🇯🇵+日本-13
+      - 🇯🇵+日本-14
+      - 🇯🇵+日本-15
+      - 🇸🇬+新加坡-13
+      - 🇸🇬+新加坡-14
+      - 🇸🇬+新加坡-15
+      - 🇺🇸 美国-08
+      - 🇺🇸 美国-09
+      - 🇺🇸 美国-10
+      - 🇰🇷+韩国-01
+      - 🇰🇷+韩国-02
+      - 🇰🇷+韩国-03
+      - 🇮🇳+印度-1
+      - 🇮🇳+印度-2
+      - 🇳🇱+荷兰
+      - 🇵🇭+菲律宾
+      - 🇦🇷+阿根廷
+      - 🇮🇹+意大利
+      - 🇹🇷+土耳其
+      - 🇻🇳+越南
+      - 🇦🇪+迪拜
+      - 🇲🇾+马来西亚
+      - 🇫🇷+法国
+      - 🇦🇺+澳大利亚
+      - 🇪🇸+西班牙
+      - 🇲🇽+墨西哥
+      - 🇷🇺+俄罗斯
+      - 🇨🇦 加拿大
+      - 🇧🇷 巴西
+      - 🇬🇧 英国
 rule-providers:
   Proxy:
     type: http
