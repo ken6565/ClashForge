@@ -59,6 +59,96 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
+- name: TG:@usfgrjk3
+  type: vless
+  server: fn.130519.xyz
+  port: 443
+  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  sni: wr.090881.xyz
+  servername: wr.090881.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /document/go.php/en/proxyip=ProxyIP.SG.CMLiussss.net/proxyip=tw.william.us.ci,ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: wr.090881.xyz
+- name: TG:@usfgrjk4
+  type: ss
+  server: bb1.l8inn.com
+  port: 11998
+  cipher: 2022-blake3-aes-128-gcm
+  password: NmUxOTBjYzg4ODIxODNlZQ==:M2YxMTczNDgtNTg1Zi00MA==
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: 德国
+  type: ss
+  server: cc1.l8inn.com
+  port: 11314
+  cipher: 2022-blake3-aes-128-gcm
+  password: ZmZkYTA0ZDU0MTFjMDI2Mg==:M2YxMTczNDgtNTg1Zi00MA==
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: 马来西亚
+  type: ss
+  server: ccoo1.whtjdasha.com
+  port: 19707
+  cipher: chacha20-ietf-poly1305
+  password: 9ef232ac-12a3-4ca9-9217-1dea53d77b8a
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: FBI
+  type: vless
+  server: www.fbi.gov
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm--fangbinxing.workers.dev
+- name: WTO
+  type: vless
+  server: www.wto.org
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm--fangbinxing.workers.dev
+- name: Csgo
+  type: vless
+  server: www.csgo.net
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm--fangbinxing.workers.dev
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -71,6 +161,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -82,6 +179,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: 📹 YouTube
   type: select
   proxies:
@@ -91,6 +195,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -100,6 +211,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: 🎮️ 游戏平台
   type: select
   proxies:
@@ -110,6 +228,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
@@ -118,6 +243,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -128,6 +260,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: 📲 电报信息
   type: select
   proxies:
@@ -138,6 +277,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -148,6 +294,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: 🎯 国内直连
   type: select
   proxies:
@@ -158,6 +311,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -168,6 +328,13 @@ proxy-groups:
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
+  - TG:@usfgrjk3
+  - TG:@usfgrjk4
+  - 德国
+  - 马来西亚
+  - FBI
+  - WTO
+  - Csgo
 rule-providers:
   Proxy:
     type: http
