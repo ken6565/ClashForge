@@ -149,7 +149,7 @@ proxies:
     path: /
     headers:
       Host: cnmfangbinxingnmsl.cnm--fangbinxing.workers.dev
- - {name: US093, client-fingerprint: chrome, network: ws, port: 443,server: 104.17.28.89, servername: r.icy.de5.net, tls: true, type: vless,udp: true, uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234, ws-opts: {early-data-header-name: Sec-WebSocket-Protocol, headers: {Host:r.icy.de5.net}, max-early-data: 2560,path:/}}
+- {name: US093, client-fingerprint: chrome, network: ws, port: 443, server: 104.17.28.89, servername: r.icy.de5.net, tls: true, type: vless, udp: true, uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234, ws-opts: {early-data-header-name: Sec-WebSocket-Protocol,  headers: {Host:r.icy.de5.net}, max-early-data: 2560, path: /}}
 proxy-groups:
 - name: 🚀 手动切换
   type: select
