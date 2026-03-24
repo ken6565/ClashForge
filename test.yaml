@@ -6,25 +6,7 @@ unified-delay: true
 log-level: info
 external-controller: 9090
 proxies:
-- name: 🇻🇳 VN 004 | ⬇️ 98KB/s
-  type: ss
-  server: 103.238.214.82
-  port: 41632
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 005 | ⬇️ 22KB/s
-  type: ss
-  server: 103.238.214.82
-  port: 41632
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇭🇰 HK 006 | ⬇️ 246KB/s
+- name: HK 009 |150KB/s
   type: ss
   server: hk14.network-cdn-gw-yd.net
   port: 32062
@@ -33,7 +15,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇭🇰 HK 008 | ⬇️ 310KB/s
+- name: HK 010 |158KB/s
   type: ss
   server: hk14.network-cdn-gw-yd.net
   port: 32062
@@ -42,7 +24,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇭🇰 HK 010 | ⬇️ 206KB/s
+- name: HK 011 |147KB/s
   type: ss
   server: hk14.network-cdn-gw-yd.net
   port: 32062
@@ -51,7 +33,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇭🇰 HK 011 | ⬇️ 322KB/s
+- name: HK 012 |133KB/s
   type: ss
   server: hk14.network-cdn-gw-yd.net
   port: 32062
@@ -60,7 +42,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇭🇰 HK 012 | ⬇️ 183KB/s
+- name: HK 013 |137KB/s
   type: ss
   server: hk14.network-cdn-gw-yd.net
   port: 32062
@@ -69,7 +51,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇭🇰 HK 014 | ⬇️ 362KB/s
+- name: HK 014 |140KB/s
   type: ss
   server: hk14.network-cdn-gw-yd.net
   port: 32062
@@ -78,313 +60,106 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 018 | ⬇️ 16KB/s
+- name: HK 015 |146KB/s
   type: ss
-  server: 103.186.155.57
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 016 |151KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 017 |165KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 019 |164KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 020 |181KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 025 |32KB/s
+  type: ss
+  server: 103.186.154.21
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 021 | ⬇️ 371KB/s
+- name: VN 028 |32KB/s
   type: ss
-  server: 103.186.154.181
+  server: 103.186.155.150
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 023 | ⬇️ 16KB/s
+- name: VN 029 |29KB/s
   type: ss
-  server: 103.186.155.57
+  server: 103.186.155.112
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 024 | ⬇️ 24KB/s
+- name: VN 030 |28KB/s
   type: ss
-  server: 103.186.155.57
+  server: 103.186.154.189
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 025 | ⬇️ 26KB/s
+- name: VN 032 |13KB/s
   type: ss
-  server: 103.186.155.57
+  server: 103.186.154.191
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 026 | ⬇️ 34KB/s
+- name: VN 033 |22KB/s
   type: ss
-  server: 103.186.155.4
+  server: 103.186.154.28
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 028 | ⬇️ 21KB/s
-  type: ss
-  server: 103.186.154.11
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 029 | ⬇️ 47KB/s
-  type: ss
-  server: 103.186.155.57
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 030 | ⬇️ 55KB/s
-  type: ss
-  server: 103.186.155.143
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 033 | ⬇️ 18KB/s
-  type: ss
-  server: 103.186.155.143
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 035 | ⬇️ 26KB/s
-  type: ss
-  server: 103.186.155.38
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 036 | ⬇️ 23KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 043 | ⬇️ 36KB/s
-  type: ss
-  server: 103.186.155.38
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 044 | ⬇️ 20KB/s
-  type: ss
-  server: 103.186.155.58
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 047 | ⬇️ 19KB/s
-  type: ss
-  server: 103.186.154.11
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 048 | ⬇️ 26KB/s
-  type: ss
-  server: 103.186.154.62
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 049 | ⬇️ 18KB/s
-  type: ss
-  server: 103.186.155.29
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 050 | ⬇️ 23KB/s
-  type: ss
-  server: 103.186.154.11
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 052 | ⬇️ 30KB/s
-  type: ss
-  server: 103.186.154.249
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 053 | ⬇️ 23KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 054 | ⬇️ 46KB/s
-  type: ss
-  server: 103.186.155.38
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 058 | ⬇️ 88KB/s
-  type: ss
-  server: 103.186.154.11
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 059 | ⬇️ 30KB/s
-  type: ss
-  server: 103.238.214.82
-  port: 41632
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 064 | ⬇️ 629KB/s
-  type: ss
-  server: 103.186.155.147
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 065 | ⬇️ 19KB/s
-  type: ss
-  server: 103.186.155.58
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 066 | ⬇️ 24KB/s
-  type: ss
-  server: 103.186.155.29
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 067 | ⬇️ 12KB/s
-  type: ss
-  server: 103.186.155.57
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 070 | ⬇️ 788KB/s
-  type: ss
-  server: 103.238.214.82
-  port: 41632
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 071 | ⬇️ 68KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 073 | ⬇️ 4MB/s
-  type: vless
-  server: 104.19.85.38
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 077 | ⬇️ 41KB/s
-  type: ss
-  server: 103.238.214.82
-  port: 41632
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 078 | ⬇️ 5MB/s
-  type: vless
-  server: www.visa.cn
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 079 | ⬇️ 20KB/s
+- name: VN 039 |136KB/s
   type: ss
   server: 103.186.155.134
   port: 38388
@@ -393,1920 +168,7 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸 US 080 | ⬇️ 3MB/s
-  type: vless
-  server: www.visa.cn
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 082 | ⬇️ 1MB/s
-  type: ss
-  server: 103.186.155.147
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 085 | ⬇️ 8MB/s
-  type: vless
-  server: www.visa.cn
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 086 | ⬇️ 267KB/s
-  type: ss
-  server: 103.186.154.249
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇭🇰 HK 089 | ⬇️ 178KB/s
-  type: ss
-  server: hk14.network-cdn-gw-yd.net
-  port: 32062
-  cipher: chacha20-ietf-poly1305
-  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 090 | ⬇️ 339KB/s
-  type: ss
-  server: 103.186.155.143
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇭🇰 HK 092 | ⬇️ 470KB/s
-  type: ss
-  server: hk14.network-cdn-gw-yd.net
-  port: 32062
-  cipher: chacha20-ietf-poly1305
-  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 093 | ⬇️ 7MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇭🇰 HK 095 | ⬇️ 167KB/s
-  type: ss
-  server: hk14.network-cdn-gw-yd.net
-  port: 32062
-  cipher: chacha20-ietf-poly1305
-  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 100 | ⬇️ 53KB/s
-  type: ss
-  server: 103.186.154.11
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 101 | ⬇️ 2MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 104 | ⬇️ 16KB/s
-  type: ss
-  server: 103.186.154.11
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 105 | ⬇️ 12KB/s
-  type: ss
-  server: 103.186.155.120
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 106 | ⬇️ 14KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 107 | ⬇️ 9MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 111 | ⬇️ 7MB/s
-  type: vless
-  server: 104.18.41.43
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 113 | ⬇️ 6KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 118 | ⬇️ 8MB/s
-  type: vless
-  server: 104.18.41.43
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 119 | ⬇️ 23KB/s
-  type: ss
-  server: 103.186.154.62
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 124 | ⬇️ 11MB/s
-  type: vless
-  server: 193.9.49.65
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 126 | ⬇️ 8MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 127 | ⬇️ 9MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 128 | ⬇️ 7MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 129 | ⬇️ 22KB/s
-  type: ss
-  server: 103.186.155.57
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 130 | ⬇️ 11MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 132 | ⬇️ 38KB/s
-  type: ss
-  server: 103.238.214.82
-  port: 41632
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 133 | ⬇️ 7MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 134 | ⬇️ 6MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 136 | ⬇️ 15KB/s
-  type: ss
-  server: 103.186.154.249
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 137 | ⬇️ 11MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 138 | ⬇️ 5MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇬🇧 GB 139 | ⬇️ 16KB/s
-  type: vless
-  server: uk2.sanzone.ir
-  port: 4040
-  uuid: b738db04-c73c-4551-b6f2-9041e93914d4
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - soft98.ir
-- name: 🇻🇳 VN 141 | ⬇️ 249KB/s
-  type: ss
-  server: 103.186.154.47
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 146 | ⬇️ 10MB/s
-  type: vless
-  server: 172.64.52.210
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 147 | ⬇️ 7MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 151 | ⬇️ 12MB/s
-  type: vless
-  server: 172.64.52.81
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 154 | ⬇️ 6MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 158 | ⬇️ 6MB/s
-  type: vless
-  server: 104.18.41.43
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  type: ss
-  server: 103.186.155.38
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 160 | ⬇️ 4MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 162 | ⬇️ 25KB/s
-  type: ss
-  server: 103.186.154.249
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 163 | ⬇️ 7MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 164 | ⬇️ 65KB/s
-  type: ss
-  server: 103.186.154.249
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 165 | ⬇️ 8MB/s
-  type: vless
-  server: 104.18.40.56
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 169 | ⬇️ 5MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 171 | ⬇️ 11MB/s
-  type: vless
-  server: 162.159.24.111
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 172 | ⬇️ 6MB/s
-  type: vless
-  server: 172.64.52.210
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 173 | ⬇️ 11MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 174 | ⬇️ 9MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 178 | ⬇️ 6MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 180 | ⬇️ 428KB/s
-  type: vless
-  server: vip1.kaixincloud.top
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 181 | ⬇️ 69KB/s
-  type: ss
-  server: 103.186.154.249
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 184 | ⬇️ 5MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 185 | ⬇️ 883KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 186 | ⬇️ 10MB/s
-  type: vless
-  server: www.visa.cn
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 188 | ⬇️ 468KB/s
-  type: ss
-  server: 103.186.155.64
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 189 | ⬇️ 18KB/s
-  type: ss
-  server: 103.186.155.57
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 190 | ⬇️ 8MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 191 | ⬇️ 10MB/s
-  type: vless
-  server: 193.9.49.65
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 197 | ⬇️ 18KB/s
-  type: ss
-  server: 103.186.155.4
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 199 | ⬇️ 16KB/s
-  type: ss
-  server: 103.186.155.64
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 201 | ⬇️ 8MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 203 | ⬇️ 6MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 204 | ⬇️ 2MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 205 | ⬇️ 20KB/s
-  type: ss
-  server: 103.186.155.29
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 207 | ⬇️ 8MB/s
-  type: vless
-  server: 172.64.52.210
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 209 | ⬇️ 6MB/s
-  type: vless
-  server: 104.19.85.38
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 219 | ⬇️ 336KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 220 | ⬇️ 8MB/s
-  type: vless
-  server: 104.19.85.38
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 221 | ⬇️ 8MB/s
-  type: vless
-  server: 104.19.85.38
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 222 | ⬇️ 14MB/s
-  type: vless
-  server: 172.64.52.81
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 225 | ⬇️ 7MB/s
-  type: vless
-  server: 104.18.41.43
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 227 | ⬇️ 51KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 228 | ⬇️ 5MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 230 | ⬇️ 9MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 231 | ⬇️ 9MB/s
-  type: vless
-  server: 172.64.52.210
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 232 | ⬇️ 1MB/s
-  type: ss
-  server: 103.186.154.66
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 235 | ⬇️ 6MB/s
-  type: vless
-  server: 104.18.41.43
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 241 | ⬇️ 45KB/s
-  type: ss
-  server: 103.186.155.78
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 243 | ⬇️ 27KB/s
-  type: ss
-  server: 103.186.155.58
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 245 | ⬇️ 9MB/s
-  type: vless
-  server: 162.159.45.232
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 246 | ⬇️ 5MB/s
-  type: vless
-  server: 104.18.40.56
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 249 | ⬇️ 166KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 250 | ⬇️ 12KB/s
-  type: ss
-  server: 103.186.155.57
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 253 | ⬇️ 9MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 254 | ⬇️ 9MB/s
-  type: vless
-  server: 104.19.85.38
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇫🇷 FR 255 | ⬇️ 941KB/s
-  type: vless
-  server: 195.154.200.13
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇺🇸 US 256 | ⬇️ 5MB/s
-  type: vless
-  server: 104.18.41.43
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 262 | ⬇️ 6MB/s
-  type: vless
-  server: 104.18.41.43
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇨🇭 CH 263 | ⬇️ 9MB/s
-  type: vless
-  server: 172.65.111.43
-  port: 22
-  uuid: monacoVPN
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-    headers:
-      Host:
-      - ''
-- name: 🇻🇳 VN 265 | ⬇️ 37KB/s
-  type: ss
-  server: 103.186.155.143
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 267 | ⬇️ 1MB/s
-  type: ss
-  server: 103.186.155.57
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 270 | ⬇️ 5MB/s
-  type: vless
-  server: 104.19.85.38
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 272 | ⬇️ 23KB/s
-  type: ss
-  server: 103.186.154.47
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 274 | ⬇️ 642KB/s
-  type: ss
-  server: 103.186.155.29
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 276 | ⬇️ 7MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 280 | ⬇️ 10MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 281 | ⬇️ 5MB/s
-  type: vless
-  server: 104.18.40.56
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇨🇭 CH 286 | ⬇️ 11MB/s
-  type: vless
-  server: 172.65.111.43
-  port: 22
-  uuid: monacoVPN
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-    headers:
-      Host:
-      - ''
-- name: 🇻🇳 VN 287 | ⬇️ 24KB/s
-  type: ss
-  server: 103.186.154.181
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 291 | ⬇️ 231KB/s
-  type: ss
-  server: 103.186.155.29
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 292 | ⬇️ 8MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 295 | ⬇️ 10MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇨🇭 CH 296 | ⬇️ 7MB/s
-  type: vless
-  server: 172.65.111.43
-  port: 22
-  uuid: monacoVPN
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /@monacoVPN@monacoVPN@monacoVPN@monacoVPN
-    headers:
-      Host:
-      - ''
-- name: 🇻🇳 VN 297 | ⬇️ 24KB/s
-  type: ss
-  server: 103.186.155.120
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 299 | ⬇️ 32KB/s
-  type: ss
-  server: 103.186.155.64
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 301 | ⬇️ 11MB/s
-  type: vless
-  server: 193.9.49.65
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 304 | ⬇️ 12MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 310 | ⬇️ 115KB/s
-  type: ss
-  server: 103.186.155.29
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 311 | ⬇️ 19KB/s
-  type: ss
-  server: 103.186.155.58
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇩🇪 DE 313 | ⬇️ 1MB/s
-  type: trojan
-  server: 172.66.44.230
-  port: 8443
-  password: 8r%3C%5B9%27l6hAO%238ZQi
-  udp: true
-  tfo: false
-  tls: true
-  sni: Koma-YT.PAGeS.Dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tro8sFW1S91B6sZrM1
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-- name: 🇺🇸 US 319 | ⬇️ 6MB/s
-  type: vless
-  server: 104.19.85.38
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 323 | ⬇️ 11MB/s
-  type: vless
-  server: 104.19.85.38
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 324 | ⬇️ 13MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 330 | ⬇️ 10MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 335 | ⬇️ 9MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 337 | ⬇️ 9MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 342 | ⬇️ 12MB/s
-  type: vless
-  server: 104.18.40.56
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 346 | ⬇️ 8MB/s
-  type: vless
-  server: 104.19.85.38
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 349 | ⬇️ 11MB/s
-  type: vless
-  server: 172.64.156.0
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 351 | ⬇️ 402KB/s
-  type: ss
-  server: 103.186.155.57
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 354 | ⬇️ 8MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 355 | ⬇️ 52KB/s
-  type: ss
-  server: 103.186.155.147
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 357 | ⬇️ 4MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 360 | ⬇️ 40KB/s
-  type: ss
-  server: 103.186.155.120
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇻🇳 VN 367 | ⬇️ 237KB/s
-  type: ss
-  server: 103.186.155.58
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 🇺🇸 US 372 | ⬇️ 5MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 373 | ⬇️ 7MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 375 | ⬇️ 9MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 381 | ⬇️ 8MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 385 | ⬇️ 32KB/s
+- name: VN 041 |272KB/s
   type: ss
   server: 103.186.155.134
   port: 38388
@@ -2315,229 +177,308 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸 US 396 | ⬇️ 7MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
+- name: GR 043 |63KB/s
+  type: ss
+  server: 192.71.166.100
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
   udp: true
   skip-cert-verify: true
   tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 399 | ⬇️ 4MB/s
-  type: vless
-  server: vip1.kaixincloud.top
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 403 | ⬇️ 5MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 408 | ⬇️ 14KB/s
+- name: VN 048 |15KB/s
   type: ss
-  server: 103.186.155.64
+  server: 103.186.154.206
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸 US 409 | ⬇️ 9MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 411 | ⬇️ 541KB/s
+- name: GR 051 |76KB/s
   type: ss
-  server: 103.186.155.57
+  server: 192.71.166.100
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 055 |33KB/s
+  type: ss
+  server: 103.186.155.134
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 412 | ⬇️ 76KB/s
+- name: VN 057 |129KB/s
   type: ss
-  server: 103.186.154.36
+  server: 103.186.155.134
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸 US 413 | ⬇️ 7MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 426 | ⬇️ 13KB/s
+- name: VN 058 |19KB/s
   type: ss
-  server: 103.186.154.151
+  server: 103.186.155.134
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 428 | ⬇️ 273KB/s
+- name: VN 060 |305KB/s
   type: ss
-  server: 103.186.154.162
+  server: 103.186.155.112
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸 US 430 | ⬇️ 12MB/s
-  type: vless
-  server: 193.9.49.65
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇻🇳 VN 432 | ⬇️ 26KB/s
+- name: VN 061 |809KB/s
   type: ss
-  server: 103.186.155.143
+  server: 103.186.155.112
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇻🇳 VN 444 | ⬇️ 1MB/s
+- name: VN 065 |1MB/s
   type: ss
-  server: 103.186.155.38
+  server: 103.186.155.134
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸 US 447 | ⬇️ 11MB/s
-  type: vless
-  server: 162.159.48.142
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
+- name: VN 094 |40KB/s
+  type: ss
+  server: 103.186.154.189
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇹🇼 TW 452 | ⬇️ 186KB/s
-  type: trojan
-  server: 220.130.75.219
-  port: 443
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  udp: true
-  tfo: false
-  tls: true
   skip-cert-verify: true
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇺🇸 US 456 | ⬇️ 9MB/s
-  type: vless
-  server: 172.64.52.81
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
   tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇫🇷 FR 457 | ⬇️ 1MB/s
+- name: GR 102 |118KB/s
+  type: ss
+  server: 192.71.166.100
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 117 |22KB/s
+  type: ss
+  server: 103.186.154.252
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 118 |23KB/s
+  type: ss
+  server: 103.186.155.222
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 235 |14KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 266 |64KB/s
+  type: ss
+  server: 103.186.155.19
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 281 |42KB/s
+  type: ss
+  server: 103.186.155.61
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: KR 341 |71KB/s
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 361 |34KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 363 |60KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 375 |81KB/s
+  type: ss
+  server: 103.186.155.222
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 380 |528KB/s
+  type: ss
+  server: 103.186.155.112
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 382 |16KB/s
+  type: ss
+  server: 103.186.155.112
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 385 |52KB/s
+  type: ss
+  server: 103.186.154.189
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 390 |927KB/s
+  type: ss
+  server: 103.186.154.21
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 393 |19KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 396 |44KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 398 |16KB/s
+  type: ss
+  server: 103.186.154.212
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 405 |525KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 429 |23KB/s
+  type: ss
+  server: 103.186.154.191
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 440 |29KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 442 |16KB/s
+  type: ss
+  server: 103.186.155.222
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 445 |31KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 446 |413KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: RU 454 |12MB/s
   type: vless
-  server: fr-cdg-1.blook.network
-  port: 443
-  uuid: 39910e1a-461f-485d-a6f3-db0845955dbf
+  server: 91.135.156.34
+  port: 52006
+  uuid: 1f0a8364-ae34-07d0-b999-34a723111ebd
   encryption: none
   udp: true
   skip-cert-verify: false
@@ -2545,284 +486,93 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: CL5aeP6smcd4ie9upZlYVEvuHDwLAt46BOIfHOjkMis
-    short-id: cae7fcef
-  servername: fr-cdg-1.blook.network
-  client-fingerprint: chrome
+    public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+    short-id: d8c6b58bcbb0c323
+  servername: max.ru
+  client-fingerprint: qq
   network: tcp
-- name: 🇺🇸 US 458 | ⬇️ 11MB/s
-  type: vless
-  server: 104.19.58.74
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 459 | ⬇️ 9MB/s
-  type: vless
-  server: 193.9.49.65
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 460 | ⬇️ 8MB/s
-  type: vless
-  server: 162.159.45.232
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 462 | ⬇️ 11MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 464 | ⬇️ 9MB/s
-  type: vless
-  server: 172.64.156.0
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 465 | ⬇️ 11MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 467 | ⬇️ 9MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 469 | ⬇️ 10MB/s
-  type: vless
-  server: 172.64.229.85
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 470 | ⬇️ 11MB/s
-  type: vless
-  server: 162.159.44.142
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 472 | ⬇️ 11MB/s
-  type: vless
-  server: 162.159.44.142
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 473 | ⬇️ 10MB/s
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 475 | ⬇️ 10MB/s
-  type: vless
-  server: 172.64.52.81
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 477 | ⬇️ 7MB/s
-  type: vless
-  server: 162.159.7.2
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇺🇸 US 478 | ⬇️ 944KB/s
-  type: trojan
-  server: 194.33.45.157
-  port: 443
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  udp: true
-  tfo: false
-  tls: true
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: tcp
-- name: 🇻🇳 VN 481 | ⬇️ 2MB/s
+- name: VN 458 |99KB/s
   type: ss
-  server: 103.186.154.11
+  server: 103.186.154.212
   port: 38388
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 🇺🇸 US 482 | ⬇️ 7MB/s
-  type: vless
-  server: 193.9.49.65
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
+- name: VN 459 |1018KB/s
+  type: ss
+  server: 103.186.154.191
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
-- name: 🇭🇰 HK 487 | ⬇️ 116KB/s
+- name: VN 463 |49KB/s
+  type: ss
+  server: 103.186.154.206
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 466 |273KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 471 |514KB/s
+  type: ss
+  server: 103.186.154.212
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 474 |69KB/s
+  type: ss
+  server: 103.186.154.206
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 481 |30KB/s
+  type: ss
+  server: 103.186.155.222
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 489 |275KB/s
+  type: ss
+  server: 103.186.155.112
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 490 |532KB/s
+  type: ss
+  server: 103.186.155.112
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 494 |111KB/s
   type: trojan
   server: 58.152.25.253
   port: 443
@@ -2830,10 +580,196 @@ proxies:
   udp: true
   tfo: false
   tls: true
-  sni: t.me/ripaojiedian
   skip-cert-verify: true
   client-fingerprint: chrome
   network: tcp
+- name: VN 495 |693KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 496 |36KB/s
+  type: ss
+  server: 103.186.154.220
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: GB 497 |14MB/s
+  type: vless
+  server: 146.185.208.66
+  port: 443
+  uuid: fc48d39b-b5ab-403f-9de0-ea4036c533c3
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rh2IgXc0vtXZ3euLtMP8RUlnmBc_4ftYBuL5Z0udk2A
+    short-id: ''
+  servername: max.ru
+  client-fingerprint: chrome
+  network: tcp
+- name: VN 502 |237KB/s
+  type: ss
+  server: 103.186.155.222
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 505 |218KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 514 |611KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: RU 517 |12MB/s
+  type: vless
+  server: 72.56.5.203
+  port: 52006
+  uuid: 1f0a8364-ae34-07d0-b999-34a723111ebd
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
+    short-id: d8c6b58bcbb0c323
+  servername: max.ru
+  client-fingerprint: qq
+  network: tcp
+- name: SG 525 |178KB/s
+  type: vless
+  server: 140.235.10.14
+  port: 30003
+  uuid: 00000000-0000-4000-8000-000000000000
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  sni: sub.mot.ip-ddns.com
+  servername: sub.mot.ip-ddns.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.mot.ip-ddns.com
+- name: HK 534 |159KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 535 |165KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 536 |151KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 538 |236KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 539 |246KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 540 |272KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK 544 |179KB/s
+  type: ss
+  server: hk14.network-cdn-gw-yd.net
+  port: 32062
+  cipher: chacha20-ietf-poly1305
+  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 545 |1MB/s
+  type: ss
+  server: 103.186.154.206
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: SE 547 |9MB/s
+  type: ss
+  server: 16.171.110.163
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: VN 697 |55KB/s
+  type: ss
+  server: 103.186.155.134
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+  tfo: false
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -2841,2319 +777,944 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: 🎮️ 游戏平台
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: 🎯 国内直连
   type: select
   proxies:
   - DIRECT
   - 🚀 手动切换
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
-  - 🇻🇳 VN 004 | ⬇️ 98KB/s
-  - 🇻🇳 VN 005 | ⬇️ 22KB/s
-  - 🇭🇰 HK 006 | ⬇️ 246KB/s
-  - 🇭🇰 HK 008 | ⬇️ 310KB/s
-  - 🇭🇰 HK 010 | ⬇️ 206KB/s
-  - 🇭🇰 HK 011 | ⬇️ 322KB/s
-  - 🇭🇰 HK 012 | ⬇️ 183KB/s
-  - 🇭🇰 HK 014 | ⬇️ 362KB/s
-  - 🇻🇳 VN 018 | ⬇️ 16KB/s
-  - 🇻🇳 VN 021 | ⬇️ 371KB/s
-  - 🇻🇳 VN 023 | ⬇️ 16KB/s
-  - 🇻🇳 VN 024 | ⬇️ 24KB/s
-  - 🇻🇳 VN 025 | ⬇️ 26KB/s
-  - 🇻🇳 VN 026 | ⬇️ 34KB/s
-  - 🇻🇳 VN 028 | ⬇️ 21KB/s
-  - 🇻🇳 VN 029 | ⬇️ 47KB/s
-  - 🇻🇳 VN 030 | ⬇️ 55KB/s
-  - 🇻🇳 VN 033 | ⬇️ 18KB/s
-  - 🇻🇳 VN 035 | ⬇️ 26KB/s
-  - 🇻🇳 VN 036 | ⬇️ 23KB/s
-  - 🇻🇳 VN 043 | ⬇️ 36KB/s
-  - 🇻🇳 VN 044 | ⬇️ 20KB/s
-  - 🇻🇳 VN 047 | ⬇️ 19KB/s
-  - 🇻🇳 VN 048 | ⬇️ 26KB/s
-  - 🇻🇳 VN 049 | ⬇️ 18KB/s
-  - 🇻🇳 VN 050 | ⬇️ 23KB/s
-  - 🇻🇳 VN 052 | ⬇️ 30KB/s
-  - 🇻🇳 VN 053 | ⬇️ 23KB/s
-  - 🇻🇳 VN 054 | ⬇️ 46KB/s
-  - 🇻🇳 VN 058 | ⬇️ 88KB/s
-  - 🇻🇳 VN 059 | ⬇️ 30KB/s
-  - 🇻🇳 VN 064 | ⬇️ 629KB/s
-  - 🇻🇳 VN 065 | ⬇️ 19KB/s
-  - 🇻🇳 VN 066 | ⬇️ 24KB/s
-  - 🇻🇳 VN 067 | ⬇️ 12KB/s
-  - 🇻🇳 VN 070 | ⬇️ 788KB/s
-  - 🇻🇳 VN 071 | ⬇️ 68KB/s
-  - 🇺🇸 US 073 | ⬇️ 4MB/s
-  - 🇻🇳 VN 077 | ⬇️ 41KB/s
-  - 🇺🇸 US 078 | ⬇️ 5MB/s
-  - 🇻🇳 VN 079 | ⬇️ 20KB/s
-  - 🇺🇸 US 080 | ⬇️ 3MB/s
-  - 🇻🇳 VN 082 | ⬇️ 1MB/s
-  - 🇺🇸 US 085 | ⬇️ 8MB/s
-  - 🇻🇳 VN 086 | ⬇️ 267KB/s
-  - 🇭🇰 HK 089 | ⬇️ 178KB/s
-  - 🇻🇳 VN 090 | ⬇️ 339KB/s
-  - 🇭🇰 HK 092 | ⬇️ 470KB/s
-  - 🇺🇸 US 093 | ⬇️ 7MB/s
-  - 🇭🇰 HK 095 | ⬇️ 167KB/s
-  - 🇻🇳 VN 100 | ⬇️ 53KB/s
-  - 🇺🇸 US 101 | ⬇️ 2MB/s
-  - 🇻🇳 VN 104 | ⬇️ 16KB/s
-  - 🇻🇳 VN 105 | ⬇️ 12KB/s
-  - 🇻🇳 VN 106 | ⬇️ 14KB/s
-  - 🇺🇸 US 107 | ⬇️ 9MB/s
-  - 🇺🇸 US 111 | ⬇️ 7MB/s
-  - 🇻🇳 VN 113 | ⬇️ 6KB/s
-  - 🇺🇸 US 118 | ⬇️ 8MB/s
-  - 🇻🇳 VN 119 | ⬇️ 23KB/s
-  - 🇺🇸 US 124 | ⬇️ 11MB/s
-  - 🇺🇸 US 126 | ⬇️ 8MB/s
-  - 🇺🇸 US 127 | ⬇️ 9MB/s
-  - 🇺🇸 US 128 | ⬇️ 7MB/s
-  - 🇻🇳 VN 129 | ⬇️ 22KB/s
-  - 🇺🇸 US 130 | ⬇️ 11MB/s
-  - 🇻🇳 VN 132 | ⬇️ 38KB/s
-  - 🇺🇸 US 133 | ⬇️ 7MB/s
-  - 🇺🇸 US 134 | ⬇️ 6MB/s
-  - 🇻🇳 VN 136 | ⬇️ 15KB/s
-  - 🇺🇸 US 137 | ⬇️ 11MB/s
-  - 🇺🇸 US 138 | ⬇️ 5MB/s
-  - 🇬🇧 GB 139 | ⬇️ 16KB/s
-  - 🇻🇳 VN 141 | ⬇️ 249KB/s
-  - 🇺🇸 US 146 | ⬇️ 10MB/s
-  - 🇺🇸 US 147 | ⬇️ 7MB/s
-  - 🇺🇸 US 151 | ⬇️ 12MB/s
-  - 🇺🇸 US 154 | ⬇️ 6MB/s
-  - 🇺🇸 US 158 | ⬇️ 6MB/s
-  - 🇻🇳 VN 159 | ⬇️ 1004KB/s
-  - 🇺🇸 US 160 | ⬇️ 4MB/s
-  - 🇻🇳 VN 162 | ⬇️ 25KB/s
-  - 🇺🇸 US 163 | ⬇️ 7MB/s
-  - 🇻🇳 VN 164 | ⬇️ 65KB/s
-  - 🇺🇸 US 165 | ⬇️ 8MB/s
-  - 🇺🇸 US 169 | ⬇️ 5MB/s
-  - 🇺🇸 US 171 | ⬇️ 11MB/s
-  - 🇺🇸 US 172 | ⬇️ 6MB/s
-  - 🇺🇸 US 173 | ⬇️ 11MB/s
-  - 🇺🇸 US 174 | ⬇️ 9MB/s
-  - 🇺🇸 US 178 | ⬇️ 6MB/s
-  - 🇺🇸 US 180 | ⬇️ 428KB/s
-  - 🇻🇳 VN 181 | ⬇️ 69KB/s
-  - 🇺🇸 US 184 | ⬇️ 5MB/s
-  - 🇻🇳 VN 185 | ⬇️ 883KB/s
-  - 🇺🇸 US 186 | ⬇️ 10MB/s
-  - 🇻🇳 VN 188 | ⬇️ 468KB/s
-  - 🇻🇳 VN 189 | ⬇️ 18KB/s
-  - 🇺🇸 US 190 | ⬇️ 8MB/s
-  - 🇺🇸 US 191 | ⬇️ 10MB/s
-  - 🇻🇳 VN 197 | ⬇️ 18KB/s
-  - 🇻🇳 VN 199 | ⬇️ 16KB/s
-  - 🇺🇸 US 201 | ⬇️ 8MB/s
-  - 🇺🇸 US 203 | ⬇️ 6MB/s
-  - 🇺🇸 US 204 | ⬇️ 2MB/s
-  - 🇻🇳 VN 205 | ⬇️ 20KB/s
-  - 🇺🇸 US 207 | ⬇️ 8MB/s
-  - 🇺🇸 US 209 | ⬇️ 6MB/s
-  - 🇻🇳 VN 219 | ⬇️ 336KB/s
-  - 🇺🇸 US 220 | ⬇️ 8MB/s
-  - 🇺🇸 US 221 | ⬇️ 8MB/s
-  - 🇺🇸 US 222 | ⬇️ 14MB/s
-  - 🇺🇸 US 225 | ⬇️ 7MB/s
-  - 🇻🇳 VN 227 | ⬇️ 51KB/s
-  - 🇺🇸 US 228 | ⬇️ 5MB/s
-  - 🇺🇸 US 230 | ⬇️ 9MB/s
-  - 🇺🇸 US 231 | ⬇️ 9MB/s
-  - 🇻🇳 VN 232 | ⬇️ 1MB/s
-  - 🇺🇸 US 235 | ⬇️ 6MB/s
-  - 🇻🇳 VN 241 | ⬇️ 45KB/s
-  - 🇻🇳 VN 243 | ⬇️ 27KB/s
-  - 🇺🇸 US 245 | ⬇️ 9MB/s
-  - 🇺🇸 US 246 | ⬇️ 5MB/s
-  - 🇻🇳 VN 249 | ⬇️ 166KB/s
-  - 🇻🇳 VN 250 | ⬇️ 12KB/s
-  - 🇺🇸 US 253 | ⬇️ 9MB/s
-  - 🇺🇸 US 254 | ⬇️ 9MB/s
-  - 🇫🇷 FR 255 | ⬇️ 941KB/s
-  - 🇺🇸 US 256 | ⬇️ 5MB/s
-  - 🇺🇸 US 262 | ⬇️ 6MB/s
-  - 🇨🇭 CH 263 | ⬇️ 9MB/s
-  - 🇻🇳 VN 265 | ⬇️ 37KB/s
-  - 🇻🇳 VN 267 | ⬇️ 1MB/s
-  - 🇺🇸 US 270 | ⬇️ 5MB/s
-  - 🇻🇳 VN 272 | ⬇️ 23KB/s
-  - 🇻🇳 VN 274 | ⬇️ 642KB/s
-  - 🇺🇸 US 276 | ⬇️ 7MB/s
-  - 🇺🇸 US 280 | ⬇️ 10MB/s
-  - 🇺🇸 US 281 | ⬇️ 5MB/s
-  - 🇨🇭 CH 286 | ⬇️ 11MB/s
-  - 🇻🇳 VN 287 | ⬇️ 24KB/s
-  - 🇻🇳 VN 291 | ⬇️ 231KB/s
-  - 🇺🇸 US 292 | ⬇️ 8MB/s
-  - 🇺🇸 US 295 | ⬇️ 10MB/s
-  - 🇨🇭 CH 296 | ⬇️ 7MB/s
-  - 🇻🇳 VN 297 | ⬇️ 24KB/s
-  - 🇻🇳 VN 299 | ⬇️ 32KB/s
-  - 🇺🇸 US 301 | ⬇️ 11MB/s
-  - 🇺🇸 US 304 | ⬇️ 12MB/s
-  - 🇻🇳 VN 310 | ⬇️ 115KB/s
-  - 🇻🇳 VN 311 | ⬇️ 19KB/s
-  - 🇩🇪 DE 313 | ⬇️ 1MB/s
-  - 🇺🇸 US 319 | ⬇️ 6MB/s
-  - 🇺🇸 US 323 | ⬇️ 11MB/s
-  - 🇺🇸 US 324 | ⬇️ 13MB/s
-  - 🇺🇸 US 330 | ⬇️ 10MB/s
-  - 🇺🇸 US 335 | ⬇️ 9MB/s
-  - 🇺🇸 US 337 | ⬇️ 9MB/s
-  - 🇺🇸 US 342 | ⬇️ 12MB/s
-  - 🇺🇸 US 346 | ⬇️ 8MB/s
-  - 🇺🇸 US 349 | ⬇️ 11MB/s
-  - 🇻🇳 VN 351 | ⬇️ 402KB/s
-  - 🇺🇸 US 354 | ⬇️ 8MB/s
-  - 🇻🇳 VN 355 | ⬇️ 52KB/s
-  - 🇺🇸 US 357 | ⬇️ 4MB/s
-  - 🇻🇳 VN 360 | ⬇️ 40KB/s
-  - 🇻🇳 VN 367 | ⬇️ 237KB/s
-  - 🇺🇸 US 372 | ⬇️ 5MB/s
-  - 🇺🇸 US 373 | ⬇️ 7MB/s
-  - 🇺🇸 US 375 | ⬇️ 9MB/s
-  - 🇺🇸 US 381 | ⬇️ 8MB/s
-  - 🇻🇳 VN 385 | ⬇️ 32KB/s
-  - 🇺🇸 US 396 | ⬇️ 7MB/s
-  - 🇺🇸 US 399 | ⬇️ 4MB/s
-  - 🇺🇸 US 403 | ⬇️ 5MB/s
-  - 🇻🇳 VN 408 | ⬇️ 14KB/s
-  - 🇺🇸 US 409 | ⬇️ 9MB/s
-  - 🇻🇳 VN 411 | ⬇️ 541KB/s
-  - 🇻🇳 VN 412 | ⬇️ 76KB/s
-  - 🇺🇸 US 413 | ⬇️ 7MB/s
-  - 🇻🇳 VN 426 | ⬇️ 13KB/s
-  - 🇻🇳 VN 428 | ⬇️ 273KB/s
-  - 🇺🇸 US 430 | ⬇️ 12MB/s
-  - 🇻🇳 VN 432 | ⬇️ 26KB/s
-  - 🇻🇳 VN 444 | ⬇️ 1MB/s
-  - 🇺🇸 US 447 | ⬇️ 11MB/s
-  - 🇹🇼 TW 452 | ⬇️ 186KB/s
-  - 🇺🇸 US 456 | ⬇️ 9MB/s
-  - 🇫🇷 FR 457 | ⬇️ 1MB/s
-  - 🇺🇸 US 458 | ⬇️ 11MB/s
-  - 🇺🇸 US 459 | ⬇️ 9MB/s
-  - 🇺🇸 US 460 | ⬇️ 8MB/s
-  - 🇺🇸 US 462 | ⬇️ 11MB/s
-  - 🇺🇸 US 464 | ⬇️ 9MB/s
-  - 🇺🇸 US 465 | ⬇️ 11MB/s
-  - 🇺🇸 US 467 | ⬇️ 9MB/s
-  - 🇺🇸 US 469 | ⬇️ 10MB/s
-  - 🇺🇸 US 470 | ⬇️ 11MB/s
-  - 🇺🇸 US 472 | ⬇️ 11MB/s
-  - 🇺🇸 US 473 | ⬇️ 10MB/s
-  - 🇺🇸 US 475 | ⬇️ 10MB/s
-  - 🇺🇸 US 477 | ⬇️ 7MB/s
-  - 🇺🇸 US 478 | ⬇️ 944KB/s
-  - 🇻🇳 VN 481 | ⬇️ 2MB/s
-  - 🇺🇸 US 482 | ⬇️ 7MB/s
-  - 🇭🇰 HK 487 | ⬇️ 116KB/s
+  - HK 009 |150KB/s
+  - HK 010 |158KB/s
+  - HK 011 |147KB/s
+  - HK 012 |133KB/s
+  - HK 013 |137KB/s
+  - HK 014 |140KB/s
+  - HK 015 |146KB/s
+  - HK 016 |151KB/s
+  - HK 017 |165KB/s
+  - HK 019 |164KB/s
+  - HK 020 |181KB/s
+  - VN 025 |32KB/s
+  - VN 028 |32KB/s
+  - VN 029 |29KB/s
+  - VN 030 |28KB/s
+  - VN 032 |13KB/s
+  - VN 033 |22KB/s
+  - VN 039 |136KB/s
+  - VN 041 |272KB/s
+  - GR 043 |63KB/s
+  - VN 048 |15KB/s
+  - GR 051 |76KB/s
+  - VN 055 |33KB/s
+  - VN 057 |129KB/s
+  - VN 058 |19KB/s
+  - VN 060 |305KB/s
+  - VN 061 |809KB/s
+  - VN 065 |1MB/s
+  - VN 094 |40KB/s
+  - GR 102 |118KB/s
+  - VN 117 |22KB/s
+  - VN 118 |23KB/s
+  - VN 235 |14KB/s
+  - VN 266 |64KB/s
+  - VN 281 |42KB/s
+  - KR 341 |71KB/s
+  - VN 361 |34KB/s
+  - VN 363 |60KB/s
+  - VN 375 |81KB/s
+  - VN 380 |528KB/s
+  - VN 382 |16KB/s
+  - VN 385 |52KB/s
+  - VN 390 |927KB/s
+  - VN 393 |19KB/s
+  - VN 396 |44KB/s
+  - VN 398 |16KB/s
+  - VN 405 |525KB/s
+  - VN 429 |23KB/s
+  - VN 440 |29KB/s
+  - VN 442 |16KB/s
+  - VN 445 |31KB/s
+  - VN 446 |413KB/s
+  - RU 454 |12MB/s
+  - VN 458 |99KB/s
+  - VN 459 |1018KB/s
+  - VN 463 |49KB/s
+  - VN 466 |273KB/s
+  - VN 471 |514KB/s
+  - VN 474 |69KB/s
+  - VN 481 |30KB/s
+  - VN 489 |275KB/s
+  - VN 490 |532KB/s
+  - HK 494 |111KB/s
+  - VN 495 |693KB/s
+  - VN 496 |36KB/s
+  - GB 497 |14MB/s
+  - VN 502 |237KB/s
+  - VN 505 |218KB/s
+  - VN 514 |611KB/s
+  - RU 517 |12MB/s
+  - SG 525 |178KB/s
+  - HK 534 |159KB/s
+  - HK 535 |165KB/s
+  - HK 536 |151KB/s
+  - HK 538 |236KB/s
+  - HK 539 |246KB/s
+  - HK 540 |272KB/s
+  - HK 544 |179KB/s
+  - VN 545 |1MB/s
+  - SE 547 |9MB/s
+  - VN 697 |55KB/s
 rule-providers:
   Proxy:
     type: http
