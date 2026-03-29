@@ -6,23 +6,6 @@ unified-delay: true
 log-level: info
 external-controller: 9090
 proxies:
-- name: US_2|2.6MB/s
-  type: vless
-  server: 172.64.229.165
-  port: 443
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: r.icy.de5.net
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: r.icy.de5.net
 - name: HK002|6.1MB/s
   type: vless
   server: 104.18.46.69
@@ -62,42 +45,6 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: TG:@usfgrjk3
-  type: vless
-  server: fn.130519.xyz
-  port: 443
-  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: wr.090881.xyz
-  servername: wr.090881.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /document/go.php/en/proxyip=ProxyIP.SG.CMLiussss.net/proxyip=tw.william.us.ci,ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: wr.090881.xyz
-- name: TG:@usfgrjk4
-  type: ss
-  server: bb1.l8inn.com
-  port: 11998
-  cipher: 2022-blake3-aes-128-gcm
-  password: NmUxOTBjYzg4ODIxODNlZQ==:M2YxMTczNDgtNTg1Zi00MA==
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 德国
-  type: ss
-  server: cc1.l8inn.com
-  port: 11314
-  cipher: 2022-blake3-aes-128-gcm
-  password: ZmZkYTA0ZDU0MTFjMDI2Mg==:M2YxMTczNDgtNTg1Zi00MA==
-  udp: true
-  skip-cert-verify: true
-  tfo: false
 - name: 马来西亚
   type: ss
   server: ccoo1.whtjdasha.com
@@ -107,58 +54,296 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: FBI
-  type: vless
-  server: www.fbi.gov
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxingnmsl.cnm--fangbinxing.workers.dev
-- name: WTO
-  type: vless
-  server: www.wto.org
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxingnmsl.cnm--fangbinxing.workers.dev
-- name: Csgo
-  type: vless
-  server: www.csgo.net
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxingnmsl.cnm--fangbinxing.workers.dev
 - name: HK020
+  type: ss
+  server: hk1.network-cdn-gw-yd.net
+  port: 32060
   cipher: chacha20-ietf-poly1305
   password: d4665d23-c0a2-454e-ba62-c276ed189a70
-  port: 32060
-  server: hk1.network-cdn-gw-yd.net
-  type: ss
   udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: TG:@usfgrjk
+  type: vless
+  server: cdn.7zz.cn
+  port: 443
+  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  sni: wy.090881.xyz
+  servername: wy.090881.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /img/project/config/proxyip=ProxyIP.SG.CMLiussss.net/proxyip=tw.william.us.ci,ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: wy.090881.xyz
+- name: FR_33|5.3MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  skip-cert-verify: true
+  port: 20088
+- name: FR_35|5.1MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: 🔒
+  skip-cert-verify: true
+  port: 20088
+- name: 美国_02
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  port: 20088
+- name: 法国_01
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: '🔒 [By EbraSha] '
+  skip-cert-verify: true
+  port: 20088
+- name: FR_23|1.6MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  skip-cert-verify: true
+  port: 20088
+- name: FR_29|5.4MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: '🔒 [By EbraSha] '
+  skip-cert-verify: true
+  port: 20088
+- name: FR_05|0.6MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: рҹ”’
+  skip-cert-verify: true
+  port: 20088
+- name: FR_58|7.6MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  port: 20088
+- name: 美国 _01
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: 🔒
+  skip-cert-verify: true
+  port: 20088
+- name: FR_44|5.6MB/s
+  type: hysteria2
+  server: 2001:bc8:32d7:302::11
+  password: dongtaiwang.com
+  sni: рҹ”’
+  skip-cert-verify: true
+  port: 20088
+- name: 美国_03
+  type: hysteria2
+  server: 2a14:3f87:f001:9::a
+  password: Telegram--%3E%40Ln2Ray
+  sni: gavazn.55994421.xyz
+  skip-cert-verify: true
+  port: 45000
+  obfs: salamander
+  obfs-password: Telegram-->@Ln2Ray
+- name: NL_03|4.4MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 54608
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_09|4.4MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 56269
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_17|4.6MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 56654
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_11|3.9MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 58576
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_13|4.7MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 57061
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_16|0.2MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 56654
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_08|0.2MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 58262
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_10|3.4MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 59220
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_14|5.0MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 58262
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_05|1.3MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 54608
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_06|3.5MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 59220
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: 美国_05
+  type: hysteria2
+  server: 2a02:180:6:1::1b3
+  password: 32d5901c-3cf6-43a9-b719-d71f1fb4f78e
+  sni: www.bing.com
+  skip-cert-verify: true
+  port: 51435
+- name: NL_12|7.2MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 57061
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_15|4.6MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 51658
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: DE_02|2.2MB/s
+  type: hysteria2
+  server: 2a02:180:6:1::1b3
+  password: 32d5901c-3cf6-43a9-b719-d71f1fb4f78e
+  sni: www.bing.com
+  skip-cert-verify: true
+  port: 51435
+- name: NL_01|4.8MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 51658
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_07|3.6MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 58576
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_02|4.6MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 52318
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: AZ_01
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-60000
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: NL_04|1.1MB/s
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 56269
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: 美国_04
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 52318
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -166,185 +351,471 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: 🎮️ 游戏平台
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: 🎯 国内直连
   type: select
   proxies:
   - DIRECT
   - 🚀 手动切换
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
-  - US_2|2.6MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - TG:@usfgrjk3
-  - TG:@usfgrjk4
-  - 德国
   - 马来西亚
-  - FBI
-  - WTO
-  - Csgo
   - HK020
+  - TG:@usfgrjk
+  - FR_33|5.3MB/s
+  - FR_35|5.1MB/s
+  - 美国_02
+  - 法国_01
+  - FR_23|1.6MB/s
+  - FR_29|5.4MB/s
+  - FR_05|0.6MB/s
+  - FR_58|7.6MB/s
+  - 美国 _01
+  - FR_44|5.6MB/s
+  - 美国_03
+  - NL_03|4.4MB/s
+  - NL_09|4.4MB/s
+  - NL_17|4.6MB/s
+  - NL_11|3.9MB/s
+  - NL_13|4.7MB/s
+  - NL_16|0.2MB/s
+  - NL_08|0.2MB/s
+  - NL_10|3.4MB/s
+  - NL_14|5.0MB/s
+  - NL_05|1.3MB/s
+  - NL_06|3.5MB/s
+  - 美国_05
+  - NL_12|7.2MB/s
+  - NL_15|4.6MB/s
+  - DE_02|2.2MB/s
+  - NL_01|4.8MB/s
+  - NL_07|3.6MB/s
+  - NL_02|4.6MB/s
+  - AZ_01
+  - NL_04|1.1MB/s
+  - 美国_04
 rule-providers:
   Proxy:
     type: http
