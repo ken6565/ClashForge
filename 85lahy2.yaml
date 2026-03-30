@@ -152,7 +152,7 @@ proxies:
 - name: 美国_03
   type: hysteria2
   server: 2a14:3f87:f001:9::a
-  password: Telegram--%3E%40Ln2Ray
+  password: Telegram--%253E%2540Ln2Ray
   sni: gavazn.55994421.xyz
   skip-cert-verify: true
   port: 45000
@@ -344,6 +344,69 @@ proxies:
   port: 52318
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
+- name: HK005
+  type: ss
+  server: b8z9y9a5g9-fb-hk18.6pzfwf2511.com
+  port: 56018
+  cipher: chacha20-ietf-poly1305
+  password: UgheQK
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: JP008
+  type: vmess
+  server: 166.88.99.80
+  port: 37469
+  uuid: 25549589-550c-43eb-99c2-2375284fd867
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  ws-opts:
+    path: /arki
+    headers:
+      Host: ''
+- name: JP011
+  type: vmess
+  server: 166.88.99.80
+  port: 6354
+  uuid: 613952fa-9a1e-4944-b85f-3587b3592b3a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: ws
+  aead: true
+  tfo: false
+  ws-opts:
+    path: /arki
+    headers:
+      Host: ''
+- name: JP021
+  type: vmess
+  server: 82.40.47.231
+  port: 19212
+  uuid: a9315a9c-e97f-4ae4-e340-8129148aa9dc
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: http
+  aead: true
+  tfo: false
+  http-opts:
+    method: GET
+    path:
+    - /
+    headers:
+      Host:
+      - ''
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -389,6 +452,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -433,6 +500,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: 📹 YouTube
   type: select
   proxies:
@@ -475,6 +546,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: 🎥 NETFLIX
   type: select
   proxies:
@@ -517,6 +592,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: 🎮️ 游戏平台
   type: select
   proxies:
@@ -560,6 +639,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
@@ -601,6 +684,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -644,6 +731,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: 📲 电报信息
   type: select
   proxies:
@@ -687,6 +778,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -730,6 +825,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: 🎯 国内直连
   type: select
   proxies:
@@ -773,6 +872,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 - name: 🐟 漏网之鱼
   type: select
   proxies:
@@ -816,6 +919,10 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - HK005
+  - JP008
+  - JP011
+  - JP021
 rule-providers:
   Proxy:
     type: http
