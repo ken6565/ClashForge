@@ -6,6 +6,47 @@ unified-delay: true
 log-level: info
 external-controller: 9090
 proxies:
+- name: 台湾 trojan
+  type: trojan
+  server: xj-tw2.zzsspnode.com
+  port: 5418
+  password: 87501829-4fcc-4954-9ecb-fd02d809dbcc
+  udp: true
+  tfo: false
+  tls: true
+  sni: xj-tw2.zzsspnode.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: tcp
+- name: 香港 trojan
+  type: trojan
+  server: tj.oopscat.com
+  port: 7443
+  password: '88888888'
+  udp: true
+  tfo: false
+  tls: true
+  sni: tj.oopscat.com
+  skip-cert-verify: true
+  network: tcp
+- name: 日本 ss
+  type: ss
+  server: 47.79.95.67
+  port: 21912
+  cipher: 2022-blake3-aes-256-gcm
+  password: 6Ss9VX6CMuADID1br5JY8tSOzTMFlpIFQfBNhJNaGxM=
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: 德国 ss
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+  skip-cert-verify: true
+  tfo: false
 - name: HK002|6.1MB/s
   type: vless
   server: 104.18.46.69
@@ -45,15 +86,6 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: 马来西亚
-  type: ss
-  server: ccoo1.whtjdasha.com
-  port: 19707
-  cipher: chacha20-ietf-poly1305
-  password: 9ef232ac-12a3-4ca9-9217-1dea53d77b8a
-  udp: true
-  skip-cert-verify: true
-  tfo: false
 - name: HK020
   type: ss
   server: hk1.network-cdn-gw-yd.net
@@ -63,24 +95,6 @@ proxies:
   udp: true
   skip-cert-verify: true
   tfo: false
-- name: TG:@usfgrjk
-  type: vless
-  server: cdn.7zz.cn
-  port: 443
-  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: wy.090881.xyz
-  servername: wy.090881.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /img/project/config/proxyip=ProxyIP.SG.CMLiussss.net/proxyip=tw.william.us.ci,ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: wy.090881.xyz
 - name: FR_33|5.3MB/s
   type: hysteria2
   server: 2001:bc8:32d7:302::11
@@ -149,15 +163,6 @@ proxies:
   sni: рҹ”’
   skip-cert-verify: true
   port: 20088
-- name: 美国_03
-  type: hysteria2
-  server: 2a14:3f87:f001:9::a
-  password: Telegram--%253E%2540Ln2Ray
-  sni: gavazn.55994421.xyz
-  skip-cert-verify: true
-  port: 45000
-  obfs: salamander
-  obfs-password: Telegram-->@Ln2Ray
 - name: NL_03|4.4MB/s
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
@@ -344,69 +349,6 @@ proxies:
   port: 52318
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: HK005
-  type: ss
-  server: b8z9y9a5g9-fb-hk18.6pzfwf2511.com
-  port: 56018
-  cipher: chacha20-ietf-poly1305
-  password: UgheQK
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: JP008
-  type: vmess
-  server: 166.88.99.80
-  port: 37469
-  uuid: 25549589-550c-43eb-99c2-2375284fd867
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
-- name: JP011
-  type: vmess
-  server: 166.88.99.80
-  port: 6354
-  uuid: 613952fa-9a1e-4944-b85f-3587b3592b3a
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: ws
-  aead: true
-  tfo: false
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
-- name: JP021
-  type: vmess
-  server: 82.40.47.231
-  port: 19212
-  uuid: a9315a9c-e97f-4ae4-e340-8129148aa9dc
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: http
-  aead: true
-  tfo: false
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - ''
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -414,12 +356,14 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -430,7 +374,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -452,22 +395,20 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -478,7 +419,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -500,20 +440,18 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -524,7 +462,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -546,20 +483,18 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -570,7 +505,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -592,21 +526,19 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: 🎮️ 游戏平台
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -617,7 +549,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -639,19 +570,17 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -662,7 +591,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -684,21 +612,19 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -709,7 +635,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -731,21 +656,19 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -756,7 +679,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -778,21 +700,19 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -803,7 +723,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -825,21 +744,19 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: 🎯 国内直连
   type: select
   proxies:
   - DIRECT
   - 🚀 手动切换
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -850,7 +767,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -872,21 +788,19 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
+  - 台湾 trojan
+  - 香港 trojan
+  - 日本 ss
+  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - HK003
-  - 马来西亚
   - HK020
-  - TG:@usfgrjk
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -897,7 +811,6 @@ proxy-groups:
   - FR_58|7.6MB/s
   - 美国 _01
   - FR_44|5.6MB/s
-  - 美国_03
   - NL_03|4.4MB/s
   - NL_09|4.4MB/s
   - NL_17|4.6MB/s
@@ -919,10 +832,6 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
-  - HK005
-  - JP008
-  - JP011
-  - JP021
 rule-providers:
   Proxy:
     type: http
