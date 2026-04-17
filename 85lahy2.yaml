@@ -2,39 +2,24 @@ port: 7890
 socks-port: 7891
 allow-lan: true
 mode: rule
-unified-delay: true
 log-level: info
 external-controller: 9090
 proxies:
-- name: 台湾 trojan
-  type: trojan
-  server: xj-tw2.zzsspnode.com
-  port: 5418
-  password: 87501829-4fcc-4954-9ecb-fd02d809dbcc
-  udp: true
-  tfo: false
-  tls: true
-  sni: xj-tw2.zzsspnode.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: tcp
-- name: 香港 trojan
-  type: trojan
-  server: tj.oopscat.com
-  port: 7443
-  password: '88888888'
-  udp: true
-  tfo: false
-  tls: true
-  sni: tj.oopscat.com
-  skip-cert-verify: true
-  network: tcp
-- name: 日本 ss
+- name: HK538|1MB/s
   type: ss
-  server: 47.79.95.67
-  port: 21912
-  cipher: 2022-blake3-aes-256-gcm
-  password: 6Ss9VX6CMuADID1br5JY8tSOzTMFlpIFQfBNhJNaGxM=
+  server: hk2.network-cdn-gw-yd.net
+  port: 32063
+  cipher: chacha20-ietf-poly1305
+  password: aed6e687-58a9-4836-ba62-7d8184c94df4
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: HK673|2MB/s
+  type: ss
+  server: hk2.network-cdn-gw-yd.net
+  port: 32063
+  cipher: chacha20-ietf-poly1305
+  password: aed6e687-58a9-4836-ba62-7d8184c94df4
   udp: true
   skip-cert-verify: true
   tfo: false
@@ -77,24 +62,6 @@ proxies:
     path: /%2F%3Fed%3D2048
     headers:
       Host: vl.dalazhi.cloudns.biz
-- name: HK003
-  type: ss
-  server: hk14.network-cdn-gw-yd.net
-  port: 32062
-  cipher: chacha20-ietf-poly1305
-  password: eb9aff96-654d-4b84-bfbd-30d57a927e4d
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: HK020
-  type: ss
-  server: hk1.network-cdn-gw-yd.net
-  port: 32060
-  cipher: chacha20-ietf-poly1305
-  password: d4665d23-c0a2-454e-ba62-c276ed189a70
-  udp: true
-  skip-cert-verify: true
-  tfo: false
 - name: FR_33|5.3MB/s
   type: hysteria2
   server: 2001:bc8:32d7:302::11
@@ -356,14 +323,11 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -401,14 +365,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -444,14 +405,11 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -487,14 +445,11 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -531,14 +486,11 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -573,14 +525,11 @@ proxy-groups:
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -617,14 +566,11 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -661,14 +607,11 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -705,14 +648,11 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -749,14 +689,11 @@ proxy-groups:
   proxies:
   - DIRECT
   - 🚀 手动切换
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -793,14 +730,11 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
-  - 台湾 trojan
-  - 香港 trojan
-  - 日本 ss
+  - HK538|1MB/s
+  - HK673|2MB/s
   - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - HK003
-  - HK020
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
@@ -914,7 +848,17 @@ rule-providers:
     behavior: classical
     format: yaml
     size-limit: 0
+  国内网站:
+    type: http
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geosite/classical/cn.yaml
+    path: ./ruleset/cn.yaml
+    interval: 86400
+    proxy: DIRECT
+    behavior: classical
+    format: yaml
+    size-limit: 0
 rules:
+- RULE-SET,国内网站,🎯 国内直连
 - RULE-SET,YouTube,📹 YouTube
 - RULE-SET,NETFLIX,🎥 NETFLIX
 - RULE-SET,NETFLIXip,🎥 NETFLIX
