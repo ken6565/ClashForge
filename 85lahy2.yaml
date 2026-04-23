@@ -5,6 +5,221 @@ mode: rule
 log-level: info
 external-controller: 9090
 proxies:
+- name: TW1212|1MB/s
+  type: ss
+  server: r3mrcg0011499tl.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: TW816|1MB/s
+  type: ss
+  server: r3mrcg0011499tl.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: TW1244|5MB/s
+  type: vless
+  server: 125.227.219.98
+  port: 6235
+  uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d146
+  encryption: none
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  sni: baidu.com
+  servername: baidu.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /xxxxhttp
+    headers:
+      Host: baidu.com
+- name: TW121|1MB/s
+  type: ss
+  server: r3mrcg0011499tl.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: TW933|2MB/s
+  type: vless
+  server: kbgs.hinet.tw1.yydjc.top
+  port: 443
+  uuid: bba65652-b714-4832-ba62-cbf861ea2dbe
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: UtL1fZqK9sl2QQaS03BQnfYBAnH760eJ_4YzSR9RniM
+    short-id: 601a08ef
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: tcp
+- name: TW926|1MB/s
+  type: ss
+  server: r3mrcg0011499tl.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+  skip-cert-verify: true
+  tfo: false
+- name: TW1253|13MB/s
+  type: vless
+  server: kbgs.hinet.tw1.yydjc.top
+  port: 443
+  uuid: bba65652-b714-4832-ba62-cbf861ea2dbe
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: UtL1fZqK9sl2QQaS03BQnfYBAnH760eJ_4YzSR9RniM
+    short-id: 601a08ef
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: tcp
+- name: JP056|11MB/s
+  type: hysteria2
+  server: vpn-jp-003.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-jp-003.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: Temu
+  type: vless
+  server: www.temu.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+- name: itarmy
+  type: vless
+  server: itarmy.com.ua
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+- name: Shopify
+  type: vless
+  server: www.shopify.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+- name: Cloudflare
+  type: vless
+  server: blog.cloudflare.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+- name: openai
+  type: vless
+  server: openai.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+- name: whatismyip
+  type: vless
+  server: www.whatismyip.net
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+- name: Cdnjs
+  type: vless
+  server: cdnjs.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
+- name: Udemy
+  type: vless
+  server: www.udemy.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
 - name: 新加坡001
   type: vmess
   server: 43.128.70.62
@@ -44,50 +259,6 @@ proxies:
   port: 5443
   obfs: salamander
   obfs-password: CF7WJGiw6r1c8imX
-- name: JP001
-  type: vless
-  server: 64.81.112.190
-  port: 443
-  uuid: 3b3223d0-c2b2-4a74-ab7c-9bb19f16a408
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: UC6bNeUyQI8DG_XjOOoUeii885CZoO4HouOgga3BWxM
-    short-id: 51febf0c7c4aa43d
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-  network: tcp
-- name: HK538|1MB/s
-  type: ss
-  server: hk2.network-cdn-gw-yd.net
-  port: 32063
-  cipher: chacha20-ietf-poly1305
-  password: aed6e687-58a9-4836-ba62-7d8184c94df4
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: HK673|2MB/s
-  type: ss
-  server: hk2.network-cdn-gw-yd.net
-  port: 32063
-  cipher: chacha20-ietf-poly1305
-  password: aed6e687-58a9-4836-ba62-7d8184c94df4
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-- name: 德国 ss
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-  skip-cert-verify: true
-  tfo: false
 - name: HK002|6.1MB/s
   type: vless
   server: 104.18.46.69
@@ -136,13 +307,6 @@ proxies:
   server: 2001:bc8:32d7:302::11
   password: dongtaiwang.com
   sni: apple.com
-  skip-cert-verify: true
-  port: 20088
-- name: 法国_01
-  type: hysteria2
-  server: 2001:bc8:32d7:302::11
-  password: dongtaiwang.com
-  sni: '🔒 [By EbraSha] '
   skip-cert-verify: true
   port: 20088
 - name: FR_23|1.6MB/s
@@ -379,19 +543,30 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -425,19 +600,30 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -469,19 +655,30 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -513,19 +710,30 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -558,19 +766,30 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -601,19 +820,30 @@ proxy-groups:
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -646,19 +876,30 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -691,19 +932,30 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -736,19 +988,30 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -781,19 +1044,30 @@ proxy-groups:
   proxies:
   - DIRECT
   - 🚀 手动切换
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
@@ -826,19 +1100,30 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
+  - TW1212|1MB/s
+  - TW816|1MB/s
+  - TW1244|5MB/s
+  - TW121|1MB/s
+  - TW933|2MB/s
+  - TW926|1MB/s
+  - TW1253|13MB/s
+  - JP056|11MB/s
+  - Temu
+  - itarmy
+  - Shopify
+  - Cloudflare
+  - openai
+  - whatismyip
+  - Cdnjs
+  - Udemy
   - 新加坡001
   - 马来西亚001
   - JP002
-  - JP001
-  - HK538|1MB/s
-  - HK673|2MB/s
-  - 德国 ss
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - FR_33|5.3MB/s
   - FR_35|5.1MB/s
   - 美国_02
-  - 法国_01
   - FR_23|1.6MB/s
   - FR_29|5.4MB/s
   - FR_05|0.6MB/s
