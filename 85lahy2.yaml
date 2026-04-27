@@ -5,6 +5,40 @@ mode: rule
 log-level: info
 external-controller: 9090
 proxies:
+- name: 台湾001vless
+  type: vless
+  server: pq-hinet.tw1.yydjc.top
+  port: 443
+  uuid: 635b8b69-f1f9-4e11-9c21-44dc58e03dc2
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kp6ml6xwSt4hTDEKj6U0FR0l-kDy2iUiILiT0XfFwjA
+    short-id: 3662ca42
+  servername: static-snowbreak.amazingseasun.com
+  client-fingerprint: chrome
+  network: tcp
+- name: 台湾002vless
+  type: vless
+  server: pq-hinet.tw2.yydjc.top
+  port: 443
+  uuid: 635b8b69-f1f9-4e11-9c21-44dc58e03dc2
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Z-S-J9zDn7pXU7haa9_BeIny-Yp5qtS0R_MnHSgsoGA
+    short-id: 0c9347ba
+  servername: static-snowbreak.amazingseasun.com
+  client-fingerprint: chrome
+  network: tcp
 - name: 新加坡003hy2
   type: hysteria2
   server: 146.235.17.47
@@ -13,13 +47,6 @@ proxies:
   skip-cert-verify: true
   port: 443
   ports: 35000-39000
-- name: 美国002hy2
-  type: hysteria2
-  server: pq.us5.globals-download.com
-  password: 635b8b69-f1f9-4e11-9c21-44dc58e03dc2
-  sni: www.apple.com
-  skip-cert-verify: true
-  port: 443
 - name: 新加坡004hy2
   type: hysteria2
   server: 158.178.236.104
@@ -36,7 +63,7 @@ proxies:
   skip-cert-verify: true
   port: 443
   ports: 35000-39000
-- name: 美国001vme
+- name: 美国001vmess
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -49,6 +76,13 @@ proxies:
   network: tcp
   aead: true
   tfo: false
+- name: 美国002hy2
+  type: hysteria2
+  server: pq.us5.globals-download.com
+  password: 635b8b69-f1f9-4e11-9c21-44dc58e03dc2
+  sni: www.apple.com
+  skip-cert-verify: true
+  port: 443
 - name: TW346|1MB/s
   type: ss
   server: 403880e.k4.gladns.com
@@ -105,98 +139,6 @@ proxies:
     short-id: 601a08ef
   servername: s0.awsstatic.com
   client-fingerprint: chrome
-  network: tcp
-- name: itarmy
-  type: vless
-  server: itarmy.com.ua
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-- name: Shopify
-  type: vless
-  server: www.shopify.com
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-- name: Cloudflare
-  type: vless
-  server: blog.cloudflare.com
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-- name: whatismyip
-  type: vless
-  server: www.whatismyip.net
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-- name: Cdnjs
-  type: vless
-  server: cdnjs.com
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-i.workers.dev
-- name: 马来西亚001
-  type: vless
-  server: lmmy.yostar.org
-  port: 24318
-  uuid: 4b73e393-9962-4f4b-b570-9ceed65cede0
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: z9KXhnlVu1GEo3Qt0XPSBS9KVbjyAphMO-X-0B4rE34
-    short-id: 0e1e1b97
-  servername: www.lilith.com
-  client-fingerprint: safari
   network: tcp
 - name: HK002|6.1MB/s
   type: vless
@@ -421,21 +363,17 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -465,21 +403,17 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -507,21 +441,17 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -549,21 +479,17 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 手动切换
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -592,21 +518,17 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -633,21 +555,17 @@ proxy-groups:
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -676,21 +594,17 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -719,21 +633,17 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -762,21 +672,17 @@ proxy-groups:
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -805,21 +711,17 @@ proxy-groups:
   proxies:
   - DIRECT
   - 🚀 手动切换
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
@@ -848,21 +750,17 @@ proxy-groups:
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
+  - 台湾001vless
+  - 台湾002vless
   - 新加坡003hy2
-  - 美国002hy2
   - 新加坡004hy2
   - 韩国001hy2
-  - 美国001vme
+  - 美国001vmess
+  - 美国002hy2
   - TW346|1MB/s
   - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
-  - itarmy
-  - Shopify
-  - Cloudflare
-  - whatismyip
-  - Cdnjs
-  - 马来西亚001
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
   - NL_03|4.4MB/s
