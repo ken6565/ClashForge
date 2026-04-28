@@ -39,6 +39,32 @@ proxies:
   servername: static-snowbreak.amazingseasun.com
   client-fingerprint: chrome
   network: tcp
+- name: 台湾003vless
+  type: vless
+  server: pq-hinet.tw3.yydjc.top
+  port: 443
+  uuid: 635b8b69-f1f9-4e11-9c21-44dc58e03dc2
+  encryption: none
+  udp: true
+  skip-cert-verify: false
+  tfo: false
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eECwNaUgTEzRbyaeSaYpZGNTuuf5xZL2UVeGhDNWxTE
+    short-id: c85e4b9b
+  servername: static-snowbreak.amazingseasun.com
+  client-fingerprint: chrome
+  network: tcp
+- name: JP001hy2
+  type: hysteria2
+  server: jp-hy2.onetaplink.app
+  password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
+  sni: hy2-jp.onetaplink.app
+  skip-cert-verify: true
+  port: 5443
+  obfs: salamander
+  obfs-password: CF7WJGiw6r1c8imX
 - name: 新加坡003hy2
   type: hysteria2
   server: 146.235.17.47
@@ -96,15 +122,6 @@ proxies:
   plugin-opts:
     mode: tls
     host: 403880e.default.epicgames.com:164892
-- name: TW1212|1MB/s
-  type: ss
-  server: r3mrcg0011499tl.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-  skip-cert-verify: true
-  tfo: false
 - name: TW1244|5MB/s
   type: vless
   server: 125.227.219.98
@@ -365,13 +382,14 @@ proxy-groups:
   - DIRECT
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -405,13 +423,14 @@ proxy-groups:
   proxies:
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -443,13 +462,14 @@ proxy-groups:
   - 🚀 手动切换
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -481,13 +501,14 @@ proxy-groups:
   - 🚀 手动切换
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -520,13 +541,14 @@ proxy-groups:
   - 🚀 手动切换
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -557,13 +579,14 @@ proxy-groups:
   proxies:
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -596,13 +619,14 @@ proxy-groups:
   - 🚀 手动切换
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -635,13 +659,14 @@ proxy-groups:
   - ♻️ 自动选择
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -674,13 +699,14 @@ proxy-groups:
   - 🚀 手动切换
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -713,13 +739,14 @@ proxy-groups:
   - 🚀 手动切换
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
@@ -752,13 +779,14 @@ proxy-groups:
   - 🎯 国内直连
   - 台湾001vless
   - 台湾002vless
+  - 台湾003vless
+  - JP001hy2
   - 新加坡003hy2
   - 新加坡004hy2
   - 韩国001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
-  - TW1212|1MB/s
   - TW1244|5MB/s
   - TW1253|13MB/s
   - HK002|6.1MB/s
