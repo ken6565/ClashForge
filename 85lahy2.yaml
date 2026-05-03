@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 external-controller: 9090
 proxies:
-- name: VN349|3MB/s
-  type: hysteria2
-  server: vpn-vn-001.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-vn-001.fastervpn.world
-  skip-cert-verify: true
-  port: 443
-- name: FR566登|8MB/s
-  type: hysteria2
-  server: 163.172.113.118
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 40022
 - name: 美国007hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
@@ -38,52 +24,40 @@ proxies:
   ports: 50000-60000
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: op_DE_1|1.0MB/s
-  type: vless
-  server: gr-1.illusion-proxy.ru
-  port: 443
-  uuid: bf263367-bb63-4663-b4a1-34946107a72e
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: I-ltGSV73Fd08VfuP_XZ-mAAb2ZE3Ag4a_8ftaX0bz0
-    short-id: fe28038a
-  servername: gr-1.illusion-proxy.ru
-  client-fingerprint: chrome
-  network: tcp
-- name: op_NL_1|1.7MB/s
-  type: vless
-  server: 195.181.173.199
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  sni: ams1.fromblancwithlove.com
-  servername: ams1.fromblancwithlove.com
-  client-fingerprint: chrome
-  alpn:
-  - h2
-  network: tcp
-- name: op_JP_2|5.1MB/s
-  type: ss
-  server: 403880e.e4.gladns.com
-  port: 2377
-  cipher: chacha20-ietf-poly1305
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  udp: true
+- name: VN349hy2
+  type: hysteria2
+  server: vpn-vn-001.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-vn-001.fastervpn.world
   skip-cert-verify: true
+  port: 443
+- name: FR566登hy2
+  type: hysteria2
+  server: 163.172.113.118
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  port: 40022
+- name: US789登vmess
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
   tfo: false
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: 403880e.default.microsoft.io:164892
+- name: VN128hy2
+  type: hysteria2
+  server: vpn-vn-001.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-vn-001.fastervpn.world
+  skip-cert-verify: true
+  port: 443
 - name: op_PL_3|1.7MB/s
   type: vless
   server: pl74.mechvpn.online
@@ -99,41 +73,6 @@ proxies:
   servername: pl74.mechvpn.online
   client-fingerprint: chrome
   network: tcp
-- name: qilan.de|DE Node
-  type: hysteria2
-  server: 178.18.147.66
-  password: github.com%2FAlvin9999-newpac%2Ffanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-  port: 29900
-- name: qilan.de|NF GPT
-  type: hysteria2
-  server: 178.18.147.66
-  password: github.com%2FAlvin9999-newpac%2Ffanqiang
-  skip-cert-verify: true
-  port: 29900
-- name: TW347|1MB/s
-  type: ss
-  server: 403880e.k4.gladns.com
-  port: 2377
-  cipher: chacha20-ietf-poly1305
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  udp: true
-  skip-cert-verify: true
-  tfo: false
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: 403880e.default.epicgames.com:164892
-- name: JP873|2MB/s
-  type: hysteria2
-  server: jp-hy2.onetaplink.app
-  password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  sni: hy2-jp.onetaplink.app
-  skip-cert-verify: false
-  port: 5443
-  obfs: salamander
-  obfs-password: CF7WJGiw6r1c8imX
 - name: CH902|2MB/s
   type: vless
   server: 172.65.111.43
@@ -152,15 +91,6 @@ proxies:
     headers:
       Host:
       - ''
-- name: JP937|3MB/s
-  type: hysteria2
-  server: jp-hy2.onetaplink.app
-  password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  sni: hy2-jp.onetaplink.app
-  skip-cert-verify: false
-  port: 5443
-  obfs: salamander
-  obfs-password: CF7WJGiw6r1c8imX
 - name: US772|16MB/s
   type: vmess
   server: 82.198.246.214
@@ -187,66 +117,6 @@ proxies:
   network: tcp
   aead: true
   tfo: false
-- name: 台湾001vless
-  type: vless
-  server: pq-hinet.tw1.yydjc.top
-  port: 443
-  uuid: 635b8b69-f1f9-4e11-9c21-44dc58e03dc2
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kp6ml6xwSt4hTDEKj6U0FR0l-kDy2iUiILiT0XfFwjA
-    short-id: 3662ca42
-  servername: static-snowbreak.amazingseasun.com
-  client-fingerprint: chrome
-  network: tcp
-- name: 台湾002vless
-  type: vless
-  server: pq-hinet.tw2.yydjc.top
-  port: 443
-  uuid: 635b8b69-f1f9-4e11-9c21-44dc58e03dc2
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Z-S-J9zDn7pXU7haa9_BeIny-Yp5qtS0R_MnHSgsoGA
-    short-id: 0c9347ba
-  servername: static-snowbreak.amazingseasun.com
-  client-fingerprint: chrome
-  network: tcp
-- name: 台湾003vless
-  type: vless
-  server: pq-hinet.tw3.yydjc.top
-  port: 443
-  uuid: 635b8b69-f1f9-4e11-9c21-44dc58e03dc2
-  encryption: none
-  udp: true
-  skip-cert-verify: false
-  tfo: false
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: eECwNaUgTEzRbyaeSaYpZGNTuuf5xZL2UVeGhDNWxTE
-    short-id: c85e4b9b
-  servername: static-snowbreak.amazingseasun.com
-  client-fingerprint: chrome
-  network: tcp
-- name: JP001hy2
-  type: hysteria2
-  server: jp-hy2.onetaplink.app
-  password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  sni: hy2-jp.onetaplink.app
-  skip-cert-verify: true
-  port: 5443
-  obfs: salamander
-  obfs-password: CF7WJGiw6r1c8imX
 - name: 美国001vmess
   type: vmess
   server: 82.198.246.233
@@ -345,7 +215,7 @@ proxies:
     path: /%2F%3Fed%3D2048
     headers:
       Host: vl.dalazhi.cloudns.biz
-- name: NL_03|4.4MB/s
+- name: NL003hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -354,7 +224,7 @@ proxies:
   port: 54608
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_09|4.4MB/s
+- name: NL009hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -363,16 +233,7 @@ proxies:
   port: 56269
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_17|4.6MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 56654
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: NL_11|3.9MB/s
+- name: NL011hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -381,7 +242,7 @@ proxies:
   port: 58576
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_13|4.7MB/s
+- name: NL013hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -390,7 +251,7 @@ proxies:
   port: 57061
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_16|0.2MB/s
+- name: NL016hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -399,7 +260,7 @@ proxies:
   port: 56654
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_08|0.2MB/s
+- name: NL008hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -408,7 +269,7 @@ proxies:
   port: 58262
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_10|3.4MB/s
+- name: NL010hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -417,7 +278,7 @@ proxies:
   port: 59220
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_14|5.0MB/s
+- name: NL014hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -426,7 +287,7 @@ proxies:
   port: 58262
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_05|1.3MB/s
+- name: NL005hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -435,7 +296,7 @@ proxies:
   port: 54608
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_06|3.5MB/s
+- name: NL006hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -444,14 +305,14 @@ proxies:
   port: 59220
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: 美国_05
+- name: 美国005hy2
   type: hysteria2
   server: 2a02:180:6:1::1b3
   password: 32d5901c-3cf6-43a9-b719-d71f1fb4f78e
   sni: www.bing.com
   skip-cert-verify: true
   port: 51435
-- name: NL_12|7.2MB/s
+- name: NL012hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -460,7 +321,7 @@ proxies:
   port: 57061
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_15|4.6MB/s
+- name: NL015hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -469,14 +330,7 @@ proxies:
   port: 51658
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: DE_02|2.2MB/s
-  type: hysteria2
-  server: 2a02:180:6:1::1b3
-  password: 32d5901c-3cf6-43a9-b719-d71f1fb4f78e
-  sni: www.bing.com
-  skip-cert-verify: true
-  port: 51435
-- name: NL_01|4.8MB/s
+- name: NL001hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -485,7 +339,7 @@ proxies:
   port: 51658
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_07|3.6MB/s
+- name: NL007hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -494,7 +348,7 @@ proxies:
   port: 58576
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_02|4.6MB/s
+- name: NL002hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -503,7 +357,7 @@ proxies:
   port: 52318
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: AZ_01
+- name: AZ001hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -513,16 +367,7 @@ proxies:
   ports: 50000-60000
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: NL_04|1.1MB/s
-  type: hysteria2
-  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
-  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  sni: Ab.ac
-  skip-cert-verify: true
-  port: 56269
-  obfs: salamander
-  obfs-password: FnFgQIckcMRtKq7i
-- name: 美国_04
+- name: 美国004hy2
   type: hysteria2
   server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
   password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
@@ -531,26 +376,6 @@ proxies:
   port: 52318
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
-- name: US789登|12MB/s
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-  network: tcp
-  aead: true
-  tfo: false
-- name: VN128|3MB/s
-  type: hysteria2
-  server: vpn-vn-001.fastervpn.world
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-vn-001.fastervpn.world
-  skip-cert-verify: true
-  port: 443
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -558,26 +383,16 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -585,55 +400,40 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -641,53 +441,38 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -695,53 +480,38 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -749,54 +519,39 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: 🎮️ 游戏平台
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -804,52 +559,37 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -857,54 +597,39 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -912,54 +637,39 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -967,54 +677,39 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -1022,54 +717,39 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: 🎯 国内直连
   type: select
   proxies:
   - DIRECT
   - 🚀 手动切换
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -1077,54 +757,39 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
-  - VN349|3MB/s
-  - FR566登|8MB/s
   - 美国007hy2
   - 阿塞拜疆001hy2
-  - op_DE_1|1.0MB/s
-  - op_NL_1|1.7MB/s
-  - op_JP_2|5.1MB/s
+  - VN349hy2
+  - FR566登hy2
+  - US789登vmess
+  - VN128hy2
   - op_PL_3|1.7MB/s
-  - qilan.de|DE Node
-  - qilan.de|NF GPT
-  - TW347|1MB/s
-  - JP873|2MB/s
   - CH902|2MB/s
-  - JP937|3MB/s
   - US772|16MB/s
   - US1043|2MB/s
-  - 台湾001vless
-  - 台湾002vless
-  - 台湾003vless
-  - JP001hy2
   - 美国001vmess
   - 美国002hy2
   - TW346|1MB/s
@@ -1132,29 +797,24 @@ proxy-groups:
   - TW1253|13MB/s
   - HK002|6.1MB/s
   - 59SG-HK_3|3.6MB/s
-  - NL_03|4.4MB/s
-  - NL_09|4.4MB/s
-  - NL_17|4.6MB/s
-  - NL_11|3.9MB/s
-  - NL_13|4.7MB/s
-  - NL_16|0.2MB/s
-  - NL_08|0.2MB/s
-  - NL_10|3.4MB/s
-  - NL_14|5.0MB/s
-  - NL_05|1.3MB/s
-  - NL_06|3.5MB/s
-  - 美国_05
-  - NL_12|7.2MB/s
-  - NL_15|4.6MB/s
-  - DE_02|2.2MB/s
-  - NL_01|4.8MB/s
-  - NL_07|3.6MB/s
-  - NL_02|4.6MB/s
-  - AZ_01
-  - NL_04|1.1MB/s
-  - 美国_04
-  - US789登|12MB/s
-  - VN128|3MB/s
+  - NL003hy2
+  - NL009hy2
+  - NL011hy2
+  - NL013hy2
+  - NL016hy2
+  - NL008hy2
+  - NL010hy2
+  - NL014hy2
+  - NL005hy2
+  - NL006hy2
+  - 美国005hy2
+  - NL012hy2
+  - NL015hy2
+  - NL001hy2
+  - NL007hy2
+  - NL002hy2
+  - AZ001hy2
+  - 美国004hy2
 rule-providers:
   Proxy:
     type: http
