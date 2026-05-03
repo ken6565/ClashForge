@@ -5,6 +5,39 @@ mode: rule
 log-level: info
 external-controller: 9090
 proxies:
+- name: VN349|3MB/s
+  type: hysteria2
+  server: vpn-vn-001.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-vn-001.fastervpn.world
+  skip-cert-verify: true
+  port: 443
+- name: FR566登|8MB/s
+  type: hysteria2
+  server: 163.172.113.118
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  port: 40022
+- name: 美国007hy2
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 52318
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
+- name: 阿塞拜疆001hy2
+  type: hysteria2
+  server: 2001:bc8:1640:50eb:dc00:ff:fe57:dd6f
+  password: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
+  sni: Ab.ac
+  skip-cert-verify: true
+  port: 443
+  ports: 50000-60000
+  obfs: salamander
+  obfs-password: FnFgQIckcMRtKq7i
 - name: op_DE_1|1.0MB/s
   type: vless
   server: gr-1.illusion-proxy.ru
@@ -498,6 +531,26 @@ proxies:
   port: 52318
   obfs: salamander
   obfs-password: FnFgQIckcMRtKq7i
+- name: US789登|12MB/s
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+  network: tcp
+  aead: true
+  tfo: false
+- name: VN128|3MB/s
+  type: hysteria2
+  server: vpn-vn-001.fastervpn.world
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-vn-001.fastervpn.world
+  skip-cert-verify: true
+  port: 443
 proxy-groups:
 - name: 🚀 手动切换
   type: select
@@ -505,6 +558,10 @@ proxy-groups:
   - ♻️ 自动选择
   - ChatGPT、Claude、Gemini、微软AI、GROK
   - DIRECT
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -549,12 +606,18 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -599,10 +662,16 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: 📹 YouTube
   type: select
   proxies:
   - 🚀 手动切换
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -647,10 +716,16 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: 🎥 NETFLIX
   type: select
   proxies:
   - 🚀 手动切换
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -695,11 +770,17 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: 🎮️ 游戏平台
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -744,9 +825,15 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: ChatGPT、Claude、Gemini、微软AI、GROK
   type: select
   proxies:
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -791,11 +878,17 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -840,11 +933,17 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 手动切换
   - ♻️ 自动选择
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -889,11 +988,17 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🎯 国内直连
   - 🚀 手动切换
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -938,11 +1043,17 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: 🎯 国内直连
   type: select
   proxies:
   - DIRECT
   - 🚀 手动切换
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -987,11 +1098,17 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 - name: 🐟 漏网之鱼
   type: select
   proxies:
   - 🚀 手动切换
   - 🎯 国内直连
+  - VN349|3MB/s
+  - FR566登|8MB/s
+  - 美国007hy2
+  - 阿塞拜疆001hy2
   - op_DE_1|1.0MB/s
   - op_NL_1|1.7MB/s
   - op_JP_2|5.1MB/s
@@ -1036,6 +1153,8 @@ proxy-groups:
   - AZ_01
   - NL_04|1.1MB/s
   - 美国_04
+  - US789登|12MB/s
+  - VN128|3MB/s
 rule-providers:
   Proxy:
     type: http
